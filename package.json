@@ -1,5 +1,13 @@
 {
+  "version": "0.0.0",
+  "name": "9th-seed",
+  "author": "Mark Katerberg <katerberg@fastmail.fm> (katerberg.net)",
+  "description": "Twitch Bot for Vintage Rotisserie Draft",
   "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/katerberg/9th-seed.git"
+  },
   "dependencies": {
     "tmi.js": "^1.4.2"
   },
