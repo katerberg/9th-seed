@@ -21,17 +21,22 @@ const connect = client.connect().then(msg => {
 });
 
 client.on('chat', (channel, user, message, self) => {
-  if (self) return;
+  try {
+    if (self) return;
 
-  const isOwner = user.username === channelName;
-  const isDope = user.mod || isOwner;
-  const msgArr = message.split(' ');
+    const isOwner = user.username === channelName;
+    const isDope = user.mod || isOwner;
+    const msgArr = message.split(' ');
 
-  if ((message.startsWith('!so') || message.startsWith('!shoutout')) && isDope) {
-    client.say(channelName, `Check out http://twitch.tv/${msgArr[1]} for some really cool content!`);
-  } else if (message.startsWith('!twitter')) {
-    client.say(channelName, 'Want to argue about VRD? https://twitter.com/stlvrd');
-  } else if (message.startsWith('!salt')) {
-    client.say(channelName, 'PJSalt PJSalt PJSalt PJSalt');
+    if ((message.startsWith('!so') || message.startsWith('!shoutout')) && isDope) {
+      client.say(channelName, `Check out http://twitch.tv/${msgArr[1]} for some really cool content!`);
+    } else if (message.startsWith('!twitter')) {
+      client.say(channelName, 'Want to argue about VRD? https://twitter.com/stlvrd');
+    } else if (message.startsWith('!salt')) {
+      client.say(channelName, 'PJSalt PJSalt PJSalt PJSalt');
+    }
+  } catch(e) {
+    console.error('Something went wrong trying to parse the message');
+    console.log(e.message);
   }
 });
