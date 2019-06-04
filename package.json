@@ -1,0 +1,6 @@
+{
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "tmi.js": "^1.4.2"
+  }
+}
