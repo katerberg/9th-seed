@@ -25,6 +25,17 @@ function unpermissioned(channelName, message) {
     return client.say(channelName, 'Want to argue about VRD? https://twitter.com/stlvrd');
   } else if (message.startsWith('!salt')) {
     return client.say(channelName, 'PJSalt PJSalt PJSalt PJSalt');
+  } else if (message.startsWith('!vrd1')) {
+    return client.say(channelName, 'https://docs.google.com/spreadsheets/d/1axKhYoW4HanXaSnp1UXZQkOS-p_HUrcLrL45qzfkMdE/edit?usp=sharing');
+  } else if (message.startsWith('!bracket') ||
+    message.startsWith('!record')) {
+    return client.say(channelName, 'https://challonge.com/yvl5j2oj/standings');
+  } else if (message.startsWith('!vrd2') ||
+    message.startsWith('!sheet') ||
+    message.startsWith('!decklist') ||
+    message.startsWith('!decklists') ||
+    message.startsWith('!draft')) {
+    return client.say(channelName, 'https://docs.google.com/spreadsheets/d/1MKkuuQ1hYIE4_uOXEUBUcTMSu1yfsgwYgHjIGyNQtm4/edit?usp=sharing');
   }
 }
 
