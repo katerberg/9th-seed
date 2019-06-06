@@ -36,6 +36,8 @@ function unpermissioned(channelName, message) {
     message.startsWith('!decklists') ||
     message.startsWith('!draft')) {
     return client.say(channelName, 'https://docs.google.com/spreadsheets/d/1MKkuuQ1hYIE4_uOXEUBUcTMSu1yfsgwYgHjIGyNQtm4/edit?usp=sharing');
+  } else if (message.startsWith('!youtube') {
+    return client.say(channelName, 'https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA');
   }
 }
 
