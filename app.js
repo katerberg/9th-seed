@@ -80,17 +80,17 @@ async function updateVote(username, vote) {
 
 async function upsertVote(username, message) {
   const count = await getVotes(username);
-  const voteFor = message.split(' ')[1];
-  if (count <= 1) {
-    return insertVote(username, voteFor);
-  } else {
+  const voteFor = getCommandParams(message);
+  if (count) {
     return updateVote(username, voteFor);
+  } else {
+    return insertVote(username, voteFor);
   }
 }
 
 async function getAllVotes() {
   return new Promise(res => {
-    connection.query('SELECT username, COUNT(vote) as votes FROM votes GROUP BY username;', (err, result) => {
+    connection.query('SELECT vote AS candidate, COUNT(username) as votes FROM votes GROUP BY vote;', (err, result) => {
       if (err) {
         console.error(err);
         console.error('Something went wrong getting votes');
@@ -99,9 +99,24 @@ async function getAllVotes() {
       }
     });
   });
-  return '';
 }
 
+async function clearAllVotes() {
+  return new Promise(res => {
+    connection.query('DELETE FROM votes;', (err, result) => {
+      if (err) {
+        console.error(err);
+        console.error('Something went wrong clearing votes');
+      } else {
+        res();
+      }
+    });
+  });
+}
+
+function getCommandParams(message) {
+  return message.substr(message.indexOf(' ') + 1);
+}
 function unpermissioned(channelName, message, user) {
   if (message.startsWith('!twitter')) {
     return client.say(channelName, 'Want to argue about VRD? https://twitter.com/stlvrd');
@@ -124,7 +139,8 @@ function unpermissioned(channelName, message, user) {
     upsertVote(user.username, message);
   } else if (message === '!votes') {
     return getAllVotes().then(votes => {
-      client.say(channelName, votes.reduce((a, c) => `${a}\r\n${c.username} has ${c.votes} votes.`, ''));
+      const votesMessage = votes.reduce((a, c) => `${a}\r\n${c.candidate} has ${c.votes} vote${c.votes > 1 ? 's' : ''}.`, '');
+      client.say(channelName, votesMessage ? votesMessage : 'No votes yet!');
     });
   }
 }
@@ -134,8 +150,9 @@ function mods(channelName, message, user) {
   const isDope = user.mod || isOwner;
   if (isDope) {
     if (message.startsWith('!so') || message.startsWith('!shoutout')) {
-      const msgArr = message.split(' ');
-      return client.say(channelName, `Check out http://twitch.tv/${msgArr[1]} for some really cool content!`);
+      return client.say(channelName, `Check out http://twitch.tv/${getCommandParams(message)} for some really cool content!`);
+    } else if (message.startsWith('!clearVotes')) {
+      return clearAllVotes();
     }
   }
 }
