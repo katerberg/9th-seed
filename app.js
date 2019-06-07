@@ -88,11 +88,21 @@ async function upsertVote(username, message) {
   }
 }
 
-function getVotesQuery() {
-  return 'SELECT username, COUNT(vote) FROM votes GROUP BY username;';
+async function getAllVotes() {
+  return new Promise(res => {
+    connection.query('SELECT username, COUNT(vote) as votes FROM votes GROUP BY username;', (err, result) => {
+      if (err) {
+        console.error(err);
+        console.error('Something went wrong getting votes');
+      } else {
+        res(result);
+      }
+    });
+  });
+  return '';
 }
 
-function unpermissioned(channelName, message) {
+function unpermissioned(channelName, message, user) {
   if (message.startsWith('!twitter')) {
     return client.say(channelName, 'Want to argue about VRD? https://twitter.com/stlvrd');
   } else if (message.startsWith('!salt')) {
@@ -110,16 +120,12 @@ function unpermissioned(channelName, message) {
     return client.say(channelName, 'https://docs.google.com/spreadsheets/d/1MKkuuQ1hYIE4_uOXEUBUcTMSu1yfsgwYgHjIGyNQtm4/edit?usp=sharing');
   } else if (message.startsWith('!youtube')) {
     return client.say(channelName, 'https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA');
+  } else if(message.startsWith('!vote ')) {
+    upsertVote(user.username, message);
   } else if (message === '!votes') {
-    connection.query(getVotesQuery(), (err, result) => {
-      if (err) {
-        console.error(err);
-        console.error('Something went wrong getting votes');
-      } else {
-        console.log(result);
-      }
+    return getAllVotes().then(votes => {
+      client.say(channelName, votes.reduce((a, c) => `${a}\r\n${c.username} has ${c.votes} votes.`, ''));
     });
-    return;
   }
 }
 
@@ -130,8 +136,6 @@ function mods(channelName, message, user) {
     if (message.startsWith('!so') || message.startsWith('!shoutout')) {
       const msgArr = message.split(' ');
       return client.say(channelName, `Check out http://twitch.tv/${msgArr[1]} for some really cool content!`);
-    } else if(message.startsWith('!vote ')) {
-      upsertVote(user.username, message);
     }
   }
 }
@@ -140,7 +144,7 @@ client.on('chat', (channel, user, message, self) => {
   try {
     if (self) return;
 
-    unpermissioned(channelName, message) ||
+    unpermissioned(channelName, message, user) ||
       mods(channelName, message, user);
 
   } catch(e) {
