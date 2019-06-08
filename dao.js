@@ -46,14 +46,14 @@ class DataAccessObject {
 
   async insertVote(username, vote) {
     return new Promise((res, rej) => {
-      this.connection.query('INSERT INTO votes (username, vote) VALUES (?, ?);', [username, vote], (err, result) => {
+      this.connection.query('INSERT INTO votes (username, vote) VALUES (?, ?);', [username, cleanVote], (err, result) => {
         if (err) {
           console.error(err);
           console.error(`Something went wrong inserting vote for ${username}`);
           rej(err);
         } else {
           console.log('Vote inserted');
-          res(vote);
+          res(cleanVote);
         }
       });
     });
@@ -61,14 +61,14 @@ class DataAccessObject {
 
   async updateVote(username, vote) {
     return new Promise((res, rej) => {
-      this.connection.query('UPDATE votes SET vote = ? WHERE username = ?;', [vote, username], (err, result) => {
+      this.connection.query('UPDATE votes SET vote = ? WHERE username = ?;', [cleanVote, username], (err, result) => {
         if (err) {
           console.error(err);
           console.error(`Something went wrong updating vote for ${username}`);
           rej(err);
         } else {
           console.log('Vote updated');
-          res(vote);
+          res(cleanVote);
         }
       });
     });
@@ -77,10 +77,16 @@ class DataAccessObject {
   async upsertVote(username, message) {
     const count = await this.getVotes(username);
     const voteFor = getCommandParams(message);
+    const cleanVote = voteFor.toLowerCase();
+    const players = await getPlayers();
+    if (!players.find(entry => entry.shortName === cleanVote)) {
+      console.error(`Invalid vote by ${username} for ${vote}`);
+      return Promise.reject('Invalid Entry');
+    }
     if (count) {
-      return this.updateVote(username, voteFor);
+      return this.updateVote(username, cleanVote);
     } else {
-      return this.insertVote(username, voteFor);
+      return this.insertVote(username, cleanVote);
     }
   }
 
