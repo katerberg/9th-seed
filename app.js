@@ -1,7 +1,7 @@
 const tmi = require('tmi.js');
 const identity = require('./creds/twitchCreds.json');
 const dbInfo = require('./creds/dbCreds.json');
-const {DataAccessObject} = require('./dao');
+const {WinsDataAccessObject} = require('./winsDao');
 const {getCommandParams}  = require('./utils');
 const mysql = require('mysql');
 
@@ -32,7 +32,7 @@ connection.on('error', () => {
   console.error('something went terribly wrong connecting to mysql');
 });
 
-const dao = new DataAccessObject(connection);
+const winsDao = new WinsDataAccessObject(connection);
 const client = new tmi.client(tmiOptions);
 
 client.connect().then(msg => {
@@ -61,9 +61,9 @@ function unpermissioned(channelName, message, user) {
   } else if (message === '!youtube') {
     return client.say(channelName, 'Find our VODs on Twitch or on https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA');
   } else if(message.startsWith('!win ')) {
-    dao.upsertWinVote(user.username, message);
+    winsDao.upsertWinVote(user.username, message);
   } else if (message === '!wins') {
-    return dao.getAllWinVotes().then(votes => {
+    return winsDao.getAllWinVotes().then(votes => {
       const votesMessage = votes.reduce((a, c) => `${a}\r\n${c.votes} vote${c.votes > 1 ? 's' : ''} for ${c.candidate} to win.`, '');
       client.say(channelName, votesMessage ? votesMessage : 'No votes yet!');
     });
@@ -77,7 +77,7 @@ function mods(channelName, message, user) {
     if (message === '!so' || message === '!shoutout') {
       return client.say(channelName, `Check out http://twitch.tv/${getCommandParams(message)} for some really cool content!`);
     } else if (message === '!clearWinVotes') {
-      return dao.clearAllWinVotes();
+      return winsDao.clearAllWinVotes();
     }
   }
 }

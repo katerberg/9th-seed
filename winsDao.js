@@ -1,6 +1,6 @@
 const {getCommandParams}  = require('./utils');
 
-class DataAccessObject {
+class WinsDataAccessObject {
   constructor(connection) {
     this.connection = connection;
   }
@@ -103,5 +103,5 @@ class DataAccessObject {
 }
 
 module.exports = {
-  DataAccessObject,
+  WinsDataAccessObject,
 }
