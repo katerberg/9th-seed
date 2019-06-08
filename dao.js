@@ -20,6 +20,18 @@ class DataAccessObject {
     });
   }
 
+  async getPlayers() {
+    return new Promise((res, rej) => {
+      this.connection.query('SELECT name, shortName FROM players;', (err, result) => {
+        if (err) {
+          console.error('Error retrieving player list');
+          return rej(err);
+        }
+        res(result);
+      });
+    });
+  }
+
   async getVotes(username) {
     return new Promise((res, rej) => {
       this.connection.query('SELECT count(vote) AS voteCount FROM votes WHERE username = ?;', [username], (err, result) => {
