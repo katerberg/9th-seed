@@ -32,18 +32,18 @@ function unpermissioned(channelName, message, user) {
   } else if (message.startsWith('!bracket') ||
     message.startsWith('!record')) {
     return client.say(channelName, 'https://challonge.com/yvl5j2oj/standings');
-  } else if (message.startsWith('!vrd2') ||
-    message.startsWith('!sheet') ||
-    message.startsWith('!decklist') ||
-    message.startsWith('!decklists') ||
-    message.startsWith('!draft')) {
+  } else if (message === '!vrd2' ||
+    message === '!sheet' ||
+    message === '!decklist' ||
+    message === '!decklists' ||
+    message === '!draft') {
     return client.say(channelName, 'https://docs.google.com/spreadsheets/d/1MKkuuQ1hYIE4_uOXEUBUcTMSu1yfsgwYgHjIGyNQtm4/edit?usp=sharing');
   } else if (message.startsWith('!youtube')) {
     return client.say(channelName, 'https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA');
-  } else if(message.startsWith('!vote ')) {
-    dao.upsertVote(user.username, message);
-  } else if (message === '!votes') {
-    return dao.getAllVotes().then(votes => {
+  } else if(message.startsWith('!win ')) {
+    dao.upsertWinVote(user.username, message);
+  } else if (message === '!wins') {
+    return dao.getAllWinVotes().then(votes => {
       const votesMessage = votes.reduce((a, c) => `${a}\r\n${c.candidate} has ${c.votes} vote${c.votes > 1 ? 's' : ''}.`, '');
       client.say(channelName, votesMessage ? votesMessage : 'No votes yet!');
     });
@@ -57,7 +57,7 @@ function mods(channelName, message, user) {
     if (message.startsWith('!so') || message.startsWith('!shoutout')) {
       return client.say(channelName, `Check out http://twitch.tv/${getCommandParams(message)} for some really cool content!`);
     } else if (message.startsWith('!clearVotes')) {
-      return dao.clearAllVotes();
+      return dao.clearAllWinVotes();
     }
   }
 }
