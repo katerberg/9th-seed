@@ -1,23 +1,8 @@
-const dbInfo = require('./creds/dbCreds.json');
-const mysql = require('mysql');
 const {getCommandParams}  = require('./utils');
 
 class DataAccessObject {
-  constructor() {
-    this.connection = mysql.createConnection({
-      ...dbInfo,
-    });
-
-    this.connection.connect(err => {
-      if (err) {
-        throw err;
-      }
-      console.log('Connected to DB');
-    });
-
-    this.connection.on('error', () => {
-      console.error('something went terribly wrong connecting to mysql');
-    });
+  constructor(connection) {
+    this.connection = connection;
   }
 
   async getPlayers() {

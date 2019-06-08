@@ -1,7 +1,9 @@
 const tmi = require('tmi.js');
 const identity = require('./creds/twitchCreds.json');
+const dbInfo = require('./creds/dbCreds.json');
 const {DataAccessObject} = require('./dao');
 const {getCommandParams}  = require('./utils');
+const mysql = require('mysql');
 
 const channelName = 'stlvrd';
 const tmiOptions = {
@@ -15,11 +17,28 @@ const tmiOptions = {
   channels: [channelName]
 };
 
-const dao = new DataAccessObject();
+const connection = mysql.createConnection({
+  ...dbInfo,
+});
+
+connection.connect(err => {
+  if (err) {
+    throw err;
+  }
+  console.log('Connected to DB');
+});
+
+connection.on('error', () => {
+  console.error('something went terribly wrong connecting to mysql');
+});
+
+const dao = new DataAccessObject(connection);
 const client = new tmi.client(tmiOptions);
 
 client.connect().then(msg => {
   console.log(`Connected to ${channelName}!`);
+}).catch(e => {
+  console.error('Error connecting to Twitch');
 });
 
 function unpermissioned(channelName, message, user) {
