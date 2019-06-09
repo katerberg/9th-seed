@@ -61,11 +61,13 @@ function unpermissioned(channelName, message, user) {
   } else if (message === '!youtube') {
     return client.say(channelName, 'Find our VODs on Twitch or on https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA');
   } else if(message.startsWith('!win ')) {
-    winsDao.upsertWinVote(user.username, message);
+    winsDao.upsertWinVote(user.username, message).catch(e => {
+      client.say(channelName, 'Error: votes can only be for players in the tournament. Try "!win naveen" instead');
+    });
   } else if (message === '!wins') {
-    return winsDao.getAllWinVotes().then(votes => {
-      const votesMessage = votes.reduce((a, c) => `${a}\r\n${c.votes} vote${c.votes > 1 ? 's' : ''} for ${c.candidate} to win.`, '');
-      client.say(channelName, votesMessage ? votesMessage : 'No votes yet!');
+    return winsDao.getAllWinVotes().then(wins => {
+      const winsMessage = wins.reduce((a, c) => `${a}\r\n${c.wins} vote${c.wins > 1 ? 's' : ''} for ${c.candidate} to win.`, '');
+      client.say(channelName, winsMessage ? winsMessage : 'No votes yet!');
     });
   }
 }
