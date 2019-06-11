@@ -80,7 +80,7 @@ function unpermissioned(channelName, message, user) {
     );
   } else if (message.startsWith("!win ")) {
     winsDao.upsertWinVote(user.username, message).catch(e => {
-      client.say(
+      return client.say(
         channelName,
         'Error: votes can only be for players in the tournament. Try "!win naveen" instead'
       );
@@ -94,8 +94,10 @@ function unpermissioned(channelName, message, user) {
           } to win.`,
         ""
       );
-      client.say(channelName, winsMessage ? winsMessage : "No votes yet!");
+      return client.say(channelName, winsMessage ? winsMessage : "No votes yet!");
     });
+  } else if (message === "!hs") {
+     return client.say(channelName, "HeartSupport is a safe place online to talk about depression, anxiety, suicidal thoughts, eating disorders, self-harm, addictions or anything else that's hard. Catch the IRL stream talking about these kinds of issues at twitch.tv/heartsupport - MORE INFO: www.heartsupport.com");
   }
 }
 
