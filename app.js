@@ -70,7 +70,11 @@ function unpermissioned(channelName, message, user) {
     return say(
       "https://docs.google.com/spreadsheets/d/1axKhYoW4HanXaSnp1UXZQkOS-p_HUrcLrL45qzfkMdE/edit?usp=sharing"
     );
-  } else if (message === "!bracket" || message === "!record") {
+  } else if (
+    message === "!bracket" ||
+    message === "!record" ||
+    message === "!standings"
+  ) {
     return say("https://challonge.com/yvl5j2oj/standings");
   } else if (
     message === "!vrd2" ||
