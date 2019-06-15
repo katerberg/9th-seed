@@ -42,7 +42,7 @@ class VotesDataAccessObject {
   async insertVote(username, vote) {
     return new Promise((res, rej) => {
       this.connection.query(
-        "INSERT INTO votes (username, candidate, label) VALUES (?, ?, 'default');",
+        "INSERT INTO votes (username, candidate, category) VALUES (?, ?, 'default');",
         [username, vote],
         (err, result) => {
           if (err) {
@@ -63,7 +63,7 @@ class VotesDataAccessObject {
   async updateVote(username, vote) {
     return new Promise((res, rej) => {
       this.connection.query(
-        "UPDATE votes SET candidate = ? WHERE username = ? AND label = 'default';",
+        "UPDATE votes SET candidate = ? WHERE username = ? AND category = 'default';",
         [vote, username],
         (err, result) => {
           if (err) {
