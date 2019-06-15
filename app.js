@@ -6,6 +6,7 @@ const { getCommandParams } = require("./utils");
 const mysql = require("mysql");
 
 const channelName = "stlvrd";
+const WIN_CATEGORY = "wins";
 const tmiOptions = {
   option: {
     debug: true
@@ -49,7 +50,7 @@ function say(message) {
 }
 
 function getWinsMessage() {
-  return votesDao.getAllVotes().then(result => {
+  return votesDao.getAllVotes(WIN_CATEGORY).then(result => {
     const message = result.reduce(
       (a, c) =>
         `${a}\r\n${c.votes} vote${c.votes > 1 ? "s" : ""} for ${c.candidate}.`,
@@ -97,7 +98,7 @@ function unpermissioned(channelName, message, user) {
     );
   } else if (message.startsWith("!win ")) {
     votesDao
-      .upsertVote(user.username, message)
+      .upsertVote(user.username, message, WIN_CATEGORY)
       .then(() => {
         return getWinsMessage();
       })
@@ -133,8 +134,8 @@ function mods(channelName, message, user) {
           message
         )} for some really cool content!`
       );
-    } else if (message === "!clearWinVotes") {
-      return votesDao.clearAllVotes();
+    } else if (message === "!clearWins") {
+      return votesDao.clearAllVotes(WIN_CATEGORY);
     }
   }
 }

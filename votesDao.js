@@ -20,11 +20,11 @@ class VotesDataAccessObject {
     });
   }
 
-  async getVotes(username) {
+  async getVotes(username, category) {
     return new Promise((res, rej) => {
       this.connection.query(
-        "SELECT count(candidate) AS voteCount FROM votes WHERE username = ?;",
-        [username],
+        "SELECT count(candidate) AS voteCount FROM votes WHERE username = ? AND category = ?;",
+        [username, category],
         (err, result) => {
           if (err) {
             console.error(`Error retrieving vote count for ${username}`);
@@ -39,11 +39,11 @@ class VotesDataAccessObject {
     });
   }
 
-  async insertVote(username, vote) {
+  async insertVote(username, vote, category) {
     return new Promise((res, rej) => {
       this.connection.query(
-        "INSERT INTO votes (username, candidate, category) VALUES (?, ?, 'default');",
-        [username, vote],
+        "INSERT INTO votes (username, candidate, category) VALUES (?, ?, ?);",
+        [username, vote, category],
         (err, result) => {
           if (err) {
             console.error(err);
@@ -60,11 +60,11 @@ class VotesDataAccessObject {
     });
   }
 
-  async updateVote(username, vote) {
+  async updateVote(username, vote, category) {
     return new Promise((res, rej) => {
       this.connection.query(
-        "UPDATE votes SET candidate = ? WHERE username = ? AND category = 'default';",
-        [vote, username],
+        "UPDATE votes SET candidate = ? WHERE username = ? AND category = ?;",
+        [vote, username, category],
         (err, result) => {
           if (err) {
             console.error(err);
@@ -79,8 +79,8 @@ class VotesDataAccessObject {
     });
   }
 
-  async upsertVote(username, message) {
-    const count = await this.getVotes(username);
+  async upsertVote(username, message, category) {
+    const count = await this.getVotes(username, category);
     const voteFor = getCommandParams(message);
     const cleanVote = voteFor.toLowerCase();
     const players = await this.getPlayers();
@@ -89,16 +89,17 @@ class VotesDataAccessObject {
       return Promise.reject("Invalid Entry");
     }
     if (count) {
-      return this.updateVote(username, cleanVote);
+      return this.updateVote(username, cleanVote, category);
     } else {
-      return this.insertVote(username, cleanVote);
+      return this.insertVote(username, cleanVote, category);
     }
   }
 
-  async getAllVotes() {
+  async getAllVotes(category) {
     return new Promise(res => {
       this.connection.query(
-        "SELECT candidate, COUNT(username) as votes FROM votes GROUP BY candidate;",
+        "SELECT candidate, COUNT(username) as votes FROM votes WHERE category = ? GROUP BY candidate;",
+        [category],
         (err, result) => {
           if (err) {
             console.error(err);
@@ -111,16 +112,20 @@ class VotesDataAccessObject {
     });
   }
 
-  async clearAllVotes() {
+  async clearAllVotes(category) {
     return new Promise(res => {
-      this.connection.query("DELETE FROM votes;", (err, result) => {
-        if (err) {
-          console.error(err);
-          console.error("Something went wrong clearing votes");
-        } else {
-          res();
+      this.connection.query(
+        "DELETE FROM votes WHERE category = ?;",
+        [category],
+        (err, result) => {
+          if (err) {
+            console.error(err);
+            console.error("Something went wrong clearing votes");
+          } else {
+            res();
+          }
         }
-      });
+      );
     });
   }
 }
