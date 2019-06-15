@@ -1,7 +1,7 @@
 const tmi = require("tmi.js");
 const identity = require("./creds/twitchCreds.json");
 const dbInfo = require("./creds/dbCreds.json");
-const { WinsDataAccessObject } = require("./winsDao");
+const { VotesDataAccessObject } = require("./votesDao");
 const { getCommandParams } = require("./utils");
 const mysql = require("mysql");
 
@@ -32,7 +32,7 @@ connection.on("error", () => {
   console.error("something went terribly wrong connecting to mysql");
 });
 
-const winsDao = new WinsDataAccessObject(connection);
+const votesDao = new VotesDataAccessObject(connection);
 const client = new tmi.client(tmiOptions);
 
 client
@@ -49,15 +49,13 @@ function say(message) {
 }
 
 function getWinsMessage() {
-  return winsDao.getAllWinVotes().then(wins => {
-    const winsMessage = wins.reduce(
+  return votesDao.getAllVotes().then(result => {
+    const message = result.reduce(
       (a, c) =>
-        `${a}\r\n${c.wins} vote${c.wins > 1 ? "s" : ""} for ${
-          c.candidate
-        } to win.`,
+        `${a}\r\n${c.votes} vote${c.votes > 1 ? "s" : ""} for ${c.candidate}.`,
       ""
     );
-    return say(winsMessage ? winsMessage : "No votes yet!");
+    return say(message ? message : "No votes yet!");
   });
 }
 
@@ -98,13 +96,13 @@ function unpermissioned(channelName, message, user) {
       "HeartSupport is a safe place online to talk about depression, anxiety, suicidal thoughts, eating disorders, self-harm, addictions or anything else that's hard. Catch the IRL stream talking about these kinds of issues at twitch.tv/heartsupport - MORE INFO: www.heartsupport.com"
     );
   } else if (message.startsWith("!win ")) {
-    winsDao
-      .upsertWinVote(user.username, message)
+    votesDao
+      .upsertVote(user.username, message)
       .then(() => {
         return getWinsMessage();
       })
       .catch(e => {
-        winsDao
+        votesDao
           .getPlayers()
           .then(players => {
             const playerList = players.reduce((a, c) => {
@@ -136,7 +134,7 @@ function mods(channelName, message, user) {
         )} for some really cool content!`
       );
     } else if (message === "!clearWinVotes") {
-      return winsDao.clearAllWinVotes();
+      return votesDao.clearAllVotes();
     }
   }
 }

@@ -1,6 +1,6 @@
 const { getCommandParams } = require("./utils");
 
-class WinsDataAccessObject {
+class VotesDataAccessObject {
   constructor(connection) {
     this.connection = connection;
   }
@@ -20,87 +20,89 @@ class WinsDataAccessObject {
     });
   }
 
-  async getWinsVotes(username) {
+  async getVotes(username) {
     return new Promise((res, rej) => {
       this.connection.query(
-        "SELECT count(vote) AS winCount FROM wins WHERE username = ?;",
+        "SELECT count(candidate) AS voteCount FROM votes WHERE username = ?;",
         [username],
         (err, result) => {
           if (err) {
-            console.error(`Error retrieving win count for ${username}`);
+            console.error(`Error retrieving vote count for ${username}`);
             return rej(err);
           }
           if (result.length !== 1) {
             throw new Error(`More than one user ${username}`);
           }
-          res(result[0].winCount);
+          res(result[0].voteCount);
         }
       );
     });
   }
 
-  async insertWinVote(username, win) {
+  async insertVote(username, vote) {
     return new Promise((res, rej) => {
       this.connection.query(
-        "INSERT INTO wins (username, vote) VALUES (?, ?);",
-        [username, win],
+        "INSERT INTO votes (username, candidate, label) VALUES (?, ?, 'default');",
+        [username, vote],
         (err, result) => {
           if (err) {
             console.error(err);
-            console.error(`Something went wrong inserting win for ${username}`);
+            console.error(
+              `Something went wrong inserting vote for ${username}`
+            );
             rej(err);
           } else {
             console.log("Win vote inserted");
-            res(win);
+            res(vote);
           }
         }
       );
     });
   }
 
-  async updateWinVote(username, win) {
+  async updateVote(username, vote) {
     return new Promise((res, rej) => {
       this.connection.query(
-        "UPDATE wins SET vote = ? WHERE username = ?;",
-        [win, username],
+        "UPDATE votes SET candidate = ? WHERE username = ? AND label = 'default';",
+        [vote, username],
         (err, result) => {
           if (err) {
             console.error(err);
-            console.error(`Something went wrong updating win for ${username}`);
+            console.error(`Something went wrong updating vote for ${username}`);
             rej(err);
           } else {
-            console.log("Win updated");
-            res(win);
+            console.log("Vote updated");
+            res(vote);
           }
         }
       );
     });
   }
 
-  async upsertWinVote(username, message) {
-    const count = await this.getWinsVotes(username);
-    const winFor = getCommandParams(message);
-    const cleanWin = winFor.toLowerCase();
+  async upsertVote(username, message) {
+    const count = await this.getVotes(username);
+    const voteFor = getCommandParams(message);
+    const cleanVote = voteFor.toLowerCase();
     const players = await this.getPlayers();
-    if (!players.find(entry => entry.shortName === cleanWin)) {
-      console.error(`Invalid win vote by ${username} for ${winFor}`);
+    if (!players.find(entry => entry.shortName === cleanVote)) {
+      console.error(`Invalid vote by ${username} for ${voteFor}`);
       return Promise.reject("Invalid Entry");
     }
     if (count) {
-      return this.updateWinVote(username, cleanWin);
+      return this.updateVote(username, cleanVote);
     } else {
-      return this.insertWinVote(username, cleanWin);
+      return this.insertVote(username, cleanVote);
     }
   }
 
-  async getAllWinVotes() {
+  async getAllVotes() {
     return new Promise(res => {
       this.connection.query(
-        "SELECT vote AS candidate, COUNT(username) as wins FROM wins GROUP BY vote;",
+        "SELECT candidate, COUNT(username) as votes FROM votes GROUP BY candidate;",
         (err, result) => {
           if (err) {
             console.error(err);
-            console.error("Something went wrong getting wins");
+            console.error("Something went wrong getting votes");
           } else {
             res(result);
           }
@@ -109,12 +111,12 @@ class WinsDataAccessObject {
     });
   }
 
-  async clearAllWinVotes() {
+  async clearAllVotes() {
     return new Promise(res => {
-      this.connection.query("DELETE FROM wins;", (err, result) => {
+      this.connection.query("DELETE FROM votes;", (err, result) => {
         if (err) {
           console.error(err);
-          console.error("Something went wrong clearing wins");
+          console.error("Something went wrong clearing votes");
         } else {
           res();
         }
@@ -124,5 +126,5 @@ class WinsDataAccessObject {
 }
 
 module.exports = {
-  WinsDataAccessObject
+  VotesDataAccessObject
 };
