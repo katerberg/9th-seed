@@ -48,6 +48,19 @@ function say(message) {
   client.say(channelName, message);
 }
 
+function getWinsMessage() {
+  return winsDao.getAllWinVotes().then(wins => {
+    const winsMessage = wins.reduce(
+      (a, c) =>
+        `${a}\r\n${c.wins} vote${c.wins > 1 ? "s" : ""} for ${
+          c.candidate
+        } to win.`,
+      ""
+    );
+    return say(winsMessage ? winsMessage : "No votes yet!");
+  });
+}
+
 function unpermissioned(channelName, message, user) {
   if (message === "!twitter") {
     return say("Want to argue about VRD? https://twitter.com/stlvrd");
@@ -81,34 +94,30 @@ function unpermissioned(channelName, message, user) {
       "HeartSupport is a safe place online to talk about depression, anxiety, suicidal thoughts, eating disorders, self-harm, addictions or anything else that's hard. Catch the IRL stream talking about these kinds of issues at twitch.tv/heartsupport - MORE INFO: www.heartsupport.com"
     );
   } else if (message.startsWith("!win ")) {
-    winsDao.upsertWinVote(user.username, message).catch(e => {
-      winsDao
-        .getPlayers()
-        .then(players => {
-          const playerList = players.reduce((a, c) => {
-            return a ? `${a}, ${c.shortName}` : c.shortName;
-          }, "");
-          return say(
-            `I don't know who you're voting for. Try voting for one of these players: ${playerList}`
-          );
-        })
-        .catch(() => {
-          return say(
-            'Error: votes can only be for players in the tournament. Try "!win naveen" instead'
-          );
-        });
-    });
+    winsDao
+      .upsertWinVote(user.username, message)
+      .then(() => {
+        return getWinsMessage();
+      })
+      .catch(e => {
+        winsDao
+          .getPlayers()
+          .then(players => {
+            const playerList = players.reduce((a, c) => {
+              return a ? `${a}, ${c.shortName}` : c.shortName;
+            }, "");
+            return say(
+              `I don't know who you're voting for. Try voting for one of these players: ${playerList}`
+            );
+          })
+          .catch(() => {
+            return say(
+              'Error: votes can only be for players in the tournament. Try "!win naveen" instead'
+            );
+          });
+      });
   } else if (message === "!wins") {
-    return winsDao.getAllWinVotes().then(wins => {
-      const winsMessage = wins.reduce(
-        (a, c) =>
-          `${a}\r\n${c.wins} vote${c.wins > 1 ? "s" : ""} for ${
-            c.candidate
-          } to win.`,
-        ""
-      );
-      return say(winsMessage ? winsMessage : "No votes yet!");
-    });
+    return getWinsMessage();
   }
 }
 
