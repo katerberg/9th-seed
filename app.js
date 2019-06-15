@@ -85,10 +85,23 @@ function unpermissioned(channelName, message, user) {
     );
   } else if (message.startsWith("!win ")) {
     winsDao.upsertWinVote(user.username, message).catch(e => {
-      return client.say(
-        channelName,
-        'Error: votes can only be for players in the tournament. Try "!win naveen" instead'
-      );
+      winsDao
+        .getPlayers()
+        .then(players => {
+          const playerList = players.reduce((a, c) => {
+            return a ? `${a}, ${c.shortName}` : c.shortName;
+          }, "");
+          return client.say(
+            channelName,
+            `I don't know who you're voting for. Try voting for one of these players: ${playerList}`
+          );
+        })
+        .catch(() => {
+          return client.say(
+            channelName,
+            'Error: votes can only be for players in the tournament. Try "!win naveen" instead'
+          );
+        });
     });
   } else if (message === "!wins") {
     return winsDao.getAllWinVotes().then(wins => {
