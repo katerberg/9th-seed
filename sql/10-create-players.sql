@@ -1,3 +1,4 @@
+DROP TABLE wins;
 DROP TABLE players;
 CREATE TABLE players (name VARCHAR(200), shortName VARCHAR(200));
 ALTER TABLE players ADD CONSTRAINT players_constraint UNIQUE (shortName);
