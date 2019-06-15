@@ -7,6 +7,8 @@ const mysql = require("mysql");
 
 const channelName = "stlvrd";
 const WIN_CATEGORY = "wins";
+const INTERVIEW_CATEGORY = "interviews";
+
 const tmiOptions = {
   option: {
     debug: true
@@ -49,8 +51,8 @@ function say(message) {
   client.say(channelName, message);
 }
 
-function getWinsMessage() {
-  return votesDao.getAllVotes(WIN_CATEGORY).then(result => {
+function getVoteResults(category) {
+  return votesDao.getAllVotes(category).then(result => {
     const message = result.reduce(
       (a, c) =>
         `${a}\r\n${c.votes} vote${c.votes > 1 ? "s" : ""} for ${c.candidate}.`,
@@ -100,7 +102,7 @@ function unpermissioned(channelName, message, user) {
     votesDao
       .upsertVote(user.username, message, WIN_CATEGORY)
       .then(() => {
-        return getWinsMessage();
+        return getVoteResults(WIN_CATEGORY);
       })
       .catch(e => {
         votesDao
@@ -120,7 +122,32 @@ function unpermissioned(channelName, message, user) {
           });
       });
   } else if (message === "!wins") {
-    return getWinsMessage();
+    return getVoteResults(WIN_CATEGORY);
+  } else if (message.startsWith("!interview ")) {
+    votesDao
+      .upsertVote(user.username, message, INTERVIEW_CATEGORY)
+      .then(() => {
+        return getVoteResults(INTERVIEW_CATEGORY);
+      })
+      .catch(e => {
+        votesDao
+          .getPlayers()
+          .then(players => {
+            const playerList = players.reduce((a, c) => {
+              return a ? `${a}, ${c.shortName}` : c.shortName;
+            }, "");
+            return say(
+              `I don't know who you're voting for. Try voting for one of these players: ${playerList}`
+            );
+          })
+          .catch(() => {
+            return say(
+              'Error: votes can only be for players in the tournament. Try "!win naveen" instead'
+            );
+          });
+      });
+  } else if (message === "!interviews") {
+    return getVoteResults(INTERVIEW_CATEGORY);
   }
 }
 
