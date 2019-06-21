@@ -62,6 +62,31 @@ function getVoteResults(category) {
   });
 }
 
+function addVoteAndReportResult(username, category, message) {
+  return votesDao
+    .upsertVote(username, message, category)
+    .then(() => {
+      return getVoteResults(category);
+    })
+    .catch(e => {
+      votesDao
+        .getPlayers()
+        .then(players => {
+          const playerList = players.reduce((a, c) => {
+            return a ? `${a}, ${c.shortName}` : c.shortName;
+          }, "");
+          return say(
+            `I don't know who you're voting for. Try voting for one of these players: ${playerList}`
+          );
+        })
+        .catch(() => {
+          return say(
+            'Error: votes can only be for players in the tournament. Try "!win naveen" instead'
+          );
+        });
+    });
+}
+
 function unpermissioned(channelName, message, user) {
   if (message === "!twitter") {
     return say("Want to argue about VRD? https://twitter.com/stlvrd");
@@ -99,53 +124,11 @@ function unpermissioned(channelName, message, user) {
       "HeartSupport is a safe place online to talk about depression, anxiety, suicidal thoughts, eating disorders, self-harm, addictions or anything else that's hard. Catch the IRL stream talking about these kinds of issues at twitch.tv/heartsupport - MORE INFO: www.heartsupport.com"
     );
   } else if (message.startsWith("!win ")) {
-    votesDao
-      .upsertVote(user.username, message, WIN_CATEGORY)
-      .then(() => {
-        return getVoteResults(WIN_CATEGORY);
-      })
-      .catch(e => {
-        votesDao
-          .getPlayers()
-          .then(players => {
-            const playerList = players.reduce((a, c) => {
-              return a ? `${a}, ${c.shortName}` : c.shortName;
-            }, "");
-            return say(
-              `I don't know who you're voting for. Try voting for one of these players: ${playerList}`
-            );
-          })
-          .catch(() => {
-            return say(
-              'Error: votes can only be for players in the tournament. Try "!win naveen" instead'
-            );
-          });
-      });
+    return addVoteAndReportResult(user.username, WIN_CATEGORY, message);
   } else if (message === "!wins") {
     return getVoteResults(WIN_CATEGORY);
   } else if (message.startsWith("!interview ")) {
-    votesDao
-      .upsertVote(user.username, message, INTERVIEW_CATEGORY)
-      .then(() => {
-        return getVoteResults(INTERVIEW_CATEGORY);
-      })
-      .catch(e => {
-        votesDao
-          .getPlayers()
-          .then(players => {
-            const playerList = players.reduce((a, c) => {
-              return a ? `${a}, ${c.shortName}` : c.shortName;
-            }, "");
-            return say(
-              `I don't know who you're voting for. Try voting for one of these players: ${playerList}`
-            );
-          })
-          .catch(() => {
-            return say(
-              'Error: votes can only be for players in the tournament. Try "!win naveen" instead'
-            );
-          });
-      });
+    return addVoteAndReportResult(user.username, INTERVIEW_CATEGORY, message);
   } else if (message === "!interviews") {
     return getVoteResults(INTERVIEW_CATEGORY);
   }
