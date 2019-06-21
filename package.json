@@ -13,6 +13,12 @@
     "tmi.js": "^1.4.2"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "mocha test",
+    "test:watch": "yarn test --watch"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
   }
 }
