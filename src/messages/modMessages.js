@@ -1,10 +1,8 @@
-const {getCommandParams} = require("./utils");
+const {getCommandParams, isPermissioned} = require("../utils");
 
 function getModResponse(message, user) {
-  const isOwner = user.username === 'stlvrd';
-  const isDope = user.mod || isOwner;
-  if (isDope) {
-    if (message && message.startsWith("!so") || message.startsWith("!shoutout")) {
+  if (isPermissioned(user)) {
+    if (message.startsWith("!so") || message.startsWith("!shoutout")) {
       return`Check out http://twitch.tv/${getCommandParams(
           message
         )} for some really cool content!`;

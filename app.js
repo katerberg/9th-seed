@@ -1,6 +1,6 @@
 const votesDao = require("./src/votesDao");
 const {onChat, say}  = require('./src/tmiClient');
-const {getModResponse} = require('./src/modMessages');
+const {getModResponse} = require('./src/messages/modMessages');
 
 const WIN_CATEGORY = "wins";
 const INTERVIEW_CATEGORY = "interviews";
