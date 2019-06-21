@@ -1,7 +1,7 @@
 const tmi = require("tmi.js");
 const identity = require("./creds/twitchCreds.json");
-const { VotesDataAccessObject } = require("./votesDao");
-const { getCommandParams } = require("./utils");
+const votesDao = require("./votesDao");
+const {getCommandParams} = require("./utils");
 const mysql = require("mysql");
 
 const channelName = "stlvrd";
@@ -19,7 +19,6 @@ const tmiOptions = {
   channels: [channelName]
 };
 
-const votesDao = new VotesDataAccessObject();
 const client = new tmi.client(tmiOptions);
 
 client

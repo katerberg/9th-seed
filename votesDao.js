@@ -1,14 +1,10 @@
 const connection = require("./db");
-const { getCommandParams } = require("./utils");
+const {getCommandParams} = require("./utils");
 
-class VotesDataAccessObject {
-  constructor() {
-    this.connection = connection;
-  }
-
-  async getPlayers() {
+module.exports = {
+  getPlayers: async () => {
     return new Promise((res, rej) => {
-      this.connection.query(
+      connection.query(
         "SELECT name, shortName FROM players;",
         (err, result) => {
           if (err) {
@@ -19,11 +15,11 @@ class VotesDataAccessObject {
         }
       );
     });
-  }
+  },
 
-  async getVotes(username, category) {
+  getVotes: async (username, category) => {
     return new Promise((res, rej) => {
-      this.connection.query(
+      connection.query(
         "SELECT count(candidate) AS voteCount FROM votes WHERE username = ? AND category = ?;",
         [username, category],
         (err, result) => {
@@ -38,11 +34,11 @@ class VotesDataAccessObject {
         }
       );
     });
-  }
+  },
 
-  async insertVote(username, vote, category) {
+  insertVote: async (username, vote, category) => {
     return new Promise((res, rej) => {
-      this.connection.query(
+      connection.query(
         "INSERT INTO votes (username, candidate, category) VALUES (?, ?, ?);",
         [username, vote, category],
         (err, result) => {
@@ -59,11 +55,11 @@ class VotesDataAccessObject {
         }
       );
     });
-  }
+  },
 
-  async updateVote(username, vote, category) {
+  updateVote: async (username, vote, category) => {
     return new Promise((res, rej) => {
-      this.connection.query(
+      connection.query(
         "UPDATE votes SET candidate = ? WHERE username = ? AND category = ?;",
         [vote, username, category],
         (err, result) => {
@@ -78,9 +74,9 @@ class VotesDataAccessObject {
         }
       );
     });
-  }
+  },
 
-  async upsertVote(username, message, category) {
+  upsertVote: async (username, message, category) => {
     const count = await this.getVotes(username, category);
     const voteFor = getCommandParams(message);
     const cleanVote = voteFor.toLowerCase();
@@ -94,11 +90,11 @@ class VotesDataAccessObject {
     } else {
       return this.insertVote(username, cleanVote, category);
     }
-  }
+  },
 
-  async getAllVotes(category) {
+  getAllVotes: async (category) => {
     return new Promise(res => {
-      this.connection.query(
+      connection.query(
         "SELECT candidate, COUNT(username) as votes FROM votes WHERE category = ? GROUP BY candidate;",
         [category],
         (err, result) => {
@@ -111,11 +107,11 @@ class VotesDataAccessObject {
         }
       );
     });
-  }
+  },
 
-  async clearAllVotes(category) {
+  clearAllVotes: async (category) => {
     return new Promise(res => {
-      this.connection.query(
+      connection.query(
         "DELETE FROM votes WHERE category = ?;",
         [category],
         (err, result) => {
@@ -129,8 +125,4 @@ class VotesDataAccessObject {
       );
     });
   }
-}
-
-module.exports = {
-  VotesDataAccessObject
 };
