@@ -1,38 +1,9 @@
-const tmi = require("tmi.js");
-const identity = require("./creds/twitchCreds.json");
 const votesDao = require("./votesDao");
 const {getCommandParams} = require("./utils");
-const mysql = require("mysql");
+const {onChat, say}  = require('./tmiClient');
 
-const channelName = "stlvrd";
 const WIN_CATEGORY = "wins";
 const INTERVIEW_CATEGORY = "interviews";
-
-const tmiOptions = {
-  option: {
-    debug: true
-  },
-  connection: {
-    reconnect: true
-  },
-  identity,
-  channels: [channelName]
-};
-
-const client = new tmi.client(tmiOptions);
-
-client
-  .connect()
-  .then(msg => {
-    console.log(`Connected to ${channelName}!`);
-  })
-  .catch(e => {
-    console.error("Error connecting to Twitch");
-  });
-
-function say(message) {
-  client.say(channelName, message);
-}
 
 function getVoteResults(category) {
   return votesDao.getAllVotes(category).then(result => {
@@ -70,7 +41,7 @@ function addVoteAndReportResult(username, category, message) {
     });
 }
 
-function unpermissioned(channelName, message, user) {
+function unpermissioned(message, user) {
   if (message === "!twitter") {
     return say("Want to argue about VRD? https://twitter.com/stlvrd");
   } else if (message === "!salt") {
@@ -117,8 +88,8 @@ function unpermissioned(channelName, message, user) {
   }
 }
 
-function mods(channelName, message, user) {
-  const isOwner = user.username === channelName;
+function mods(message, user) {
+  const isOwner = user.username === 'stlvrd';
   const isDope = user.mod || isOwner;
   if (isDope) {
     if (message === "!so" || message === "!shoutout") {
@@ -133,12 +104,12 @@ function mods(channelName, message, user) {
   }
 }
 
-client.on("chat", (channel, user, message, self) => {
+onChat((_channel, user, message, self) => {
   try {
     if (self) return;
 
-    unpermissioned(channelName, message, user) ||
-      mods(channelName, message, user);
+    unpermissioned(message, user) ||
+      mods(message, user);
   } catch (e) {
     console.error("Something went wrong trying to parse the message");
     console.log(e.message);
