@@ -1,5 +1,5 @@
 var mysql = require("mysql");
-const dbInfo = require("./creds/dbCreds.json");
+const dbInfo = require("../creds/dbCreds.json");
 
 var connection = mysql.createConnection({
   ...dbInfo

@@ -1,5 +1,5 @@
 const tmi = require("tmi.js");
-const identity = require("./creds/twitchCreds.json");
+const identity = require("../creds/twitchCreds.json");
 
 const channelName = "stlvrd";
 const tmiOptions = {

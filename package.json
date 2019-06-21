@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "mocha test",
+    "test": "mocha 'src/**/*.test.js' 'test'",
     "test:watch": "yarn test --watch"
   },
   "devDependencies": {
