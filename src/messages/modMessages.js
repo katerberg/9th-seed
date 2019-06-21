@@ -3,9 +3,8 @@ const {getCommandParams, isPermissioned} = require("../utils");
 function getModResponse(message, user) {
   if (isPermissioned(user)) {
     if (message.startsWith("!so") || message.startsWith("!shoutout")) {
-      return`Check out http://twitch.tv/${getCommandParams(
-          message
-        )} for some really cool content!`;
+      const shoutout = getCommandParams(message);
+      return shoutout ? `Check out http://twitch.tv/${shoutout} for some really cool content!` : null;
     } else if (message === "!clearWins") {
       votesDao.clearAllVotes(WIN_CATEGORY);
       return null;

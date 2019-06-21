@@ -16,6 +16,12 @@ describe('Mod Messages', function() {
     expect(result).to.have.string('neem');
   });
 
+  it('does not give shout out if missing parameter', function() {
+    const result = getModResponse('!so', {mod: true});
+
+    expect(result).to.be.null;
+  });
+
   it('does not give shout out for random user', function() {
     const result = getModResponse('!so neem', {username: 'foobar'});
 
