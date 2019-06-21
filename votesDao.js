@@ -1,7 +1,8 @@
+const connection = require("./db");
 const { getCommandParams } = require("./utils");
 
 class VotesDataAccessObject {
-  constructor(connection) {
+  constructor() {
     this.connection = connection;
   }
 
