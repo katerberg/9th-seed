@@ -25,7 +25,9 @@ client
   });
 
 function say(message) {
-  client.say(channelName, message);
+  if (message) {
+    client.say(channelName, message);
+  }
 }
 
 function onChat(callback) {

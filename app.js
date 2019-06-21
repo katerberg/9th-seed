@@ -1,6 +1,6 @@
 const votesDao = require("./votesDao");
-const {getCommandParams} = require("./utils");
 const {onChat, say}  = require('./tmiClient');
+const {getModResponse} = require('./modMessages');
 
 const WIN_CATEGORY = "wins";
 const INTERVIEW_CATEGORY = "interviews";
@@ -88,28 +88,13 @@ function unpermissioned(message, user) {
   }
 }
 
-function mods(message, user) {
-  const isOwner = user.username === 'stlvrd';
-  const isDope = user.mod || isOwner;
-  if (isDope) {
-    if (message === "!so" || message === "!shoutout") {
-      return say(
-        `Check out http://twitch.tv/${getCommandParams(
-          message
-        )} for some really cool content!`
-      );
-    } else if (message === "!clearWins") {
-      return votesDao.clearAllVotes(WIN_CATEGORY);
-    }
-  }
-}
-
 onChat((_channel, user, message, self) => {
   try {
     if (self) return;
 
-    unpermissioned(message, user) ||
-      mods(message, user);
+    say(getModResponse(message, user));
+
+    unpermissioned(message, user);
   } catch (e) {
     console.error("Something went wrong trying to parse the message");
     console.log(e.message);
