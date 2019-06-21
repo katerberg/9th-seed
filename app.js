@@ -1,6 +1,6 @@
 const tmi = require("tmi.js");
 const identity = require("./creds/twitchCreds.json");
-const dbInfo = require("./creds/dbCreds.json");
+const connection = require("./db");
 const { VotesDataAccessObject } = require("./votesDao");
 const { getCommandParams } = require("./utils");
 const mysql = require("mysql");
@@ -19,21 +19,6 @@ const tmiOptions = {
   identity,
   channels: [channelName]
 };
-
-const connection = mysql.createConnection({
-  ...dbInfo
-});
-
-connection.connect(err => {
-  if (err) {
-    throw err;
-  }
-  console.log("Connected to DB");
-});
-
-connection.on("error", () => {
-  console.error("something went terribly wrong connecting to mysql");
-});
 
 const votesDao = new VotesDataAccessObject(connection);
 const client = new tmi.client(tmiOptions);
