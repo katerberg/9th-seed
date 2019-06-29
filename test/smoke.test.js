@@ -1,7 +1,7 @@
 const {expect} = require('chai');
 
-describe('Smoketest', function() {
-  it('can run tests', function() {
+describe('Smoketest', () => {
+  it('can run tests', () => {
     expect(1).to.equal(1);
   });
 });

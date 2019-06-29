@@ -33,6 +33,7 @@ function addVoteAndReportResult(username, category, message) {
         .catch(() => 'Error: votes can only be for players in the tournament. Try "!win naveen" instead');
     });
 }
+
 function getUnpermissionedResponse(message, user) {
   if (message === '!twitter') {
     return 'Want to argue about VRD? https://twitter.com/stlvrd';
