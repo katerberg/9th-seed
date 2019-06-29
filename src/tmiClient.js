@@ -1,32 +1,41 @@
-const tmi = require("tmi.js");
-const identity = require("../creds/twitchCreds.json");
+const tmi = require('tmi.js');
+const identity = require('../creds/twitchCreds.json');
 
-const channelName = "stlvrd";
+const channelName = 'stlvrd';
 const tmiOptions = {
   option: {
-    debug: true
+    debug: true,
   },
   connection: {
-    reconnect: true
+    reconnect: true,
   },
   identity,
-  channels: [channelName]
+  channels: [channelName],
 };
 
 const client = new tmi.client(tmiOptions);
 
 client
   .connect()
-  .then(msg => {
+  .then(() => {
     console.log(`Connected to ${channelName}!`);
   })
-  .catch(e => {
-    console.error("Error connecting to Twitch");
+  .catch(() => {
+    console.error('Error connecting to Twitch');
   });
 
 function say(message) {
   if (message) {
-    client.say(channelName, message);
+    switch (typeof message) {
+    case 'string':
+      client.say(channelName, message);
+      break;
+    case 'object':
+      message.then(response => client.say(channelName, response));
+      break;
+    default:
+      console.error('Unknown type of message');
+    }
   }
 }
 

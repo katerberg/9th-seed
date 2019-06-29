@@ -1,5 +1,5 @@
 function getCommandParams(message) {
-  const index = message.indexOf(" ");
+  const index = message.indexOf(' ');
   return index === -1 ? null : message.substr(index + 1);
 }
 
