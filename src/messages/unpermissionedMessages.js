@@ -46,9 +46,9 @@ function getUnpermissionedResponse(message, user) {
     message === '!record' ||
     message === '!standings'
   ) {
-    return 'https://challonge.com/yvl5j2oj/standings';
+    return 'Standings are visible at https://challonge.com/8aroof4o';
   } else if (
-    message === '!vrd2' ||
+    message === '!vrd3' ||
     message === '!sheet' ||
     message === '!picks' ||
     message === '!decks' ||
@@ -57,7 +57,7 @@ function getUnpermissionedResponse(message, user) {
     message === '!decklists' ||
     message === '!draft'
   ) {
-    return 'Spreadsheet with draft picks is at https://docs.google.com/spreadsheets/d/1MKkuuQ1hYIE4_uOXEUBUcTMSu1yfsgwYgHjIGyNQtm4/edit?usp=sharing';
+    return 'Spreadsheet with draft picks is at https://docs.google.com/spreadsheets/d/1u7G5ZgnQRylVRwrinuHxRKwaWMebbKgAoqpmMcx2X00/edit?usp=sharing';
   } else if (message === '!youtube') {
     return 'Find our VODs on Twitch or on https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA';
   } else if (message === '!hs') {

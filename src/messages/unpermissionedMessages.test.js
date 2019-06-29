@@ -19,4 +19,20 @@ describe('Unpermissioned Messages', () => {
       expect(getUnpermissionedResponse(item)).to.have.string('1AdrhW', `${item} failed to get spreadsheet`);
     });
   });
+
+  it('links to current draft', () => {
+    ['!vrd3', '!decks', '!decklists', '!draft', '!picks', '!sheet'].forEach(item => {
+      expect(getUnpermissionedResponse(item)).to.have.string('1u7G5', `${item} failed to get spreadsheet`);
+    });
+  });
+
+  it('links to bracket', () => {
+    ['!bracket', '!standings', '!record'].forEach(item => {
+      expect(getUnpermissionedResponse(item)).to.have.string('challonge', `${item} failed to get challonge`);
+    });
+  });
+
+  it('links to suicide prevention', () => {
+    expect(getUnpermissionedResponse('!hs')).to.have.string('HeartSupport');
+  });
 });
