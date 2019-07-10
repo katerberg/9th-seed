@@ -33,6 +33,6 @@ describe('Unpermissioned Messages', () => {
   });
 
   it('links to suicide prevention', () => {
-    expect(getUnpermissionedResponse('!hs')).to.have.string('HeartSupport');
+    expect(getUnpermissionedResponse('!gethelp')).to.have.string('trevorproject');
   });
 });

@@ -60,8 +60,8 @@ function getUnpermissionedResponse(message, user) {
     return 'Spreadsheet with draft picks is at https://docs.google.com/spreadsheets/d/1u7G5ZgnQRylVRwrinuHxRKwaWMebbKgAoqpmMcx2X00/edit?usp=sharing';
   } else if (message === '!youtube') {
     return 'Find our VODs on Twitch or on https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA';
-  } else if (message === '!hs') {
-    return 'HeartSupport is a safe place online to talk about depression, anxiety, suicidal thoughts, eating disorders, self-harm, addictions or anything else that\'s hard. Catch the IRL stream talking about these kinds of issues at twitch.tv/heartsupport - MORE INFO: www.heartsupport.com';
+  } else if (message === '!gethelp') {
+    return 'For someone to talk to please contact http://www.thetrevorproject.org 1 866 488 7386 Crisis Text Line SMS: Text "HERE" to 741-741';
   } else if (message.indexOf('!win ') === 0) {
     return addVoteAndReportResult(user.username, WIN_CATEGORY, message);
   } else if (message === '!wins') {
