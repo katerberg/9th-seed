@@ -1,4 +1,4 @@
-DROP TABLE votes;
+DROP TABLE IF EXISTS votes;
 CREATE TABLE votes (
   username VARCHAR(200),
   candidate VARCHAR(200),

@@ -13,6 +13,7 @@
     "tmi.js": "^1.4.2"
   },
   "scripts": {
+    "db:create": "node setup/dbCreate.js",
     "start": "node app.js",
     "test": "mocha 'src/**/*.test.js' 'test'",
     "test:watch": "yarn test --watch",

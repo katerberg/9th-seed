@@ -1,4 +1,4 @@
-DROP TABLE archives;
+DROP TABLE IF EXISTS archives;
 CREATE TABLE archives (
   player VARCHAR(200),
   card VARCHAR(200),
