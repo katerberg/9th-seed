@@ -1,7 +1,10 @@
 DROP TABLE IF EXISTS votes;
 DROP TABLE IF EXISTS players;
 
-CREATE TABLE players (name VARCHAR(200), shortName VARCHAR(200));
+CREATE TABLE players (
+  name VARCHAR(200) NOT NULL,
+  shortName VARCHAR(200) NOT NULL
+);
 ALTER TABLE players ADD CONSTRAINT players_constraint UNIQUE (shortName);
 
 INSERT INTO players (name, shortName) VALUES ('Naveen Balaji', 'naveen');

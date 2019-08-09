@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS votes;
 CREATE TABLE votes (
-  username VARCHAR(200),
-  candidate VARCHAR(200),
-  category VARCHAR(200)
+  username VARCHAR(200) NOT NULL,
+  candidate VARCHAR(200) NOT NULL,
+  category VARCHAR(200) NOT NULL
 );
 ALTER TABLE votes
   ADD CONSTRAINT votes_unique_constraint
