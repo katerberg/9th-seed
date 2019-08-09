@@ -13,12 +13,16 @@ const connection = mysql.createConnection({
   multipleStatements: true,
 });
 connection.connectAsync = util.promisify(connection.connect);
+connection.queryAsync = util.promisify(connection.query);
 
 connection.on('error', () => {
   console.error('something went terribly wrong connecting to mysql');
 });
 
+const INSERT_TEMPLATE = 'INSERT INTO archives (player, card, draft, pick) VALUES ("{player}", "{card}", "{draft}", {pick})';
+
 function getInsertsFromCsv(csv, draftName) {
+  const insertStatements = [];
   const records = parse(csv);
   records.forEach((record, row) => {
     if (record[0].match(/^\d+$/)) {
@@ -26,29 +30,58 @@ function getInsertsFromCsv(csv, draftName) {
       const numberOfPicksBeforeRound = 8 * (round - 1);
       for (let i=1; i<=8; i++) {
         const pickNumber = numberOfPicksBeforeRound + (round % 2 === 0 ? 9 - i : i);
-        console.log(`${draftName} pick ${round} (${pickNumber}) for ${records[0][i]} is ${record[i]}`);
+        insertStatements.push(INSERT_TEMPLATE
+          .replace('{player}', records[0][i])
+          .replace('{card}', record[i].toLowerCase())
+          .replace('{pick}', pickNumber)
+          .replace('{draft}', draftName)
+        );
       }
     }
   });
+  return insertStatements;
 }
 
-function addDrafts(drafts, number) {
+function addDrafts(drafts, number, insertStatements) {
   if (drafts.length === number) {
-    return;
+    return insertStatements;
   }
   return fs.readFileAsync(`${process.cwd()}/drafts/${drafts[number]}`, 'utf-8').then((draftCsv) => {
-    console.log(drafts[number]);
-    console.log(draftCsv.split('\n')[0]);
-    getInsertsFromCsv(draftCsv, drafts[number].split('.')[0]);
-    return addDrafts(drafts, ++number);;
+    const inserts = getInsertsFromCsv(draftCsv, drafts[number].split('.')[0]);
+    return addDrafts(drafts, ++number, [...insertStatements, ...inserts]);
   });
+}
+
+function runScripts(scripts, number) {
+  if (scripts.length === number) {
+    return;
+  }
+  return connection.queryAsync(scripts[number])
+    .then(() => {
+      console.log(`Finished running ${scripts[number]}`);
+      return runScripts(scripts, ++number);
+    })
+    .catch((e)=>{
+      console.log(`SQL was unhappy with ${scripts[number]}`);
+      console.log(e);
+    });
 }
 
 connection.connectAsync().then(() => {
   console.log('Connected to DB');
 
   fs.readdirAsync(`${process.cwd()}/drafts`).then((items) => {
-    addDrafts(items.filter(item => item.match(/\.csv$/)), 0).catch(()=>{return null;}).then(() => {
+    addDrafts(items.filter(item => item.match(/\.csv$/)), 0, ['DELETE FROM archives']).then(inserts => {
+      console.log('got some inserts');
+      console.log(inserts && inserts.length);
+      if (inserts && inserts.length) {
+        console.log(inserts[0]);
+        return runScripts(inserts, 0);
+      } else {
+        console.log('Something went wrong inserting');
+      }
+    }).catch(()=>{}).then(() => {
+      console.log('closing connection');
       connection.end();
     });
   });
