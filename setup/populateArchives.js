@@ -18,13 +18,15 @@ connection.on('error', () => {
   console.error('something went terribly wrong connecting to mysql');
 });
 
-function getInsertsFromCsv(csv) {
+function getInsertsFromCsv(csv, draftName) {
   const records = parse(csv);
   records.forEach((record, row) => {
     if (record[0].match(/^\d+$/)) {
       const round = Number.parseInt(record[0]);
+      const numberOfPicksBeforeRound = 8 * (round - 1);
       for (let i=1; i<=8; i++) {
-        console.log(`Pick ${round} for ${records[0][i]} is ${record[i]}`);
+        const pickNumber = numberOfPicksBeforeRound + (round % 2 === 0 ? 9 - i : i);
+        console.log(`${draftName} pick ${round} (${pickNumber}) for ${records[0][i]} is ${record[i]}`);
       }
     }
   });
@@ -37,7 +39,7 @@ function addDrafts(drafts, number) {
   return fs.readFileAsync(`${process.cwd()}/drafts/${drafts[number]}`, 'utf-8').then((draftCsv) => {
     console.log(drafts[number]);
     console.log(draftCsv.split('\n')[0]);
-    getInsertsFromCsv(draftCsv);
+    getInsertsFromCsv(draftCsv, drafts[number].split('.')[0]);
     return addDrafts(drafts, ++number);;
   });
 }
