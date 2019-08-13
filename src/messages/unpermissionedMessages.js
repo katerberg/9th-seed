@@ -1,16 +1,16 @@
 const votesDao = require('../votesDao');
+const {getStats} = require('../stats');
 const {WIN_CATEGORY, INTERVIEW_CATEGORY} = require('../constants');
 
 
-function getVoteResults(category) {
-  return votesDao.getAllVotes(category).then(result => {
-    const message = result.reduce(
-      (a, c) =>
-        `${a}\r\n${c.votes} vote${c.votes > 1 ? 's' : ''} for ${c.candidate}.`,
-      ''
-    );
-    return message ? message : 'No votes yet!';
-  });
+async function getVoteResults(category) {
+  const result = await votesDao.getAllVotes(category);
+  const message = result.reduce(
+    (a, c) =>
+      `${a}\r\n${c.votes} vote${c.votes > 1 ? 's' : ''} for ${c.candidate}.`,
+    ''
+  );
+  return message ? message : 'No votes yet!';
 }
 
 function addVoteAndReportResult(username, category, message) {
@@ -70,6 +70,8 @@ function getUnpermissionedResponse(message, user) {
     return addVoteAndReportResult(user.username, INTERVIEW_CATEGORY, message);
   } else if (message === '!interviews') {
     return getVoteResults(INTERVIEW_CATEGORY);
+  } else if (message.indexOf('!pick') === 0) {
+    return getStats(message);
   }
 }
 

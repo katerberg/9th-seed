@@ -35,4 +35,18 @@ describe('Unpermissioned Messages', () => {
   it('links to suicide prevention', () => {
     expect(getUnpermissionedResponse('!gethelp')).to.have.string('trevorproject');
   });
+
+  describe('!pick', () => {
+    it('gives number of times taken for a known card', async() => {
+      const result = await getUnpermissionedResponse('!pick Black Lotus');
+
+      expect(result).to.have.string('13 times');
+    });
+
+    it('gives unknown message for an unknown card', async() => {
+      const result = await getUnpermissionedResponse('!pick Black Lotsu');
+
+      expect(result).to.have.string('Sorry');
+    });
+  });
 });
