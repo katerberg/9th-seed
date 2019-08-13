@@ -1,9 +1,8 @@
 const fs = require('fs');
-const readline = require('readline');
 const util = require('util');
 const mysql = require('mysql');
 const dbInfo = require('../creds/dbCreds.json');
-const parse = require('csv-parse/lib/sync')
+const parse = require('csv-parse/lib/sync');
 
 fs.readFileAsync = util.promisify(fs.readFile);
 fs.readdirAsync = util.promisify(fs.readdir);
@@ -24,11 +23,11 @@ const INSERT_TEMPLATE = 'INSERT INTO archives (player, card, draft, pick) VALUES
 function getInsertsFromCsv(csv, draftName) {
   const insertStatements = [];
   const records = parse(csv);
-  records.forEach((record, row) => {
+  records.forEach((record) => {
     if (record[0].match(/^\d+$/)) {
-      const round = Number.parseInt(record[0]);
+      const round = Number.parseInt(record[0], 10);
       const numberOfPicksBeforeRound = 8 * (round - 1);
-      for (let i=1; i<=8; i++) {
+      for (let i = 1; i <= 8; i++) { // eslint-disable-line no-plusplus
         const pickNumber = numberOfPicksBeforeRound + (round % 2 === 0 ? 9 - i : i);
         insertStatements.push(INSERT_TEMPLATE
           .replace('{player}', records[0][i])
@@ -48,7 +47,7 @@ function addDrafts(drafts, number, insertStatements) {
   }
   return fs.readFileAsync(`${process.cwd()}/drafts/${drafts[number]}`, 'utf-8').then((draftCsv) => {
     const inserts = getInsertsFromCsv(draftCsv, drafts[number].split('.')[0]);
-    return addDrafts(drafts, ++number, [...insertStatements, ...inserts]);
+    return addDrafts(drafts, number + 1, [...insertStatements, ...inserts]);
   });
 }
 
@@ -57,10 +56,8 @@ function runScripts(scripts, number) {
     return;
   }
   return connection.queryAsync(scripts[number])
-    .then(() => {
-      return runScripts(scripts, ++number);
-    })
-    .catch((e)=>{
+    .then(() => runScripts(scripts, number + 1))
+    .catch((e) => {
       console.log(`SQL was unhappy with ${scripts[number]}`);
       console.log(e);
     });
@@ -75,10 +72,13 @@ connection.connectAsync().then(() => {
       console.log(inserts && inserts.length);
       if (inserts && inserts.length) {
         return runScripts(inserts, 0);
-      } else {
-        console.log('Something went wrong inserting');
       }
-    }).catch(()=>{}).then(() => {
+      console.log('Something went wrong inserting');
+
+    }).catch((e) => {
+      console.log('Error inserting');
+      console.log(e);
+    }).then(() => {
       console.log('closing connection');
       connection.end();
     });

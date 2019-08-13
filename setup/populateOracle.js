@@ -1,9 +1,8 @@
 const fs = require('fs');
-const readline = require('readline');
 const util = require('util');
 const mysql = require('mysql');
 const dbInfo = require('../creds/dbCreds.json');
-const parse = require('csv-parse/lib/sync')
+const parse = require('csv-parse/lib/sync');
 
 fs.readFileAsync = util.promisify(fs.readFile);
 fs.readdirAsync = util.promisify(fs.readdir);
@@ -21,13 +20,16 @@ connection.on('error', () => {
 
 const INSERT_TEMPLATE = 'INSERT INTO oracle (card) VALUES ("{card}")';
 
+function createInsertStatement(cardName) {
+  return INSERT_TEMPLATE
+    .replace('{card}', cardName.toLowerCase().replace(/"/g, '\\"'));
+}
+
 function getInsertsFromCsv(csv) {
   const insertStatements = [];
   const records = parse(csv);
-  records.forEach(([record], row) => {
-    insertStatements.push(INSERT_TEMPLATE
-      .replace('{card}', record.toLowerCase().replace(/"/g, '\\"'))
-    );
+  records.forEach(([record]) => {
+    insertStatements.push(createInsertStatement(record));
   });
   return insertStatements;
 }
@@ -37,10 +39,8 @@ function runScripts(scripts, number) {
     return;
   }
   return connection.queryAsync(scripts[number])
-    .then(() => {
-      return runScripts(scripts, ++number);
-    })
-    .catch((e)=>{
+    .then(() => runScripts(scripts, number + 1))
+    .catch((e) => {
       console.log(`SQL was unhappy with ${scripts[number]}`);
       console.log(e);
     });
@@ -55,16 +55,16 @@ connection.connectAsync().then(() => {
     console.log(inserts && inserts.length);
     if (inserts && inserts.length) {
       return runScripts(inserts, 0);
-    } else {
-      console.log('Something went wrong inserting');
     }
-  }).catch((e)=>{
+    console.log('Something went wrong inserting');
+
+  }).catch((e) => {
     console.log('There was an error');
     console.log(e);
   }).then(() => {
-      console.log('closing connection');
-      connection.end();
-    });
+    console.log('closing connection');
+    connection.end();
+  });
 });
 
 

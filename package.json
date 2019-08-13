@@ -21,7 +21,7 @@
     "test": "mocha 'src/**/*.test.js' 'test' --exit -R dot",
     "test:watch": "yarn test --watch",
     "lint": "yarn lint:ci --fix",
-    "lint:ci": "eslint src app.js test",
+    "lint:ci": "eslint src app.js test setup",
     "lint:watch": "watch 'yarn lint' ."
   },
   "devDependencies": {

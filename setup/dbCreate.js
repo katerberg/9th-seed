@@ -1,5 +1,4 @@
 const fs = require('fs');
-const readline = require('readline');
 const util = require('util');
 const mysql = require('mysql');
 const dbInfo = require('../creds/dbCreds.json');
@@ -26,25 +25,23 @@ connection.connectAsync().then(() => {
     if (scripts.length === number) {
       return;
     }
-    return fs.readFileAsync(`${process.cwd()}/sql/${scripts[number]}`, 'utf-8').then((sqlScript) => {
-      return connection.queryAsync(sqlScript)
-        .then(() => {
-          console.log(`Finished running ${scripts[number]}`);
-          return runScripts(scripts, ++number);
-        })
-        .catch((e)=>{
-          console.log(`SQL was unhappy with ${scripts[number]}`);
-          console.log(e);
-        });
-    });
+    return fs.readFileAsync(`${process.cwd()}/sql/${scripts[number]}`, 'utf-8').then((sqlScript) => connection.queryAsync(sqlScript)
+      .then(() => {
+        console.log(`Finished running ${scripts[number]}`);
+        return runScripts(scripts, number + 1);
+      })
+      .catch((e) => {
+        console.log(`SQL was unhappy with ${scripts[number]}`);
+        console.log(e);
+      }));
   }
 
   fs.readdirAsync(`${process.cwd()}/sql`).then((items) => {
-    items.sort((a,b) => {
+    items.sort((a, b) => {
       const regex = /^\d+/;
       return Number.parseInt(a.match(regex)[0], 10) > Number.parseInt(b.match(regex)[0], 10);
     });
-    runScripts(items, 0).catch(()=>{return null;}).then(() => {
+    runScripts(items, 0).catch(() => null).then(() => {
       connection.end();
     });
   });
