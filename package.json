@@ -16,7 +16,7 @@
     "db:create": "node setup/dbCreate.js",
     "db:populateArchives": "node setup/populateArchives.js",
     "start": "node app.js",
-    "test": "mocha 'src/**/*.test.js' 'test'",
+    "test": "mocha 'src/**/*.test.js' 'test' --exit",
     "test:watch": "yarn test --watch",
     "lint": "yarn lint:ci --fix",
     "lint:ci": "eslint src app.js test",
