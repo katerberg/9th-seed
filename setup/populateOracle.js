@@ -25,6 +25,20 @@ function createInsertStatement(cardName) {
     .replace('{card}', cardName.toLowerCase().replace(/"/g, '\\"'));
 }
 
+function getInsertsFromArchives() {
+  return [
+    createInsertStatement('fire/ice'),
+    createInsertStatement('far/away'),
+    createInsertStatement('life/death'),
+    createInsertStatement('hide/seek'),
+    createInsertStatement('breaking/entering'),
+    createInsertStatement('wear/tear'),
+    createInsertStatement("lim-dul's vault");
+    createInsertStatement('unknown'),
+    createInsertStatement('unknown2'),
+  ];
+}
+
 function getInsertsFromCsv(csv) {
   const insertStatements = [];
   const records = parse(csv);
@@ -50,7 +64,8 @@ connection.connectAsync().then(() => {
   console.log('Connected to DB');
 
   fs.readFileAsync(`${process.cwd()}/setup/AllCards.csv`, 'utf-8').then((draftCsv) => {
-    const inserts = getInsertsFromCsv(draftCsv);
+    const insertsFromCsv = getInsertsFromCsv(draftCsv);
+    const inserts = [...insertsFromCsv, ...getInsertsFromArchives()];
     console.log('got some inserts');
     console.log(inserts && inserts.length);
     if (inserts && inserts.length) {
