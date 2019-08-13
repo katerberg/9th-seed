@@ -44,7 +44,13 @@ describe('Unpermissioned Messages', () => {
       expect(result).to.have.string('at pick 1.3 (round 1)');
     });
 
-    it('gives unknown message for an unknown card', async() => {
+    it('says an undrafted card is not playable', async() => {
+      const result = await getUnpermissionedResponse('!pick Crocanura');
+
+      expect(result).to.have.string('has not been picked');
+    });
+
+    it('gives unknown message for an non-existant card', async() => {
       const result = await getUnpermissionedResponse('!pick Black Lotsu');
 
       expect(result).to.have.string('Sorry');
