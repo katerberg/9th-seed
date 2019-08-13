@@ -11,8 +11,7 @@ You will need `yarn` and `mysql` installed.
 To get data into the database (which assists or is required for many of the features of 9th Seed, run
 
 ```
-yarn db:create
-yarn db:populateArchives
+yarn db
 ```
 
 ## Starting

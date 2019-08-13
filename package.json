@@ -13,7 +13,9 @@
     "tmi.js": "^1.4.2"
   },
   "scripts": {
+    "db": "yarn db:create && yarn db:populateOracle && yarn db:populateArchives",
     "db:create": "node setup/dbCreate.js",
+    "db:populateOracle": "node setup/populateOracle.js",
     "db:populateArchives": "node setup/populateArchives.js",
     "start": "node app.js",
     "test": "mocha 'src/**/*.test.js' 'test' --exit -R dot",

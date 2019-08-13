@@ -58,7 +58,6 @@ function runScripts(scripts, number) {
   }
   return connection.queryAsync(scripts[number])
     .then(() => {
-      console.log(`Finished running ${scripts[number]}`);
       return runScripts(scripts, ++number);
     })
     .catch((e)=>{
@@ -75,7 +74,6 @@ connection.connectAsync().then(() => {
       console.log('got some inserts');
       console.log(inserts && inserts.length);
       if (inserts && inserts.length) {
-        console.log(inserts[0]);
         return runScripts(inserts, 0);
       } else {
         console.log('Something went wrong inserting');
