@@ -37,10 +37,11 @@ describe('Unpermissioned Messages', () => {
   });
 
   describe('!pick', () => {
-    it('gives number of times taken for a known card', async() => {
+    it('gives stats for a known card', async() => {
       const result = await getUnpermissionedResponse('!pick Black Lotus');
 
       expect(result).to.have.string('13 times');
+      expect(result).to.have.string('at pick 1.3 (round 1)');
     });
 
     it('gives unknown message for an unknown card', async() => {

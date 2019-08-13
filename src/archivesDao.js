@@ -1,9 +1,9 @@
 const connection = require('./db');
 
 const archivesDao = {
-  getNumberOfTimesTaken: async(name) => new Promise((res, rej) => {
+  getStatsForCard: async(name) => new Promise((res, rej) => {
     connection.query(
-      'SELECT card, count(*) as numberTaken FROM archives WHERE card = ? GROUP BY card;',
+      'SELECT card, avg(pick) as average, count(*) as numberTaken FROM archives WHERE card = ? GROUP BY card;',
       [name],
       (err, result) => {
         if (err) {
