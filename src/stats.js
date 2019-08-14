@@ -9,15 +9,15 @@ function getMessage(card, numberTaken, average) {
 }
 
 async function fuzzyMatch(card) {
-  if (card.length === 0 ) {
+  if (card.length === 0) {
     return;
   }
   const [result] = await getStatsForCard(card);
   if (result) {
     return result;
-  } else {
-    return fuzzyMatch(card.slice(0, card.length - 1));
   }
+  return fuzzyMatch(card.slice(0, card.length - 1));
+
 }
 
 async function getStats(message) {
@@ -27,15 +27,15 @@ async function getStats(message) {
     const [result] = await getStatsForCard(card);
     if (result) {
       return getMessage(card, result.numberTaken, result.average);
-    } else {
-      return `${card} has not been picked yet. Are you sure it's playable?`;
     }
-  } else {
-    const fuzzyResult = await fuzzyMatch(card);
-    if (fuzzyResult) {
-      return `"${card}" doesn't exist. ${getMessage(fuzzyResult.card, fuzzyResult.numberTaken, fuzzyResult.average)}`;
-    }
+    return `${card} has not been picked yet. Are you sure it's playable?`;
+
   }
+  const fuzzyResult = await fuzzyMatch(card);
+  if (fuzzyResult) {
+    return `"${card}" doesn't exist. ${getMessage(fuzzyResult.card, fuzzyResult.numberTaken, fuzzyResult.average)}`;
+  }
+
 
   return `Sorry, I couldn't find ${card}. Please make sure it's the exact spelling`;
 }
