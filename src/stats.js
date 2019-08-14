@@ -2,19 +2,42 @@ const {getCommandParams} = require('./utils');
 const {getStatsForCard} = require('./archivesDao');
 const {isValidCardName} = require('./oracleDao');
 
-async function getStats(message) {
-  const card = getCommandParams(message);
+function getMessage(card, numberTaken, average) {
+  const roundedAverage = Math.round(average * 10) / 10;
+  const pickRound = Math.ceil(roundedAverage / 8);
+  return `${card} has been picked ${numberTaken} times (of 13) at pick ${roundedAverage} (round ${pickRound}) on average`;
+}
+
+async function fuzzyMatch(card) {
+  if (card.length === 0 ) {
+    return;
+  }
   const [result] = await getStatsForCard(card);
   if (result) {
-    const roundedAverage = Math.round(result.average * 10) / 10;
-    const pickRound = Math.ceil(roundedAverage / 8);
-    return `${card} has been picked ${result.numberTaken} times (of 13) at pick ${roundedAverage} (round ${pickRound}) on average`;
+    return result;
+  } else {
+    return fuzzyMatch(card.slice(0, card.length - 1));
   }
+}
+
+async function getStats(message) {
+  const card = getCommandParams(message);
+
   if (await isValidCardName(card)) {
-    return `${card} has not been picked yet. Are you sure it's playable?`;
+    const [result] = await getStatsForCard(card);
+    if (result) {
+      return getMessage(card, result.numberTaken, result.average);
+    } else {
+      return `${card} has not been picked yet. Are you sure it's playable?`;
+    }
+  } else {
+    const fuzzyResult = await fuzzyMatch(card);
+    if (fuzzyResult) {
+      return `"${card}" doesn't exist. ${getMessage(fuzzyResult.card, fuzzyResult.numberTaken, fuzzyResult.average)}`;
+    }
   }
 
-  return `Sorry, I couldn't find ${card}. Make sure it's the exact spelling`;
+  return `Sorry, I couldn't find ${card}. Please make sure it's the exact spelling`;
 }
 
 module.exports = {

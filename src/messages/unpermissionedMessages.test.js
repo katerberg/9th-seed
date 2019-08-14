@@ -50,8 +50,22 @@ describe('Unpermissioned Messages', () => {
       expect(result).to.have.string('has not been picked');
     });
 
-    it('gives unknown message for an non-existant card', async() => {
+    it('does fuzzy matching for a partial card', async() => {
+      const result = await getUnpermissionedResponse('!pick Lim-D');
+
+      expect(result).to.have.string('"Lim-D" doesn\'t exist. lim-dul\'s vault has');
+      expect(result).to.have.string('3 times');
+    });
+
+    it('does fuzzy matching for an unknown card', async() => {
       const result = await getUnpermissionedResponse('!pick Black Lotsu');
+
+      expect(result).to.have.string('"Black Lotsu" doesn\'t exist. black lotus has');
+      expect(result).to.have.string('13 times');
+    });
+
+    it('gives up if nothing matches', async() => {
+      const result = await getUnpermissionedResponse('!pick &&&&');
 
       expect(result).to.have.string('Sorry');
     });
