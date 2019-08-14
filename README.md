@@ -18,6 +18,24 @@ yarn db
 
 Populate a `creds` folder with a `dbCreds.json` and a `twitchCreds.json`.
 
+Example `dbCreds.json`:
+```
+{
+  "database": "stlvrd",
+  "host": "localhost",
+  "password": "YOUR_PASSWORD_HERE",
+  "user": "YOUR_USER_HERE"
+}
+```
+
+Example `twitchCreds.json`:
+```
+{
+  "username": "YOUR_USER_HERE"
+  "password": "oauth:YOUR_OAUTH_HERE",
+}
+```
+
 Run the following to start your bot watching the channel.
 ```
 yarn
