@@ -64,6 +64,13 @@ describe('Unpermissioned Messages', () => {
       expect(result).to.have.string('13 times');
     });
 
+    it('gives accurate name when fuzzy matching for a known split card', async() => {
+      const result = await getUnpermissionedResponse('!pick Fire');
+
+      expect(result).to.have.string('"Fire" isn\'t a full card name. fire diamond has');
+      expect(result).to.have.string('1 time ');
+    });
+
     it('gives up if nothing matches', async() => {
       const result = await getUnpermissionedResponse('!pick &&&&');
 
