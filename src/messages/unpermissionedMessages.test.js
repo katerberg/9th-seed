@@ -1,7 +1,16 @@
 const {expect} = require('chai');
+const {getModResponse} = require('./modMessages');
 const {getUnpermissionedResponse} = require('./unpermissionedMessages');
 
 describe('Unpermissioned Messages', () => {
+  beforeEach(() => {
+    sinon.stub(console, 'log');
+  });
+
+  afterEach(() => {
+    console.log.restore();
+  });
+
   it('gives youtube link', () => {
     expect(getUnpermissionedResponse('!youtube')).to.have.string('youtube');
   });
@@ -34,6 +43,24 @@ describe('Unpermissioned Messages', () => {
 
   it('links to suicide prevention', () => {
     expect(getUnpermissionedResponse('!gethelp')).to.have.string('trevorproject');
+  });
+
+  describe('!winning', () => {
+    beforeEach(() => {
+      getModResponse('!clearVotes', 'stlvrd');
+    });
+
+    it('votes for a valid player', async() => {
+      const result = await getUnpermissionedResponse('!winning naveen', {username: 'foobar'});
+
+      expect(result).to.have.string('1 vote for naveen');
+    });
+
+    it('gives error messages for an invalid player', async() => {
+      const result = await getUnpermissionedResponse('!winning blahblahblah', {username: 'foobar'});
+
+      expect(result).to.have.string('Try voting for one of these');
+    });
   });
 
   describe('!pick', () => {
