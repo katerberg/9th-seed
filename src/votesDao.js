@@ -74,7 +74,7 @@ const votesDao = {
     const cleanVote = voteFor.toLowerCase();
     const players = await votesDao.getPlayers();
     if (!players.find(entry => entry.shortName === cleanVote)) {
-      console.error(`Invalid vote by ${username} for ${voteFor}`);
+      console.log(`Invalid vote by ${username} for ${voteFor}`);
       return Promise.reject('Invalid Entry');
     }
     if (count) {

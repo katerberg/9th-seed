@@ -17,21 +17,19 @@ function addVoteAndReportResult(username, category, message) {
   return votesDao
     .upsertVote(username, message, category)
     .then(() => getVoteResults(category))
-    .catch(() => {
-      votesDao
-        .getPlayers()
-        .then(players => {
-          const playerList = players.reduce((a, c) => {
-            if (a) {
-              return `${a}, ${c.shortName}`;
-            }
-            return c.shortName;
+    .catch(() => votesDao
+      .getPlayers()
+      .then(players => {
+        const playerList = players.reduce((a, c) => {
+          if (a) {
+            return `${a}, ${c.shortName}`;
+          }
+          return c.shortName;
 
-          }, '');
-          return `I don't know who you're voting for. Try voting for one of these players: ${playerList}`;
-        })
-        .catch(() => 'Error: votes can only be for players in the tournament. Try "!win naveen" instead');
-    });
+        }, '');
+        return `I don't know who you're voting for. Try voting for one of these players: ${playerList}`;
+      })
+      .catch(() => 'Error: votes can only be for players in the tournament. Try "!win naveen" instead'));
 }
 
 function getUnpermissionedResponse(message, user) {
@@ -59,10 +57,10 @@ function getUnpermissionedResponse(message, user) {
   ) {
     return 'Spreadsheet with draft picks is at https://docs.google.com/spreadsheets/d/1u7G5ZgnQRylVRwrinuHxRKwaWMebbKgAoqpmMcx2X00/edit?usp=sharing';
   } else if (message === '!youtube') {
-    return 'Find our VODs on Twitch or on https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA';
+    return 'Find our VODs on https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA';
   } else if (message === '!gethelp') {
     return 'For someone to talk to please contact http://www.thetrevorproject.org 1 866 488 7386 Crisis Text Line SMS: Text "HERE" to 741-741';
-  } else if (message.indexOf('!win ') === 0) {
+  } else if (message.indexOf('!winning ') === 0) {
     return addVoteAndReportResult(user.username, WIN_CATEGORY, message);
   } else if (message === '!wins') {
     return getVoteResults(WIN_CATEGORY);
