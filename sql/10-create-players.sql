@@ -9,7 +9,7 @@ ALTER TABLE players ADD CONSTRAINT players_constraint UNIQUE (shortName);
 
 INSERT INTO players (name, shortName) VALUES ('Cody Owen', 'cody');
 INSERT INTO players (name, shortName) VALUES ('Jeff Blyden', 'jeff');
-INSERT INTO players (name, shortName) VALUES ('Kyle Vance', 'kyle');
+INSERT INTO players (name, shortName) VALUES ('Mark Katerberg', 'mark');
 INSERT INTO players (name, shortName) VALUES ('Brandon Curry', 'brandon');
 INSERT INTO players (name, shortName) VALUES ('Joe Wisdom', 'joe');
 INSERT INTO players (name, shortName) VALUES ('Alec Dishaw', 'alec');
