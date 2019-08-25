@@ -7,11 +7,11 @@ CREATE TABLE players (
 );
 ALTER TABLE players ADD CONSTRAINT players_constraint UNIQUE (shortName);
 
-INSERT INTO players (name, shortName) VALUES ('Naveen Balaji', 'naveen');
-INSERT INTO players (name, shortName) VALUES ('John Koines', 'john');
-INSERT INTO players (name, shortName) VALUES ('Brent Yard', 'brent');
-INSERT INTO players (name, shortName) VALUES ('Eric Levine', 'eric');
-INSERT INTO players (name, shortName) VALUES ('Daniel Zielinski', 'daniel');
-INSERT INTO players (name, shortName) VALUES ('Vincent Brown', 'vincent');
+INSERT INTO players (name, shortName) VALUES ('Cody Owen', 'cody');
+INSERT INTO players (name, shortName) VALUES ('Jeff Blyden', 'jeff');
+INSERT INTO players (name, shortName) VALUES ('Kyle Vance', 'kyle');
+INSERT INTO players (name, shortName) VALUES ('Brandon Curry', 'brandon');
+INSERT INTO players (name, shortName) VALUES ('Joe Wisdom', 'joe');
+INSERT INTO players (name, shortName) VALUES ('Alec Dishaw', 'alec');
 INSERT INTO players (name, shortName) VALUES ('Stephen Hagan', 'stephen');
 INSERT INTO players (name, shortName) VALUES ('Elaine Cao', 'elaine');

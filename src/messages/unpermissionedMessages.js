@@ -29,7 +29,7 @@ function addVoteAndReportResult(username, category, message) {
         }, '');
         return `I don't know who you're voting for. Try voting for one of these players: ${playerList}`;
       })
-      .catch(() => 'Error: votes can only be for players in the tournament. Try "!win naveen" instead'));
+      .catch(() => 'Error: votes can only be for players in the tournament. Try "!win alec" instead'));
 }
 
 function getUnpermissionedResponse(message, user) {
