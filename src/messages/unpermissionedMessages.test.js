@@ -51,9 +51,9 @@ describe('Unpermissioned Messages', () => {
     });
 
     it('votes for a valid player', async() => {
-      const result = await getUnpermissionedResponse('!winning naveen', {username: 'foobar'});
+      const result = await getUnpermissionedResponse('!winning jeff', {username: 'foobar'});
 
-      expect(result).to.have.string('1 vote for naveen');
+      expect(result).to.have.string('1 vote for jeff');
     });
 
     it('gives error messages for an invalid player', async() => {
@@ -67,7 +67,7 @@ describe('Unpermissioned Messages', () => {
     it('gives stats for a known card', async() => {
       const result = await getUnpermissionedResponse('!pick Black Lotus');
 
-      expect(result).to.have.string('13 times');
+      expect(result).to.have.string('14 times');
       expect(result).to.have.string('at pick 1.3 (round 1)');
     });
 
@@ -88,7 +88,7 @@ describe('Unpermissioned Messages', () => {
       const result = await getUnpermissionedResponse('!pick Black Lotsu');
 
       expect(result).to.have.string('"Black Lotsu" doesn\'t exist. black lotus has');
-      expect(result).to.have.string('13 times');
+      expect(result).to.have.string('14 times');
     });
 
     it('gives accurate name when fuzzy matching for a known split card', async() => {
