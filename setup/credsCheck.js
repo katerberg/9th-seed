@@ -18,7 +18,7 @@ async function checkDb() {
             !parsed.user) {
             rej(`Missing required fields in ${file}`);
           }
-        } catch(e) {
+        } catch (e) {
           rej(`Invalid JSON in ${file}`);
         }
 
@@ -43,7 +43,7 @@ async function checkTwitch() {
             !parsed.username) {
             rej(`Missing required fields in ${file}`);
           }
-        } catch(e) {
+        } catch (e) {
           rej(`Invalid JSON in ${file}`);
         }
 
