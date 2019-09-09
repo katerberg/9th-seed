@@ -6,7 +6,7 @@ async function getMessage(card, numberTaken, average) {
   let drafts;
   try {
     drafts = await getDrafts();
-  } catch(e) {
+  } catch (e) {
     console.error('Error getting drafts');
     console.error(e);
     drafts = 'all drafts';

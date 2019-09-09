@@ -6,7 +6,7 @@ const archivesDao = {
       'SELECT draft FROM archives GROUP BY draft;',
       (err, result) => {
         if (err) {
-          console.error(`Error retrieving draft names`);
+          console.error('Error retrieving draft names');
           return rej(err);
         }
         res(result);
