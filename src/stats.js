@@ -1,11 +1,19 @@
 const {getCommandParams} = require('./utils');
-const {getStatsForCard} = require('./archivesDao');
+const {getDrafts, getStatsForCard} = require('./archivesDao');
 const {isValidCardName} = require('./oracleDao');
 
-function getMessage(card, numberTaken, average) {
+async function getMessage(card, numberTaken, average) {
+  let drafts;
+  try {
+    drafts = await getDrafts();
+  } catch (e) {
+    console.error('Error getting drafts');
+    console.error(e);
+    drafts = 'all drafts';
+  }
   const roundedAverage = Math.round(average * 10) / 10;
   const pickRound = Math.ceil(roundedAverage / 8);
-  return `${card} has been picked ${numberTaken} time${numberTaken > 1 ? 's' : ''} (of 14) at pick ${roundedAverage} (round ${pickRound}) on average`;
+  return `${card} has been picked ${numberTaken} time${numberTaken > 1 ? 's' : ''} (of ${drafts.length}) at pick ${roundedAverage} (round ${pickRound}) on average`;
 }
 
 async function fuzzyMatch(card) {
@@ -27,7 +35,8 @@ async function getStats(message) {
     const [result] = await getStatsForCard(card);
     if (result) {
       if (result.card !== card.toLowerCase()) {
-        return `"${card}" isn't a full card name. ${getMessage(result.card, result.numberTaken, result.average)}`;
+        const message = await getMessage(result.card, result.numberTaken, result.average);
+        return `"${card}" isn't a full card name. ${message}`;
       }
       return getMessage(card, result.numberTaken, result.average);
     }
@@ -36,7 +45,9 @@ async function getStats(message) {
   }
   const fuzzyResult = await fuzzyMatch(card);
   if (fuzzyResult) {
-    return `"${card}" doesn't exist. ${getMessage(fuzzyResult.card, fuzzyResult.numberTaken, fuzzyResult.average)}`;
+    const message = await getMessage(fuzzyResult.card, fuzzyResult.numberTaken, fuzzyResult.average);
+
+    return `"${card}" doesn't exist. ${message}`;
   }
 
 
