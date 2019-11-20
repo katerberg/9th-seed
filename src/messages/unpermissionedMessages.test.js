@@ -40,7 +40,7 @@ describe('Unpermissioned Messages', () => {
   });
 
   it('links to bracket', () => {
-    ['!bracket', '!standings', '!record'].forEach(item => {
+    ['!bracket', '!standings', '!record', '!challonge'].forEach(item => {
       expect(getUnpermissionedResponse(item)).to.have.string('challonge', `${item} failed to get challonge`);
     });
   });

@@ -37,16 +37,22 @@ function getUnpermissionedResponse(message, user) {
     return 'Want to argue about VRD? https://twitter.com/stlvrd';
   } else if (message === '!salt') {
     return 'PJSalt PJSalt PJSalt PJSalt';
-  } else if (message === '!vrd1' || message === '!vrd2' || message === '!vrd3' || message === '!archives') {
+  } else if (
+    message === '!vrd1' ||
+    message === '!vrd2' ||
+    message === '!vrd3' ||
+    message === '!archives'
+  ) {
     return 'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=945529176';
   } else if (message === '!banned') {
     return 'Any card not banned in Vintage is legal in this format. Restricted cards are legal and encouraged: https://magic.wizards.com/en/game-info/gameplay/rules-and-formats/banned-restricted';
   } else if (
     message === '!bracket' ||
     message === '!record' ||
-    message === '!standings'
+    message === '!standings' ||
+    message === '!challonge'
   ) {
-    return 'Standings are visible at https://challonge.com/8aroof4o';
+    return 'Standings are visible at https://challonge.com/stlvrd4';
   } else if (
     message === '!vrd4' ||
     message === '!sheet' ||
