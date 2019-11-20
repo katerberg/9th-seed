@@ -28,6 +28,7 @@ function createInsertStatement(cardName) {
 function getInsertsFromArchives() {
   return [
     createInsertStatement('fire/ice'),
+    createInsertStatement('repudiate/replicate'),
     createInsertStatement('far/away'),
     createInsertStatement('life/death'),
     createInsertStatement('hide/seek'),
