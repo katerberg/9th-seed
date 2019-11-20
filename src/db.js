@@ -1,30 +1,11 @@
 const mysql = require('mysql');
 const dbInfo = require('../creds/dbCreds.json');
 
-let connection;
+const pool = mysql.createPool(dbInfo);
 
-function handleDisconnect() {
-  connection = mysql.createConnection(dbInfo);
+pool.on('error', (err) => {
+  console.log('db error', err);
+  console.error('something went terribly wrong with an error of mysql');
+});
 
-  connection.connect((err) => {
-    if (err) {
-      console.log('error when connecting to db:', err);
-      setTimeout(handleDisconnect, 2000);
-    } else {
-      console.log('Connected to DB');
-    }
-  });
-
-  connection.on('error', (err) => {
-    console.log('db error', err);
-    if (err.code === 'PROTOCOL_CONNECTION_LOST') {
-      handleDisconnect();
-    } else {
-      console.error('something went terribly wrong with an error of mysql');
-    }
-  });
-}
-
-handleDisconnect();
-
-module.exports = connection;
+module.exports = pool;

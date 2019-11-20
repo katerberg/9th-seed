@@ -21,6 +21,7 @@ Populate a `creds` folder with a `dbCreds.json` and a `twitchCreds.json`.
 Example `dbCreds.json`:
 ```
 {
+  "connectionLimit": 10,
   "database": "stlvrd",
   "host": "localhost",
   "password": "YOUR_PASSWORD_HERE",
