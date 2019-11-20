@@ -98,6 +98,12 @@ describe('Unpermissioned Messages', () => {
       expect(result).to.have.string('1 time ');
     });
 
+    it('does not give stilted language for cards drafted once', async() => {
+      const result = await getUnpermissionedResponse('!pick Copper Gnomes');
+
+      expect(result).not.to.have.string('on average');
+    });
+
     it('gives up if nothing matches', async() => {
       const result = await getUnpermissionedResponse('!pick &&&&');
 

@@ -13,7 +13,7 @@ async function getMessage(card, numberTaken, average) {
   }
   const roundedAverage = Math.round(average * 10) / 10;
   const pickRound = Math.ceil(roundedAverage / 8);
-  return `${card} has been picked ${numberTaken} time${numberTaken > 1 ? 's' : ''} (of ${drafts.length}) at pick ${roundedAverage} (round ${pickRound}) on average`;
+  return `${card} has been picked ${numberTaken} time${numberTaken > 1 ? 's' : ''} (of ${drafts.length}) at pick ${roundedAverage} (round ${pickRound})${numberTaken > 1 ? ' on average' : ''}`;
 }
 
 async function fuzzyMatch(card) {
