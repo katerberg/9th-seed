@@ -15,6 +15,10 @@ describe('Unpermissioned Messages', () => {
     expect(getUnpermissionedResponse('!youtube')).to.have.string('youtube');
   });
 
+  it('gives link to ban list', () => {
+    expect(getUnpermissionedResponse('!banned')).to.have.string('rules-and-formats/banned-restricted');
+  });
+
   it('gives twitter link', () => {
     expect(getUnpermissionedResponse('!twitter')).to.have.string('twitter');
   });
