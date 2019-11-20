@@ -28,14 +28,14 @@ describe('Unpermissioned Messages', () => {
   });
 
   it('links to archives', () => {
-    ['!vrd1', '!vrd2', '!archives'].forEach(item => {
+    ['!vrd1', '!vrd2', '!vrd3', '!archives'].forEach(item => {
       expect(getUnpermissionedResponse(item)).to.have.string('1AdrhW', `${item} failed to get spreadsheet`);
     });
   });
 
   it('links to current draft', () => {
-    ['!vrd3', '!decks', '!decklists', '!draft', '!picks', '!sheet'].forEach(item => {
-      expect(getUnpermissionedResponse(item)).to.have.string('1u7G5', `${item} failed to get spreadsheet`);
+    ['!vrd4', '!decks', '!decklists', '!draft', '!picks', '!sheet'].forEach(item => {
+      expect(getUnpermissionedResponse(item)).to.have.string('yrUo', `${item} failed to get spreadsheet`);
     });
   });
 

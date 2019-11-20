@@ -37,7 +37,7 @@ function getUnpermissionedResponse(message, user) {
     return 'Want to argue about VRD? https://twitter.com/stlvrd';
   } else if (message === '!salt') {
     return 'PJSalt PJSalt PJSalt PJSalt';
-  } else if (message === '!vrd1' || message === '!vrd2' || message === '!archives') {
+  } else if (message === '!vrd1' || message === '!vrd2' || message === '!vrd3' || message === '!archives') {
     return 'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=945529176';
   } else if (message === '!banned') {
     return 'Any card not banned in Vintage is legal in this format. Restricted cards are legal and encouraged: https://magic.wizards.com/en/game-info/gameplay/rules-and-formats/banned-restricted';
@@ -48,7 +48,7 @@ function getUnpermissionedResponse(message, user) {
   ) {
     return 'Standings are visible at https://challonge.com/8aroof4o';
   } else if (
-    message === '!vrd3' ||
+    message === '!vrd4' ||
     message === '!sheet' ||
     message === '!picks' ||
     message === '!decks' ||
@@ -57,7 +57,7 @@ function getUnpermissionedResponse(message, user) {
     message === '!decklists' ||
     message === '!draft'
   ) {
-    return 'Spreadsheet with draft picks is at https://docs.google.com/spreadsheets/d/1u7G5ZgnQRylVRwrinuHxRKwaWMebbKgAoqpmMcx2X00/edit?usp=sharing';
+    return 'Spreadsheet with draft picks is at https://docs.google.com/spreadsheets/d/1wUe9ph5lKs8eDoDw9G_BkOfCiDUviVpVOVyrUol5WgI/edit?usp=sharing';
   } else if (message === '!youtube') {
     return 'Find our VODs on https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA';
   } else if (message === '!gethelp') {
