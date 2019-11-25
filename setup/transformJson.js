@@ -1,6 +1,6 @@
 const fs = require('fs');
 const util = require('util');
-const stringify = require('csv-stringify')
+const stringify = require('csv-stringify');
 
 fs.readFileAsync = util.promisify(fs.readFile);
 fs.writeFileAsync = util.promisify(fs.writeFile);
@@ -18,7 +18,7 @@ fs.readFileAsync(`${process.cwd()}/setup/VintageCards.json`, 'utf-8').then((text
   }).catch((e) => {
     console.log('There was an error writing csv');
     console.log(e);
-  });;
+  });
 }).catch((e) => {
   console.log('There was an error');
   console.log(e);
