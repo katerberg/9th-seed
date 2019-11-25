@@ -71,7 +71,7 @@ describe('Unpermissioned Messages', () => {
     it('gives stats for a known card', async() => {
       const result = await getUnpermissionedResponse('!pick Black Lotus');
 
-      expect(result).to.have.string('23 times');
+      expect(result).to.have.string('24 times');
       expect(result).to.have.string('at pick 1.2 (round 1)');
     });
 
@@ -85,14 +85,14 @@ describe('Unpermissioned Messages', () => {
       const result = await getUnpermissionedResponse('!pick Lim-D');
 
       expect(result).to.have.string('"Lim-D" doesn\'t exist. lim-dul\'s vault has');
-      expect(result).to.have.string('4 times');
+      expect(result).to.have.string('5 times');
     });
 
     it('does fuzzy matching for an unknown card', async() => {
       const result = await getUnpermissionedResponse('!pick Black Lotsu');
 
       expect(result).to.have.string('"Black Lotsu" doesn\'t exist. black lotus has');
-      expect(result).to.have.string('23 times');
+      expect(result).to.have.string('24 times');
     });
 
     it('gives accurate name when fuzzy matching for a known split card', async() => {
