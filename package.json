@@ -9,14 +9,15 @@
     "url": "https://github.com/katerberg/9th-seed.git"
   },
   "dependencies": {
+    "csv-stringify": "^5.3.3",
     "mysql": "^2.17.1",
     "tmi.js": "^1.4.2"
   },
   "scripts": {
     "credsCheck": "node setup/credsCheck.js",
-    "transformJson": "node setup/transformJson.js",
-    "db": "yarn credsCheck && yarn db:create && yarn db:populateOracle && yarn db:populateArchives",
+    "db": "yarn credsCheck && yarn db:create && yarn db:fetchCardList && yarn db:populateOracle && yarn db:populateArchives",
     "db:create": "yarn credsCheck && node setup/dbCreate.js",
+    "db:fetchCardList": "curl https://www.mtgjson.com/files/VintageCards.json > setup/VintageCards.json && node setup/transformJson.js",
     "db:populateOracle": "yarn credsCheck && node setup/populateOracle.js",
     "db:populateArchives": "yarn credsCheck && node setup/populateArchives.js",
     "start": "node app.js",

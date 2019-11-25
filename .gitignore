@@ -1,3 +1,5 @@
 /node_modules
 /creds
+/setup/*.json
+/setup/*.csv
 .DS_STORE
