@@ -22,6 +22,7 @@
     "db:populateOracle": "yarn credsCheck && node setup/populateOracle.js",
     "db:populateArchives": "yarn credsCheck && node setup/populateArchives.js",
     "start": "node app.js",
+    "start:dev": "CHANNEL=katmarktest node app.js",
     "test": "mocha 'src/**/*.test.js' 'test'",
     "test:watch": "yarn test --watch",
     "lint": "yarn lint:ci --fix",

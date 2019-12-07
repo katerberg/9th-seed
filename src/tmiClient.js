@@ -1,7 +1,7 @@
 const tmi = require('tmi.js');
 const identity = require('../creds/twitchCreds.json');
 
-const channelName = 'stlvrd';
+const channelName = process.env.CHANNEL || 'stlvrd';
 const tmiOptions = {
   option: {
     debug: true,
