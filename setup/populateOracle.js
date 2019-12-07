@@ -36,6 +36,7 @@ function getInsertsFromArchives() {
     createInsertStatement('wear/tear'),
     createInsertStatement('beck/call'),
     createInsertStatement('crime/punishment'),
+    createInsertStatement('wax/wane'),
     createInsertStatement('unknown'),
     createInsertStatement('unknown2'),
   ];
