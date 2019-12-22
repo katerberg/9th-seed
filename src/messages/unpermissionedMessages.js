@@ -32,7 +32,8 @@ function addVoteAndReportResult(username, category, message) {
       .catch(() => 'Error: votes can only be for players in the tournament. Try "!win alec" instead'));
 }
 
-function getUnpermissionedResponse(message, user) {
+function getUnpermissionedResponse(dirtyMessage, user) {
+  const message = dirtyMessage && dirtyMessage.replace(/[^\x20-\x7E]+/g, '');
   if (!message) {
     return;
   }
