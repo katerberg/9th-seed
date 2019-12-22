@@ -11,12 +11,19 @@ describe('Unpermissioned Messages', () => {
     console.log.restore();
   });
 
+  it('handles missing message', () => {
+    expect(getUnpermissionedResponse()).to.be.undefined;
+  });
+
   it('gives youtube link', () => {
     expect(getUnpermissionedResponse('!youtube')).to.have.string('youtube');
   });
 
   it('gives link to ban list', () => {
     expect(getUnpermissionedResponse('!banned')).to.have.string('rules-and-formats/banned-restricted');
+    expect(getUnpermissionedResponse('!ban')).to.have.string('rules-and-formats/banned-restricted');
+    expect(getUnpermissionedResponse('!banlist')).to.have.string('rules-and-formats/banned-restricted');
+    expect(getUnpermissionedResponse('!bans')).to.have.string('rules-and-formats/banned-restricted');
   });
 
   it('gives twitter link', () => {
