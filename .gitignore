@@ -2,3 +2,4 @@
 /creds
 /setup/*.json
 .DS_STORE
+*.log
