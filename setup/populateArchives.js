@@ -20,15 +20,21 @@ connection.on('error', () => {
 
 const INSERT_TEMPLATE = 'INSERT INTO archives (player, card, draft, pick) VALUES ("{player}", "{card}", "{draft}", {pick})';
 
+function getNumberOfPlayers(records) {
+  return records[0].length - 1;
+}
+
 function getInsertsFromCsv(csv, draftName) {
   const insertStatements = [];
   const records = parse(csv);
+  const numberOfPlayers = getNumberOfPlayers(records);
+  console.log(`${draftName} has ${numberOfPlayers} players`);
   records.forEach((record) => {
     if (record[0].match(/^\d+$/)) {
       const round = Number.parseInt(record[0], 10);
-      const numberOfPicksBeforeRound = 8 * (round - 1);
-      for (let i = 1; i <= 8; i++) { // eslint-disable-line no-plusplus
-        const pickNumber = numberOfPicksBeforeRound + (round % 2 === 0 ? 9 - i : i);
+      const numberOfPicksBeforeRound = numberOfPlayers * (round - 1);
+      for (let i = 1; i <= numberOfPlayers; i++) { // eslint-disable-line no-plusplus
+        const pickNumber = numberOfPicksBeforeRound + (round % 2 === 0 ? numberOfPlayers + 1 - i : i);
         insertStatements.push(INSERT_TEMPLATE
           .replace('{player}', records[0][i])
           .replace('{card}', record[i].toLowerCase())
