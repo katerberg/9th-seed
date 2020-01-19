@@ -28,7 +28,7 @@ function getInsertsFromCsv(csv, draftName) {
   const insertStatements = [];
   const records = parse(csv);
   const numberOfPlayers = getNumberOfPlayers(records);
-  console.log(`${draftName} has ${numberOfPlayers} players`);
+  console.debug(`${draftName} has ${numberOfPlayers} players`);
   records.forEach((record) => {
     if (record[0].match(/^\d+$/)) {
       const round = Number.parseInt(record[0], 10);
