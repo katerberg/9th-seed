@@ -91,7 +91,7 @@ describe('Unpermissioned Messages', () => {
     it('does fuzzy matching for a partial card', async() => {
       const result = await getUnpermissionedResponse('!pick Lim-D');
 
-      expect(result).to.have.string('"Lim-D" doesn\'t exist. lim-dul\'s vault has');
+      expect(result).to.have.string('"Lim-D" doesn\'t exist. lim-dûl\'s vault has');
     });
 
     it('does fuzzy matching for an unknown card', async() => {
