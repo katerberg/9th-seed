@@ -1,5 +1,6 @@
 const {getCommandParams} = require('./utils');
-const {getDrafts, getStatsForCard} = require('./archivesDao');
+const {getStatsForCard} = require('./archivesDao');
+const {getDrafts} = require('./draftsDao');
 const {isValidCardName} = require('./oracleDao');
 
 async function getMessage(card, numberTaken, average) {
