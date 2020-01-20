@@ -2,5 +2,6 @@ DROP TABLE IF EXISTS archives;
 DROP TABLE IF EXISTS oracle;
 
 CREATE TABLE oracle (
-  card VARCHAR(200) PRIMARY KEY
+  card VARCHAR(200) PRIMARY KEY,
+  releaseDate DATE NOT NULL
 );

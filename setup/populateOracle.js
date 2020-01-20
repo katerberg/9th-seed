@@ -18,35 +18,36 @@ connection.on('error', () => {
   console.error('something went terribly wrong connecting to mysql');
 });
 
-const INSERT_TEMPLATE = 'INSERT INTO oracle (card) VALUES ("{card}")';
+const INSERT_TEMPLATE = 'INSERT INTO oracle (card, releaseDate) VALUES ("{card}", "{releaseDate}")';
 
-function createInsertStatement(cardName) {
+function createInsertStatement(cardName, releaseDate) {
   return INSERT_TEMPLATE
-    .replace('{card}', cardName.toLowerCase().replace(/"/g, '\\"'));
+    .replace('{card}', cardName.toLowerCase().replace(/"/g, '\\"'))
+    .replace('{releaseDate}', releaseDate);
 }
 
 function getInsertsFromArchives() {
   return [
-    createInsertStatement('fire/ice'),
-    createInsertStatement('repudiate/replicate'),
-    createInsertStatement('far/away'),
-    createInsertStatement('life/death'),
-    createInsertStatement('hide/seek'),
-    createInsertStatement('breaking/entering'),
-    createInsertStatement('wear/tear'),
-    createInsertStatement('beck/call'),
-    createInsertStatement('crime/punishment'),
-    createInsertStatement('wax/wane'),
-    createInsertStatement('unknown'),
-    createInsertStatement('unknown2'),
+    createInsertStatement('fire/ice', '2001-06-04'),
+    createInsertStatement('repudiate/replicate', '2019-01-25'),
+    createInsertStatement('far/away', '2013-05-03'),
+    createInsertStatement('life/death', '2001-06-04'),
+    createInsertStatement('hide/seek', '2006-05-05'),
+    createInsertStatement('breaking/entering', '2013-04-27'),
+    createInsertStatement('wear/tear', '2013-04-27'),
+    createInsertStatement('beck/call', '2013-04-27'),
+    createInsertStatement('crime/punishment', '2006-05-05'),
+    createInsertStatement('wax/wane', '2000-10-02'),
+    createInsertStatement('unknown', '2222-01-01'),
+    createInsertStatement('unknown2', '2222-01-01'),
   ];
 }
 
 function getInsertsFromCsv(csv) {
   const insertStatements = [];
   const records = parse(csv);
-  records.forEach(([record]) => {
-    insertStatements.push(createInsertStatement(record));
+  records.forEach(([record, releaseDate]) => {
+    insertStatements.push(createInsertStatement(record, releaseDate));
   });
   return insertStatements;
 }
