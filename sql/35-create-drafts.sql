@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS archives;
+DROP TABLE IF EXISTS drafts;
+
+CREATE TABLE drafts (
+  draft VARCHAR(200) PRIMARY KEY,
+  occurance DATE NOT NULL
+);
+

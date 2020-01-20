@@ -11,3 +11,5 @@ CREATE TABLE archives (
 
 ALTER TABLE archives
   ADD FOREIGN KEY (card) REFERENCES oracle(card);
+ALTER TABLE archives
+  ADD FOREIGN KEY (draft) REFERENCES drafts(draft);

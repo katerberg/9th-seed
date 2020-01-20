@@ -18,7 +18,8 @@ connection.on('error', () => {
   console.error('something went terribly wrong connecting to mysql');
 });
 
-const INSERT_TEMPLATE = 'INSERT INTO archives (player, card, draft, pick) VALUES ("{player}", "{card}", "{draft}", {pick})';
+const INSERT_DRAFT_TEMPLATE = 'INSERT INTO drafts (draft, occurance) VALUES ("{draft}", "{occurance}")';
+const INSERT_ARCHIVE_TEMPLATE = 'INSERT INTO archives (player, card, draft, pick) VALUES ("{player}", "{card}", "{draft}", {pick})';
 
 function getNumberOfPlayers(records) {
   return records[0].length - 1;
@@ -30,12 +31,18 @@ function getInsertsFromCsv(csv, draftName) {
   const numberOfPlayers = getNumberOfPlayers(records);
   console.debug(`${draftName} has ${numberOfPlayers} players`);
   records.forEach((record) => {
+    if (record[0].match(/^Date$/)) {
+        insertStatements.push(INSERT_DRAFT_TEMPLATE
+          .replace('{draft}', draftName)
+          .replace('{occurance}', record[1])
+        );
+    }
     if (record[0].match(/^\d+$/)) {
       const round = Number.parseInt(record[0], 10);
       const numberOfPicksBeforeRound = numberOfPlayers * (round - 1);
       for (let i = 1; i <= numberOfPlayers; i++) { // eslint-disable-line no-plusplus
         const pickNumber = numberOfPicksBeforeRound + (round % 2 === 0 ? numberOfPlayers + 1 - i : i);
-        insertStatements.push(INSERT_TEMPLATE
+        insertStatements.push(INSERT_ARCHIVE_TEMPLATE
           .replace('{player}', records[0][i])
           .replace('{card}', record[i].toLowerCase())
           .replace('{pick}', pickNumber)
@@ -55,6 +62,10 @@ function addDrafts(drafts, number, insertStatements) {
     const inserts = getInsertsFromCsv(draftCsv, drafts[number].split('.')[0]);
     return addDrafts(drafts, number + 1, [...insertStatements, ...inserts]);
   });
+}
+
+function getDraftInsert(draft, date) {
+  return 'DELETE FROM archives';
 }
 
 function runScripts(scripts, number) {

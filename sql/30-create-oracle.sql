@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS archives;
+DROP TABLE IF EXISTS drafts;
 DROP TABLE IF EXISTS oracle;
 
 CREATE TABLE oracle (
