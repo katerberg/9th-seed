@@ -32,10 +32,10 @@ function getInsertsFromCsv(csv, draftName) {
   console.debug(`${draftName} has ${numberOfPlayers} players`);
   records.forEach((record) => {
     if (record[0].match(/^Date$/)) {
-        insertStatements.push(INSERT_DRAFT_TEMPLATE
-          .replace('{draft}', draftName)
-          .replace('{occurance}', record[1])
-        );
+      insertStatements.push(INSERT_DRAFT_TEMPLATE
+        .replace('{draft}', draftName)
+        .replace('{occurance}', record[1])
+      );
     }
     if (record[0].match(/^\d+$/)) {
       const round = Number.parseInt(record[0], 10);
@@ -62,10 +62,6 @@ function addDrafts(drafts, number, insertStatements) {
     const inserts = getInsertsFromCsv(draftCsv, drafts[number].split('.')[0]);
     return addDrafts(drafts, number + 1, [...insertStatements, ...inserts]);
   });
-}
-
-function getDraftInsert(draft, date) {
-  return 'DELETE FROM archives';
 }
 
 function runScripts(scripts, number) {
