@@ -6,7 +6,8 @@ const archivesDao = {
       'SELECT count(drafts.draft) as numberOfDrafts ' +
       'FROM drafts ' +
       'LEFT JOIN oracle on oracle.releaseDate BETWEEN "1000-01-01" AND drafts.occurance ' +
-      'WHERE oracle.card LIKE ?;',
+      'WHERE oracle.card LIKE ? ' +
+      'GROUP BY oracle.card;',
       [`${name}%`],
       (err, result) => {
         if (err) {
