@@ -7,7 +7,8 @@ const archivesDao = {
       'FROM drafts ' +
       'LEFT JOIN oracle on oracle.releaseDate BETWEEN "1000-01-01" AND drafts.occurance ' +
       'WHERE oracle.card LIKE ? ' +
-      'GROUP BY oracle.card;',
+      'GROUP BY oracle.card ' +
+      'ORDER BY oracle.card asc;',
       [`${name}%`],
       (err, result) => {
         if (err) {
@@ -23,7 +24,8 @@ const archivesDao = {
       'SELECT card, avg(pick) as average, count(*) as numberTaken ' +
       'FROM archives ' +
       'WHERE card LIKE ? ' +
-      'GROUP BY card;',
+      'GROUP BY card ' +
+      'ORDER BY card asc;',
       [`${name}%`],
       (err, result) => {
         if (err) {
