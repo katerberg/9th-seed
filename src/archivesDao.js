@@ -16,7 +16,7 @@ const archivesDao = {
           return rej(err);
         }
         res(result);
-      }
+      },
     );
   }),
   getStatsForCard: async(name) => new Promise((res, rej) => {
@@ -33,7 +33,7 @@ const archivesDao = {
           return rej(err);
         }
         res(result);
-      }
+      },
     );
   }),
 };

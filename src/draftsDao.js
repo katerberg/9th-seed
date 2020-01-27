@@ -10,7 +10,7 @@ const draftsDao = {
           return rej(err);
         }
         res(result);
-      }
+      },
     );
   }),
 };

@@ -11,7 +11,7 @@ const oracleDao = {
           return rej(err);
         }
         res(result.length);
-      }
+      },
     );
   }),
 };

@@ -8,7 +8,7 @@ async function getVoteResults(category) {
   const message = result.reduce(
     (a, c) =>
       `${a}\r\n${c.votes} vote${c.votes > 1 ? 's' : ''} for ${c.candidate}.`,
-    ''
+    '',
   );
   return message ? message : 'No votes yet!';
 }

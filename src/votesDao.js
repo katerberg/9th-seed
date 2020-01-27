@@ -11,7 +11,7 @@ const votesDao = {
           return rej(err);
         }
         res(result);
-      }
+      },
     );
   }),
 
@@ -28,7 +28,7 @@ const votesDao = {
           throw new Error(`More than one user ${username}`);
         }
         res(result[0].voteCount);
-      }
+      },
     );
   }),
 
@@ -40,14 +40,14 @@ const votesDao = {
         if (err) {
           console.error(err);
           console.error(
-            `Something went wrong inserting vote for ${username}`
+            `Something went wrong inserting vote for ${username}`,
           );
           rej(err);
         } else {
           console.log('Win vote inserted');
           res(vote);
         }
-      }
+      },
     );
   }),
 
@@ -64,7 +64,7 @@ const votesDao = {
           console.log('Vote updated');
           res(vote);
         }
-      }
+      },
     );
   }),
 
@@ -95,7 +95,7 @@ const votesDao = {
         } else {
           res(result);
         }
-      }
+      },
     );
   }),
 
@@ -110,7 +110,7 @@ const votesDao = {
         } else {
           res();
         }
-      }
+      },
     );
   }),
 };

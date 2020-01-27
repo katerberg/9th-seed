@@ -34,7 +34,7 @@ function getInsertsFromCsv(csv, draftName) {
     if (record[0].match(/^Date$/)) {
       insertStatements.push(INSERT_DRAFT_TEMPLATE
         .replace('{draft}', draftName)
-        .replace('{occurance}', record[1])
+        .replace('{occurance}', record[1]),
       );
     }
     if (record[0].match(/^\d+$/)) {
@@ -46,7 +46,7 @@ function getInsertsFromCsv(csv, draftName) {
           .replace('{player}', records[0][i])
           .replace('{card}', record[i].toLowerCase())
           .replace('{pick}', pickNumber)
-          .replace('{draft}', draftName)
+          .replace('{draft}', draftName),
         );
       }
     }
