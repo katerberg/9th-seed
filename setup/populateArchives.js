@@ -26,7 +26,7 @@ function getNumberOfPlayers(records) {
 }
 
 function getInsertsFromCsv(csv, draftName) {
-  const insertStatements = [];
+  const insertStatements = ['DELETE from archives;', 'DELETE FROM drafts;'];
   const records = parse(csv);
   const numberOfPlayers = getNumberOfPlayers(records);
   console.debug(`${draftName} has ${numberOfPlayers} players`);
