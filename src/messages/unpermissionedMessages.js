@@ -45,6 +45,7 @@ function getUnpermissionedResponse(dirtyMessage, user) {
     message === '!vrd1' ||
     message === '!vrd2' ||
     message === '!vrd3' ||
+    message === '!vrd4' ||
     message === '!archives'
   ) {
     return 'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=945529176';
@@ -56,9 +57,9 @@ function getUnpermissionedResponse(dirtyMessage, user) {
     message === '!standings' ||
     message === '!challonge'
   ) {
-    return 'Standings are visible at https://challonge.com/stlvrd4';
+    return 'Standings are visible at https://challonge.com/stlvrd5';
   } else if (
-    message === '!vrd4' ||
+    message === '!vrd5' ||
     message === '!sheet' ||
     message === '!picks' ||
     message === '!decks' ||
@@ -67,7 +68,7 @@ function getUnpermissionedResponse(dirtyMessage, user) {
     message === '!decklists' ||
     message === '!draft'
   ) {
-    return 'Spreadsheet with draft picks is at https://docs.google.com/spreadsheets/d/1wUe9ph5lKs8eDoDw9G_BkOfCiDUviVpVOVyrUol5WgI/edit?usp=sharing';
+    return 'Spreadsheet with draft picks is at https://bit.ly/37YbewZ';
   } else if (message === '!youtube') {
     return 'Find our VODs on https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA';
   } else if (message === '!gethelp') {
