@@ -14,7 +14,7 @@ describe('Utils', () => {
 
   describe('isPermissioned()', () => {
     it('is true for owner of channel', () => {
-      expect(isPermissioned({username: 'stlvrd'})).to.be.true;
+      expect(isPermissioned({username: process.env.CHANNEL || 'stlotusmtg'})).to.be.true;
     });
 
     it('is true for mod', () => {

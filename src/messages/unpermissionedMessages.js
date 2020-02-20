@@ -38,7 +38,7 @@ function getUnpermissionedResponse(dirtyMessage, user) {
     return;
   }
   if (message === '!twitter') {
-    return 'Want to argue about VRD? https://twitter.com/stlvrd';
+    return 'Want to argue about VRD? https://twitter.com/stlotusmtg';
   } else if (message === '!salt') {
     return 'PJSalt PJSalt PJSalt PJSalt';
   } else if (
@@ -46,6 +46,7 @@ function getUnpermissionedResponse(dirtyMessage, user) {
     message === '!vrd2' ||
     message === '!vrd3' ||
     message === '!vrd4' ||
+    message === '!vrd5' ||
     message === '!archives'
   ) {
     return 'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=945529176';
@@ -57,9 +58,9 @@ function getUnpermissionedResponse(dirtyMessage, user) {
     message === '!standings' ||
     message === '!challonge'
   ) {
-    return 'Standings are visible at https://challonge.com/stlvrd5';
+    return 'Standings are visible at https://challonge.com/stlvrd6';
   } else if (
-    message === '!vrd5' ||
+    message === '!vrd6' ||
     message === '!sheet' ||
     message === '!picks' ||
     message === '!decks' ||

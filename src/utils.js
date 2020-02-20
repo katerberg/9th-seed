@@ -4,7 +4,7 @@ function getCommandParams(message) {
 }
 
 function isPermissioned(user) {
-  const isOwner = user.username === 'stlvrd';
+  const isOwner = user.username === (process.env.CHANNEL || 'stlotusmtg');
   return user.mod || isOwner;
 }
 

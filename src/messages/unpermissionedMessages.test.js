@@ -35,14 +35,14 @@ describe('Unpermissioned Messages', () => {
   });
 
   it('links to archives', () => {
-    ['!vrd1', '!vrd2', '!vrd3', '!archives'].forEach(item => {
+    ['!vrd1', '!vrd2', '!vrd3', '!vrd4', '!vrd5', '!archives'].forEach(item => {
       expect(getUnpermissionedResponse(item)).to.have.string('1AdrhW', `${item} failed to get spreadsheet`);
     });
   });
 
   it('links to current draft', () => {
-    ['!vrd4', '!decks', '!decklists', '!draft', '!picks', '!sheet'].forEach(item => {
-      expect(getUnpermissionedResponse(item)).to.have.string('yrUo', `${item} failed to get spreadsheet`);
+    ['!vrd6', '!decks', '!decklists', '!draft', '!picks', '!sheet'].forEach(item => {
+      expect(getUnpermissionedResponse(item)).to.have.string('Spreadsheet with draft picks', `${item} failed to get spreadsheet`);
     });
   });
 
@@ -58,13 +58,13 @@ describe('Unpermissioned Messages', () => {
 
   describe('!winning', () => {
     beforeEach(() => {
-      getModResponse('!clearVotes', 'stlvrd');
+      getModResponse('!clearVotes', process.env.CHANNEL || 'stlotusmtg');
     });
 
     it('votes for a valid player', async() => {
-      const result = await getUnpermissionedResponse('!winning jeff', {username: 'foobar'});
+      const result = await getUnpermissionedResponse('!winning elaine', {username: 'foobar'});
 
-      expect(result).to.have.string('1 vote for jeff');
+      expect(result).to.have.string('1 vote for elaine');
     });
 
     it('gives error messages for an invalid player', async() => {
@@ -91,7 +91,7 @@ describe('Unpermissioned Messages', () => {
     it('does fuzzy matching for a partial card', async() => {
       const result = await getUnpermissionedResponse('!pick Lim-D');
 
-      expect(result).to.have.string('"Lim-D" doesn\'t exist. lim-dûl\'s vault has');
+      expect(result).to.have.string('"Lim-D" doesn\'t exist. lim-dul\'s vault has');
     });
 
     it('does fuzzy matching for an unknown card', async() => {
