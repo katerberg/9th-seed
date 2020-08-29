@@ -35,6 +35,8 @@ function getInsertsFromArchives() {
     createInsertStatement('hide/seek', '2006-05-05'),
     createInsertStatement('breaking/entering', '2013-04-27'),
     createInsertStatement('wear/tear', '2013-04-27'),
+    createInsertStatement('commit/memory', '2017-04-28'),
+    createInsertStatement('expansion/explosion', '2018-10-05'),
     createInsertStatement('beck/call', '2013-04-27'),
     createInsertStatement('crime/punishment', '2006-05-05'),
     createInsertStatement('wax/wane', '2000-10-02'),
