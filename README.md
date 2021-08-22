@@ -6,6 +6,8 @@ A twitch bot designed to assist viewers of the [St Louis Vintage Rotisserie Draf
 
 You will need `yarn` and `mysql` installed.
 
+You will need a database called `stlvrd` created in mysql which is accessibly by your user.
+
 ## Populating the Database
 
 To get data into the database (which assists or is required for many of the features of 9th Seed, run
