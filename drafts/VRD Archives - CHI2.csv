@@ -5,7 +5,7 @@ Wins,2,4,4,4,0,2,0,1
 Losses,3,2,1,1,5,3,0,0
 1,Black Lotus,Ancestral Recall,Mox Sapphire,Time Vault,Mox Ruby,Mana Crypt,Mox Emerald,Mox Pearl
 2,"Karn, the Great Creator",Snapcaster Mage,Force of Will,Tinker,Time Walk,Mishra's Workshop,Mox Jet,Sol Ring
-3,Mana Vault,Force of Negation,Library of Alexandria,"Jace, the Mind Sculptor ",Timetwister,Ancient Tomb,Mox Diamond,Strip Mine
+3,Mana Vault,Force of Negation,Library of Alexandria,"Jace, the Mind Sculptor",Timetwister,Ancient Tomb,Mox Diamond,Strip Mine
 4,Demonic Tutor,Gitaxian Probe,"Oko, Thief of Crowns",Mana Drain,Lion's Eye Diamond,Tolarian Academy,Chrome Mox,Wasteland
 5,Vampiric Tutor,Misty Rainforest,"Narset, Parter of Veils",Ponder,Brainstorm,Mox Opal,Wrenn and Six,Phyrexian Revoker
 6,Arcane Savant,Flooded Strand,Swords to Plowshares,Preordain ,Lotus Petal,Grim Monolith,Imperial Seal,Eldrazi Temple
@@ -20,7 +20,7 @@ Losses,3,2,1,1,5,3,0,0
 15,Defense Grid,Mystic Sanctuary,Fact or Fiction,Miscalculation,Faithless Looting,Simian Spirit Guide,Windswept Heath,Elvish Spirit Guide
 16,Bayou,Treasure Cruise,Birds of Paradise,Ancestral Vision,Runaway Steam-kin,Goblin Welder,Arid Mesa,Cavern of Souls
 17,Veil of Summer,Gush,Savannah,Force Spike,Desperate Ritual,Wheel of Fortune,Taiga,Skullclamp
-18,Necropotence,Mystical Dispute,Collector Ouphe,Mystic Confluence,Burning-Tree Emissary,Channel,Overgrown Tomb,Adarkar Wastes
+18,Necropotence,Mystical Dispute,Collector Ouphe,Mystic Confluence ,Burning-Tree Emissary,Channel,Overgrown Tomb,Adarkar Wastes
 19,Bolas's Citadel,Memory Lapse,Ethersworn Canonist,Sower of Temptation ,Experimental Frenzy,Basalt Monolith,Stomping Ground,Vryn Wingmare
 20,Spellseeker,Ceremonious Rejection,Glen Elendra Archmage,Isochron Scepter ,Seething Song,Orb of Dreams,"Oboro, Palace in the Clouds",Glowrider
 21,Hurkyl's Recall,Flusterstorm,Path to Exile,Man-o'-War,Culling the Weak,Ancient Stirrings,Zuran Orb,Smuggler's Copter
