@@ -11,15 +11,15 @@ Date,2016-07-22,,,,,,,
 9,True-name Nemesis,Trinket Mage,Spellskite,Show and Tell,Wheel of Fortune,Counterspell,Vendilion Clique,Mox Opal
 10,"Thada Adel, Acquisitor",Transmute Artifact,Mana Leak,Liliana of the Veil,Glimpse the Unthinkable,Brainstorm,Tundra,City of Traitors
 11,Treasure Cruise,Lotus Petal,Crop Rotation,Negate,Hedron Crab,Miscalculation,Aven Mindcensor,Timetwister
-12,Steel Sabotage,Dig Through Time,Pact of Negation,"Jace, Vryn's Prodigy",Archive Trap,Sensei's Divining Top,Prohibit,Dack Fayden
+12,Steel Sabotage,Dig Through Time,Pact of Negation,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Archive Trap,Sensei's Divining Top,Prohibit,Dack Fayden
 13,Disrupting Shoal,"Emrakul, the Aeons Torn",Null Rod,Duress,Vision Charm,Personal Tutor,Remand,Day's Undoing
 14,Rishadan Port,Tezzeret the Seeker,Noble Hierarch,Delay,Tome Scour,Portent,Memory Lapse,Ethersworn Canonist
 15,Fastbond,Channel,Gaea's Blessing,Hymn to Tourach,Shriekhorn,Cascade Bluffs,Umezawa's Jitte,Enlightened Tutor
-16,Sylvan Library,Gaea's Cradle,Pendelhaven,Hurkyl's Recall,Startled Awake,Imperial Recruiter,Ancestral Vision,Trinisphere
-17,Deprive,Yavimaya Coast,Blighted Agent,Griselbrand,Breaking/Entering,Goblin Guide,Maze of Ith,"Kataki, War's Wage"
+16,Sylvan Library,Gaea's Cradle,Pendelhaven,Hurkyl's Recall,Startled Awake // Persistent Nightmare,Imperial Recruiter,Ancestral Vision,Trinisphere
+17,Deprive,Yavimaya Coast,Blighted Agent,Griselbrand,breaking // entering,Goblin Guide,Maze of Ith,"Kataki, War's Wage"
 18,Winter Orb,Dark Depths,Rancor,Buried Alive,Mesmeric Orb,Goblin Rabblemaster,Logic Knot,Tangle Wire
 19,Annul,Thespian's Stage,Tectonic Edge,"Iona, Shield of Emeria",Dream Twist,Lightning Bolt,Karakas,Sphere of Resistance
-20,Trygon Predator,Leyline of Sanctity,Glistener Elf,Pithing Needle,Increasing Confusion,Grim Lavamancer,Thing in the Ice,Thorn of Amethyst
+20,Trygon Predator,Leyline of Sanctity,Glistener Elf,Pithing Needle,Increasing Confusion,Grim Lavamancer,Thing in The Ice // Awoken Horror,Thorn of Amethyst
 21,Gush,Flooded Grove,Blight Mamba,Exhume,Visions of Beyond,Grafdigger's Cage,Spell Queller,Lodestone Golem
 22,Hinterland Harbor,Birds of Paradise,Nature's Claim,Reanimate,"Jace, Memory Adept",Deceiver Exarch,Engineered Explosives,Containment Priest
 23,Sleight of Hand,Cavern of Souls,Slaughter Pact,Mind Twist,"Ashiok, Nightmare Weaver",Pestermite,Aegis of the Gods,Boros Signet
@@ -31,8 +31,8 @@ Date,2016-07-22,,,,,,,
 29,Dismember,Scavenging Ooze,Rot Wolf,Toxic Deluge,Damnation,Smash to Smithereens,Gifts Ungiven,"Kozilek, Butcher of Truth"
 30,Boomerang,Curfew,Berserk,Bazaar of BaghDAD,Relic of Progenitus,Muddle the Mixture,Elixir of Immortality,Pyroclasm
 31,Cryptic Command,Primeval Titan,Invigorate,Inkwell Leviathan,Nihil Spellbomb,Counterbalance,Isochron Scepter,Council's Judgment
-32,Delver of Secrets,Fabricate,Vines of Vastwood,Chancellor of the Annex,Leyline of the Void,Standstill,Orim's Chant,Swords to Plowshares
-33,Quirion Dryad,Llanowar Elves,Groundswell,Life/Death,Sphinx's Tutelage,Looter Il-Kor,"Venser, Shaper Savant",Crucible of Worlds
+32,Delver of Secrets // Insectile Aberration,Fabricate,Vines of Vastwood,Chancellor of the Annex,Leyline of the Void,Standstill,Orim's Chant,Swords to Plowshares
+33,Quirion Dryad,Llanowar Elves,Groundswell,life // death,Sphinx's Tutelage,Looter Il-Kor,"Venser, Shaper Savant",Crucible of Worlds
 34,Temporal Spring,Fyndhorn Elves,Might of Old Krosa,Chrome Mox,Reins of Power,Chain Lightning,Path to Exile,"Daretti, Scrap Savant"
 35,Tarmogoyf,Natural Order,Simic Charm,Necromancy,Telemin Performance,Hellrider,Hallowed Fountain,Wildfire
 36,The Tabernacle at Pendrell Vale,Kiora's Follower,Distortion Strike,Empyrial Archangel,Riddlekeeper,Firedrinker Satyr,Mystic Gate,Burning of Xinye
