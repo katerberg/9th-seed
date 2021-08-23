@@ -22,7 +22,7 @@ function getEarliestReleaseDate(allSets, setsForCard) {
 
 fs.readFileAsync(`${process.cwd()}/setup/SetList.json`, 'utf-8').then((setListText) => {
   const sets = {};
-  JSON.parse(setListText).forEach(set => {
+  JSON.parse(setListText).data.forEach(set => {
     sets[set.code] = {
       name: set.name,
       releaseDate: set.releaseDate,
@@ -30,9 +30,9 @@ fs.readFileAsync(`${process.cwd()}/setup/SetList.json`, 'utf-8').then((setListTe
   });
 
   fs.readFileAsync(`${process.cwd()}/setup/VintageCards.json`, 'utf-8').then((textFile) => {
-    const cardJson = JSON.parse(textFile);
+    const cardJson = JSON.parse(textFile).data;
     const cards = Object.keys(cardJson);
-    stringifyAsync(cards.map(c => [c, getEarliestReleaseDate(sets, cardJson[c].printings)])).then((output) => {
+    stringifyAsync(cards.map(c => [c, getEarliestReleaseDate(sets, cardJson[c][0].printings)])).then((output) => {
       fs.writeFile(`${process.cwd()}/setup/AllCards.csv`, output, (err) => {
         if (err) {
           throw err;
@@ -43,7 +43,7 @@ fs.readFileAsync(`${process.cwd()}/setup/SetList.json`, 'utf-8').then((setListTe
       console.log(e);
     });
   }).catch((e) => {
-    console.log('There was an error reading vintagecards.json');
+    console.log('There was an error reading VintageCards.json');
     console.log(e);
   });
 }).catch((e) => {
