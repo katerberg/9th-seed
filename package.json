@@ -19,7 +19,7 @@
     "db:local": "yarn credsCheck && yarn db:create && yarn db:fetchCardList && yarn db:populateOracle && yarn db:populateArchives",
     "db:create": "yarn credsCheck && node setup/dbCreate.js",
     "db:fetchSetList": "curl https://mtgjson.com/api/v5/SetList.json > setup/SetList.json",
-    "db:fetchCardList": "yarn db:fetchSetList && curl https://mtgjson.com/api/v5/VintageAtomic.json > setup/VintageCards.json && node setup/transformJson.js",
+    "db:fetchCardList": "yarn db:fetchSetList && curl https://mtgjson.com/api/v5/AtomicCards.json > setup/VintageCards.json && node setup/transformJson.js",
     "db:populateOracle": "yarn credsCheck && node setup/populateOracle.js",
     "db:populateArchives": "yarn credsCheck && node setup/populateArchives.js",
     "start": "node app.js",
