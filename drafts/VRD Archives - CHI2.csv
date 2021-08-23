@@ -8,23 +8,23 @@ Losses,3,2,1,1,5,3,0,0
 3,Mana Vault,Force of Negation,Library of Alexandria,"Jace, the Mind Sculptor",Timetwister,Ancient Tomb,Mox Diamond,Strip Mine
 4,Demonic Tutor,Gitaxian Probe,"Oko, Thief of Crowns",Mana Drain,Lion's Eye Diamond,Tolarian Academy,Chrome Mox,Wasteland
 5,Vampiric Tutor,Misty Rainforest,"Narset, Parter of Veils",Ponder,Brainstorm,Mox Opal,Wrenn and Six,Phyrexian Revoker
-6,Arcane Savant,Flooded Strand,Swords to Plowshares,Preordain ,Lotus Petal,Grim Monolith,Imperial Seal,Eldrazi Temple
+6,Arcane Savant,Flooded Strand,Swords to Plowshares,Preordain,Lotus Petal,Grim Monolith,Imperial Seal,Eldrazi Temple
 7,Polluted Delta,Scalding Tarn,Noble Hierarch,Daze,Volcanic Island,City of Traitors,Crop Rotation,"Thalia, Guardian of Thraben"
-8,Yawgmoth's Will,Mental Misstep,Tropical Island,Sensei's Divining Top,Underground Sea,Trinisphere,Verdant Catacombs ,Thought-Knot Seer
-9,Dark Ritual,Brazen Borrower,Tundra,Dig Through Time,Badlands,Chalice of the Void,Crucible of Worlds,Stoneforge Mystic
+8,Yawgmoth's Will,Mental Misstep,Tropical Island,Sensei's Divining Top,Underground Sea,Trinisphere,Verdant Catacombs,Thought-Knot Seer
+9,Dark Ritual,Brazen Borrower // Petty Theft,Tundra,Dig Through Time,Badlands,Chalice of the Void,Crucible of Worlds,Stoneforge Mystic
 10,Thoughtseize,Archmage's Charm,Monastery Mentor,Counterspell,Bloodstained Mire,Lodestone Golem,Fastbond,Thorn of Amethyst
 11,Duress,Cryptic Command,"Teferi, Time Raveler",Spell Pierce,Rite of Flame,Sphere of Resistance,Wooded Foothills,Reality Smasher
 12,Wishclaw Talisman,Remand,Mana Leak,True-Name Nemesis,Cabal Ritual,Engineered Explosives,Blood Crypt,Phyrexian Metamorph
 13,Dark Petition,Negate,Vendilion Clique,"Venser, Shaper Savant",Manamorphose,Walking Ballista,Once Upon a Time,Eldrazi Displacer
-14,Mystical Tutor,Breeding Pool,Mind Twist,Vedalken Shackles ,Helm of Awakening,Mystic Forge,Marsh Flats,Containment Priest
+14,Mystical Tutor,Breeding Pool,Mind Twist,Vedalken Shackles,Helm of Awakening,Mystic Forge,Marsh Flats,Containment Priest
 15,Defense Grid,Mystic Sanctuary,Fact or Fiction,Miscalculation,Faithless Looting,Simian Spirit Guide,Windswept Heath,Elvish Spirit Guide
 16,Bayou,Treasure Cruise,Birds of Paradise,Ancestral Vision,Runaway Steam-kin,Goblin Welder,Arid Mesa,Cavern of Souls
 17,Veil of Summer,Gush,Savannah,Force Spike,Desperate Ritual,Wheel of Fortune,Taiga,Skullclamp
-18,Necropotence,Mystical Dispute,Collector Ouphe,Mystic Confluence ,Burning-Tree Emissary,Channel,Overgrown Tomb,Adarkar Wastes
-19,Bolas's Citadel,Memory Lapse,Ethersworn Canonist,Sower of Temptation ,Experimental Frenzy,Basalt Monolith,Stomping Ground,Vryn Wingmare
-20,Spellseeker,Ceremonious Rejection,Glen Elendra Archmage,Isochron Scepter ,Seething Song,Orb of Dreams,"Oboro, Palace in the Clouds",Glowrider
+18,Necropotence,Mystical Dispute,Collector Ouphe,Mystic Confluence,Burning-Tree Emissary,Channel,Overgrown Tomb,Adarkar Wastes
+19,Bolas's Citadel,Memory Lapse,Ethersworn Canonist,Sower of Temptation,Experimental Frenzy,Basalt Monolith,Stomping Ground,Vryn Wingmare
+20,Spellseeker,Ceremonious Rejection,Glen Elendra Archmage,Isochron Scepter,Seething Song,Orb of Dreams,"Oboro, Palace in the Clouds",Glowrider
 21,Hurkyl's Recall,Flusterstorm,Path to Exile,Man-o'-War,Culling the Weak,Ancient Stirrings,Zuran Orb,Smuggler's Copter
-22,Bubbling Muck,"Jace, Vryn's Prodigy",Prismatic Vista,Thirst for Knowledge,Ornithopter,Thran Dynamo,Amulet of Vigor,Brushland
+22,Bubbling Muck,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Prismatic Vista,Thirst for Knowledge,Ornithopter,Thran Dynamo,Amulet of Vigor,Brushland
 23,Rain of Filth,Aether Vial,Dovin's Veto,Splinter Twin,Gaea's Cradle,Pyroblast,Sylvan Scrying,"Thalia, Heretic Cathar"
 24,Watery Grave,Nature's Claim,Carnage Tyrant,Arcum's Astrolabe,Memnite,Red Elemental Blast,Thespian's Stage,Vesuva
 25,Darkslick Shores,Eternal Witness,"Thrun, the Last Troll",Steam Vents,Gemstone Caverns,Metalworker,Expedition Map,Stony Silence
@@ -41,7 +41,7 @@ Losses,3,2,1,1,5,3,0,0
 36,Dread of Night,Mystic Snake,Restoration Angel,Deceiver Exarch,Crimson Kobolds,Spire of Industry,Golgari Rot Farm,Spirit of the Labyrinth
 37,Rushing River,Frilled Mystic,Lumbering Falls,Voltaic Key,Viscera Seer,Inventors' Fair,Maze of Ith,Batterskull
 38,Doomsday,Waterlogged Grove,Nimble Obstructionist,Skred,Gravecrawler,Crystal Vein,"Ob Nixilis, the Fallen",Hushwing Gryff
-39,"Jace, Wielder of Mysteries",Annul,Settle the Wreckage ,Castle Vantress,"Tibalt, the Fiend-Blooded",Everflowing Chalice,Eternity Vessel,Shefet Dunes
+39,"Jace, Wielder of Mysteries",Annul,Settle the Wreckage,Castle Vantress,"Tibalt, the Fiend-Blooded",Everflowing Chalice,Eternity Vessel,Shefet Dunes
 40,Sunken Hollow,Botanical Sanctum,Yavimaya Coast,Phantasmal Image,Brain Freeze,Blast Zone,Retreat to Hagra,Aegis of the Gods
 41,Lake of the Dead,Faerie Seer,Llanowar Elves,Flame Slash,Skirk Prospector,Winter Orb,Horn of Greed,Sword of Body and Mind
 42,Unmask,Pongify,Gaddock Teeg,Tezzeret the Seeker,Carrion Feeder,Precursor Golem,Cosi's Ravager,Rugged Prairie
