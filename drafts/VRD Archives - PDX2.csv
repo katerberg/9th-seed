@@ -4,7 +4,7 @@ Wins,,,,,,,,6
 Losses,,,,,,,,1
 1,Sol Ring,Ancestral Recall,Black Lotus,Mox Sapphire,Mox Jet,Mana Crypt,Mox Ruby,Mox Pearl
 2,Time Walk,Tinker,Library of Alexandria,Time Vault,Hymn to Tourach,Grim Monolith,Mana Vault,Mox Emerald
-3,"Jace, Vryn's Prodigy",Blightsteel Colossus,Demonic Tutor,Mana Drain,Vampiric Tutor,Voltaic Key,"Emrakul, the Aeons Torn",Mox Diamond
+3,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Blightsteel Colossus,Demonic Tutor,Mana Drain,Vampiric Tutor,Voltaic Key,"Emrakul, the Aeons Torn",Mox Diamond
 4,Dack Fayden,"Leovold, Emissary of Trest",Enlightened Tutor,"Jace, the Mind Sculptor",Liliana of the Veil,Metalworker,Sneak Attack,Lion's Eye Diamond
 5,Glen Elendra Archmage,Snapcaster Mage,Oath of Druids,Force of Will,Thoughtseize,Painter's Servant,Volcanic Island,Channel
 6,Ponder,Natural Order,Duress,Counterspell,Inquisition of Kozilek,Grindstone,Griselbrand,"Kozilek, Butcher of Truth"
@@ -29,7 +29,7 @@ Losses,,,,,,,,1
 25,Young Pyromancer,Acidic Slime,Leyline of the Void,Unburial Rites,Bloodghast,Phyrexian Revoker,Into the Roil,Flooded Grove
 26,Humility,Reclamation Sage,Forbidden Orchard,Mystic Gate,Phyrexian Obliterator,Phyrexian Metamorph,Pestermite,Mycosynth Lattice
 27,Prairie Stream,Deranged Hermit,Tidespout Tyrant,Adarkar Wastes,Cabal Therapy,Spire of Industry,Izzet Signet,Seat of the Synod
-28,Detention Sphere,Lotus Cobra,Idyllic Tutor,Search for Azcanta,Dragonskull Summit,Glimmervoid,Hurkyl's Recall,Botanical Sanctum
+28,Detention Sphere,Lotus Cobra,Idyllic Tutor,"Search for Azcanta // Azcanta, the Sunken Ruin",Dragonskull Summit,Glimmervoid,Hurkyl's Recall,Botanical Sanctum
 29,Ensnaring Bridge,Oracle of Mul Daya,Oblivion Ring,Karakas,Cabal Coffers,Great Furnace,Repeal,Gemstone Mine
 30,Plateau,Breeding Pool,Words of Waste,Shelldock Isle,Torment of Hailfire,Vault of Whispers,Zealous Conscripts,Yavimaya Coast
 31,Oath of Teferi,Carnage Tyrant,Ashen Rider,Celestial Colonnade,Blackcleave Cliffs,Goblin Welder,Splinter Twin,Trinket Mage
@@ -38,7 +38,7 @@ Losses,,,,,,,,1
 34,Bad River,"Boseiju, Who Shelters All",Concordant Crossroads,Forbid,Victim of Night,Ensoul Artifact,Draining Whelk,Tree of Tales
 35,Grasslands,Windfall,Aura of Silence,Opt,Necromancy,Lodestone Golem,Red Elemental Blast,Fragmentize
 36,Seachrome Coast,Living Death,Vindicate,Peek,Puppeteer Clique,"Tezzeret, Artifice Master",Pyroblast,Nature's Claim
-37,Wear/Tear,Ramunap Excavator,Sandsteppe Citadel,Boomerang,Pack Rat ,Scrap Mastery,Shivan Reef ,Bring to Light
+37,wear // tear,Ramunap Excavator,Sandsteppe Citadel,Boomerang,Pack Rat,Scrap Mastery,Shivan Reef,Bring to Light
 38,Disenchant,"Thrun, the Last Troll",Maelstrom Pulse,Energy Flux,Gray Merchant of Asphodel,Krark-Clan Ironworks,Izzet Charm,Codex Shredder
 39,Sacred Foundry,Manglehorn,City of Solitude,Talisman of Progress,Divest,Mana Confluence,Show and Tell,Autumn's Veil
 40,Treasure Cruise,Survival of the Fittest,Phyrexian Arena,Wrath of God,Sadistic Sacrament,City of Brass,Worldspine Wurm,Aether Spellbomb

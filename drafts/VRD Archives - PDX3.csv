@@ -23,7 +23,7 @@ Losses,2,5,4,3,5,2,2,3
 19,Chain Lightning,Darkslick Shores,"Jace, the mind sculptor",Duress,cyclonic rift,"Teferi, Time Raveler",Mystical Tutor,"Nissa, worldwaker"
 20,"Kiki-Jiki, Mirror Breaker",Prismatic Vista,fact or fiction,Enlightened Tutor,bribery,"Emrakul, the Aeons Torn",Counterspell,"Garruk, Caller of beasts"
 21,Pestermite,Phyrexian Metamorph,exploration,Inquisition of Kozilek,"padeem, consul of innovation",Spellskite,Sneak Attack,coiling oracle
-22,Splinter Twin,Spirebluff Canal,explore,Leyline of the Void,animation module,Ancient Stirrings,Mana Leak,fire/ice
+22,Splinter Twin,Spirebluff Canal,explore,Leyline of the Void,animation module,Ancient Stirrings,Mana Leak,fire // ice
 23,Deceiver Exarch,Ensnaring Bridge,life from the loam,Rest in Peace,cryptic command,Coercive portal,Cascade Bluffs,fire-lit thicket
 24,Imperial Recruiter,Vault of Whispers,Containment Priest,Dark Ritual,anguished unmaking,Mana confluence,Through the Breach,flooded grove
 25,Frantic Search,Tainted Pact,nature's chant,Nature's Claim,condescend,City of brass,Blood Crypt,reclamation sage
@@ -34,8 +34,8 @@ Losses,2,5,4,3,5,2,2,3
 30,Izzet Signet,transmute artifact,Crucible of worlds,Fragmentize,etched champion,Academy Ruins,Simian Spirit Guide,tarmogoyf
 31,Mission Briefing,underground river,Chart a course,Vindicate,mindslaver,Glimmervoid,Shimmer of Possibility,maelstrom wanderer
 32,Red Elemental Blast,blackcleave cliffs,growth spiral,Pack Rat,"Sai, master thopterist",City of Traitors,Worldspine Wurm,lightning strike
-33,Pyroblast,nullstone gargoyle,winding way,Silent Clearing,dispatch,platinum angel,Repudiate/Replicate,risen reef
-34,Sleight of Hand,phyrexian revoker,"Jace, Vryn's prodigy",Nurturing Peatland,sculpting steel,Tolaria West,Smelt,tarfire
+33,Pyroblast,nullstone gargoyle,winding way,Silent Clearing,dispatch,platinum angel,repudiate // replicate,risen reef
+34,Sleight of Hand,phyrexian revoker,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Nurturing Peatland,sculpting steel,Tolaria West,Smelt,tarfire
 35,Street Wraith,God-Pharaoh's Statue,Thought Scour,Return to Nature,conclave tribunal,Mishra's bauble,Waterlogged Grove,electrolyze
 36,Sulfuric Vortex,trash for treasure,"Thalia, heretic cathar",Hymn to Tourach,basilisk collar,Urza's bauble,Aether Hub,farseek
 37,True-name Nemesis,Snow-covered island,Noble Hierarch,Swords to Plowshares,scrap trawler,Tree of tales,Tendo Ice Bridge,by force
