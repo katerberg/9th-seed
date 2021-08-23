@@ -14,9 +14,9 @@ Notes,https://old.reddit.com/r/mtgcube/comments/iepk16/just_finished_a_vintage_r
 9,Verdant Catacombs,Hallowed Fountain,Blightsteel Colossus,"Teferi, Hero of Dominaria",Windswept Heath,Marsh Flats,Upheaval,Wooded Foothills
 10,Dark Ritual,Fractured Identity,Thirst for Knowledge,Vendilion Clique,Once Upon a Time,Wasteland,Tolarian Academy,Plateau
 11,Cabal Ritual,Coalition Relic,Mystical Dispute,Mind Twist,Mystic Confluence,Sylvan Library,Phyrexian Metamorph,Stoneforge Mystic
-12,Yawgmoth's Bargain,Fact or Fiction ,Izzet Signet,Mental Misstep,Karakas,Crucible of Worlds,Frantic search,Umezawa's Jitte
+12,Yawgmoth's Bargain,Fact or Fiction,Izzet Signet,Mental Misstep,Karakas,Crucible of Worlds,Frantic search,Umezawa's Jitte
 13,Necropotence,Splinter Twin,Preordain,Condescend,"Uro, Titan of Nature's Wrath",Imperial Seal,Ancient Tomb,Prismatic Vista
-14,Lion's Eye Diamond,Bayou,Glen Elendra Archmage ,Brazen Borrower // Petty Theft,"Lavinia, Azorius Renegade",Duress ,Karn Liberated,Batterskull
+14,Lion's Eye Diamond,Bayou,Glen Elendra Archmage,Brazen Borrower // Petty Theft,"Lavinia, Azorius Renegade",Duress,Karn Liberated,Batterskull
 15,Lotus Petal,"Leovold, Emissary of Trest",Ensnaring Bridge,Enlightened Tutor,Geist of Saint Traft,Overgrown Tomb,Walking Ballista,Restoration Angel
 16,Gitaxian Probe,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Mycosynth Lattice,Watery Grave,Savannah,Nurturing Peatland,Phyrexian revoker,"Kiki-Jiki, Mirror Breaker"
 17,Mind's Desire,Dimir Signet,Simic Signet,Cryptic Command,"Lutri, the Spellchaser",Thespian's Stage,Solemn Simulacrum,Zealous Conscripts
@@ -25,15 +25,15 @@ Notes,https://old.reddit.com/r/mtgcube/comments/iepk16/just_finished_a_vintage_r
 20,Sleight of hand,Collective Brutality,Abrade,Flusterstorm,Shardless Agent,Force of Vigor,Trinisphere,Fiery Confluence
 21,Mystic Remora,Liliana of the Veil,Trinket Mage,Voltaic Key,"Niambi, Esteemed Speaker",Exploration,Sensei's Divining Top,Containment Priest
 22,Underworld Breach,Mystical Tutor,Seat of the Synod,Toxic Deluge,"Edric, Spymaster of Trest","Urborg, Tomb of Yawgmoth",Transmute Artifact,wear // tear
-23,Brain Freeze,Miscalculation,Mox Opal,Mana Leak,Serum Visions,Abrupt Decay,Mishra's Workshop,Council's Judgment  
+23,Brain Freeze,Miscalculation,Mox Opal,Mana Leak,Serum Visions,Abrupt Decay,Mishra's Workshop,Council's Judgment
 24,Night's Whisper,"Golos, Tireless Pilgrim",Darksteel Citadel,Rest in Peace,Explore,Primeval Titan,Lodestone golem,By Force
 25,Manamorphose,Assassin's Trophy,Stony Silence,Negate,"Nissa, Vastwood Seer",Collector Ouphe,Mindslaver,Village Bell-Ringer
-26,Chain of Vapor,Hymn to Tourach ,Paradoxical Outcome,Baleful Strix,Spell Queller,Life From the Loam,Shelldock Isle,Mana Tithe
-27,Fatal Push,Drowned Catacomb,Pithing Needle ,Ceremonious Rejection,Eternal Witness,Crop Rotation,Goblin Welder,Imperial Recruiter
-28,Inquisition of Kozilek,Thief of Sanity,Grindstone,Anguished Unmaking,Green Sun's Zenith,Indatha Triome,Tezzeret the Seeker ,Recruiter of the Guard
-29,Windfall,Blood Crypt,Painter's Servant ,Hostage Taker,Dryad Arbor,Tranquil Thicket,Through the breach,"Thalia, Guardian of Thraben"
+26,Chain of Vapor,Hymn to Tourach,Paradoxical Outcome,Baleful Strix,Spell Queller,Life From the Loam,Shelldock Isle,Mana Tithe
+27,Fatal Push,Drowned Catacomb,Pithing Needle,Ceremonious Rejection,Eternal Witness,Crop Rotation,Goblin Welder,Imperial Recruiter
+28,Inquisition of Kozilek,Thief of Sanity,Grindstone,Anguished Unmaking,Green Sun's Zenith,Indatha Triome,Tezzeret the Seeker,Recruiter of the Guard
+29,Windfall,Blood Crypt,Painter's Servant,Hostage Taker,Dryad Arbor,Tranquil Thicket,Through the breach,"Thalia, Guardian of Thraben"
 30,Bubbling Muck,Remand,Engineered Explosives,Steel Sabotage,Urza's Ruinous Blast,Llanowar Wastes,Sundering titan,Thorn of Amethyst
-31,Cruel Bargain,Waterlogged Grove ,Great Furnace,Irrigated Farmland,Regrowth,Ramunap Excavator,Careful Consideration,Sphere of Resistance
+31,Cruel Bargain,Waterlogged Grove,Great Furnace,Irrigated Farmland,Regrowth,Ramunap Excavator,Careful Consideration,Sphere of Resistance
 32,Infernal Reckoning,commit // memory,Fiery Islet,Mindbreak Trap,Seasons Past,Ghost Quarter,Academy Rector,Grafdigger's Cage
 33,Phyrexian Arena,Torrential Gearhulk,"Emry, Lurker of the Loch",Annul,Tireless Tracker,Elvish Reclaimer,Izzet charm,Sacred Foundry
 34,Sadistic Sacrament,Nature's Claim,Liquimetal Coating,Talisman of Dominance,"Venser, Shaper Savant",Field of the Dead,Palinchron,Ethersworn Canonist
@@ -41,9 +41,9 @@ Notes,https://old.reddit.com/r/mtgcube/comments/iepk16/just_finished_a_vintage_r
 36,"Baral, Chief of Compliance",Careful Study,Hydroblast,Fabled Passage,Breeding Pool,Rishadan Port,expansion // explosion,Deafening Silence
 37,Gifts Ungiven,Exhume,Thoughtcast,Dovin's Veto,Temple Garden,Barren Moor,Ashen rider,Sword of Body and Mind
 38,Rain of Filth,"Iona, Shield of Emeria",Blood Moon,Countersquall,Sunpetal Grove,"Titania, Protector of Argoth",Confiscate,Sunbaked Canyon
-39,Snuff Out,Bane of Progress,Mishra's Bauble,Cast Out ,Glacial Fortress,Sylvan Scrying,Shivan Reef,Clifftop Retreat
+39,Snuff Out,Bane of Progress,Mishra's Bauble,Cast Out,Glacial Fortress,Sylvan Scrying,Shivan Reef,Clifftop Retreat
 40,Surgical Extraction,Grim Flayer,Sulfur Falls,Prairie Stream,"Selvala, Heart of the Wilds",Vampire Hexmage,Evolving wilds,Vryn Wingmare
-41,Noxious Revival,Deathrite Shaman,Soul-Guide Lantern ,Talisman of Progress,Temur Sabertooth,Temple of Malady,Candelabra of tawnos,Mother of Runes
+41,Noxious Revival,Deathrite Shaman,Soul-Guide Lantern,Talisman of Progress,Temur Sabertooth,Temple of Malady,Candelabra of tawnos,Mother of Runes
 42,Infernal Contract,"Ruric Thar, the Unbowed",Tribute Mage,Noxious Grasp,Coiling Oracle,The Tabernacle at Pendrell Vale,City of traitors,Fragmentize
 43,Blood Pet,Leyline of the Void,Aether Gust,Arcane Laboratory,"Okina, Temple to the Grandfathers","Tomik, Distinguished Advokist",Bribery,"Gideon, Ally of Zendikar"
 44,Bolas's Citadel,Show and Tell,Goblin Engineer,Disenchant,Harmonize,Maze of Ith,Metalworker,Gorilla Shaman

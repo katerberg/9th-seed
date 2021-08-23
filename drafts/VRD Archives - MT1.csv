@@ -1,15 +1,15 @@
 ,Tom,Bill,Garry,Andy,Georg,Cinderella,Haakon,Jonas
 Wins,3,6,1,4,0,4,3,7
 Losses,4,1,6,3,7,3,4,0
-1,Sol Ring,Ancestral Recall ,Black Lotus,Mox Sapphire,Time Vault,Time Walk,Mox Ruby,Mox Jet
+1,Sol Ring,Ancestral Recall,Black Lotus,Mox Sapphire,Time Vault,Time Walk,Mox Ruby,Mox Jet
 2,Tinker,"Jace, the Mind Sculptor",Demonic Tutor,Mana Drain,Mana Crypt,Library of Alexandria,Mox Emerald,Mox Pearl
 3,Blightsteel Colossus,Snapcaster Mage,Tendrils of Agony,Balance,Mana vault,Dack Fayden,Sneak Attack,Vampiric Tutor
-4,Skullclamp,Force of Will ,Lotus Petal,Mystical Tutor,Timetwister,Grim monolith,Griselbrand,Strip Mine
+4,Skullclamp,Force of Will,Lotus Petal,Mystical Tutor,Timetwister,Grim monolith,Griselbrand,Strip Mine
 5,Arcbound Ravager,Counterspell,Dark Ritual,Merchant Scroll,Painter’s Servant,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Ancient Tomb,Thoughtseize
 6,Mishra's Workshop,Ponder,Duress,Null Rod,Tolarian Academy,Treasure Cruise,Wasteland,Mental Misstep
-7,Mox Opal,Swords to Plowshares ,Yawgmoth's Will,"Emrakul, the Aeons Torn",Mox Diamond,Spell Pierce,Gitaxian Probe,Flooded Strand
+7,Mox Opal,Swords to Plowshares,Yawgmoth's Will,"Emrakul, the Aeons Torn",Mox Diamond,Spell Pierce,Gitaxian Probe,Flooded Strand
 8,"Karn, Scion of Urza",Preordain,Mind Twist,"Teferi, Hero of Dominaria",Negate,Remand,Woodfall Primus,Polluted Delta
-9,Umezawa's Jitte,Monastery Mentor ,Necropotence,Mystic Confluence,Fastbond,Scalding Tarn,Wooded Foothills,Marsh Flats
+9,Umezawa's Jitte,Monastery Mentor,Necropotence,Mystic Confluence,Fastbond,Scalding Tarn,Wooded Foothills,Marsh Flats
 10,Thoughtcast,Stony Silence,Grim Tutor,Enlightened Tutor,Isochron Scepter,Volcanic Island,Through the Breach,Imperial Seal
 11,Hangarback Walker,Flusterstorm,Hymn to Tourach,"Nahiri, The Harbinger",Hurkyl’s Recall,Misty Rainforest,Bloodstained Mire,Containment Priest
 12,Walking Ballista,Gush,Night's Whisper,Dig Through Time,City of Traitors,Mana Leak,Faitless Looting,Path to Exile
@@ -20,29 +20,29 @@ Losses,4,1,6,3,7,3,4,0
 17,Foundry Inspector,Mindbreak Trap,Distress,"Search for Azcanta // Azcanta, the Sunken Ruin",Voltaic Key,Splinter Twin,Oath of Druids,Unexpectedly Absent
 18,Chief of the Foundry,Spell Snare,Cruel Bargain,Force Spike,Transmute Artifact,Miscalculation,Forbidden Orchard,Windswept Heath
 19,Phyrexian Revoker,Fragmentize,Bubbling Muck,Stasis,Everflowing chalice,Serum Visions,Ancient Grudge,Arcane Denial
-20,Signal Pest,Dispel ,Lion's Eye Diamond,"Jace, Architect of Thought",Boomerang,True-Name Nemesis,Sensei's Divining Top,Glen Elendra Archmage
-21,Vault Skirge,Supreme Verdict ,Dismember,Memory Lapse,Regrowth,Fiery Confluence,Inferno Titan,Dark Confidant
-22,Inkmoth Nexus,Pestermite ,Yawgmoth's Bargain,Spell Queller,Carpet of Flowers,Red Elemental Blast,Pyroblast,Nimble Obstructionist
-23,Blinkmoth Nexus,Deceiver Exarch ,Infernal Contract,Power Sink,Channel,Reanimate,Ricochet Trap,Underground Sea
+20,Signal Pest,Dispel,Lion's Eye Diamond,"Jace, Architect of Thought",Boomerang,True-Name Nemesis,Sensei's Divining Top,Glen Elendra Archmage
+21,Vault Skirge,Supreme Verdict,Dismember,Memory Lapse,Regrowth,Fiery Confluence,Inferno Titan,Dark Confidant
+22,Inkmoth Nexus,Pestermite,Yawgmoth's Bargain,Spell Queller,Carpet of Flowers,Red Elemental Blast,Pyroblast,Nimble Obstructionist
+23,Blinkmoth Nexus,Deceiver Exarch,Infernal Contract,Power Sink,Channel,Reanimate,Ricochet Trap,Underground Sea
 24,Memnite,Sorcerous Spyglass,Unmask,Pithing Needle,Lodestone golem,"Iona, Shield of Emeria",Verdant Catacombs,"Kataki, War's Wage"
 25,Ornithopter,Council's Judgement,Beseech the Queen,Porphyry Nodes,"Leovold, Emissary of Trest",Watery grave,Stomping Ground,Recruiter of the Guard
-26,Frogmite,Karakas ,Lotus Bloom,Back to Basics,Academy Ruins,Entomb,"Boseiju, who Shelters All",Scrubland
-27,Myr Enforcer,Field of Ruin ,Cabal Coffers,Damping Sphere,Trinket Mage,Badlands,Simian Spirit Guide,Leonin Relic-Warder
+26,Frogmite,Karakas,Lotus Bloom,Back to Basics,Academy Ruins,Entomb,"Boseiju, who Shelters All",Scrubland
+27,Myr Enforcer,Field of Ruin,Cabal Coffers,Damping Sphere,Trinket Mage,Badlands,Simian Spirit Guide,Leonin Relic-Warder
 28,Great Furnace,Treachery,Ratchet Bomb,Rest in Peace,Seat of the Synod,Animate Dead,Sphere of Resistance,Spirit of the Labyrinth
 29,Darksteel Citadel,Bribery,The Abyss,Mystic Remora,Mana confluence,Inkwell Leviathan,By Force,Diabolic Edict
-30,The Antiquities War,Prairie Stream ,Toxic Deluge,Capsize,Paradoxical Outcome,Ancestral Vision,Worldspine Wurm,Hostage Taker
-31,Tree of Tales,Celestial Colonnade ,Dark Petition,Eidolon of Rethoric,Grindstone,Collective Brutality,Tormod's Crypt,Tidehollow Sculler
-32,Vault of Whispers,Celestial Purge ,Fatal Push,Grafdigger's Cage,City of brass,Forbid,Leyline of the Void,Liliana of the Veil
-33,Ancient Den,Glacial Fortress ,Culling the Weak,Commit//Memory,Breeding Pool,Chain of Vapor,Leyline of Sanctity,Geist of Saint Traft
+30,The Antiquities War,Prairie Stream,Toxic Deluge,Capsize,Paradoxical Outcome,Ancestral Vision,Worldspine Wurm,Hostage Taker
+31,Tree of Tales,Celestial Colonnade,Dark Petition,Eidolon of Rethoric,Grindstone,Collective Brutality,Tormod's Crypt,Tidehollow Sculler
+32,Vault of Whispers,Celestial Purge,Fatal Push,Grafdigger's Cage,City of brass,Forbid,Leyline of the Void,Liliana of the Veil
+33,Ancient Den,Glacial Fortress,Culling the Weak,Commit//Memory,Breeding Pool,Chain of Vapor,Leyline of Sanctity,Geist of Saint Traft
 34,Glimmervoid,Batterskull,Crypt Ghast,Stoneforge Mystic,Yavimaya Coast,Exhume,Shattering Spree,"Kambal, Consul of Allocations"
-35,Spire of Industry,Phyrexian Metamorph ,Sadistic Sacrament,Shadow of Doubt,Orim's Chant,"Elesh Norn, Grand Cenobite",Helm of Obedience,Vindicate
-36,"Traxos, Scourge of Kroog",Disenchant ,Hope of Ghirapur,Nexus of Fate,"Padeem, Consul of Innovation",Necromancy,Gamble,Anguished Unmaking
-37,Cavern of Souls,Seachrome Coast ,Phyrexian Arena,Mana Tithe,Muddle the Mixture,Abrade,Hinterland Harbor,Countersquall
-38,Metallic Rebuke,Logic Knot ,Blood Pet,Rule of Law,Botanical Sanctum,Bane of Progress,Progenitus,Notion Thief
-39,Ray of Revelation,Ethersworn Canonist ,Basal Thrull,Arcane Laboratory,Spellskite,Sire of Insanity,Surgical Extraction,Serenity
+35,Spire of Industry,Phyrexian Metamorph,Sadistic Sacrament,Shadow of Doubt,Orim's Chant,"Elesh Norn, Grand Cenobite",Helm of Obedience,Vindicate
+36,"Traxos, Scourge of Kroog",Disenchant,Hope of Ghirapur,Nexus of Fate,"Padeem, Consul of Innovation",Necromancy,Gamble,Anguished Unmaking
+37,Cavern of Souls,Seachrome Coast,Phyrexian Arena,Mana Tithe,Muddle the Mixture,Abrade,Hinterland Harbor,Countersquall
+38,Metallic Rebuke,Logic Knot,Blood Pet,Rule of Law,Botanical Sanctum,Bane of Progress,Progenitus,Notion Thief
+39,Ray of Revelation,Ethersworn Canonist,Basal Thrull,Arcane Laboratory,Spellskite,Sire of Insanity,Surgical Extraction,Serenity
 40,Natural State,Wrath of God,Peat Bog,Angel's Grace,Upheaval,Thirst for Knowledge,Tormenting Voice,Annul
 41,Thorn of Amethyst,"Elspeth, Sun's Champion",Hypnotic Specter,Ceremonious Rejection,Nature’s Claim,Grave Titan,Cathartic Reunion,Bayou
-42,Sulfuric Vortex,"Venser, Shaper Savant ",Underworld Dreams,Blessed Alliance,Xantid Swarm,Repeal,Invasive Surgery,Fracturing Gust
+42,Sulfuric Vortex,"Venser, Shaper Savant",Underworld Dreams,Blessed Alliance,Xantid Swarm,Repeal,Invasive Surgery,Fracturing Gust
 43,Pyrostatic Pillar,Oust,Consume Spirit,Winter Orb,Sundering Titan,Ashen Rider,Spirebluff Canal,Curse of Exhaustion
-44,Welding Jar,Hydroblast ,Ad Nauseam,Chalice of the Void,Argivian Restoration,Careful Study,Gemstone Mine,Lingering Souls
+44,Welding Jar,Hydroblast,Ad Nauseam,Chalice of the Void,Argivian Restoration,Careful Study,Gemstone Mine,Lingering Souls
 45,"Tezzeret, Agent of Bolas",Shelldock Isle,Drain Life,Plateau,Chromatic star,"Jin-Gitaxias, Core Augur",Flash,Fractured Identity
