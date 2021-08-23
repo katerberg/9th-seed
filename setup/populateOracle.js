@@ -28,18 +28,6 @@ function createInsertStatement(cardName, releaseDate) {
 
 function getInsertsFromArchives() {
   return [
-    createInsertStatement('fire/ice', '2001-06-04'),
-    createInsertStatement('repudiate/replicate', '2019-01-25'),
-    createInsertStatement('far/away', '2013-05-03'),
-    createInsertStatement('life/death', '2001-06-04'),
-    createInsertStatement('hide/seek', '2006-05-05'),
-    createInsertStatement('breaking/entering', '2013-04-27'),
-    createInsertStatement('wear/tear', '2013-04-27'),
-    createInsertStatement('commit/memory', '2017-04-28'),
-    createInsertStatement('expansion/explosion', '2018-10-05'),
-    createInsertStatement('beck/call', '2013-04-27'),
-    createInsertStatement('crime/punishment', '2006-05-05'),
-    createInsertStatement('wax/wane', '2000-10-02'),
     createInsertStatement('unknown', '2222-01-01'),
     createInsertStatement('unknown2', '2222-01-01'),
   ];
