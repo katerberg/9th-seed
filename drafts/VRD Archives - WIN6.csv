@@ -1,4 +1,4 @@
-,Austen,Tyler,Mike,Cam ,Fil,nathan,Bryan,Leigh
+,Austen,Tyler,Mike,Cam,Fil,nathan,Bryan,Leigh
 Wins,0,0,0,0,2,0,0,3
 Losses,0,0,0,0,1,0,0,0
 Date,2018-07-01,,,,,,,
@@ -10,18 +10,18 @@ Date,2018-07-01,,,,,,,
 6,Duress,Batterskull,Vendilion Clique,Imperial Seal,Tundra,Tolarian Academy,Leyline of the Void,Shivan Reef
 7,Sneak Attack,Stoneforge Mystic,True-Name Nemesis,Mox Opal,Flooded Strand,Lotus Petal,Underground Sea,Urza's Tower
 8,Inquisition of Kozilek,Null Rod,Polluted Delta,Blightsteel Colossus,Stony Silence,Chrome Mox,Painter's Servant,Thought-Knot Seer
-9,Liliana of the Veil,Force Spike,Misty Rainforest,Mind Twist,Delver of Secrets,Tropical Island,Verdant Catacombs,Cavern of Souls
+9,Liliana of the Veil,Force Spike,Misty Rainforest,Mind Twist,Delver of Secrets // Insectile Aberration,Tropical Island,Verdant Catacombs,Cavern of Souls
 10,City of Traitors,Hallowed Fountain,Bayou,Ponder,Young Pyromancer,Wooded Foothills,Dark Ritual,Karn Liberated
 11,"Emrakul, the Aeons Torn",Preordain,Breeding Pool,Watery Grave,Counterspell,Mystical Tutor,Cabal Ritual,Lodestone Golem
 12,Faithless Looting,Brainstorm,Windswept Heath,Basalt Monolith,Spell Snare,UNKNOWN,Yawgmoth's Will,Trinisphere
 13,Simian Spirit Guide,Arid Mesa,Tarmogoyf,Serum Visions,Opt,Arcbound Ravager,Gitaxian Probe,Reality Smasher
-14,Collective Brutality,Monastery Mentor,Overgrown Tomb,Seat of the Synod,Search for Azcanta,Cranial Plating,"Erayo, Soratami Ascendant","Chandra, Torch of Defiance"
+14,Collective Brutality,Monastery Mentor,Overgrown Tomb,Seat of the Synod,"Search for Azcanta // Azcanta, the Sunken Ruin",Cranial Plating,"Erayo, Soratami Ascendant // Erayo's Essence","Chandra, Torch of Defiance"
 15,Lightning Bolt,Swords to Plowshares,Gush,Relic of Progenitus,Thought Scour,Wheel of Fortune,"Ashiok, Nightmare Weaver",Matter Reshaper
 16,"Liliana, the Last Hope",Dig Through Time,Treasure Cruise,Sensei's Divining Top,"Nahiri, the Harbinger",Spellskite,Tormod's Crypt,Eldrazi Temple
 17,Exhume,Mana Leak,Spellstutter Sprite,Inkwell Leviathan,Cryptic Command,Noble Hierarch,Windfall,Umezawa's Jitte
-18,Bloodstained Mire,Marsh Flats,Deathrite Shaman,"Tezzeret, Agent of Bolas","Jace, Vryn's Prodigy",Timetwister,Defense Grid,Koth of the Hammer
+18,Bloodstained Mire,Marsh Flats,Deathrite Shaman,"Tezzeret, Agent of Bolas","Jace, Vryn's Prodigy // Jace, Telepath Unbound",Timetwister,Defense Grid,Koth of the Hammer
 19,Hazoret the Fervent,Path to Exile,Dark Confidant,Vault of Whispers,Deceiver Exarch,Inkmoth Nexus,Shelldock Isle,Eldrazi Mimic
-20,Badlands,Council's Judgment,Flusterstorm,Phyrexian Metamorph,Fire/Ice,Glistener Elf,"Urborg, tomb of Yawgmoth",Metallic Mimic
+20,Badlands,Council's Judgment,Flusterstorm,Phyrexian Metamorph,fire // ice,Glistener Elf,"Urborg, tomb of Yawgmoth",Metallic Mimic
 21,Fatal Push,Containment Priest,Dismember,Mind Stone,Geist of Saint Traft,Pact of Negation,Night of Souls' Betrayal,Endbringer
 22,"Elesh Norn, Grand Cenobite",Spell Queller,Scavenging Ooze,Steam Vents,Restoration Angel,Dispel,Sadistic Sacrament,Oblivion Sower
 23,Blood Crypt,Seachrome Coast,Trygon Predator,Coalition Relic,Torrential Gearhulk,Submerge,Tendrils of Agony,Eldrazi Obligator
@@ -32,13 +32,13 @@ Date,2018-07-01,,,,,,,
 28,Nihil Spellbomb,Pestermite,Standstill,Sorcerous Spyglass,Celestial Colonnade,Invigorate,"Jace, Memory Adept",Vile Aggregate
 29,Elvish Spirit Guide,Aven Mindcensor,Faerie Conclave,Darksteel Citadel,Necropotence,Aether Spellbomb,Glimpse the Unthinkable,Endless One
 30,Wretched Confluence,Mystic Confluence,Back to Nature,Talisman of Dominance,Urza's Power Plant,Blighted Agent,Archive Trap,Pia and Kiran Nalaar
-31,Diabolic Edict,Memory Lapse,Mystic Snake,Storm the Vault,Logic Knot,Become Immense,Breaking/Entering,Solemn Simulacrum
+31,Diabolic Edict,Memory Lapse,Mystic Snake,Storm the Vault,Logic Knot,Become Immense,breaking // entering,Solemn Simulacrum
 32,"Iona, Shield of Emeria",Disrupt,Krosan Grip,Copy Artifact,Sacred Foundry,Ichorclaw Myr,Duskmantle Guildmage,Blood Moon
 33,Shadow of Doubt,"Venser, Shaper Savant",Taiga,Grim Tutor,Vandalblast,Plague Myr,Mindcrank,Hedron Crawler
 34,Vampire Hexmage,Karakas,Divert,Dark Depths,Izzet Charm,Blossoming Defense,Visions of Beyond,Pilgrim's Eye
 35,Thespian's Stage,Talisman of Progress,Sylvan Library,Academy Ruins,"Tamiyo, the Moon Sage",Signal Pest,Bubbling Muck,Cultivator's Caravan
 36,Boil,Sphinx's Revelation,Reclamation Sage,Glimmervoid,"Kiki-Jiki, Mirror Breaker",Bonesplitter,Brain freeze,"Chandra, Flamecaller"
-37,Go For The Throat,Land Tax,Ancient Grudge,Mindbreak Trap,Wear/Tear,Grafdigger's Cage,Dimir Signet,Heart of Kiran
+37,Go For The Throat,Land Tax,Ancient Grudge,Mindbreak Trap,wear // tear,Grafdigger's Cage,Dimir Signet,Heart of Kiran
 38,Firestorm,Scroll Rack,Stomping Ground,Swan Song,Felidar Guardian,Necropede,Consuming Aberration,Elder Deep-Fiend
 39,Pack Rat,Entreat the Angels,Maelstrom Pulse,"Boseiju, Who Shelters All",Blessed Alliance,Pendelhaven,Fraying Sanity,Ruination Guide
 40,Burning Wish,Cyclonic Rift,Darkslick Shores,Solemnity,Saheeli Rai,Mutagenic Growth,Mesmeric Orb,Phantasmal Image
