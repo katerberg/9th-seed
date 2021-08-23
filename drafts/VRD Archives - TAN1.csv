@@ -6,12 +6,11 @@ Notes,https://docs.google.com/spreadsheets/d/1V5SMsuKX3B97-jdPqH1vV8xqRhLcYU02p2
 1,Black Lotus,Ancestral Recall,Sol Ring,Time Vault,Mox Sapphire,Mox Ruby,Mox Jet,Time Walk
 2,"Emry, Lurker of the Loch",Tinker,Lurrus of the Dream-Den,Force of Will,Library of Alexandria,Mana Crypt,Mox Pearl,Mox Emerald
 3,Memory Jar,Blightsteel Colossus,Demonic Tutor,Tezzeret the Seeker,Mana Drain,"Jace, The Mind Sculptor",Mana Vault,Dack Fayden
-4,Metal Worker,Mox Diamond,Lotus Petal,Transmute Artifact,Counterspell,Timetwister,Strip Mine,"Narset, Parter of Veils"
+4,MetalWorker,Mox Diamond,Lotus Petal,Transmute Artifact,Counterspell,Timetwister,Strip Mine,"Narset, Parter of Veils"
 5,Phryexian Processor,Force of Negation,Lion's Eye Diamond,Grim Monolith,Arcane Savant,Vampiric Tutor,Fastbond,Gush
 6,Foil,Mindslaver,Wheel of Fortune,Mishra's Workshop,Spell Pierce,Mystical Tutor,Channel,Brainstorm
 7,Stroke of Genius,Tolarian Academy,Chrome Mox,Mox opal,Ponder,Preordain,Wasteland,Daze
-8,"Urza, Lord High Artificer
-",Dig Through Time,Mental Misstep,Mana leak,Gitaxian Probe,Yawgmoth's Will,Thoughtseize,Pact of Negation
+8,"Urza, Lord High Artificer",Dig Through Time,Mental Misstep,Mana leak,Gitaxian Probe,Yawgmoth's Will,Thoughtseize,Pact of Negation
 9,"Jace, Cunning Castaway",Polluted Delta,Underworld Breach,"Karn, the Great Creator",Flusterstorm,Serum Visions,"Oko, Thief of Crowns","Lutri, the Spellchaser"
 10,Foilio of Fancies,Verdant Catacombs,Dark Depths,Painter's servant,Misty Rainforest,Dark Ritual,Prismatic Vista,Scalding Tarn
 11,Cyclonic Rift,"Leovold, Emissary of Trest",Pyroblast,grindstone,Tropical Island,Underground Sea,Wooded Foothills,Flooded Strand
@@ -19,9 +18,7 @@ Notes,https://docs.google.com/spreadsheets/d/1V5SMsuKX3B97-jdPqH1vV8xqRhLcYU02p2
 13,Isochron Scepter,Watery Grave,Marsh Flats,sensei's divining top,Breeding Pool,Volcanic Island,Elvish Spirit Guide,Arid Mesa
 14,thran Dynanmo,Abrupt Decay,Mishra's Bauble,AncIENt tOMb,Sylvan Library,Null Rod,Pentad Prism,Snapcaster Mage
 15,upheaval,Overgrown Tomb,Lightning Bolt,Goblin engineer,Remand,Duress,"Emrakul, the Aeons Torn",Red Elemental Blast
-16,"Palinchron
-
-",Deathrite Shaman,Faithless Looting,Urza's bauble,Noble Hierarch,Windfall,Zagoth Triome,Mystical Dispute
+16,Palinchron,Deathrite Shaman,Faithless Looting,Urza's bauble,Noble Hierarch,Windfall,Zagoth Triome,Mystical Dispute
 17,commandeer,Green Sun's Zenith,Badlands,Frantic search,Energy Flux,Steam Vents,Mind Twist,Splinter Twin
 18,back to basics,Tarmogoyf,Mana Confluence,"Karn, scion of urza",Collector Ouphe,Bolas's Citadel,Twilight Mire,Pestermite
 19,high tide,Force of Vigor,Blood Crypt,True-Name Nemesis,Treasure Cruise,Time Spiral,Hurkyl's Recall,"Dovin, Hand of Control"
