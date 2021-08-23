@@ -5,7 +5,7 @@ Wins,6,3,2,3,6,1,3,4
 Losses,1,4,5,4,1,6,4,3
 1,Black Lotus,Time Vault,Ancestral Recall,Sol Ring,Mox Jet,Mox Sapphire,Mana Crypt,Mox Pearl
 2,Time Walk,Tinker,Mana Drain,Demonic Tutor,Mox Emerald,Mox Ruby,"Narset, Parter of Veils",Fast Bond
-3,Vampiric Tutor,Mana Vault,Force of Will,Imperial Seal,Thoughtseize,Time Twister,Brainstorm,Channel
+3,Vampiric Tutor,Mana Vault,Force of Will,Imperial Seal,Thoughtseize,Timetwister,Brainstorm,Channel
 4,Flooded Strand,Polluted Delta,Scalding Tarn,Opposition Agent,Misty Rainforest,Hullbreacher,"Lutri, the Spellchaser",Verdant Catacombs
 5,Prismatic Vista,"Oko, Thief of Crowns",Dack Fayden,Dauthi Voidwalker,Inquisition of Kozilek,Ponder,Snapcaster Mage,Bayou
 6,Preordain,Force of Negation,Volcanic Island,Duress,Tropical Island,Treasure Cruise,"Jace, The mind Sculptor",Sylvan Library
@@ -19,29 +19,29 @@ Losses,1,4,5,4,1,6,4,3
 14,Chrome Mox,Opt,Bloodstained Mire,Bitterblossom,Marsh Flats,Tolarian Academy,True Name Nemesis,Allosaurus Shepherd
 15,Arid Mesa,Hallowed Fountain,Serum Visions,Grief,Dryad Arbor,Time Spiral,Watery Grave,Walking Ballista
 16,Flusterstorm,Prismatic Ending,Thought Scour,Chain of Smog,Cabal Therapy,Personal Tutor,Brain Freeze,Finale of Devastation
-17,Careful Study,Brazen Borrower,Dreadhorde Arcanist,Witherbloom Apprentice,Endurance,Mox Opal ,"Ashiok, Dream Render",Vizier of Remedies
-18,Collective Brutality,Tezzeret the Seeker,"Jace, Vryn's Prodigy",Dark Depths,Glimpse of Nature,Frantic Search,"Ashiok, Nightmare Weaver",Devoted Druid
+17,Careful Study,Brazen Borrower // Petty Theft,Dreadhorde Arcanist,Witherbloom Apprentice,Endurance,Mox Opal,"Ashiok, Dream Render",Vizier of Remedies
+18,Collective Brutality,Tezzeret the Seeker,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Dark Depths,Glimpse of Nature,Frantic Search,"Ashiok, Nightmare Weaver",Devoted Druid
 19,Unmask,Rest in Peace,Misdirection,Thespians Stage,Scavening ooze,Windfall,Cryptic Command,Scurry Oak
 20,Faithless Looting,Lose Focus,Negate,Null Rod,Reclamation Sage,Wheel of fortune,Mystic Sanctuary,Ivy Lane Denizen
 21,"Iona, Shield of Emeria",Manifold Key,Mana Leak,Leyline of the Void,Skullclamp,Underworld breach,Dig through Time,Grand Abolisher
 22,Exhume,Gainsay,Animate Dead,Defense Grid,Summoners Pact,Spirebluff Canal,Reanimate,Ranger-Captain of Eos
 23,Show and Tell,Swords to Plowshares,Lightning Bolt,"Liliana, the Last Hope",Karakas,High tide,"Emrakul, The Aeons Torn",Kitchen Finks
 24,Necropotence,Stoneforge Mystic,Worldgorger Dragon,"Kozilek, Butcher of Truth",Natural Order,Turnabout,Tasha's Hideous Laughter,Viscera Seer
-25,Dance of the Dead,Kaldra Compleat ,Unholy Heat,"Karn, the Great Creator",Gaea's Herald,"Urza, Lord High Artificer",Shelldock Isle,"Shalai, Voice of Plenty"
+25,Dance of the Dead,Kaldra Compleat,Unholy Heat,"Karn, the Great Creator",Gaea's Herald,"Urza, Lord High Artificer",Shelldock Isle,"Shalai, Voice of Plenty"
 26,Necromancy,Fragmentize,Force Spike,Mycosynth Lattice,Craterhoof Behemoth,Winter Orb,Fractured Sanity,Carrion Feeder
-27,Archon of Cruelty,Skyclave Apparition ,City of Brass,Crop Rotation,Concordant Crossroads,"Jace, Wielder of Mysteries",Archive Trap,Scrubland
+27,Archon of Cruelty,Skyclave Apparition,City of Brass,Crop Rotation,Concordant Crossroads,"Jace, Wielder of Mysteries",Archive Trap,Scrubland
 28,Badlands,Prairie Stream,Nurturing Peatlands,Stripmine,Beast Whisperer,Paradigm Shift,Drown in the Loch,Temple Garden
 29,Blood Crypt,Containment Priest,Blue Sun's Zenith,Cursed Totem,Waterlogged Grove,Seat of the Synod,Repeal,Horizon Canopy
 30,Thought Erasure,Dovin's Veto,Root Maze,Guttaral Response,Priest of Titania,Wish,Hurkyl's Recall,"Chatterfang, Squirrel General"
 31,Pack Rat,Archon of Emeria,Inevitable Betrayal,Elves of Deep Shadow,"Ezuri, Renegade Leader",Rune Snag,Bitter Ordeal,Eladamri's Call
 32,Rotting Regisaur,Ancient Den,Tarmogoyf,Shadow of Doubt,Collected Company,Quench,"Thada Del, Acquisitor",Rhonas the Indomitable
 33,Echoing Truth,Urza's Saga,Pithing Needle,Phyrexian Revoker,Elvish Archdruid,Expressive Iteration,Engineered explosives,Recruiter of the Guard
-34,Sedgemoor Witch,Path to Exile,Gaea's Blessing,Dark Confidant,Circle of Dreams Druid,Empty the Warrens ,Energy Flux,Eldritch Evolution
+34,Sedgemoor Witch,Path to Exile,Gaea's Blessing,Dark Confidant,Circle of Dreams Druid,Empty the Warrens,Energy Flux,Eldritch Evolution
 35,"Ragavan, Nimble Pilferer",Solitude,Sorcerous Spyglass,Toxic Deluge,Wirewood Symbiote,Laboratory Maniac,Altar of the Brood,Prowling Serpopard
 36,"Elesh Norn, Grand Cenobyte",Mind Stone,Seasoned Pyromancer,Despise,Quirion Ranger,Talisman of Creativity,Narset's Reversal,Duskwatch Recruiter
-37,Snuff Out,Aven Mindcensor,Chain of Vapor,Darkbore Pathway,Elvish Visionary,Izzet Signet,"Urborg, Tomb of Yawgmoth","Yavimaya, Cradle of Growth"
-38,Clearwater Pathway,Barkchannel Pathway,Ice-Fang Coatl,Twilight Mire,Elvish Mystic,Fiery Islet,Darkslick Shores,Elvish Spirit Guide
-39,"Boseiju, Who Shelters All",Hushbringer,Riverglide Pathway,Llanowar Wastes,Llanowar Elves,Prismari Command,Arcane Denial,Heroic Intervention
+37,Snuff Out,Aven Mindcensor,Chain of Vapor,Darkbore Pathway // Slitherbore Pathway,Elvish Visionary,Izzet Signet,"Urborg, Tomb of Yawgmoth","Yavimaya, Cradle of Growth"
+38,Clearwater Pathway // Murkwater Pathway,Barkchannel Pathway // Tidechannel Pathway,Ice-Fang Coatl,Twilight Mire,Elvish Mystic,Fiery Islet,Darkslick Shores,Elvish Spirit Guide
+39,"Boseiju, Who Shelters All",Hushbringer,Riverglide Pathway // Lavaglide Pathway,Llanowar Wastes,Llanowar Elves,Prismari Command,Arcane Denial,Heroic Intervention
 40,Makeshift Mannequin,Tanglepool Bridge,"Thrun, the Last Troll",Witherbloom Command,Fyndhorn Elves,Manamorphose,Quicken,Display of Dominance
 41,Massacre,Jwari Disruption,Ancestral Vision,Questing Beast,Realmwalker,Isochron Scepter,Glimpse the Unthinkable,Unearth
 42,Grave Titan,Enlightened Tutor,Stasis,Plague Engineer,Heritage Druid,Dramatic Reversal,Relic of Progenitus,Loaming Shaman
