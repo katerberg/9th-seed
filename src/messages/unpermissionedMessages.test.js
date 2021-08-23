@@ -103,7 +103,7 @@ describe('Unpermissioned Messages', () => {
     it('gives accurate name when fuzzy matching for a known split card', async() => {
       const result = await getUnpermissionedResponse('!pick Fire');
 
-      expect(result).to.have.string('"Fire" isn\'t a full card name. fire diamond has');
+      expect(result).to.have.string('"Fire" doesn\'t exist. fire // ice has');
       expect(result).to.have.string('1 time ');
     });
 
