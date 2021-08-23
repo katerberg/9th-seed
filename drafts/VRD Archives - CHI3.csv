@@ -5,25 +5,25 @@ Wins,5,1,1,4,4,4,2,3
 Losses,1,3,4,2,1,1,3,1
 1,Black Lotus,Ancestral Recall,Mox Sapphire,Mox Emerald,Time Vault,Mox Jet,Time Walk,Mox Pearl
 2,Mana Vault,Snapcaster Mage,Force of Will,Demonic tutor,Tinker,Sol Ring,Mox Ruby,Mana Crypt
-3,Grim Monolith,Force of Negation,Jace Vryn's Prodigy,Vampiric Tutor,"Karn, The Great Creator",Mind Twist,Library of Alexandria ,Crucible of Worlds
-4,Lion's Eye Diamond,"Oko, Thief of Crowns",Arcane Denial ,Bazaar of Baghdad,Mana Drain,Thoughtseize,"Jace, The Mind Sculptor",Strip Mine
+3,Grim Monolith,Force of Negation,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Vampiric Tutor,"Karn, The Great Creator",Mind Twist,Library of Alexandria,Crucible of Worlds
+4,Lion's Eye Diamond,"Oko, Thief of Crowns",Arcane Denial,Bazaar of Baghdad,Mana Drain,Thoughtseize,"Jace, The Mind Sculptor",Strip Mine
 5,Basalt Monolith,Daze,Swords to Plowshares,Entomb,"Urza, Lord High Artificer",Skullclamp,Fastbond,Wasteland
 6,Mishra's Workshop,"Narset, Parter of Veils",Path to Exile,Reanimate,Tezzeret the Seeker,Umezawa's Jitte,Timetwister,Enlightened Tutor
 7,Sensei's Divining Top,"Teferi, Time Raveler",Tundra,Dark Ritual,Tolarian Academy,Bloodstained Mire,Mox Diamond,"Thalia, Guardian of Thraben"
-8,Ancient Tomb,Misty Rainforest,Underground Sea,Survival of the Fittest ,Chrome Mox,Verdant Catacombs,"Uro, Titan of Nature's Wrath",Stoneforge Mystic
+8,Ancient Tomb,Misty Rainforest,Underground Sea,Survival of the Fittest,Chrome Mox,Verdant Catacombs,"Uro, Titan of Nature's Wrath",Stoneforge Mystic
 9,Walking Ballista,Flooded Strand,Polluted Delta,Lotus Petal,Grindstone,Badlands,Eternal Witness,City of Traitors
 10,Mox Opal,Lightning Bolt,Marsh Flats,Wheel of Fortune,Painter's Servant,Blood Crypt,Tropical Island,Sword of Fire and Ice
 11,Goblin Welder,Chain Lightning,Scrubland,Faithless Looting,Chalice of the Void,Bomat Courier,Gaea's Cradle,Containment Priest
 12,Metalworker,Scalding Tarn,Duress,Hymn to Tourach,Dack Fayden,Goblin Guide,Prismatic Vista,Batterskull
 13,Mystic Forge,Arid Mesa,Liliana of the Veil,Unmask,Volcanic Island,Dark Confidant,Channel,Mother of Runes
 14,Staff of Domination,Brainstorm,Preordain,Sneak Attack,Spell Pierce,Inquisition of Kozilek,"Emrakul, the Aeons Torn",Oust
-15,Goblin Engineer,Sylvan Library,Ponder,Blightsteel Colossus,Muddle the Mixture,Deathrite Shaman,Mystic Sanctuary ,Monastery Mentor
-16,"Zirada, the Dawnwaker",Brazen Borrower // Petty Theft,Serum Visions,Griselbrand,Mystical Tutor,Bitterblossom,Gitaxian Probe,Abolish
+15,Goblin Engineer,Sylvan Library,Ponder,Blightsteel Colossus,Muddle the Mixture,Deathrite Shaman,Mystic Sanctuary,Monastery Mentor
+16,"Zirda, the Dawnwaker",Brazen Borrower // Petty Theft,Serum Visions,Griselbrand,Mystical Tutor,Bitterblossom,Gitaxian Probe,Abolish
 17,Auriok Salvagers,treasure cruise,Leyline of the Void,Gamble,"Emry, Lurker of the Loch",Pack Rat,Veil of Summer,Savannah
 18,Voltaic Key,Wooded Foothills,Dovin's Veto,Cathartic Reunion,Whir of Invention,Char,Once Upon a Time,Temple Garden
 19,Manifold key,Steam Vents,Windswept Heath,Null Rod,Trinisphere,Rift Bolt,Ramunap Excavator,Armageddon
 20,Retrofitter Foundry,Monastery Swiftspear,Archive Trap,"Iona, Shield of Emeria",Voltaic Servant,Dragonskull Summit,Courser of Kruphix,Ravages of War
-21,"Ugin, the Ineffable",Fireblast,Glimpse the Unthinkable ,Graven Cairns,Mycosynth Lattice,Mesmeric Fiend,Crop Rotation ,Noble Hierarch
+21,"Ugin, the Ineffable",Fireblast,Glimpse the Unthinkable,Graven Cairns,Mycosynth Lattice,Mesmeric Fiend,Crop Rotation,Noble Hierarch
 22,Paradoxical Outcome,Breeding Pool,Hedron Crab,Sulfurous Springs,Gush,Brain Maggot,Dark Depths,Wooded Bastion
 23,Memory Jar,Plateau,Mind Funeral,"Urborg, Tomb of Yawgmoth",Great Furnace,"Kroxa, Titan of Death's Hunger",Thespian's Stage,Recruiter of the Guard
 24,Chromatic Star,Young Pyromancer,"Ashiok, Dream Render",Cabal Therapy,Seat of the Synod,Eidolon of the Great Revel,Reclamation Sage,Sanctum Prelate
@@ -33,18 +33,18 @@ Losses,1,3,4,2,1,1,3,1
 28,Mana Confluence,Chain of Vapor,Brain Freeze,Vandalblast,Wurmcoil Engine,Mutavault,Waterlogged Grove,Flagstones of Trokair
 29,City of Brass,Vapor Snag,Mesmeric Orb,Goryo's Vengeance,Aether Spellbomb,Kitesail Freebooter,Karakas,Gideon Blackblade
 30,Arcum's Astrolabe,True-Name Nemesis,Thought Scour,Through the Breach,Thoughtcast,Ophiomancer,Life from the Loam,Grafdigger's Cage
-31,Pyrite Spellbomb,Watery Grave,Visions from Beyond ,Helm of Obedience,Soul-Guide Lantern,Pyrostatic Pillar,Exploration ,Aether Vial
+31,Pyrite Spellbomb,Watery Grave,Visions of Beyond,Helm of Obedience,Soul-Guide Lantern,Pyrostatic Pillar,Exploration,Aether Vial
 32,Boros Signet,Scavenging Ooze,Ravenous Trap,Snuff Out,Liquimetal Coating,Blackcleave Cliffs,Ghost Quarter,Aegis of the Gods
 33,Oath of Druids,Tarmogoyf,Noxious Revival,Dreadhorde Butcher,Pithing Needle,Kolaghan's Command,Botanical Sanctum,Flickerwisp
-34,Tormond's Crypt,Boros Charm,Breaking//Entering ,Pyretic Ritual,Hurkyl's Recall,Rakdos's Return,Green Sun's Zenith,Aven Mindcensor
+34,Tormod's Crypt,Boros Charm,Breaking // Entering,Pyretic Ritual,Hurkyl's Recall,Rakdos's Return,Green Sun's Zenith,Aven Mindcensor
 35,Experimental Frenzy,Flame Rift,Mind Sculpt,Animate Dead,Shenanigans,Blightning,The Tabernacle at Pendrell Vale,Palace Jailer
-36,Yawgmoth's Will,Delver of Secrets // Insectile Aberration,Overwhelmed Apprentice,Life//Death,Ratchet Bomb,Dismember,Primeval Titan,Qasali Pridemage
+36,Yawgmoth's Will,Delver of Secrets // Insectile Aberration,Overwhelmed Apprentice,Life // Death,Ratchet Bomb,Dismember,Primeval Titan,Qasali Pridemage
 37,Mishra's Bauble,Rakdos Charm,Sanity Grinding,Cabal Ritual,Pyroclasm,Terminate,Simic Growth Chamber,Serenity
-38,Urza's Bauble,Wild Nacatl,Supreme Verdict ,Damnation,Swan Song,Smash to Smithereens,Ancient Stirrings,Worldly Tutor
-39,Abrade,Godless Shrine,Merfolk Secretkeeper,Grisly Salvage,Steel Sabotage,Shattering Spree,Field of the Dead,Grand Abolisher
+38,Urza's Bauble,Wild Nacatl,Supreme Verdict,Damnation,Swan Song,Smash to Smithereens,Ancient Stirrings,Worldly Tutor
+39,Abrade,Godless Shrine,Merfolk Secretkeeper // Venture Deeper,Grisly Salvage,Steel Sabotage,Shattering Spree,Field of the Dead,Grand Abolisher
 40,Serum Powder,Taiga,Fragmentize,Grim Tutor,Vedalken Shackles,Toxic Deluge,Idyllic Tutor,Voice of Resurgence
 41,Ancient Den,Tribal flames,Sphinx's tutelage,Cabal Coffers,Sentinel Totem,Nihil Spellbomb,Crystal Shard,Humility
-42,Azorious Signet,Leyline of Sanctity,Vision Charm ,Tidespout Tyrant,Energy Flux,Blood Moon,"Ulamog, the Ceaseless Hunger",Leonin Relic-Warder
-43,Inventor's Fair,Spell Snare,Counterspell,Sire of Insanity,Commandeer,Pyroblast,Into the North,Nature's Claim
-44,Mazemind Tome,Seal of Removal,Opt,Slaughterpact,Aether Gust,Diabolic Edict,Meloku the Clouded Mirror,Hammer of Nazahn
+42,Azorius Signet,Leyline of Sanctity,Vision Charm,Tidespout Tyrant,Energy Flux,Blood Moon,"Ulamog, the Ceaseless Hunger",Leonin Relic-Warder
+43,Inventors' Fair,Spell Snare,Counterspell,Sire of Insanity,Commandeer,Pyroblast,Into the North,Nature's Claim
+44,Mazemind Tome,Seal of Removal,Opt,Slaughter pact,Aether Gust,Diabolic Edict,Meloku the Clouded Mirror,Hammer of Nazahn
 45,Hangarback Walker,Grim Lavamancer,Manic Scribe,Bloodghast,Witchbane Orb,Bojuka Bog,Personal Tutor,Basilisk Collar
