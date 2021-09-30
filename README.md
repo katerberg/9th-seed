@@ -2,6 +2,10 @@
 
 A twitch bot designed to assist viewers of the [St Louis Vintage Rotisserie Draft](https://twitch.tv/stlvrd)
 
+## Commands
+
+
+
 ## Requirements
 
 You will need `yarn` and `mysql` installed.
