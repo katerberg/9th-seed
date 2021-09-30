@@ -31,7 +31,7 @@ fs.readFileAsync(`${process.cwd()}/setup/SetList.json`, 'utf-8').then((setListTe
 
   fs.readFileAsync(`${process.cwd()}/setup/VintageCards.json`, 'utf-8').then((textFile) => {
     const cardJson = JSON.parse(textFile).data;
-    const cards = Object.keys(cardJson);
+    const cards = Object.keys(cardJson).filter(c => cardJson[c][0].printings);
     stringifyAsync(cards.map(c => [c, getEarliestReleaseDate(sets, cardJson[c][0].printings)])).then((output) => {
       fs.writeFile(`${process.cwd()}/setup/AllCards.csv`, output, (err) => {
         if (err) {
