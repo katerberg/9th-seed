@@ -20,14 +20,17 @@ describe('Unpermissioned Messages', () => {
   });
 
   it('gives link to ban list', () => {
-    expect(getUnpermissionedResponse('!banned')).to.have.string('rules-and-formats/banned-restricted');
-    expect(getUnpermissionedResponse('!ban')).to.have.string('rules-and-formats/banned-restricted');
-    expect(getUnpermissionedResponse('!banlist')).to.have.string('rules-and-formats/banned-restricted');
-    expect(getUnpermissionedResponse('!bans')).to.have.string('rules-and-formats/banned-restricted');
+    ['!banned', '!ban', '!banlist', '!bans'].forEach(item => {
+      expect(getUnpermissionedResponse(item)).to.have.string('rules');
+    });
   });
 
   it('gives twitter link', () => {
     expect(getUnpermissionedResponse('!twitter')).to.have.string('twitter');
+  });
+
+  it('is case insensitive', () => {
+    expect(getUnpermissionedResponse('!twIttEr')).to.have.string('twitter');
   });
 
   it('lets users be salty', () => {
@@ -35,13 +38,13 @@ describe('Unpermissioned Messages', () => {
   });
 
   it('links to archives', () => {
-    ['!vrd1', '!vrd2', '!vrd3', '!vrd4', '!vrd5', '!archives'].forEach(item => {
+    ['!vrd1', '!vrd2', '!vrd3', '!vrd4', '!vrd5', '!vrd6', '!archives'].forEach(item => {
       expect(getUnpermissionedResponse(item)).to.have.string('1AdrhW', `${item} failed to get spreadsheet`);
     });
   });
 
   it('links to current draft', () => {
-    ['!vrd6', '!decks', '!decklists', '!draft', '!picks', '!sheet'].forEach(item => {
+    ['!vrd7', '!decks', '!decklists', '!draft', '!picks', '!sheet'].forEach(item => {
       expect(getUnpermissionedResponse(item)).to.have.string('Spreadsheet with draft picks', `${item} failed to get spreadsheet`);
     });
   });
@@ -54,24 +57,6 @@ describe('Unpermissioned Messages', () => {
 
   it('links to suicide prevention', () => {
     expect(getUnpermissionedResponse('!gethelp')).to.have.string('trevorproject');
-  });
-
-  describe('!winning', () => {
-    beforeEach(() => {
-      getModResponse('!clearVotes', process.env.CHANNEL || 'stlotusmtg');
-    });
-
-    it('votes for a valid player', async() => {
-      const result = await getUnpermissionedResponse('!winning elaine', {username: 'foobar'});
-
-      expect(result).to.have.string('1 vote for elaine');
-    });
-
-    it('gives error messages for an invalid player', async() => {
-      const result = await getUnpermissionedResponse('!winning blahblahblah', {username: 'foobar'});
-
-      expect(result).to.have.string('Try voting for one of these');
-    });
   });
 
   describe('!pick', () => {

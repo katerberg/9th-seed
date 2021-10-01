@@ -33,7 +33,7 @@ function addVoteAndReportResult(username, category, message) {
 }
 
 function getUnpermissionedResponse(dirtyMessage, user) {
-  const message = dirtyMessage && dirtyMessage.replace(/[^\x20-\x7E]+/g, '');
+  const message = dirtyMessage && dirtyMessage.replace(/[^\x20-\x7E]+/g, '').toLowerCase();
   if (!message) {
     return;
   }
@@ -47,20 +47,21 @@ function getUnpermissionedResponse(dirtyMessage, user) {
     message === '!vrd3' ||
     message === '!vrd4' ||
     message === '!vrd5' ||
+    message === '!vrd6' ||
     message === '!archives'
   ) {
     return 'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=945529176';
-  } else if (message.startsWith('!ban')) {
-    return 'Any card not banned in Vintage is legal in this format. Restricted cards are legal and encouraged: https://magic.wizards.com/en/game-info/gameplay/rules-and-formats/banned-restricted';
+  } else if (message.startsWith('!ban') || message.startsWith('!rules')) {
+    return 'Any card not banned in Vintage is legal in this format. Restricted cards are legal and encouraged: https://stlotus.org/build/index.html#/rulings';
   } else if (
     message === '!bracket' ||
     message === '!record' ||
     message === '!standings' ||
     message === '!challonge'
   ) {
-    return 'Standings are visible at https://challonge.com/stlvrd6';
+    return 'Standings are visible at https://challonge.com/stlvrd7';
   } else if (
-    message === '!vrd6' ||
+    message === '!vrd7' ||
     message === '!sheet' ||
     message === '!picks' ||
     message === '!decks' ||
@@ -69,20 +70,12 @@ function getUnpermissionedResponse(dirtyMessage, user) {
     message === '!decklists' ||
     message === '!draft'
   ) {
-    return 'Spreadsheet with draft picks is at https://bit.ly/37YbewZ';
+    return 'Spreadsheet with draft picks is at https://bit.ly/3kZj0zm';
   } else if (message === '!youtube') {
     return 'Find our VODs on https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA';
   } else if (message === '!gethelp') {
     return 'For someone to talk to please contact http://www.thetrevorproject.org 1 866 488 7386 Crisis Text Line SMS: Text "HERE" to 741-741';
-  } else if (message.indexOf('!winning ') === 0) {
-    return addVoteAndReportResult(user.username, WIN_CATEGORY, message);
-  } else if (message === '!wins') {
-    return getVoteResults(WIN_CATEGORY);
-  } else if (message.indexOf('!interview ') === 0) {
-    return addVoteAndReportResult(user.username, INTERVIEW_CATEGORY, message);
-  } else if (message === '!interviews') {
-    return getVoteResults(INTERVIEW_CATEGORY);
-  } else if (message.indexOf('!pick') === 0) {
+  } else if (message.startsWith('!pick')) {
     return getStats(message);
   }
 }
