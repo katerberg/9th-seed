@@ -59,7 +59,7 @@ function getUnpermissionedResponse(dirtyMessage, user) {
     message === '!standings' ||
     message === '!challonge'
   ) {
-    return 'Standings are visible at https://challonge.com/stlvrd7';
+    return 'Standings are visible at https://challonge.com/stlotus7';
   } else if (
     message === '!vrd7' ||
     message === '!sheet' ||
