@@ -8,7 +8,7 @@ const stringifyAsync = util.promisify(stringify);
 
 function getEarliestReleaseDate(allSets, setsForCard) {
   const bestDate = setsForCard.reduce((a, c) => {
-    if (c === 'PRM') { //Promos are BS and never first printing, but since the first promo came out in 2002 it screws everything up
+    if (allSets[c].type === 'promo') { //Promos are BS and never first printing, but since the first promo came out in 2002 it screws everything up
       return a;
     }
     if (a && a < allSets[c].releaseDate) {
@@ -26,13 +26,16 @@ fs.readFileAsync(`${process.cwd()}/setup/SetList.json`, 'utf-8').then((setListTe
     sets[set.code] = {
       name: set.name,
       releaseDate: set.releaseDate,
+      type: set.type,
     };
   });
 
   fs.readFileAsync(`${process.cwd()}/setup/VintageCards.json`, 'utf-8').then((textFile) => {
     const cardJson = JSON.parse(textFile).data;
     const cards = Object.keys(cardJson).filter(c => cardJson[c][0].printings);
-    stringifyAsync(cards.map(c => [c, getEarliestReleaseDate(sets, cardJson[c][0].printings)])).then((output) => {
+    stringifyAsync(cards.map(c => {
+      return [c, getEarliestReleaseDate(sets, cardJson[c][0].printings)];
+    })).then((output) => {
       fs.writeFile(`${process.cwd()}/setup/AllCards.csv`, output, (err) => {
         if (err) {
           throw err;
