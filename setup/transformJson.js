@@ -6,18 +6,31 @@ fs.readFileAsync = util.promisify(fs.readFile);
 fs.writeFileAsync = util.promisify(fs.writeFile);
 const stringifyAsync = util.promisify(stringify);
 
+function isNormalSet(type) {
+  return ['expansion', 'core'].includes(type);
+}
+
 function getEarliestReleaseDate(allSets, setsForCard) {
-  const bestDate = setsForCard.reduce((a, c) => {
-    if (allSets[c].type === 'promo') { //Promos are BS and never first printing, but since the first promo came out in 2002 it screws everything up
+  if (setsForCard.some(s => isNormalSet(allSets[s].type))) {
+    return setsForCard.reduce((a, c) => {
+      if (!isNormalSet(allSets[c].type)) {
+        return a;
+      }
+      if (a < allSets[c].releaseDate) {
+        return a;
+      }
+      return allSets[c].releaseDate;
+    }, '2222-11-11');
+  }
+  return setsForCard.reduce((a, c) => {
+    if (allSets[c].type === 'promo') {
       return a;
     }
-    if (a && a < allSets[c].releaseDate) {
+    if (a < allSets[c].releaseDate) {
       return a;
     }
     return allSets[c].releaseDate;
   }, '2222-11-11');
-
-  return bestDate;
 }
 
 fs.readFileAsync(`${process.cwd()}/setup/SetList.json`, 'utf-8').then((setListText) => {
