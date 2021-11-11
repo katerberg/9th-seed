@@ -8,8 +8,13 @@ fs.readFileAsync = util.promisify(fs.readFile);
 fs.readdirAsync = util.promisify(fs.readdir);
 
 const connection = mysql.createConnection({
-  ...dbInfo,
+  connectionLimit: 10,
   multipleStatements: true,
+  database: process.env.DB_NAME || dbInfo.database,
+  host: process.env.DB_HOST || dbInfo.host,
+  user: process.env.DB_USER || dbInfo.user,
+  password: process.env.DB_PASSWORD || dbInfo.password,
+  port: process.env.DB_PORT || 3306,
 });
 connection.connectAsync = util.promisify(connection.connect);
 connection.queryAsync = util.promisify(connection.query);

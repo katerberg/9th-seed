@@ -29,7 +29,7 @@ const archivesDao = {
       [`${name}%`],
       (err, result) => {
         if (err) {
-          console.error(`Error retrieving number of times taken for ${name}`);
+          console.error(`Error retrieving stats for ${name}`);
           return rej(err);
         }
         res(result);

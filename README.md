@@ -5,6 +5,24 @@ A twitch bot designed to assist viewers of the [St Louis Vintage Rotisserie Draf
 ## Commands
 
 
+# Docker setup
+
+## Requirements
+
+You will need `docker desktop` installed.
+
+## Starting
+
+To run the environment hosted on docker, run the following:
+
+```
+docker-compose build
+docker-compose up
+```
+
+
+
+# Non-Docker setup
 
 ## Requirements
 

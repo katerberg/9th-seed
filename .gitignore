@@ -2,3 +2,4 @@
 /creds
 .DS_STORE
 *.log
+.env
