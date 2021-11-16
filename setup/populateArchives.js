@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
   host: process.env.DB_HOST || dbInfo.host,
   user: process.env.DB_USER || dbInfo.user,
   password: process.env.DB_PASSWORD || dbInfo.password,
-  port: process.env.DB_PORT || 3306,
+  port: process.env.DB_PORT || 3307,
 });
 connection.connectAsync = util.promisify(connection.connect);
 connection.queryAsync = util.promisify(connection.query);

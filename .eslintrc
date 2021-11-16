@@ -59,7 +59,7 @@
     "block-spacing": ["error", "never"],
     "brace-style": "error",
     "camelcase": "error",
-    "capitalized-comments": "error",
+    "capitalized-comments": "off",
     "comma-dangle": ["error", "always-multiline"],
     "comma-spacing": "error",
     "comma-style": "error",

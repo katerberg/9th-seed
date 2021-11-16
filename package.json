@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "csv-stringify": "^5.3.3",
+    "fastify": "^3.24.0",
     "mysql": "^2.17.1",
+    "nodemon": "^2.0.15",
     "tmi.js": "^1.4.2"
   },
   "scripts": {
@@ -25,7 +27,7 @@
     "db:populateArchives": "yarn credsCheck && node setup/populateArchives.js",
     "waitForMysql": "wait-for-it ${DB_HOST}:${DB_PORT}",
     "start": "node app.js",
-    "start:dev": "CHANNEL=katmarktest node app.js",
+    "start:dev": "CHANNEL=katmarktest nodemon app.js",
     "test": "mocha 'src/**/*.test.js' 'test'",
     "test:watch": "yarn test --watch",
     "lint": "yarn lint:ci --fix",
