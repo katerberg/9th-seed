@@ -1,6 +1,26 @@
 const connection = require('./db');
 
 const archivesDao = {
+  getMostCommonCards: async(limit = 50) => new Promise((res, rej) => {
+    connection.query(
+      'SELECT archives.card, avg(archives.pick) as averagePick, count(archives.card) as numberTaken ' +
+      'FROM archives ' +
+      'INNER JOIN oracle on oracle.card = archives.card ' +
+      'RIGHT JOIN drafts on oracle.releaseDate BETWEEN "1000-01-01" AND drafts.occurance ' +
+      'GROUP BY card ' +
+      'ORDER BY numberTaken desc, averagePick asc ' +
+      'LIMIT ?;',
+      [limit],
+      (err, result) => {
+        console.log('RESULTresult');
+        if (err) {
+          console.error('Error retrieving most common cards');
+          return rej(err);
+        }
+        res(result);
+      },
+    );
+  }),
   getNumberOfDraftsLegalForCard: async(name) => new Promise((res, rej) => {
     connection.query(
       'SELECT count(drafts.draft) as numberOfDrafts ' +
