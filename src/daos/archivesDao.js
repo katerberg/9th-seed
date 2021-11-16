@@ -12,7 +12,6 @@ const archivesDao = {
       'LIMIT ?;',
       [limit],
       (err, result) => {
-        console.log('RESULTresult');
         if (err) {
           console.error('Error retrieving most common cards');
           return rej(err);

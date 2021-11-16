@@ -13,8 +13,15 @@ const cards = {
 
     return {...stats, ...drafts};
   },
-  getCards: async() => {
-    const mostCommon = await getMostCommonCards(50);
+  getCards: async(request) => {
+    let limit;
+    try {
+      limit = Number.parseInt(request.query.limit, 10);
+    } catch (e) {
+      console.log('Bad limit provided to getCards. Using default');
+      limit = 50;
+    }
+    const mostCommon = await getMostCommonCards(limit);
     const promises = mostCommon.map(({card}) => ({
       stats: getStatsForCard(card),
       drafts: getNumberOfDraftsLegalForCard(card),
