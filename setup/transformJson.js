@@ -7,7 +7,7 @@ fs.writeFileAsync = util.promisify(fs.writeFile);
 const stringifyAsync = util.promisify(stringify);
 
 function isNormalSet(type) {
-  return ['expansion', 'core'].includes(type);
+  return ['expansion', 'core', 'commander', 'starter'].includes(type);
 }
 
 function getEarliestReleaseDate(allSets, setsForCard) {
@@ -46,9 +46,7 @@ fs.readFileAsync(`${process.cwd()}/setup/SetList.json`, 'utf-8').then((setListTe
   fs.readFileAsync(`${process.cwd()}/setup/VintageCards.json`, 'utf-8').then((textFile) => {
     const cardJson = JSON.parse(textFile).data;
     const cards = Object.keys(cardJson).filter(c => cardJson[c][0].printings);
-    stringifyAsync(cards.map(c => {
-      return [c, getEarliestReleaseDate(sets, cardJson[c][0].printings)];
-    })).then((output) => {
+    stringifyAsync(cards.map(c => [c, getEarliestReleaseDate(sets, cardJson[c][0].printings)])).then((output) => {
       fs.writeFile(`${process.cwd()}/setup/AllCards.csv`, output, (err) => {
         if (err) {
           throw err;
