@@ -36,18 +36,16 @@ const cards = {
       minRatio = undefined;
     }
     const mostCommon = await getMostCommonCards(minRatio, limit);
-    const promises = mostCommon.map(({card}) => ({
-      stats: getStatsForCard(card),
-      drafts: getNumberOfDraftsLegalForCard(card),
-    }));
-    const finishedDetails = await Promise.all(promises.reduce((a, c) => {
-      a.push(Promise.all([c.stats, c.drafts]));
-      return a;
-    }, []));
-    return finishedDetails.map(detail => {
-      const [[stat], [drafts]] = detail;
-      return {card: stat.card, average: stat.average, numberTaken: stat.numberTaken, numberOfDrafts: drafts.numberOfDrafts};
-    });
+    return mostCommon.map(detail =>
+      ({
+        card: detail.card,
+        average: detail.average,
+        numberTaken: detail.numberTaken,
+        numberOfDrafts: detail.numberAvailable,
+        averageRound: detail.averageRound,
+        ratio: detail.ratio,
+      }),
+    );
   },
 };
 

@@ -4,8 +4,9 @@ const archivesDao = {
   getMostCommonCards: async(ratio = 0.1, limit = 50) => new Promise((res, rej) => {
     connection.query(
       'SELECT * from ( ' +
-      'SELECT a.card, a.averageRound, a.numberAvailable, a.numberTaken, a.numberTaken/a.numberAvailable as ratio from( ' +
+      'SELECT a.card, a.averageRound, a.average, a.numberAvailable, a.numberTaken, a.numberTaken/a.numberAvailable as ratio from( ' +
         'SELECT archives.card ' +
+        ',avg(archives.pick) as average ' +
         ',ceiling(avg(archives.pick)/8) as averageRound ' +
         ',( ' +
           'select count(*) ' +
