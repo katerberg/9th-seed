@@ -5,6 +5,9 @@ const fastify = require('fastify')({logger: true});
 Object.entries(fastifyRoutes.get).forEach(([name, route]) => {
   fastify.get(name, route);
 });
+Object.entries(fastifyRoutes.post).forEach(([name, route]) => {
+  fastify.post(name, route);
+});
 
 // Run the server!
 const start = async() => {

@@ -1,5 +1,5 @@
 const {isValidCardName} = require('../daos/oracleDao');
-const {getMostCommonCards, getNumberOfDraftsLegalForCard, getStatsForCard} = require('../daos/archivesDao');
+const {getMostCommonCards, getStatsForManyCards, getNumberOfDraftsLegalForCard, getStatsForCard} = require('../daos/archivesDao');
 
 const NUMBER_OF_ROUNDS = 8;
 
@@ -46,6 +46,17 @@ const cards = {
         ratio: detail.ratio,
       }),
     );
+  },
+  postCards: async(request) => {
+    if (typeof request.body !== 'object') {
+      throw {statusCode: 400, message: 'Invalid content-type'};
+    }
+    if (!Array.isArray(request.body) || request.body.some(item => typeof item !== 'string')) {
+      throw {statusCode: 400, message: 'Expected string array'};
+    }
+
+    const cardStats = await getStatsForManyCards(request.body);
+    return cardStats;
   },
 };
 
