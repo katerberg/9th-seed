@@ -19,6 +19,9 @@ const cards = {
     let limit;
     try {
       limit = Number.parseInt(request.query.limit, 10);
+      if (Number.isNaN(limit) || limit > 1000) {
+        limit = 50;
+      }
     } catch (e) {
       console.log('Bad limit provided to getCards. Using default');
       limit = 50;
