@@ -26,6 +26,8 @@
     "db:populateOracle": "yarn credsCheck && node setup/populateOracle.js",
     "db:populateArchives": "yarn credsCheck && node setup/populateArchives.js",
     "waitForMysql": "wait-for-it ${DB_HOST}:${DB_PORT}",
+    "http": "node fastify.js",
+    "http:dev": "nodemon fastify.js",
     "start": "node app.js",
     "start:dev": "CHANNEL=katmarktest nodemon app.js",
     "test": "mocha 'src/**/*.test.js' 'test'",

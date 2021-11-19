@@ -1,6 +1,8 @@
 const {isValidCardName} = require('../daos/oracleDao');
 const {getMostCommonCards, getNumberOfDraftsLegalForCard, getStatsForCard} = require('../daos/archivesDao');
 
+const NUMBER_OF_ROUNDS = 8;
+
 const cards = {
   getCard: async(request) => {
     const {cardName} = request.params;
@@ -11,7 +13,7 @@ const cards = {
     const [stats] = await getStatsForCard(cardName);
     const [drafts] = await getNumberOfDraftsLegalForCard(cardName);
 
-    return {...stats, ...drafts};
+    return {...stats, ...drafts, averageRound: Math.ceil(stats.average / NUMBER_OF_ROUNDS)};
   },
   getCards: async(request) => {
     let limit;
