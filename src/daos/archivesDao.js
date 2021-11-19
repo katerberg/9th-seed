@@ -1,8 +1,11 @@
 const connection = require('./db');
 
 const archivesDao = {
-  getMostCommonCards: async(limit = 50) => new Promise((res, rej) => {
+  getMostCommonCards: async(ratio = 0.1, limit = 50) => new Promise((res, rej) => {
+    console.log('ratio', ratio);
+    console.log('limit', limit);
     connection.query(
+      'SELECT * from ( ' +
       'SELECT a.card, a.averageRound, a.numberAvailable, a.numberTaken, a.numberTaken/a.numberAvailable as ratio from( ' +
         'SELECT archives.card ' +
         ',ceiling(avg(archives.pick)/8) as averageRound ' +
@@ -17,6 +20,8 @@ const archivesDao = {
              'INNER JOIN oracle on oracle.card = archives.card ' +
              'GROUP BY card ' +
              ' ) a ' +
+          ' ) b ' +
+       'WHERE ratio > ? ' +
        'ORDER BY ' +
        'averageRound asc ' +
        ', ' +
@@ -24,7 +29,7 @@ const archivesDao = {
        ', ' +
        'numberTaken desc ' +
        'LIMIT ?;',
-      [limit],
+      [ratio, limit],
       (err, result) => {
         if (err) {
           console.error('Error retrieving most common cards');

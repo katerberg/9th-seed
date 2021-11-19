@@ -16,17 +16,26 @@ const cards = {
     return {...stats, ...drafts, averageRound: Math.ceil(stats.average / NUMBER_OF_ROUNDS)};
   },
   getCards: async(request) => {
-    let limit;
+    let limit, minRatio;
     try {
       limit = Number.parseInt(request.query.limit, 10);
       if (Number.isNaN(limit) || limit > 1000) {
-        limit = 50;
+        limit = undefined;
       }
     } catch (e) {
       console.log('Bad limit provided to getCards. Using default');
-      limit = 50;
+      limit = undefined;
     }
-    const mostCommon = await getMostCommonCards(limit);
+    try {
+      minRatio = Number.parseInt(request.query['min-ratio'], 10);
+      if (Number.isNaN(minRatio) || minRatio > 1 || minRatio < 0) {
+        minRatio = undefined;
+      }
+    } catch (e) {
+      console.log('Bad minimum ratio provided to getCards. Using default');
+      minRatio = undefined;
+    }
+    const mostCommon = await getMostCommonCards(minRatio, limit);
     const promises = mostCommon.map(({card}) => ({
       stats: getStatsForCard(card),
       drafts: getNumberOfDraftsLegalForCard(card),
