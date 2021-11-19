@@ -2,8 +2,6 @@ const connection = require('./db');
 
 const archivesDao = {
   getMostCommonCards: async(ratio = 0.1, limit = 50) => new Promise((res, rej) => {
-    console.log('ratio', ratio);
-    console.log('limit', limit);
     connection.query(
       'SELECT * from ( ' +
       'SELECT a.card, a.averageRound, a.numberAvailable, a.numberTaken, a.numberTaken/a.numberAvailable as ratio from( ' +
