@@ -22,7 +22,7 @@ const archivesDao = {
           ' ) b ' +
        'WHERE ratio > ? ' +
        'ORDER BY ' +
-       'averageRound asc ' +
+       'average asc ' +
        ', ' +
        'ratio desc ' +
        ', ' +
