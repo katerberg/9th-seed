@@ -13,9 +13,10 @@ const cards = {
     const [stats] = await getStatsForCard(cardName);
     const [drafts] = await getNumberOfDraftsLegalForCard(cardName);
 
-    return {...stats, ...drafts, averageRound: Math.ceil(stats.average / NUMBER_OF_ROUNDS)};
+    return {...stats, ...drafts, averageRound: stats ? Math.ceil(stats.average / NUMBER_OF_ROUNDS) : null};
   },
   getCards: async(request) => {
+    // Freak out if the responses from DB don't match input (due to name mismatch)
     let limit, minRatio;
     try {
       limit = Number.parseInt(request.query.limit, 10);
