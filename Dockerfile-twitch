@@ -8,4 +8,4 @@ COPY yarn.lock .
 COPY package.json .
 RUN yarn install
 COPY . .
-CMD yarn db:docker && yarn http
+CMD yarn waitForMysql && yarn start

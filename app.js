@@ -16,5 +16,3 @@ onChat((_channel, user, message, self) => {
     console.log(e.message); // eslint-disable-line no-console
   }
 });
-
-require('./fastify');

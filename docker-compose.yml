@@ -30,6 +30,24 @@ services:
     tty: true
     networks:
       - backend
+  http:
+    depends_on:
+      - mysqldb
+    build:
+      context: .
+      dockerfile: Dockerfile-twitch
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - DB_HOST=mysqldb
+      - DB_USER=$MYSQLDB_USER
+      - DB_PASSWORD=$MYSQLDB_ROOT_PASSWORD
+      - DB_NAME=$MYSQLDB_DATABASE
+      - DB_PORT=$MYSQLDB_DOCKER_PORT
+    stdin_open: true
+    tty: true
+    networks:
+      - backend
 
 networks:
   backend:
