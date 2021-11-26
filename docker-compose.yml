@@ -12,7 +12,7 @@ services:
       - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
     networks:
       - backend
-  app:
+  http:
     depends_on:
       - mysqldb
     build: ./
@@ -30,7 +30,7 @@ services:
     tty: true
     networks:
       - backend
-  http:
+  twitch:
     depends_on:
       - mysqldb
     build:
