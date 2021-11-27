@@ -1,6 +1,7 @@
 const fastifyRoutes = require('./src/http/routes');
 const fastify = require('fastify')({logger: true});
 
+fastify.register(require('fastify-cors'));
 
 Object.entries(fastifyRoutes.get).forEach(([name, route]) => {
   fastify.get(name, route);
@@ -12,7 +13,7 @@ Object.entries(fastifyRoutes.post).forEach(([name, route]) => {
 // Run the server!
 const start = async() => {
   try {
-    await fastify.listen(3000, '0.0.0.0');
+    await fastify.listen(process.env.FASTIFY_PORT || 3000, '0.0.0.0');
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
