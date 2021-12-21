@@ -3,12 +3,25 @@ const {getMostCommonCards, getStatsForManyCards, getNumberOfDraftsLegalForCard, 
 
 const NUMBER_OF_ROUNDS = 8;
 
+async function fuzzyMatch(card) {
+  if (card.length === 0) {
+    return;
+  }
+  const [result] = await getStatsForCard(card);
+  if (result) {
+    return result;
+  }
+  return fuzzyMatch(card.slice(0, card.length - 1));
+}
+
 const cards = {
   getCard: async(request) => {
     const {cardName} = request.params;
     const isValid = await isValidCardName(cardName);
     if (!isValid) {
-      throw {statusCode: 404, message: 'Invalid card name'};
+      const stats = await fuzzyMatch(cardName);
+
+      throw {statusCode: 404, message: stats.card};
     }
     const [stats] = await getStatsForCard(cardName);
     const [drafts] = await getNumberOfDraftsLegalForCard(cardName);

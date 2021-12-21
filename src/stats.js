@@ -25,7 +25,6 @@ async function fuzzyMatch(card) {
     return result;
   }
   return fuzzyMatch(card.slice(0, card.length - 1));
-
 }
 
 async function getStats(message) {
