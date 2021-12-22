@@ -24,6 +24,11 @@ const cards = {
       throw {statusCode: 404, message: stats ? stats.card : null};
     }
     const [stats] = await getStatsForCard(cardName);
+    if (stats.card !== cardName) {
+      const stats = await fuzzyMatch(cardName);
+
+      throw {statusCode: 404, message: stats ? stats.card : null};
+    }
     const [drafts] = await getNumberOfDraftsLegalForCard(cardName);
 
     return {...stats, ...drafts, averageRound: stats ? Math.ceil(stats.average / NUMBER_OF_ROUNDS) : null};
