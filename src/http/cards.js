@@ -24,10 +24,10 @@ const cards = {
       throw {statusCode: 404, message: stats ? stats.card : null};
     }
     const [stats] = await getStatsForCard(cardName);
-    if (stats.card !== cardName) {
-      const stats = await fuzzyMatch(cardName);
+    if (!stats || `${stats.card}`.toLowerCase() !== `${cardName}`.toLowerCase()) {
+      const fuzz = await fuzzyMatch(cardName);
 
-      throw {statusCode: 404, message: stats ? stats.card : null};
+      throw {statusCode: 404, message: fuzz ? fuzz.card : null};
     }
     const [drafts] = await getNumberOfDraftsLegalForCard(cardName);
 
