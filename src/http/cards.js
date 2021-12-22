@@ -21,7 +21,7 @@ const cards = {
     if (!isValid) {
       const stats = await fuzzyMatch(cardName);
 
-      throw {statusCode: 404, message: stats.card};
+      throw {statusCode: 404, message: stats ? stats.card : null};
     }
     const [stats] = await getStatsForCard(cardName);
     const [drafts] = await getNumberOfDraftsLegalForCard(cardName);
