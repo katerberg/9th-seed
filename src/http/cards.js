@@ -24,12 +24,12 @@ const cards = {
       throw {statusCode: 404, message: stats ? stats.card : null};
     }
     const [stats] = await getStatsForCard(cardName);
+    const [drafts] = await getNumberOfDraftsLegalForCard(cardName);
     if (!stats || `${stats.card}`.toLowerCase() !== `${cardName}`.toLowerCase()) {
       const fuzz = await fuzzyMatch(cardName);
 
-      throw {statusCode: 404, message: fuzz ? fuzz.card : null};
+      return {...stats, ...drafts, card: cardName, numberTaken: 0, averageRound: null, suggestion: fuzz ? fuzz.card : null};
     }
-    const [drafts] = await getNumberOfDraftsLegalForCard(cardName);
 
     return {...stats, ...drafts, averageRound: stats ? Math.ceil(stats.average / NUMBER_OF_ROUNDS) : null};
   },
