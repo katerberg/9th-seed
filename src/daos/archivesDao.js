@@ -1,43 +1,26 @@
 const connection = require('./db');
 
+const lotusScoreSelect = 'SELECT * from ( ' +
+        'SELECT *, ((376-(((withRatio.numberAvailable - withRatio.numberTaken) * 376 + withRatio.average * withRatio.numberTaken) / withRatio.numberAvailable))/376*100) as lotusScore from ( ' +
+          'SELECT a.card, a.averageRound, a.average, a.numberAvailable, a.numberTaken, a.numberTaken/a.numberAvailable as ratio from( ' +
+            'SELECT archives.card ' +
+            ',avg(archives.pick) as average ' +
+            ',ceiling(avg(archives.pick)/8) as averageRound ' +
+            ',( ' +
+              'select count(*) ' +
+              'from drafts ' +
+              'where oracle.releaseDate ' +
+              'BETWEEN "1000-01-01" AND drafts.occurance ' +
+            ') as numberAvailable ' +
+            ', count(*) as numberTaken ' +
+            'FROM archives ' +
+            'INNER JOIN oracle on oracle.card = archives.card ' +
+            'GROUP BY card ' +
+          ') a ' +
+        ') withRatio ' +
+      ') withLotus ';
+
 const archivesDao = {
-  getMostCommonCards: async(ratio = 0.1, limit = 50) => new Promise((res, rej) => {
-    connection.query(
-      'SELECT * from ( ' +
-      'SELECT a.card, a.averageRound, a.average, a.numberAvailable, a.numberTaken, a.numberTaken/a.numberAvailable as ratio from( ' +
-        'SELECT archives.card ' +
-        ',avg(archives.pick) as average ' +
-        ',ceiling(avg(archives.pick)/8) as averageRound ' +
-        ',( ' +
-          'select count(*) ' +
-          'from drafts ' +
-          'where oracle.releaseDate ' +
-          'BETWEEN "1000-01-01" AND drafts.occurance ' +
-        ') as numberAvailable ' +
-        ', count(*) as numberTaken ' +
-             'FROM archives ' +
-             'INNER JOIN oracle on oracle.card = archives.card ' +
-             'GROUP BY card ' +
-             ' ) a ' +
-          ' ) b ' +
-       'WHERE ratio > ? ' +
-       'ORDER BY ' +
-       'average asc ' +
-       ', ' +
-       'ratio desc ' +
-       ', ' +
-       'numberTaken desc ' +
-       'LIMIT ?;',
-      [ratio, limit],
-      (err, result) => {
-        if (err) {
-          console.error('Error retrieving most common cards');
-          return rej(err);
-        }
-        res(result);
-      },
-    );
-  }),
   getNumberOfDraftsLegalForCard: async(name) => new Promise((res, rej) => {
     connection.query(
       'SELECT count(drafts.draft) as numberOfDrafts ' +
@@ -58,9 +41,7 @@ const archivesDao = {
   }),
   getStatsForCard: async(name) => new Promise((res, rej) => {
     connection.query(
-      'SELECT card, avg(pick) as average, count(*) as numberTaken ' +
-      'FROM archives ' +
-      'WHERE card LIKE ? ' +
+      `${lotusScoreSelect} WHERE card LIKE ? ` +
       'GROUP BY card ' +
       'ORDER BY card asc;',
       [`${name}%`],
@@ -75,30 +56,13 @@ const archivesDao = {
   }),
   getStatsForManyCards: async(cardList) => new Promise((res, rej) => {
     connection.query(
-      'SELECT * from ( ' +
-      'SELECT a.card, a.averageRound, a.average, a.numberAvailable, a.numberTaken, a.numberTaken/a.numberAvailable as ratio from( ' +
-        'SELECT archives.card ' +
-        ',avg(archives.pick) as average ' +
-        ',ceiling(avg(archives.pick)/8) as averageRound ' +
-        ',( ' +
-          'select count(*) ' +
-          'from drafts ' +
-          'where oracle.releaseDate ' +
-          'BETWEEN "1000-01-01" AND drafts.occurance ' +
-        ') as numberAvailable ' +
-        ', count(*) as numberTaken ' +
-             'FROM archives ' +
-             'INNER JOIN oracle on oracle.card = archives.card ' +
-             'GROUP BY card ' +
-             ' ) a ' +
-          ' ) b ' +
-       'WHERE card in (?)' +
-       'ORDER BY ' +
-       'average asc ' +
-       ', ' +
-       'ratio desc ' +
-       ', ' +
-       'numberTaken desc;',
+      `${lotusScoreSelect} WHERE card in (?)` +
+      'ORDER BY ' +
+      'average asc ' +
+      ', ' +
+      'ratio desc ' +
+      ', ' +
+      'numberTaken desc;',
       [cardList],
       (err, result) => {
         if (err) {
