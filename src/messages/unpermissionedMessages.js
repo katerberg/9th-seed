@@ -16,6 +16,7 @@ function getUnpermissionedResponse(dirtyMessage) {
     message === '!vrd4' ||
     message === '!vrd5' ||
     message === '!vrd6' ||
+    message === '!vrd7' ||
     message === '!archives'
   ) {
     return 'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=945529176';
@@ -27,7 +28,7 @@ function getUnpermissionedResponse(dirtyMessage) {
     message === '!standings' ||
     message === '!challonge'
   ) {
-    return 'Standings are visible at https://challonge.com/stlotus7';
+    return 'Standings are visible at https://challonge.com/stlotus8';
   } else if (
     message === '!vrd7' ||
     message === '!sheet' ||
@@ -38,7 +39,9 @@ function getUnpermissionedResponse(dirtyMessage) {
     message === '!decklists' ||
     message === '!draft'
   ) {
-    return 'Spreadsheet with draft picks is at https://bit.ly/3kZj0zm';
+    return 'Spreadsheet with draft picks is at https://bit.ly/3JTLTH6';
+  } else if (message === '!discord') {
+    return 'Play your first VRD online at https://discord.gg/nxBPYXn';
   } else if (message === '!youtube') {
     return 'Find our VODs on https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA';
   } else if (message === '!gethelp') {
