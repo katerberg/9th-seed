@@ -25,17 +25,21 @@ connection.on('error', () => {
 
 const INSERT_DRAFT_TEMPLATE = 'INSERT INTO drafts (draft, occurance) VALUES ("{draft}", "{occurance}")';
 const INSERT_ARCHIVE_TEMPLATE = 'INSERT INTO archives (player, card, draft, pick) VALUES ("{player}", "{card}", "{draft}", {pick})';
+const SELECT_ORACLE_TEMPLATE = 'SELECT card FROM oracle WHERE card = "{name}"';
+const SELECT_LIKE_ORACLE_TEMPLATE = 'SELECT card FROM oracle WHERE card like "{name}%"';
+
 
 function getNumberOfPlayers(records) {
   return records[0].length - 1;
 }
 
-function getInsertsFromCsv(csv, draftName) {
+async function getInsertsFromCsv(csv, draftName) {
   const insertStatements = [];
   const records = parse(csv);
   const numberOfPlayers = getNumberOfPlayers(records);
   console.debug(`${draftName} has ${numberOfPlayers} players`);
-  records.forEach((record) => {
+  for (let recordI = 0; recordI < records.length; recordI++) { // eslint-disable-line no-plusplus
+    const record = records[recordI];
     if (record[0].match(/^Date$/)) {
       insertStatements.push(INSERT_DRAFT_TEMPLATE
         .replace('{draft}', draftName)
@@ -47,15 +51,27 @@ function getInsertsFromCsv(csv, draftName) {
       const numberOfPicksBeforeRound = numberOfPlayers * (round - 1);
       for (let i = 1; i <= numberOfPlayers; i++) { // eslint-disable-line no-plusplus
         const pickNumber = numberOfPicksBeforeRound + (round % 2 === 0 ? numberOfPlayers + 1 - i : i);
+        let cardName = record[i].toLowerCase();
+        const selectResponse = await connection.queryAsync(SELECT_ORACLE_TEMPLATE.replace('{name}', cardName));
+        if (!selectResponse.length) {
+          const permissiveReponse = await connection.queryAsync(SELECT_LIKE_ORACLE_TEMPLATE.replace('{name}', cardName));
+          if (permissiveReponse.length) {
+            const permissiveCard = permissiveReponse[0].card;
+            if (permissiveCard.includes('//')) {
+              cardName = permissiveCard;
+            }
+          }
+        }
+
         insertStatements.push(INSERT_ARCHIVE_TEMPLATE
           .replace('{player}', records[0][i])
-          .replace('{card}', record[i].toLowerCase())
+          .replace('{card}', cardName)
           .replace('{pick}', pickNumber)
           .replace('{draft}', draftName),
         );
       }
     }
-  });
+  }
   return insertStatements;
 }
 
@@ -63,8 +79,8 @@ function addDrafts(drafts, number, insertStatements) {
   if (drafts.length === number) {
     return insertStatements;
   }
-  return fs.readFileAsync(`${process.cwd()}/drafts/${drafts[number]}`, 'utf-8').then((draftCsv) => {
-    const inserts = getInsertsFromCsv(draftCsv, drafts[number].split('.')[0]);
+  return fs.readFileAsync(`${process.cwd()}/drafts/${drafts[number]}`, 'utf-8').then(async(draftCsv) => {
+    const inserts = await getInsertsFromCsv(draftCsv, drafts[number].split('.')[0]);
     return addDrafts(drafts, number + 1, [...insertStatements, ...inserts]);
   });
 }
@@ -76,7 +92,7 @@ function runScripts(scripts, number) {
   return connection.queryAsync(scripts[number])
     .then(() => runScripts(scripts, number + 1))
     .catch((e) => {
-      console.log(`SQL was unhappy with ${scripts[number]}`);
+      console.log(`Archives: SQL was unhappy with ${scripts[number]}`);
       console.log(e);
     });
 }

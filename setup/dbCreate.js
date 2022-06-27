@@ -36,7 +36,7 @@ connection.connectAsync().then(() => {
         return runScripts(scripts, number + 1);
       })
       .catch((e) => {
-        console.log(`SQL was unhappy with ${scripts[number]}`);
+        console.log(`Create: SQL was unhappy with ${scripts[number]}`);
         console.log(e);
       }));
   }

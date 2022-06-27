@@ -54,7 +54,7 @@ function runScripts(scripts, number) {
   return connection.queryAsync(scripts[number])
     .then(() => runScripts(scripts, number + 1))
     .catch((e) => {
-      console.log(`SQL was unhappy with ${scripts[number]}`);
+      console.log(`Oracle: SQL was unhappy with ${scripts[number]}`);
       console.log(e);
     });
 }
