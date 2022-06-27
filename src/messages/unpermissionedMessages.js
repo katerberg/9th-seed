@@ -46,7 +46,7 @@ function getUnpermissionedResponse(dirtyMessage) {
     return 'Find our VODs on https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA';
   } else if (message === '!gethelp') {
     return 'For someone to talk to please contact http://www.thetrevorproject.org 1 866 488 7386 Crisis Text Line SMS: Text "HERE" to 741-741';
-  } else if (message.startsWith('!pick')) {
+  } else if (message.startsWith('!pick') || message.startsWith('pick!')) {
     return getStats(message);
   }
 }

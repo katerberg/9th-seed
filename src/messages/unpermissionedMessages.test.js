@@ -66,6 +66,13 @@ describe('Unpermissioned Messages', () => {
       expect(result).to.have.string('(round 1)');
     });
 
+    it('allows pick!', async() => {
+      const result = await getUnpermissionedResponse('pick! Black Lotus');
+
+      expect(result).to.have.string('times (of ');
+      expect(result).to.have.string('(round 1)');
+    });
+
     it('says an undrafted card is not playable', async() => {
       const result = await getUnpermissionedResponse('!pick Crocanura');
 
