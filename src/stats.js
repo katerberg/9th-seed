@@ -46,6 +46,9 @@ async function getStats(message) {
   if (fuzzyResult) {
     const message = await getMessage(fuzzyResult.card, fuzzyResult.numberTaken, fuzzyResult.average);
 
+    if (message.startsWith(card) && message.includes('//')) {
+      return message;
+    }
     return `"${card}" doesn't exist. ${message}`;
   }
 

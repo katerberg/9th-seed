@@ -84,10 +84,11 @@ describe('Unpermissioned Messages', () => {
       expect(result).to.have.string('"black lotsu" doesn\'t exist. black lotus has');
     });
 
-    it('gives accurate name when fuzzy matching for a known split card', async() => {
+    it('gives accurate name without sass when fuzzy matching for a known split card', async() => {
       const result = await getUnpermissionedResponse('!pick Fire');
 
-      expect(result).to.have.string('"fire" doesn\'t exist. fire // ice has');
+      expect(result).to.have.string('fire // ice has');
+      expect(result).not.to.have.string('doesn\'t exist');
     });
 
     it('does not give stilted language for cards drafted once', async() => {
