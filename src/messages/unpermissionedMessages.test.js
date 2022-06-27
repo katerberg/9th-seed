@@ -1,5 +1,4 @@
 const {expect} = require('chai');
-const {getModResponse} = require('./modMessages');
 const {getUnpermissionedResponse} = require('./unpermissionedMessages');
 
 describe('Unpermissioned Messages', () => {
@@ -21,7 +20,7 @@ describe('Unpermissioned Messages', () => {
 
   it('gives link to ban list', () => {
     ['!banned', '!ban', '!banlist', '!bans'].forEach(item => {
-      expect(getUnpermissionedResponse(item)).to.have.string('rules');
+      expect(getUnpermissionedResponse(item)).to.have.string('/rulings');
     });
   });
 
@@ -44,7 +43,7 @@ describe('Unpermissioned Messages', () => {
   });
 
   it('links to current draft', () => {
-    ['!vrd7', '!decks', '!decklists', '!draft', '!picks', '!sheet'].forEach(item => {
+    ['!decks', '!decklists', '!draft', '!picks', '!sheet'].forEach(item => {
       expect(getUnpermissionedResponse(item)).to.have.string('Spreadsheet with draft picks', `${item} failed to get spreadsheet`);
     });
   });
@@ -76,20 +75,19 @@ describe('Unpermissioned Messages', () => {
     it('does fuzzy matching for a partial card', async() => {
       const result = await getUnpermissionedResponse('!pick Lim-D');
 
-      expect(result).to.have.string('"Lim-D" doesn\'t exist. lim-dul\'s vault has');
+      expect(result).to.have.string('"lim-d" doesn\'t exist. lim-dul\'s vault has');
     });
 
     it('does fuzzy matching for an unknown card', async() => {
       const result = await getUnpermissionedResponse('!pick Black Lotsu');
 
-      expect(result).to.have.string('"Black Lotsu" doesn\'t exist. black lotus has');
+      expect(result).to.have.string('"black lotsu" doesn\'t exist. black lotus has');
     });
 
     it('gives accurate name when fuzzy matching for a known split card', async() => {
       const result = await getUnpermissionedResponse('!pick Fire');
 
-      expect(result).to.have.string('"Fire" doesn\'t exist. fire // ice has');
-      expect(result).to.have.string('1 time ');
+      expect(result).to.have.string('"fire" doesn\'t exist. fire // ice has');
     });
 
     it('does not give stilted language for cards drafted once', async() => {
