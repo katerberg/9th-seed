@@ -7,7 +7,7 @@ fs.writeFileAsync = util.promisify(fs.writeFile);
 const stringifyAsync = util.promisify(stringify);
 
 function isNormalSet(type) {
-  return ['expansion', 'core', 'commander', 'starter'].includes(type);
+  return ['expansion', 'core', 'commander', 'starter', 'draft_innovation'].includes(type);
 }
 
 function getEarliestReleaseDate(allSets, setsForCard) {
