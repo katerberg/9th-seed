@@ -1,5 +1,5 @@
 const {isValidCardName} = require('../daos/oracleDao');
-const {getStatsForManyCards, getNumberOfDraftsLegalForCard, getStatsForCard} = require('../daos/archivesDao');
+const {getStatsForManyCards, getNumberOfDraftsLegalForCard, getStatsForCard, getSynergiesForCard} = require('../daos/archivesDao');
 
 const NUMBER_OF_ROUNDS = 8;
 
@@ -14,15 +14,21 @@ async function fuzzyMatch(card) {
   return fuzzyMatch(card.slice(0, card.length - 1));
 }
 
+async function validateCard(cardName) {
+  const isValid = await isValidCardName(cardName);
+  if (!isValid) {
+    const stats = await fuzzyMatch(cardName);
+
+    throw {statusCode: 404, message: stats ? stats.card : null};
+  }
+  return isValid;
+}
+
 const cards = {
   getCard: async(request) => {
     const {cardName} = request.params;
-    const isValid = await isValidCardName(cardName);
-    if (!isValid) {
-      const stats = await fuzzyMatch(cardName);
+    await validateCard(cardName);
 
-      throw {statusCode: 404, message: stats ? stats.card : null};
-    }
     const [stats] = await getStatsForCard(cardName);
     const [drafts] = await getNumberOfDraftsLegalForCard(cardName);
     if (!stats || `${stats.card}`.toLowerCase() !== `${cardName}`.toLowerCase()) {
@@ -32,6 +38,17 @@ const cards = {
     }
 
     return {...stats, ...drafts, averageRound: stats ? Math.ceil(stats.average / NUMBER_OF_ROUNDS) : null};
+  },
+  getCardSynergies: async(request) => {
+    const {cardName} = request.params;
+    await validateCard(cardName);
+
+    const synergies = await getSynergiesForCard(cardName);
+    // find all drafts where the card was picked
+    // find all cards picked with it
+    // order by which ones were picked most
+    // take into account that some cards weren't always available
+    return synergies;
   },
   postCards: async(request) => {
     if (typeof request.body !== 'object') {
