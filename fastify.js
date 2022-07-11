@@ -1,7 +1,7 @@
 const fs = require('fs');
 const fastifyRoutes = require('./src/http/routes');
 
-const httpsOptions = {
+const httpsOptions = process.env.ENV === 'development' ? null : {
   key: fs.readFileSync(process.env.KEY || 'creds/fastify.key'),
   cert: fs.readFileSync(process.env.CERT || 'creds/fastify.crt'),
 };
