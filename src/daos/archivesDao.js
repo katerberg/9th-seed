@@ -41,26 +41,32 @@ const archivesDao = {
   }),
   getSynergiesForCard: async(name) => new Promise((res, rej) => {
     connection.query(
-      'SELECT card, picksWith, averagePick, LEAST(maxPicks, numberAvailable) as numberOfOpportunities,  picksWith/LEAST(maxPicks, numberAvailable) as percentageTogether' +
+      'SELECT card, picksWith, averagePick, picksOfSelection, picksOfSynergyOption, LEAST(availablePicksOfSelection, numberAvailable) as overlapInstances, picksWith/LEAST(picksOfSelection, numberAvailable) as percentageTogether' +
       ' FROM (' +
-      '   SELECT groupedPicks.card, picksWith, averagePick, maxPicks, ( ' +
-      '       SELECT count(*) ' +
-      '       FROM drafts ' +
-      '       WHERE oracle.releaseDate ' +
-      '       BETWEEN "1000-01-01" AND drafts.occurance ' +
-      '   ) AS numberAvailable ' +
-      '   FROM (' +
-      '     SELECT b.card, count(b.card) as picksWith, (SELECT count(card) FROM (archives) WHERE archives.card like ?) as maxPicks, avg(b.pick) as averagePick FROM archives a' +
-      '     INNER JOIN archives b ON a.player = b.player AND a.draft = b.draft' +
-      '     WHERE a.card like ?' +
-      '     GROUP BY b.card' +
-      '     ORDER BY count(b.card) DESC, averagePick ASC' +
-      '   ) groupedPicks' +
-      '   INNER JOIN oracle on oracle.card = groupedPicks.card' +
-      '   WHERE groupedPicks.picksWith > 1' +
+      '  SELECT groupedPicks.card, picksWith, averagePick, picksOfSelection, picksOfSynergyOption, availablePicksOfSelection, ( ' +
+      '      SELECT count(*) ' +
+      '      FROM drafts ' +
+      '      WHERE oracle.releaseDate ' +
+      '      BETWEEN "1000-01-01" AND drafts.occurance ' +
+      '  ) AS numberAvailable ' +
+      '  FROM (' +
+      '    SELECT b.card, count(b.card) as picksWith, (SELECT count(*) ' +
+      '      FROM drafts ' +
+      '      INNER JOIN archives on archives.draft = drafts.draft' +
+      '      INNER JOIN oracle on oracle.card = archives.card' +
+      '      WHERE archives.card like ?' +
+      '      AND oracle.releaseDate BETWEEN "1000-01-01" AND drafts.occurance' +
+      '      ) as availablePicksOfSelection, (SELECT count(card) FROM (archives) WHERE archives.card like ?) as picksOfSelection, (SELECT count(card) FROM (archives) WHERE archives.card = b.card) as picksOfSynergyOption, avg(b.pick) as averagePick FROM archives a' +
+      '    INNER JOIN archives b ON a.player = b.player AND a.draft = b.draft' +
+      '    WHERE a.card like ?' +
+      '    GROUP BY b.card' +
+      '    ORDER BY count(b.card) DESC, averagePick ASC' +
+      '  ) groupedPicks' +
+      '  INNER JOIN oracle on oracle.card = groupedPicks.card' +
+      '  WHERE groupedPicks.picksWith > 1' +
       ' ) AS availabledPicks' +
-      ' ORDER BY percentageTogether DESC',
-      [`${name}%`, `${name}%`],
+      ' ORDER BY percentageTogether DESC, picksWith DESC, picksOfSynergyOption ASC, averagePick ASC',
+      [`${name}%`, `${name}%`, `${name}%`],
       (err, result) => {
         if (err) {
           console.error(`Error retrieving synergies for ${name}`);
