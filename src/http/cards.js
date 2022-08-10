@@ -48,7 +48,7 @@ const cards = {
     // find all cards picked with it
     // order by which ones were picked most
     // take into account that some cards weren't always available
-    return synergies;
+    return synergies.filter(s => s.card !== cardName);
   },
   postCards: async(request) => {
     if (typeof request.body !== 'object') {
