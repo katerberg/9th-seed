@@ -28,9 +28,8 @@ function getUnpermissionedResponse(dirtyMessage) {
     message === '!standings' ||
     message === '!challonge'
   ) {
-    return 'Standings are visible at https://challonge.com/stlotus9';
+    return 'Standings are visible at https://challonge.com/stlotus10';
   } else if (
-    message === '!vrd7' ||
     message === '!sheet' ||
     message === '!picks' ||
     message === '!decks' ||
