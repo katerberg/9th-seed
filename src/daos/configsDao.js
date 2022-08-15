@@ -2,7 +2,6 @@ const connection = require('./db');
 
 const configsDao = {
   getConfig: async(name) => new Promise((res, rej) => {
-    console.log(name);
     connection.query(
       'SELECT stored FROM configs WHERE config = ?;',
       [name],

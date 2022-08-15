@@ -25,7 +25,7 @@ connection.on('error', () => {
 const INSERT_CONFIG_TEMPLATE = 'INSERT INTO configs (config, stored) VALUES ("{config}", "{stored}")';
 
 function getInsert(config, value) {
-  return INSERT_CONFIG_TEMPLATE.replace('{config}', config).replace('{value}', value);
+  return INSERT_CONFIG_TEMPLATE.replace('{config}', config).replace('{stored}', value);
 }
 
 function runScripts(scripts, number) {
@@ -35,7 +35,7 @@ function runScripts(scripts, number) {
   return connection.queryAsync(scripts[number])
     .then(() => runScripts(scripts, number + 1))
     .catch((e) => {
-      console.log(`Archives: SQL was unhappy with ${scripts[number]}`);
+      console.log(`Config: SQL was unhappy with ${scripts[number]}`);
       console.log(e);
     });
 }
@@ -43,7 +43,7 @@ function runScripts(scripts, number) {
 connection.connectAsync().then(() => {
   console.log('Connected to DB');
   const inserts = [
-    'DELETE FROM archives',
+    'DELETE FROM configs',
     getInsert('sheet', 'https://docs.google.com/spreadsheets/d/1yHAVTi7N8n42lvQirCX2j7VBgTUNADx4Lcfv-Aq027s/edit?usp=sharing'),
     getInsert('challonge', 'https://challonge.com/stlotus10'),
   ];
