@@ -32,7 +32,6 @@ async function checkTwitch() {
   return new Promise((res, rej) => {
     const file = './creds/twitchCreds.json';
     fs.readFile(file, 'utf8', (err, contents) => {
-      // Console.log(contents);
       if (err) {
         rej(`Unable to find ${file}`);
       } else {

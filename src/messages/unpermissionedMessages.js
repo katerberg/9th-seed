@@ -1,3 +1,4 @@
+const {getChallonge, getSheet} = require('../configs');
 const {getStats} = require('../stats');
 
 function getUnpermissionedResponse(dirtyMessage) {
@@ -28,7 +29,7 @@ function getUnpermissionedResponse(dirtyMessage) {
     message === '!standings' ||
     message === '!challonge'
   ) {
-    return 'Standings are visible at https://challonge.com/stlotus10';
+    return getChallonge();
   } else if (
     message === '!sheet' ||
     message === '!picks' ||
@@ -38,7 +39,7 @@ function getUnpermissionedResponse(dirtyMessage) {
     message === '!decklists' ||
     message === '!draft'
   ) {
-    return 'Spreadsheet with draft picks is at https://bit.ly/3C3trLb';
+    return getSheet();
   } else if (message === '!discord') {
     return 'Play your first VRD online at https://discord.gg/nxBPYXn';
   } else if (message === '!youtube') {
