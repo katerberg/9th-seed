@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "csv-stringify": "^5.3.3",
-    "fastify": "^3.24.0",
+    "fastify": "^3.29.4",
     "fastify-cors": "^6.0.2",
     "mysql": "^2.17.1",
     "nodemon": "^2.0.15",
