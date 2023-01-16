@@ -3,10 +3,10 @@ const util = require('util');
 const mysql = require('mysql');
 const dbInfo = require('../creds/dbCreds.json');
 
-
 fs.readFileAsync = util.promisify(fs.readFile);
 fs.readdirAsync = util.promisify(fs.readdir);
 
+console.log(dbInfo);
 const connection = mysql.createConnection({
   connectionLimit: 10,
   multipleStatements: true,
@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
   host: process.env.DB_HOST || dbInfo.host,
   user: process.env.DB_USER || dbInfo.user,
   password: process.env.DB_PASSWORD || dbInfo.password,
-  port: process.env.DB_PORT || 3307,
+  port: process.env.DB_PORT || 3306,
 });
 connection.connectAsync = util.promisify(connection.connect);
 connection.queryAsync = util.promisify(connection.query);
@@ -30,24 +30,34 @@ connection.connectAsync().then(() => {
     if (scripts.length === number) {
       return;
     }
-    return fs.readFileAsync(`${process.cwd()}/sql/${scripts[number]}`, 'utf-8').then((sqlScript) => connection.queryAsync(sqlScript)
-      .then(() => {
-        console.log(`Finished running ${scripts[number]}`);
-        return runScripts(scripts, number + 1);
-      })
-      .catch((e) => {
-        console.log(`Create: SQL was unhappy with ${scripts[number]}`);
-        console.log(e);
-      }));
+    return fs
+      .readFileAsync(`${process.cwd()}/sql/${scripts[number]}`, 'utf-8')
+      .then((sqlScript) =>
+        connection
+          .queryAsync(sqlScript)
+          .then(() => {
+            console.log(`Finished running ${scripts[number]}`);
+            return runScripts(scripts, number + 1);
+          })
+          .catch((e) => {
+            console.log(`Create: SQL was unhappy with ${scripts[number]}`);
+            console.log(e);
+          })
+      );
   }
 
   fs.readdirAsync(`${process.cwd()}/sql`).then((items) => {
     items.sort((a, b) => {
       const regex = /^\d+/;
-      return Number.parseInt(a.match(regex)[0], 10) > Number.parseInt(b.match(regex)[0], 10);
+      return (
+        Number.parseInt(a.match(regex)[0], 10) >
+        Number.parseInt(b.match(regex)[0], 10)
+      );
     });
-    runScripts(items, 0).catch(() => null).then(() => {
-      connection.end();
-    });
+    runScripts(items, 0)
+      .catch(() => null)
+      .then(() => {
+        connection.end();
+      });
   });
 });

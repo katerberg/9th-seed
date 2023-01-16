@@ -1,13 +1,14 @@
 const mysql = require('mysql');
 const dbInfo = require('../../creds/dbCreds.json');
 
-const pool = mysql.createPool({connectionLimit: 10,
+const pool = mysql.createPool({
+  connectionLimit: 10,
   multipleStatements: true,
   database: process.env.DB_NAME || dbInfo.database,
   host: process.env.DB_HOST || dbInfo.host,
   user: process.env.DB_USER || dbInfo.user,
   password: process.env.DB_PASSWORD || dbInfo.password,
-  port: process.env.DB_PORT || 3307,
+  port: process.env.DB_PORT || 3306,
 });
 
 pool.on('error', (err) => {

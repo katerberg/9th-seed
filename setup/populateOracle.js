@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
   host: process.env.DB_HOST || dbInfo.host,
   user: process.env.DB_USER || dbInfo.user,
   password: process.env.DB_PASSWORD || dbInfo.password,
-  port: process.env.DB_PORT || 3307,
+  port: process.env.DB_PORT || 3306,
 });
 connection.connectAsync = util.promisify(connection.connect);
 connection.queryAsync = util.promisify(connection.query);
@@ -23,12 +23,14 @@ connection.on('error', () => {
   console.error('something went terribly wrong connecting to mysql');
 });
 
-const INSERT_TEMPLATE = 'INSERT INTO oracle (card, releaseDate) VALUES ("{card}", "{releaseDate}")';
+const INSERT_TEMPLATE =
+  'INSERT INTO oracle (card, releaseDate) VALUES ("{card}", "{releaseDate}")';
 
 function createInsertStatement(cardName, releaseDate) {
-  return INSERT_TEMPLATE
-    .replace('{card}', cardName.toLowerCase().replace(/"/g, '\\"'))
-    .replace('{releaseDate}', releaseDate);
+  return INSERT_TEMPLATE.replace(
+    '{card}',
+    cardName.toLowerCase().replace(/"/g, '\\"')
+  ).replace('{releaseDate}', releaseDate);
 }
 
 function getInsertsFromArchives() {
@@ -51,7 +53,8 @@ function runScripts(scripts, number) {
   if (scripts.length === number) {
     return;
   }
-  return connection.queryAsync(scripts[number])
+  return connection
+    .queryAsync(scripts[number])
     .then(() => runScripts(scripts, number + 1))
     .catch((e) => {
       console.log(`Oracle: SQL was unhappy with ${scripts[number]}`);
@@ -62,23 +65,23 @@ function runScripts(scripts, number) {
 connection.connectAsync().then(() => {
   console.log('Connected to DB');
 
-  fs.readFileAsync(`${process.cwd()}/setup/AllCards.csv`, 'utf-8').then((draftCsv) => {
-    const insertsFromCsv = getInsertsFromCsv(draftCsv);
-    const inserts = [...insertsFromCsv, ...getInsertsFromArchives()];
-    console.log('got some inserts');
-    console.log(inserts && inserts.length);
-    if (inserts && inserts.length) {
-      return runScripts(inserts, 0);
-    }
-    console.log('Something went wrong inserting');
-
-  }).catch((e) => {
-    console.log('There was an error');
-    console.log(e);
-  }).then(() => {
-    console.log('closing connection');
-    connection.end();
-  });
+  fs.readFileAsync(`${process.cwd()}/setup/AllCards.csv`, 'utf-8')
+    .then((draftCsv) => {
+      const insertsFromCsv = getInsertsFromCsv(draftCsv);
+      const inserts = [...insertsFromCsv, ...getInsertsFromArchives()];
+      console.log('got some inserts');
+      console.log(inserts && inserts.length);
+      if (inserts && inserts.length) {
+        return runScripts(inserts, 0);
+      }
+      console.log('Something went wrong inserting');
+    })
+    .catch((e) => {
+      console.log('There was an error');
+      console.log(e);
+    })
+    .then(() => {
+      console.log('closing connection');
+      connection.end();
+    });
 });
-
-
