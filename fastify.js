@@ -1,13 +1,17 @@
+/* eslint-disable operator-linebreak */
+/* eslint-disable multiline-ternary */
 const fs = require('fs');
 const fastifyRoutes = require('./src/http/routes');
 
-const httpsOptions = process.env.ENV === 'development' ? null : {
-  key: fs.readFileSync(process.env.KEY || 'creds/fastify.key'),
-  cert: fs.readFileSync(process.env.CERT || 'creds/fastify.crt'),
-};
+const httpsOptions =
+  process.env.ENV === 'development'
+    ? null
+    : {
+        key: fs.readFileSync(process.env.KEY || 'creds/fastify.key'),
+        cert: fs.readFileSync(process.env.CERT || 'creds/fastify.crt'),
+      };
 
 const fastify = require('fastify')({logger: true, https: httpsOptions});
-
 
 fastify.register(require('fastify-cors'));
 
@@ -19,7 +23,7 @@ Object.entries(fastifyRoutes.post).forEach(([name, route]) => {
 });
 
 // Run the server!
-const start = async() => {
+const start = async () => {
   try {
     await fastify.listen(process.env.FASTIFY_PORT || 3000, '0.0.0.0');
   } catch (err) {
