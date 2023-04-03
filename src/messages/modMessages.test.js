@@ -3,7 +3,9 @@ const {getModResponse} = require('./modMessages');
 
 describe('Mod Messages', () => {
   it('gives shout out if user is channel owner', () => {
-    const result = getModResponse('!so neem', {username: process.env.CHANNEL || 'stlotusmtg'});
+    const result = getModResponse('!so neem', {
+      username: process.env.CHANNEL || 'stlotusmtg',
+    });
 
     expect(result).to.have.string('content');
     expect(result).to.have.string('neem');

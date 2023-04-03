@@ -1,5 +1,10 @@
 const {isValidCardName} = require('../daos/oracleDao');
-const {getStatsForManyCards, getNumberOfDraftsLegalForCard, getStatsForCard, getSynergiesForCard} = require('../daos/archivesDao');
+const {
+  getStatsForManyCards,
+  getNumberOfDraftsLegalForCard,
+  getStatsForCard,
+  getSynergiesForCard,
+} = require('../daos/archivesDao');
 
 const NUMBER_OF_ROUNDS = 8;
 
@@ -25,21 +30,35 @@ async function validateCard(cardName) {
 }
 
 const cards = {
-  getCard: async(request) => {
+  getCard: async (request) => {
     const {cardName} = request.params;
     await validateCard(cardName);
 
     const [stats] = await getStatsForCard(cardName);
     const [drafts] = await getNumberOfDraftsLegalForCard(cardName);
-    if (!stats || `${stats.card}`.toLowerCase() !== `${cardName}`.toLowerCase()) {
+    if (
+      !stats ||
+      `${stats.card}`.toLowerCase() !== `${cardName}`.toLowerCase()
+    ) {
       const fuzz = await fuzzyMatch(cardName);
 
-      return {...stats, ...drafts, card: cardName, numberTaken: 0, averageRound: null, suggestion: fuzz ? fuzz.card : null};
+      return {
+        ...stats,
+        ...drafts,
+        card: cardName,
+        numberTaken: 0,
+        averageRound: null,
+        suggestion: fuzz ? fuzz.card : null,
+      };
     }
 
-    return {...stats, ...drafts, averageRound: stats ? Math.ceil(stats.average / NUMBER_OF_ROUNDS) : null};
+    return {
+      ...stats,
+      ...drafts,
+      averageRound: stats ? Math.ceil(stats.average / NUMBER_OF_ROUNDS) : null,
+    };
   },
-  getCardSynergies: async(request) => {
+  getCardSynergies: async (request) => {
     const {cardName} = request.params;
     await validateCard(cardName);
 
@@ -48,13 +67,16 @@ const cards = {
     // find all cards picked with it
     // order by which ones were picked most
     // take into account that some cards weren't always available
-    return synergies.filter(s => s.card !== cardName);
+    return synergies.filter((s) => s.card !== cardName);
   },
-  postCards: async(request) => {
+  postCards: async (request) => {
     if (typeof request.body !== 'object') {
       throw {statusCode: 400, message: 'Invalid content-type'};
     }
-    if (!Array.isArray(request.body) || request.body.some(item => typeof item !== 'string')) {
+    if (
+      !Array.isArray(request.body) ||
+      request.body.some((item) => typeof item !== 'string')
+    ) {
       throw {statusCode: 400, message: 'Expected string array'};
     }
 

@@ -7,15 +7,16 @@ async function checkDb() {
       if (err) {
         rej(`Unable to find ${file}`);
       } else {
-
         try {
           const parsed = JSON.parse(contents);
 
-          if (!parsed ||
+          if (
+            !parsed ||
             !parsed.database ||
             !parsed.host ||
             !parsed.password ||
-            !parsed.user) {
+            !parsed.user
+          ) {
             rej(`Missing required fields in ${file}`);
           }
         } catch (e) {
@@ -37,9 +38,7 @@ async function checkTwitch() {
       } else {
         try {
           const parsed = JSON.parse(contents);
-          if (!parsed ||
-            !parsed.password ||
-            !parsed.username) {
+          if (!parsed || !parsed.password || !parsed.username) {
             rej(`Missing required fields in ${file}`);
           }
         } catch (e) {

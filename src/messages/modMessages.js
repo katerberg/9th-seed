@@ -5,7 +5,8 @@ function getModResponse(message, user) {
   if (isPermissioned(user)) {
     if (message.indexOf('!so') === 0 || message.indexOf('!shoutout') === 0) {
       const shoutout = getCommandParams(message);
-      return shoutout ? `Check out http://twitch.tv/${shoutout} for some really cool content!` : null;
+      const checkoutMessage = `Check out http://twitch.tv/${shoutout} for some really cool content!`;
+      return shoutout ? checkoutMessage : null;
     }
 
     if (message.indexOf('!setsheet') === 0) {

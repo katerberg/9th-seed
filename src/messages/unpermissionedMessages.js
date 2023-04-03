@@ -2,7 +2,8 @@ const {getChallonge, getSheet} = require('../configs');
 const {getStats} = require('../stats');
 
 function getUnpermissionedResponse(dirtyMessage) {
-  const message = dirtyMessage && dirtyMessage.replace(/[^\x20-\x7E]+/g, '').toLowerCase();
+  const message =
+    dirtyMessage && dirtyMessage.replace(/[^\x20-\x7E]+/g, '').toLowerCase();
   if (!message) {
     return;
   }

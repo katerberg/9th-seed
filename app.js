@@ -1,6 +1,8 @@
 const {onChat, say} = require('./src/tmiClient');
 const {getModResponse} = require('./src/messages/modMessages');
-const {getUnpermissionedResponse} = require('./src/messages/unpermissionedMessages');
+const {
+  getUnpermissionedResponse,
+} = require('./src/messages/unpermissionedMessages');
 
 onChat((_channel, user, message, self) => {
   try {

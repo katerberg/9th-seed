@@ -27,14 +27,14 @@ client
 function say(message) {
   if (message) {
     switch (typeof message) {
-    case 'string':
-      client.say(channelName, message);
-      break;
-    case 'object':
-      message.then(response => client.say(channelName, response));
-      break;
-    default:
-      console.error('Unknown type of message');
+      case 'string':
+        client.say(channelName, message);
+        break;
+      case 'object':
+        message.then((response) => client.say(channelName, response));
+        break;
+      default:
+        console.error('Unknown type of message');
     }
   }
 }
