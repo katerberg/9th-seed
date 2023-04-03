@@ -59,7 +59,7 @@ async function getInsertsFromCsv(csv, draftName) {
         const pickNumber =
           numberOfPicksBeforeRound +
           (round % 2 === 0 ? numberOfPlayers + 1 - i : i);
-        let cardName = record[i].toLowerCase();
+        let cardName = record[i].toLowerCase().replaceAll('"', '\\"');
         const selectResponse = await connection.queryAsync(
           SELECT_ORACLE_TEMPLATE.replace('{name}', cardName)
         );

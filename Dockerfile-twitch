@@ -1,6 +1,6 @@
-FROM node:14
+FROM node:18
 
-WORKDIR /
+WORKDIR /usr/app
 RUN apt-get update
 RUN apt-get install wait-for-it
 RUN npm install yarn
