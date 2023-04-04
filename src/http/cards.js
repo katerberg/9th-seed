@@ -1,9 +1,12 @@
+/* eslint-disable operator-linebreak */
+/* eslint-disable multiline-ternary */
 const {isValidCardName} = require('../daos/oracleDao');
 const {
   getStatsForManyCards,
   getNumberOfDraftsLegalForCard,
   getStatsForCard,
   getSynergiesForCard,
+  getRecentStatsForCard,
 } = require('../daos/archivesDao');
 
 const NUMBER_OF_ROUNDS = 8;
@@ -34,7 +37,12 @@ const cards = {
     const {cardName} = request.params;
     await validateCard(cardName);
 
-    const [stats] = await getStatsForCard(cardName);
+    const isPremierDraftFilter =
+      request.query && request.query.premier !== undefined;
+
+    const [stats] = await (isPremierDraftFilter
+      ? getRecentStatsForCard(cardName)
+      : getStatsForCard(cardName));
     const [drafts] = await getNumberOfDraftsLegalForCard(cardName);
     if (
       !stats ||
