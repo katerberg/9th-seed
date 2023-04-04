@@ -23,7 +23,7 @@ async function fuzzyMatch(card, statsFunction) {
   if (result) {
     return result;
   }
-  return fuzzyMatch(card.slice(0, card.length - 1));
+  return fuzzyMatch(card.slice(0, card.length - 1), statsFunction);
 }
 
 async function getRecentStats(message) {

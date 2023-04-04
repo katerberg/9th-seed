@@ -10,21 +10,21 @@ const {
 
 const NUMBER_OF_ROUNDS = 8;
 
-async function fuzzyMatch(card) {
+async function fuzzyMatch(card, statsFunction) {
   if (card.length === 0) {
     return;
   }
-  const [result] = await getStatsForCard(card);
+  const [result] = await statsFunction(card);
   if (result) {
     return result;
   }
-  return fuzzyMatch(card.slice(0, card.length - 1));
+  return fuzzyMatch(card.slice(0, card.length - 1), statsFunction);
 }
 
 async function validateCard(cardName) {
   const isValid = await isValidCardName(cardName);
   if (!isValid) {
-    const stats = await fuzzyMatch(cardName);
+    const stats = await fuzzyMatch(cardName, getStatsForCard);
 
     throw {statusCode: 404, message: stats ? stats.card : null};
   }
@@ -46,7 +46,7 @@ const cards = {
       !stats ||
       `${stats.card}`.toLowerCase() !== `${cardName}`.toLowerCase()
     ) {
-      const fuzz = await fuzzyMatch(cardName);
+      const fuzz = await fuzzyMatch(cardName, getStatsForCard);
 
       return {
         ...stats,
