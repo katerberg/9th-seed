@@ -3,7 +3,6 @@
 const {isValidCardName} = require('../daos/oracleDao');
 const {
   getStatsForManyCards,
-  getNumberOfDraftsLegalForCard,
   getStatsForCard,
   getSynergiesForCard,
   getRecentStatsForCard,
@@ -43,7 +42,6 @@ const cards = {
     const [stats] = await (isPremierDraftFilter
       ? getRecentStatsForCard(cardName)
       : getStatsForCard(cardName));
-    const [drafts] = await getNumberOfDraftsLegalForCard(cardName);
     if (
       !stats ||
       `${stats.card}`.toLowerCase() !== `${cardName}`.toLowerCase()
@@ -52,7 +50,6 @@ const cards = {
 
       return {
         ...stats,
-        ...drafts,
         card: cardName,
         numberTaken: 0,
         averageRound: null,
@@ -62,7 +59,6 @@ const cards = {
 
     return {
       ...stats,
-      ...drafts,
       averageRound: stats ? Math.ceil(stats.average / NUMBER_OF_ROUNDS) : null,
     };
   },
