@@ -21,10 +21,10 @@ async function fuzzyMatch(card, statsFunction) {
   return fuzzyMatch(card.slice(0, card.length - 1), statsFunction);
 }
 
-async function validateCard(cardName) {
+async function validateCard(cardName, statsFunction) {
   const isValid = await isValidCardName(cardName);
   if (!isValid) {
-    const stats = await fuzzyMatch(cardName, getStatsForCard);
+    const stats = await fuzzyMatch(cardName, statsFunction);
 
     throw {statusCode: 404, message: stats ? stats.card : null};
   }
@@ -34,19 +34,22 @@ async function validateCard(cardName) {
 const cards = {
   getCard: async (request) => {
     const {cardName} = request.params;
-    await validateCard(cardName);
 
     const isPremierDraftFilter =
       request.query && request.query.premier !== undefined;
 
-    const [stats] = await (isPremierDraftFilter
-      ? getRecentStatsForCard(cardName)
-      : getStatsForCard(cardName));
+    const statsFunction = isPremierDraftFilter
+      ? getRecentStatsForCard
+      : getStatsForCard;
+
+    await validateCard(cardName, statsFunction);
+
+    const [stats] = await statsFunction(cardName);
     if (
       !stats ||
       `${stats.card}`.toLowerCase() !== `${cardName}`.toLowerCase()
     ) {
-      const fuzz = await fuzzyMatch(cardName, getStatsForCard);
+      const fuzz = await fuzzyMatch(cardName, statsFunction);
 
       return {
         ...stats,
