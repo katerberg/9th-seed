@@ -1,46 +1,49 @@
 const connection = require('./db');
 
-const recentLotusScoreSelect =
-  'select card, averageround, average, numberavailable, numbertaken, ratio, coalesce(nullif (abs(lotusscore), -lotusscore), 0) as lotusscore from ( ' +
-  'select *, ((376-(((withratio.numberavailable - withratio.numbertaken) * 376 + withratio.average * withratio.numbertaken) / withratio.numberavailable))/376*100) as lotusscore from ( ' +
-  'select a.card, a.averageround, a.average, a.numberavailable, a.numbertaken, a.numbertaken/a.numberavailable as ratio from( ' +
-  'select archives.card ' +
-  ',avg(archives.pick) as average ' +
-  ',ceiling(avg(archives.pick)/8) as averageround ' +
-  ',( ' +
-  'select count(*) ' +
-  'from drafts ' +
-  'where oracle.releasedate ' +
-  'between "1000-01-01" and drafts.occurance ' +
-  ') as numberavailable ' +
-  ', count(*) as numbertaken ' +
-  'from archives ' +
-  'inner join oracle on oracle.card = archives.card ' +
-  'group by card ' +
-  ') a ' +
-  ') withratio ' +
-  ') withlotus ';
-
 const lotusScoreSelect =
-  'select card, averageround, average, numberavailable, numbertaken, ratio, coalesce(nullif (abs(lotusscore), -lotusscore), 0) as lotusscore from ( ' +
-  'select *, ((376-(((withratio.numberavailable - withratio.numbertaken) * 376 + withratio.average * withratio.numbertaken) / withratio.numberavailable))/376*100) as lotusscore from ( ' +
-  'select a.card, a.averageround, a.average, a.numberavailable, a.numbertaken, a.numbertaken/a.numberavailable as ratio from( ' +
-  'select archives.card ' +
+  'SELECT card, averageRound, average, numberAvailable, numberTaken, ratio, COALESCE(NULLIF (ABS(lotusScore), -lotusScore), 0) as lotusScore from ( ' +
+  'SELECT *, ((376-(((withRatio.numberAvailable - withRatio.numberTaken) * 376 + withRatio.average * withRatio.numberTaken) / withRatio.numberAvailable))/376*100) as lotusScore from ( ' +
+  'SELECT a.card, a.averageRound, a.average, a.numberAvailable, a.numberTaken, a.numberTaken/a.numberAvailable as ratio from( ' +
+  'SELECT archives.card ' +
   ',avg(archives.pick) as average ' +
-  ',ceiling(avg(archives.pick)/8) as averageround ' +
+  ',ceiling(avg(archives.pick)/8) as averageRound ' +
   ',( ' +
   'select count(*) ' +
   'from drafts ' +
-  'where oracle.releasedate ' +
-  'between "1000-01-01" and drafts.occurance ' +
-  ') as numberavailable ' +
-  ', count(*) as numbertaken ' +
-  'from archives ' +
-  'inner join oracle on oracle.card = archives.card ' +
-  'group by card ' +
+  'where oracle.releaseDate ' +
+  'BETWEEN "1000-01-01" AND drafts.occurance ' +
+  ') as numberAvailable ' +
+  ', count(*) as numberTaken ' +
+  'FROM archives ' +
+  'INNER JOIN oracle on oracle.card = archives.card ' +
+  'GROUP BY card ' +
   ') a ' +
-  ') withratio ' +
-  ') withlotus ';
+  ') withRatio ' +
+  ') withLotus ';
+
+const recentLotusScoreSelect =
+  'SELECT card, averageRound, average, numberAvailable, numberTaken, ratio, COALESCE(NULLIF (ABS(lotusScore), -lotusScore), 0) as lotusScore from ( ' +
+  'SELECT *, ((376-(((withRatio.numberAvailable - withRatio.numberTaken) * 376 + withRatio.average * withRatio.numberTaken) / withRatio.numberAvailable))/376*100) as lotusScore from ( ' +
+  'SELECT a.card, a.averageRound, a.average, a.numberAvailable, a.numberTaken, a.numberTaken/a.numberAvailable as ratio from( ' +
+  'SELECT archives.card ' +
+  ',avg(archives.pick) as average ' +
+  ',ceiling(avg(archives.pick)/8) as averageRound ' +
+  ',( ' +
+  'select count(*) ' +
+  'from drafts ' +
+  'where (drafts.draft like "VRD Archives - DIS%" OR drafts.draft like "VRD Archives - StLotus%") ' +
+  'AND oracle.releaseDate ' +
+  'BETWEEN "1000-01-01" AND drafts.occurance ' +
+  ') as numberAvailable ' +
+  ', count(*) as numberTaken ' +
+  'FROM archives ' +
+  'INNER JOIN oracle on oracle.card = archives.card ' +
+  'INNER JOIN drafts on drafts.draft = archives.draft ' +
+  'WHERE (drafts.draft like "VRD Archives - DIS%" OR drafts.draft like "VRD Archives - StLotus%")' +
+  'GROUP BY card ' +
+  ') a ' +
+  ') withRatio ' +
+  ') withLotus ';
 
 const archivesDao = {
   getNumberOfDraftsLegalForCard: async (name) =>

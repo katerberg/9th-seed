@@ -60,7 +60,6 @@
     "block-spacing": ["error", "never"],
     "brace-style": "error",
     "camelcase": "error",
-    "capitalized-comments": "off",
     "comma-spacing": "error",
     "comma-style": "error",
     "computed-property-spacing": "error",
