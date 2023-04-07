@@ -6,6 +6,7 @@ const {
   getStatsForCard,
   getSynergiesForCard,
   getRecentStatsForCard,
+  getNumberOfDraftsLegalForCard,
 } = require('../daos/archivesDao');
 const {getDraftsForCard} = require('../daos/draftsDao');
 
@@ -45,6 +46,10 @@ const cards = {
 
     await validateCard(cardName, statsFunction);
 
+    const [draftsLegal] = await getNumberOfDraftsLegalForCard(
+      cardName,
+      isPremierDraftFilter
+    );
     const [stats] = await statsFunction(cardName);
     if (
       !stats ||
@@ -56,6 +61,7 @@ const cards = {
         ...stats,
         card: cardName,
         numberTaken: 0,
+        numberAvailable: draftsLegal.numberOfDrafts,
         averageRound: null,
         suggestion: fuzz ? fuzz.card : null,
       };
