@@ -3,11 +3,11 @@ const connection = require('./db');
 const draftsForCardSelect = `
 SELECT * FROM
   (SELECT archives.card, drafts.draft, drafts.occurance,
-  (SELECT releaseDate FROM oracle WHERE oracle.card like ?) as maxRelease
+  (SELECT releaseDate FROM oracle WHERE oracle.card = ?) as maxRelease
   FROM drafts
   LEFT JOIN archives ON (
     drafts.draft = archives.draft
-    AND archives.card like ?
+    AND archives.card = ?
     OR archives.card IS NULL
   )
   LEFT JOIN oracle on (archives.card = oracle.card OR oracle.card IS NULL)
@@ -41,7 +41,7 @@ const draftsDao = {
     new Promise((res, rej) => {
       connection.query(
         draftsForCardSelect,
-        [`${name}%`, `${name}%`],
+        [`${name}`, `${name}`],
         (err, result) => {
           if (err) {
             console.error('Error retrieving drafts for card');
