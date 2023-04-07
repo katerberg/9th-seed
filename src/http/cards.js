@@ -7,6 +7,7 @@ const {
   getSynergiesForCard,
   getRecentStatsForCard,
 } = require('../daos/archivesDao');
+const {getDraftsForCard} = require('../daos/draftsDao');
 
 const NUMBER_OF_ROUNDS = 8;
 
@@ -60,8 +61,11 @@ const cards = {
       };
     }
 
+    const drafts = await getDraftsForCard(cardName);
+
     return {
       ...stats,
+      drafts,
       averageRound: stats ? Math.ceil(stats.average / NUMBER_OF_ROUNDS) : null,
     };
   },
