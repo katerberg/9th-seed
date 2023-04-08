@@ -67,7 +67,7 @@ const cards = {
       };
     }
 
-    const drafts = await getDraftsForCard(cardName);
+    const drafts = await getDraftsForCard(cardName, isPremierDraftFilter);
 
     return {
       ...stats,

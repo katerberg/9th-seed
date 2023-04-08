@@ -1,4 +1,5 @@
 const connection = require('./db');
+const {PREMIER_FILTER} = require('./filters');
 
 const lotusScoreSelect =
   'SELECT card, averageRound, average, numberAvailable, numberTaken, ratio, COALESCE(NULLIF (ABS(lotusScore), -lotusScore), 0) as lotusScore from ( ' +
@@ -20,9 +21,6 @@ const lotusScoreSelect =
   ') a ' +
   ') withRatio ' +
   ') withLotus ';
-
-const PREMIER_FILTER =
-  '(drafts.draft like "VRD Archives - DIS%" OR drafts.draft like "VRD Archives - StLotus%")';
 
 const recentLotusScoreSelect =
   `SELECT card, averageRound, average, numberAvailable, numberTaken, ratio, COALESCE(NULLIF (ABS(lotusScore), -lotusScore), 0) as lotusScore from ( ` +
