@@ -2,7 +2,7 @@ const connection = require('./db');
 
 const draftsForCardSelect = `
 SELECT * FROM
-  (SELECT archives.card, drafts.draft, drafts.occurance,
+  (SELECT archives.card, drafts.draft, drafts.occurance as occurrence, archives.pick,
   (SELECT releaseDate FROM oracle WHERE oracle.card = ?) as maxRelease
   FROM drafts
   LEFT JOIN archives ON (
@@ -11,8 +11,8 @@ SELECT * FROM
     OR archives.card IS NULL
   )
   LEFT JOIN oracle on (archives.card = oracle.card OR oracle.card IS NULL)
-  ORDER BY drafts.occurance DESC) a
-WHERE a.occurance >= a.maxRelease
+  ORDER BY drafts.occurance ASC) a
+WHERE a.occurrence >= a.maxRelease
 `;
 
 const draftsDao = {
