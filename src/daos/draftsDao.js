@@ -28,7 +28,7 @@ const draftsDao = {
       connection.query(
         `
 SELECT * FROM
-  (SELECT archives.card, drafts.draft, drafts.occurance as occurrence, archives.pick,
+  (SELECT archives.card, drafts.draft, drafts.gid, drafts.occurance as occurrence, archives.pick,
   (SELECT releaseDate FROM oracle WHERE oracle.card = ?) as maxRelease
   FROM drafts
   LEFT JOIN archives ON (

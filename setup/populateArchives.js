@@ -24,7 +24,7 @@ connection.on('error', () => {
 });
 
 const INSERT_DRAFT_TEMPLATE =
-  'INSERT INTO drafts (draft, occurance) VALUES ("{draft}", "{occurance}")';
+  'INSERT INTO drafts (draft, gid, occurance) VALUES ("{draft}", "{gid}", "{occurance}")';
 const INSERT_ARCHIVE_TEMPLATE =
   'INSERT INTO archives (player, card, draft, pick) VALUES ("{player}", "{card}", "{draft}", {pick})';
 const SELECT_ORACLE_TEMPLATE = 'SELECT card FROM oracle WHERE card = "{name}"';
@@ -35,7 +35,7 @@ function getNumberOfPlayers(records) {
   return records[0].length - 1;
 }
 
-async function getInsertsFromCsv(csv, draftName) {
+async function getInsertsFromCsv(csv, draftName, gid) {
   const insertStatements = [];
   const records = parse(csv);
   const numberOfPlayers = getNumberOfPlayers(records);
@@ -45,10 +45,9 @@ async function getInsertsFromCsv(csv, draftName) {
     const record = records[recordI];
     if (record[0].match(/^Date$/)) {
       insertStatements.push(
-        INSERT_DRAFT_TEMPLATE.replace('{draft}', draftName).replace(
-          '{occurance}',
-          record[1]
-        )
+        INSERT_DRAFT_TEMPLATE.replace('{draft}', draftName)
+          .replace('{occurance}', record[1])
+          .replace('{gid}', gid)
       );
     }
     if (record[0].match(/^\d+$/)) {
@@ -64,11 +63,11 @@ async function getInsertsFromCsv(csv, draftName) {
           SELECT_ORACLE_TEMPLATE.replace('{name}', cardName)
         );
         if (!selectResponse.length) {
-          const permissiveReponse = await connection.queryAsync(
+          const permissiveResponse = await connection.queryAsync(
             SELECT_LIKE_ORACLE_TEMPLATE.replace('{name}', cardName)
           );
-          if (permissiveReponse.length) {
-            const permissiveCard = permissiveReponse[0].card;
+          if (permissiveResponse.length) {
+            const permissiveCard = permissiveResponse[0].card;
             if (permissiveCard.includes('//')) {
               cardName = permissiveCard;
             }
@@ -94,9 +93,11 @@ function addDrafts(drafts, number, insertStatements) {
   return fs
     .readFileAsync(`${process.cwd()}/drafts/${drafts[number]}`, 'utf-8')
     .then(async (draftCsv) => {
+      const [draftName, gidName] = drafts[number].split('_');
       const inserts = await getInsertsFromCsv(
         draftCsv,
-        drafts[number].split('.')[0]
+        draftName,
+        gidName.split('.')[0]
       );
       return addDrafts(drafts, number + 1, [...insertStatements, ...inserts]);
     });
