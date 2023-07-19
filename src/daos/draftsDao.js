@@ -39,7 +39,7 @@ SELECT * FROM
   LEFT JOIN oracle on (archives.card = oracle.card OR oracle.card IS NULL)
   ${premier ? `WHERE ${PREMIER_FILTER}` : ''}
   ) a
-WHERE a.occurrence >= a.maxRelease
+WHERE a.card IS NOT NULL OR a.occurrence >= a.maxRelease
 ORDER BY a.occurrence ASC;
 `,
         [`${name}`, `${name}`],
