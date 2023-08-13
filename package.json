@@ -15,7 +15,7 @@
     "fastify-cors": "^6.0.2",
     "mysql": "^2.17.1",
     "nodemon": "^2.0.15",
-    "tmi.js": "^1.4.2"
+    "tmi.js": "^1.8.5"
   },
   "scripts": {
     "credsCheck": "node setup/credsCheck.js",
