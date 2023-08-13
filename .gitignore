@@ -1,5 +1,6 @@
 /node_modules
 /creds
+/setup/VintageCards.json
 .DS_STORE
 *.log
 .env
