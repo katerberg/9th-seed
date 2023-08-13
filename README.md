@@ -47,7 +47,7 @@ docker-compose up
 
 ### Requirements
 
-You will need `yarn` and `mysql` installed.
+You will need `npm` and `mysql` installed.
 
 You will need a database called `stlvrd` created in mysql which is accessibly by your user.
 
@@ -56,7 +56,7 @@ You will need a database called `stlvrd` created in mysql which is accessibly by
 To get data into the database (which assists or is required for many of the features of 9th Seed, run
 
 ```
-yarn db
+npm run db
 ```
 
 ### Starting
@@ -84,8 +84,8 @@ Example `twitchCreds.json`:
 
 Run the following to start your bot watching the channel.
 ```
-yarn
-yarn start
+npm install
+npm start
 ```
 
 
