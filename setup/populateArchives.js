@@ -24,7 +24,7 @@ connection.on('error', () => {
 });
 
 const INSERT_DRAFT_TEMPLATE =
-  'INSERT INTO drafts (draft, gid, occurance) VALUES ("{draft}", "{gid}", "{occurance}")';
+  'INSERT INTO drafts (draft, gid, occurrence) VALUES ("{draft}", "{gid}", "{occurrence}")';
 const INSERT_ARCHIVE_TEMPLATE =
   'INSERT INTO archives (player, card, draft, pick) VALUES ("{player}", "{card}", "{draft}", {pick})';
 const SELECT_ORACLE_TEMPLATE = 'SELECT card FROM oracle WHERE card = "{name}"';
@@ -46,7 +46,7 @@ async function getInsertsFromCsv(csv, draftName, gid) {
     if (record[0].match(/^Date$/)) {
       insertStatements.push(
         INSERT_DRAFT_TEMPLATE.replace('{draft}', draftName)
-          .replace('{occurance}', record[1])
+          .replace('{occurrence}', record[1])
           .replace('{gid}', gid)
       );
     }

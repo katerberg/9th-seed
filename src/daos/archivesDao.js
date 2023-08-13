@@ -12,7 +12,7 @@ const lotusScoreSelect =
   'select count(*) ' +
   'from drafts ' +
   'where oracle.releaseDate ' +
-  'BETWEEN "1000-01-01" AND drafts.occurance ' +
+  'BETWEEN "1000-01-01" AND drafts.occurrence ' +
   ') as numberAvailable ' +
   ', count(*) as numberTaken ' +
   'FROM archives ' +
@@ -34,7 +34,7 @@ const recentLotusScoreSelect =
   `from drafts ` +
   `where ${PREMIER_FILTER} ` +
   `AND oracle.releaseDate ` +
-  `BETWEEN "1000-01-01" AND drafts.occurance ` +
+  `BETWEEN "1000-01-01" AND drafts.occurrence ` +
   `) as numberAvailable ` +
   `, count(*) as numberTaken ` +
   `FROM archives ` +
@@ -52,7 +52,7 @@ const archivesDao = {
       connection.query(
         `SELECT count(drafts.draft) as numberOfDrafts ` +
           `FROM drafts ` +
-          `LEFT JOIN oracle on oracle.releaseDate BETWEEN "1000-01-01" AND drafts.occurance ` +
+          `LEFT JOIN oracle on oracle.releaseDate BETWEEN "1000-01-01" AND drafts.occurrence ` +
           `WHERE oracle.card LIKE ? ${filter} GROUP BY oracle.card ` +
           `ORDER BY oracle.card asc;`,
         [`${name}%`],
@@ -76,7 +76,7 @@ const archivesDao = {
           '      SELECT count(*) ' +
           '      FROM drafts ' +
           '      WHERE oracle.releaseDate ' +
-          '      BETWEEN "1000-01-01" AND drafts.occurance ' +
+          '      BETWEEN "1000-01-01" AND drafts.occurrence ' +
           '  ) AS numberAvailable ' +
           '  FROM (' +
           '    SELECT b.card, count(b.card) as picksWith, (SELECT count(*) ' +
@@ -84,7 +84,7 @@ const archivesDao = {
           '      INNER JOIN archives on archives.draft = drafts.draft' +
           '      INNER JOIN oracle on oracle.card = archives.card' +
           '      WHERE archives.card like ?' +
-          '      AND oracle.releaseDate BETWEEN "1000-01-01" AND drafts.occurance' +
+          '      AND oracle.releaseDate BETWEEN "1000-01-01" AND drafts.occurrence' +
           '      ) as availablePicksOfSelection, (SELECT count(card) FROM (archives) WHERE archives.card like ?) as picksOfSelection, (SELECT count(card) FROM (archives) WHERE archives.card = b.card) as picksOfSynergyOption, avg(b.pick) as averagePick FROM archives a' +
           '    INNER JOIN archives b ON a.player = b.player AND a.draft = b.draft' +
           '    WHERE a.card like ?' +

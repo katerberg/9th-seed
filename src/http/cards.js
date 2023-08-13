@@ -68,10 +68,11 @@ const cards = {
     }
 
     const drafts = await getDraftsForCard(cardName, isPremierDraftFilter);
+    console.log(drafts);
 
     return {
       ...stats,
-      drafts,
+      drafts: drafts.map((d) => ({...d, occurance: d.occurrence})),
       averageRound: stats ? Math.ceil(stats.average / NUMBER_OF_ROUNDS) : null,
     };
   },

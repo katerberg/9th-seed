@@ -5,13 +5,13 @@ const draftsDao = {
   getDrafts: async () =>
     new Promise((res, rej) => {
       connection.query(
-        'SELECT d.draft, d.occurance, exp((d.maxDays - d.daysSinceDraft) / (d.maxDays - d.minDays)) * 2 - 1.9 as weight ' +
+        'SELECT d.draft, d.occurrence, exp((d.maxDays - d.daysSinceDraft) / (d.maxDays - d.minDays)) * 2 - 1.9 as weight ' +
           'FROM ( ' +
           '  SELECT drafts.draft' +
-          '      , drafts.occurance' +
-          '      , DATEDIFF(now(), drafts.occurance) as daysSinceDraft' +
-          '      , (select DATEDIFF(now(), min(drafts.occurance)) from drafts) as maxDays' +
-          '      , (select DATEDIFF(now(), max(drafts.occurance)) from drafts) as minDays' +
+          '      , drafts.occurrence' +
+          '      , DATEDIFF(now(), drafts.occurrence) as daysSinceDraft' +
+          '      , (select DATEDIFF(now(), min(drafts.occurrence)) from drafts) as maxDays' +
+          '      , (select DATEDIFF(now(), max(drafts.occurrence)) from drafts) as minDays' +
           '  FROM drafts' +
           ') d;',
         (err, result) => {
@@ -28,7 +28,7 @@ const draftsDao = {
       connection.query(
         `
 SELECT * FROM
-  (SELECT archives.card, drafts.draft, drafts.gid, drafts.occurance as occurrence, archives.pick,
+  (SELECT archives.card, drafts.draft, drafts.gid, drafts.occurrence as occurrence, archives.pick,
   (SELECT releaseDate FROM oracle WHERE oracle.card = ?) as maxRelease
   FROM drafts
   LEFT JOIN archives ON (
