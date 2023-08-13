@@ -1,4 +1,3 @@
-const PREMIER_FILTER =
-  '(drafts.draft like "VRD Archives - DIS%" OR drafts.draft like "VRD Archives - StLotus%")';
+const PREMIER_FILTER = '(drafts.occurance > DATE_ADD(NOW(), INTERVAL -2 YEAR))';
 
 module.exports = {PREMIER_FILTER};
