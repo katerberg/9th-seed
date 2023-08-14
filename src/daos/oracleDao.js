@@ -3,7 +3,6 @@ const connection = require('./db');
 const oracleDao = {
   isValidCardName: async (name) =>
     new Promise((res, rej) => {
-      console.log(name);
       connection.query(
         'SELECT card FROM oracle WHERE card = ?;',
         [name],

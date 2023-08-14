@@ -68,7 +68,6 @@ const cards = {
     }
 
     const drafts = await getDraftsForCard(cardName, isPremierDraftFilter);
-    console.log(drafts);
 
     return {
       ...stats,
