@@ -40,7 +40,7 @@
     "lint:watch": "watch 'npm run lint' ."
   },
   "devDependencies": {
-    "chai": "^4.2.0",
+    "chai": "^4.3.7",
     "csv-parse": "^4.4.6",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.5.0",
