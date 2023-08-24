@@ -1,6 +1,6 @@
 /* eslint-disable operator-linebreak */
 /* eslint-disable multiline-ternary */
-const {isValidCardName} = require('../daos/oracleDao');
+const {isValidCardName, getRelevantMatches} = require('../daos/oracleDao');
 const {
   getStatsForManyCards,
   getStatsForCard,
@@ -21,6 +21,10 @@ async function fuzzyMatch(card, statsFunction) {
     return result;
   }
   return fuzzyMatch(card.slice(0, card.length - 1), statsFunction);
+}
+
+async function getRelevanceFuzzyMatchCards(cardName) {
+  return getRelevantMatches(cardName);
 }
 
 async function validateCard(cardName, statsFunction) {
@@ -56,6 +60,7 @@ const cards = {
       `${stats.card}`.toLowerCase() !== `${cardName}`.toLowerCase()
     ) {
       const fuzz = await fuzzyMatch(cardName, statsFunction);
+      const moreFuzzies = await getRelevanceFuzzyMatchCards(cardName);
 
       return {
         ...stats,
@@ -64,6 +69,7 @@ const cards = {
         numberAvailable: draftsLegal.numberOfDrafts,
         averageRound: null,
         suggestion: fuzz ? fuzz.card : null,
+        suggestions: moreFuzzies.map((fuzzy) => fuzzy.card).slice(0, 20),
       };
     }
 
@@ -77,7 +83,7 @@ const cards = {
   },
   getCardSynergies: async (request) => {
     const {cardName} = request.params;
-    await validateCard(cardName);
+    await validateCard(cardName, getStatsForCard);
 
     const synergies = await getSynergiesForCard(cardName);
     // find all drafts where the card was picked
