@@ -6,6 +6,3 @@ CREATE TABLE oracle (
   card VARCHAR(200) PRIMARY KEY,
   releaseDate DATE NOT NULL
 );
-
-ALTER TABLE oracle
-  ADD FULLTEXT(card) WITH PARSER ngram;

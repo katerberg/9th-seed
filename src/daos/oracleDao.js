@@ -29,25 +29,6 @@ const oracleDao = {
         }
       );
     }),
-  getRelevantMatches: async (name) =>
-    new Promise((res, rej) => {
-      connection.query(
-        `SELECT oracle.card, MATCH(oracle.card) AGAINST(?) AS Relevance
-FROM oracle
-INNER JOIN archives ON archives.card = oracle.card
-GROUP BY oracle.card
-ORDER BY relevance DESC
-LIMIT 100;`,
-        [name],
-        (err, result) => {
-          if (err) {
-            console.error(`Error retrieving fuzzy match for ${name}`);
-            return rej(err);
-          }
-          res(result);
-        }
-      );
-    }),
 };
 
 module.exports = oracleDao;

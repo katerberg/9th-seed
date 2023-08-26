@@ -1,10 +1,6 @@
 /* eslint-disable operator-linebreak */
 /* eslint-disable multiline-ternary */
-const {
-  isValidCardName,
-  getCardsLike,
-  getRelevantMatches,
-} = require('../daos/oracleDao');
+const {isValidCardName, getCardsLike} = require('../daos/oracleDao');
 const {
   getStatsForManyCards,
   getStatsForCard,
@@ -39,10 +35,6 @@ async function fuzzyNameMatch(card) {
   return fuzzyNameMatch(card.slice(0, card.length - 1), getCardsLike);
 }
 
-async function getRelevanceFuzzyMatchCards(cardName) {
-  return getRelevantMatches(cardName);
-}
-
 async function validateCard(cardName, statsFunction) {
   const isValid = await isValidCardName(cardName);
   if (!isValid) {
@@ -68,7 +60,6 @@ async function getSuggestions(invalidCardName) {
     `%${invalidCardName}%`,
     getStatsForCard
   ); // Fuzzy rough match from non-vrd
-  const moreFuzzies = await getRelevanceFuzzyMatchCards(invalidCardName); // Really bad relevance match
   return [
     ...new Set(
       [
@@ -76,7 +67,6 @@ async function getSuggestions(invalidCardName) {
         ...(exactFuzz || []).map((fuzzy) => fuzzy.card),
         ...(startingFuzz || []).map((fuzzy) => fuzzy.card),
         ...(looseFuzz || []).map((fuzzy) => fuzzy.card),
-        ...(moreFuzzies || []).map((fuzzy) => fuzzy.card),
       ].filter((a) => a)
     ),
   ].slice(0, 20);
