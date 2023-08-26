@@ -1,6 +1,10 @@
 /* eslint-disable operator-linebreak */
 /* eslint-disable multiline-ternary */
-const {isValidCardName, getRelevantMatches} = require('../daos/oracleDao');
+const {
+  isValidCardName,
+  getCardsLike,
+  getRelevantMatches,
+} = require('../daos/oracleDao');
 const {
   getStatsForManyCards,
   getStatsForCard,
@@ -23,6 +27,18 @@ async function fuzzyMatch(card, statsFunction) {
   return fuzzyMatch(card.slice(0, card.length - 1), statsFunction);
 }
 
+async function fuzzyNameMatch(card) {
+  console.log('fuzzy searching ', card);
+  if (card.length === 0) {
+    return;
+  }
+  const result = await getCardsLike(card);
+  if (result[0]) {
+    return result;
+  }
+  return fuzzyNameMatch(card.slice(0, card.length - 1), getCardsLike);
+}
+
 async function getRelevanceFuzzyMatchCards(cardName) {
   return getRelevantMatches(cardName);
 }
@@ -32,9 +48,38 @@ async function validateCard(cardName, statsFunction) {
   if (!isValid) {
     const stats = await fuzzyMatch(cardName, statsFunction);
 
-    throw {statusCode: 404, message: stats ? stats.card : null};
+    throw {
+      statusCode: 404,
+      suggestions: await getSuggestions(cardName),
+      message: stats ? stats.card : null,
+    };
   }
   return isValid;
+}
+
+async function getSuggestions(invalidCardName) {
+  const fuzz = await fuzzyMatch(invalidCardName, getStatsForCard); // Fuzzy match from VRD
+  const exactFuzz = await fuzzyNameMatch(invalidCardName, getStatsForCard); // Fuzzy exact match from non-vrd
+  const startingFuzz = await fuzzyNameMatch(
+    `${invalidCardName}%`,
+    getStatsForCard
+  ); // Fuzzy rough starting match from non-vrd
+  const looseFuzz = await fuzzyNameMatch(
+    `%${invalidCardName}%`,
+    getStatsForCard
+  ); // Fuzzy rough match from non-vrd
+  const moreFuzzies = await getRelevanceFuzzyMatchCards(invalidCardName); // Really bad relevance match
+  return [
+    ...new Set(
+      [
+        fuzz ? fuzz.card : '',
+        ...(exactFuzz || []).map((fuzzy) => fuzzy.card),
+        ...(startingFuzz || []).map((fuzzy) => fuzzy.card),
+        ...(looseFuzz || []).map((fuzzy) => fuzzy.card),
+        ...(moreFuzzies || []).map((fuzzy) => fuzzy.card),
+      ].filter((a) => a)
+    ),
+  ].slice(0, 20);
 }
 
 const cards = {
@@ -60,7 +105,6 @@ const cards = {
       `${stats.card}`.toLowerCase() !== `${cardName}`.toLowerCase()
     ) {
       const fuzz = await fuzzyMatch(cardName, statsFunction);
-      const moreFuzzies = await getRelevanceFuzzyMatchCards(cardName);
 
       return {
         ...stats,
@@ -69,7 +113,7 @@ const cards = {
         numberAvailable: draftsLegal.numberOfDrafts,
         averageRound: null,
         suggestion: fuzz ? fuzz.card : null,
-        suggestions: moreFuzzies.map((fuzzy) => fuzzy.card).slice(0, 20),
+        suggestions: await getSuggestions(cardName),
       };
     }
 
