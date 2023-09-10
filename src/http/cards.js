@@ -7,6 +7,7 @@ const {
   getSynergiesForCard,
   getRecentStatsForCard,
   getNumberOfDraftsLegalForCard,
+  getTopCards,
 } = require('../daos/archivesDao');
 const {getDraftsForCard} = require('../daos/draftsDao');
 
@@ -139,6 +140,10 @@ const cards = {
 
     const cardStats = await getStatsForManyCards(request.body);
     return cardStats;
+  },
+  getTopCards: async (request) => {
+    const topCards = await getTopCards();
+    return topCards;
   },
 };
 

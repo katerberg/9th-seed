@@ -8,12 +8,12 @@ const lotusScoreSelect =
   'SELECT archives.card ' +
   ',avg(archives.pick) as average ' +
   ',ceiling(avg(archives.pick)/8) as averageRound ' +
-  ',( ' +
+  ',GREATEST(( ' +
   'select count(*) ' +
   'from drafts ' +
   'where oracle.releaseDate ' +
   'BETWEEN "1000-01-01" AND drafts.occurrence ' +
-  ') as numberAvailable ' +
+  '), count(*)) as numberAvailable ' +
   ', count(*) as numberTaken ' +
   'FROM archives ' +
   'INNER JOIN oracle on oracle.card = archives.card ' +
@@ -29,13 +29,13 @@ const recentLotusScoreSelect =
   `SELECT archives.card ` +
   `,avg(archives.pick) as average ` +
   `,ceiling(avg(archives.pick)/8) as averageRound ` +
-  `,( ` +
+  `,GREATEST(( ` +
   `select count(*) ` +
   `from drafts ` +
   `where ${PREMIER_FILTER} ` +
   `AND oracle.releaseDate ` +
   `BETWEEN "1000-01-01" AND drafts.occurrence ` +
-  `) as numberAvailable ` +
+  `), count(*)) as numberAvailable ` +
   `, count(*) as numberTaken ` +
   `FROM archives ` +
   `INNER JOIN oracle on oracle.card = archives.card ` +
@@ -140,7 +140,7 @@ const archivesDao = {
   getStatsForManyCards: async (cardList) =>
     new Promise((res, rej) => {
       connection.query(
-        `${lotusScoreSelect} WHERE card in (?)` +
+        `${recentLotusScoreSelect} WHERE card in (?)` +
           'ORDER BY ' +
           'average asc ' +
           ', ' +
@@ -151,6 +151,20 @@ const archivesDao = {
         (err, result) => {
           if (err) {
             console.error('Error retrieving most common cards');
+            return rej(err);
+          }
+          res(result);
+        }
+      );
+    }),
+  getTopCards: async (limit = 100) =>
+    new Promise((res, rej) => {
+      connection.query(
+        `${recentLotusScoreSelect} ORDER BY lotusScore desc LIMIT ?;`,
+        [limit],
+        (err, result) => {
+          if (err) {
+            console.error('Error retrieving top cards');
             return rej(err);
           }
           res(result);
