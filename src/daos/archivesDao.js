@@ -157,7 +157,7 @@ const archivesDao = {
         }
       );
     }),
-  getTopCards: async (limit = 100) =>
+  getTopCards: async (limit = 1000) =>
     new Promise((res, rej) => {
       connection.query(
         `${recentLotusScoreSelect} ORDER BY lotusScore desc LIMIT ?;`,

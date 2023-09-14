@@ -141,9 +141,9 @@ const cards = {
     const cardStats = await getStatsForManyCards(request.body);
     return cardStats;
   },
-  getTopCards: async (request) => {
+  getTopCards: async () => {
     const topCards = await getTopCards();
-    return topCards;
+    return topCards.map((c, i) => ({...c, overallPick: i}));
   },
 };
 
