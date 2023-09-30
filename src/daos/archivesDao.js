@@ -93,8 +93,9 @@ const archivesDao = {
           '  ) groupedPicks' +
           '  INNER JOIN oracle on oracle.card = groupedPicks.card' +
           '  WHERE groupedPicks.picksWith > 1' +
-          ' ) AS availabledPicks' +
-          ' ORDER BY percentageTogether DESC, picksWith DESC, picksOfSynergyOption ASC, averagePick ASC',
+          ' ) AS availablePicks' +
+          ' ORDER BY percentageTogether DESC, picksWith DESC, picksOfSynergyOption ASC, averagePick ASC' +
+          ' LIMIT 200',
         [`${name}%`, `${name}%`, `${name}%`],
         (err, result) => {
           if (err) {
