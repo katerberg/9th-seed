@@ -140,6 +140,7 @@ const cards = {
     }
     if (
       !Array.isArray(request.body) ||
+      request.body.length === 0 ||
       request.body.some((item) => typeof item !== 'string')
     ) {
       throw {statusCode: 400, message: 'Expected string array'};
@@ -155,17 +156,23 @@ const cards = {
     if (request.body.length !== validCards.length) {
       const missingCards = request.body.filter(
         (requestCard) =>
-          !validCards.find((validCard) => validCard.card === requestCard)
+          !validCards.find(
+            (validCard) =>
+              validCard.card.toLowerCase() === requestCard.toLowerCase()
+          )
       );
       throw {
-        message: `Invalid cards: ${missingCards.toString()}`,
+        message: `Invalid full card names: ${missingCards.join(', ')}`,
       };
     }
     const cardStats = await getStatsForManyCards(request.body);
     if (request.body.length !== cardStats.length) {
       const missingCards = request.body.filter(
         (requestCard) =>
-          !cardStats.find((cardStat) => cardStat.card === requestCard)
+          !cardStats.find(
+            (cardStat) =>
+              cardStat.card.toLowerCase() === requestCard.toLowerCase()
+          )
       );
       missingCards.forEach((missing) => {
         cardStats.push({
