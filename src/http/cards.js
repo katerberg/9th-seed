@@ -187,10 +187,10 @@ const cards = {
       });
     }
     return cardStats.sort((a, b) => {
-      if (a.lotusScore > b.lotusScore) {
-        return -1;
+      if (a.average > b.average) {
+        return 1;
       }
-      return 1;
+      return -1;
     });
   },
   getTopCards: async () => {

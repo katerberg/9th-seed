@@ -141,7 +141,7 @@ const archivesDao = {
   getStatsForManyCards: async (cardList) =>
     new Promise((res, rej) => {
       connection.query(
-        `${recentLotusScoreSelect} WHERE card in (?)` +
+        `${lotusScoreSelect} WHERE card in (?)` +
           'ORDER BY ' +
           'average asc ' +
           ', ' +
