@@ -15,6 +15,20 @@ const oracleDao = {
         }
       );
     }),
+  getValidCards: async (cardList) =>
+    new Promise((res, rej) => {
+      connection.query(
+        'SELECT card FROM oracle WHERE card in (?);',
+        [cardList],
+        (err, result) => {
+          if (err) {
+            console.error('Error retrieving valid card list');
+            return rej(err);
+          }
+          res(result);
+        }
+      );
+    }),
   getCardsLike: async (name) =>
     new Promise((res, rej) => {
       connection.query(

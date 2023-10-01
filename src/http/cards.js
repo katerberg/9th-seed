@@ -1,6 +1,10 @@
 /* eslint-disable operator-linebreak */
 /* eslint-disable multiline-ternary */
-const {isValidCardName, getCardsLike} = require('../daos/oracleDao');
+const {
+  getValidCards,
+  isValidCardName,
+  getCardsLike,
+} = require('../daos/oracleDao');
 const {
   getStatsForManyCards,
   getStatsForCard,
@@ -12,6 +16,9 @@ const {
 const {getDraftsForCard} = require('../daos/draftsDao');
 
 const NUMBER_OF_ROUNDS = 8;
+
+const findDuplicates = (arr) =>
+  arr.filter((item, index) => arr.indexOf(item) !== index);
 
 async function fuzzyMatch(card, statsFunction) {
   if (card.length === 0) {
@@ -138,7 +145,40 @@ const cards = {
       throw {statusCode: 400, message: 'Expected string array'};
     }
 
+    const duplicates = [...new Set(findDuplicates(request.body))];
+    if (duplicates.length) {
+      throw {
+        message: `Duplicate cards: ${duplicates.toString()}`,
+      };
+    }
+    const validCards = await getValidCards(request.body);
+    if (request.body.length !== validCards.length) {
+      const missingCards = request.body.filter(
+        (requestCard) =>
+          !validCards.find((validCard) => validCard.card === requestCard)
+      );
+      throw {
+        message: `Invalid cards: ${missingCards.toString()}`,
+      };
+    }
     const cardStats = await getStatsForManyCards(request.body);
+    if (request.body.length !== cardStats.length) {
+      const missingCards = request.body.filter(
+        (requestCard) =>
+          !cardStats.find((cardStat) => cardStat.card === requestCard)
+      );
+      missingCards.forEach((missing) => {
+        cardStats.push({
+          card: missing,
+          averageRound: null,
+          average: null,
+          numberAvailable: null,
+          numberTaken: null,
+          ratio: null,
+          lotusScore: null,
+        });
+      });
+    }
     return cardStats;
   },
   getTopCards: async () => {
