@@ -4,6 +4,7 @@ const {
   getValidCards,
   isValidCardName,
   getCardsLike,
+  getDfcFromPartialName,
 } = require('../daos/oracleDao');
 const {
   getStatsForManyCards,
@@ -153,21 +154,37 @@ const cards = {
       };
     }
     const validCards = await getValidCards(request.body);
+    // Translate DFCs
+    let dfcSafeCards = request.body;
     if (request.body.length !== validCards.length) {
-      const missingCards = request.body.filter(
-        (requestCard) =>
-          !validCards.find(
-            (validCard) =>
-              validCard.card.toLowerCase() === requestCard.toLowerCase()
-          )
+      const missingCardsHash = {};
+      dfcSafeCards = await Promise.all(
+        request.body.map(async (requestCard) => {
+          if (
+            !validCards.find(
+              (validCard) =>
+                validCard.card.toLowerCase() === requestCard.toLowerCase()
+            )
+          ) {
+            const dfcCard = await getDfcFromPartialName(requestCard);
+            if (dfcCard[0]) {
+              return dfcCard[0].card;
+            }
+            missingCardsHash[requestCard] = true;
+          }
+          return requestCard;
+        })
       );
-      throw {
-        message: `Invalid full card names: ${missingCards.join(', ')}`,
-      };
+      const missingCards = Object.keys(missingCardsHash);
+      if (missingCards.length) {
+        throw {
+          message: `Invalid full card names: ${missingCards.join(', ')}`,
+        };
+      }
     }
-    const cardStats = await getStatsForManyCards(request.body);
-    if (request.body.length !== cardStats.length) {
-      const missingCards = request.body.filter(
+    const cardStats = await getStatsForManyCards(dfcSafeCards);
+    if (dfcSafeCards.length !== cardStats.length) {
+      const missingCards = dfcSafeCards.filter(
         (requestCard) =>
           !cardStats.find(
             (cardStat) =>

@@ -15,6 +15,20 @@ const oracleDao = {
         }
       );
     }),
+  getDfcFromPartialName: async (name) =>
+    new Promise((res, rej) => {
+      connection.query(
+        'SELECT card FROM oracle WHERE card LIKE ?;',
+        [`${name} // %`],
+        (err, result) => {
+          if (err) {
+            console.error(`Error retrieving dfc card name for ${name}`);
+            return rej(err);
+          }
+          res(result);
+        }
+      );
+    }),
   getValidCards: async (cardList) =>
     new Promise((res, rej) => {
       connection.query(
