@@ -1,13 +1,8 @@
 """Ach! Hans, Run!""",2004-11-19
 """Brims"" Barone, Midway Mobster",2022-10-07
-"""Inverted Iceberg"" // ""Iceberg Titan""",2023-11-17
-"""JELL-O® Discovery""",2023-11-17
 """Lifetime"" Pass Holder",2022-10-07
 """Name Sticker"" Goblin",2022-10-07
-"""Oteclan Arch"" // ""Oteclan Levitator""",2023-11-17
 """Rumors of My Death . . .""",2017-12-08
-"""Solemn Gnomelacrum""",2023-11-17
-"""Three Cans of Mountain Dew"" // ""Bajablastamental""",2023-11-17
 +2 Mace,2021-07-23
 1996 World Champion,1996-08-14
 A Display of My Dark Power,2010-06-18
@@ -132,6 +127,7 @@ A-Ochre Jelly,2021-07-23
 A-Ominous Parcel,2022-04-29
 "A-Omnath, Locus of Creation",2020-09-25
 A-Oran-Rief Ooze,2020-09-25
+A-Orcish Bowmasters,2023-06-23
 A-Paragon of Modernity,2022-04-29
 A-Patrician Geist,2021-09-24
 A-Peerless Samurai,2022-02-18
@@ -183,6 +179,7 @@ A-Tanazir Quandrix,2021-04-23
 "A-Teferi, Time Raveler",2019-05-03
 A-Tenured Inkcaster,2021-04-23
 A-The Meathook Massacre,2021-09-24
+A-The One Ring,2023-06-23
 A-Thornmantle Striker,2021-02-05
 A-Thousand-Faced Shadow,2022-02-18
 A-Tome Shredder,2021-04-23
@@ -315,6 +312,7 @@ Acidic Sliver,1998-03-02
 Acidic Soil,1998-10-12
 "Aclazotz, Deepest Betrayal // Temple of the Dead",2023-11-17
 Acolyte Hybrid,2022-10-07
+Acolyte of Aclazotz,2023-11-17
 Acolyte of Affliction,2020-01-24
 Acolyte of Bahamut,2022-06-10
 Acolyte of Xathrid,2009-07-17
@@ -327,6 +325,7 @@ Acquire,2004-06-04
 Acquisition Octopus,2022-02-18
 Acquisitions Expert,2020-09-25
 Acridian,1998-10-12
+Acrobatic Leap,2023-11-17
 Acrobatic Maneuver,2016-09-30
 Act of Aggression,2011-05-13
 Act of Authority,2013-11-01
@@ -340,6 +339,7 @@ Adamant Will,2018-04-27
 "Adamaro, First to Desire",2005-06-03
 Adanto Vanguard,2017-09-29
 Adaptive Automaton,2011-07-15
+Adaptive Gemguard,2023-11-17
 Adaptive Shimmerer,2020-04-24
 Adaptive Snapjaw,2013-02-01
 Adaptive Sporesinger,2023-02-03
@@ -832,6 +832,7 @@ Anax and Cymede,2013-09-27
 Ancestor Dragon,2016-11-16
 Ancestor's Chosen,2002-05-27
 Ancestor's Prophet,2002-10-07
+Ancestors' Aid,2023-11-17
 Ancestral Anger,2021-11-19
 Ancestral Blade,2019-07-12
 Ancestral Hot Dog Minotaur,2022-10-07
@@ -840,6 +841,7 @@ Ancestral Knowledge,1997-06-09
 Ancestral Mask,1999-10-04
 Ancestral Memories,1996-10-08
 Ancestral Recall,1993-08-05
+Ancestral Reminiscence,2023-11-17
 Ancestral Statue,2015-03-27
 Ancestral Tribute,2001-10-01
 Ancestral Vengeance,2015-01-23
@@ -1006,6 +1008,7 @@ Anointed Procession,2017-04-28
 Anointer Priest,2017-04-28
 Anointer of Champions,2015-07-17
 Anointer of Valor,2020-11-20
+Another Chance,2023-11-17
 "Anowon, the Ruin Sage",2010-02-05
 "Anowon, the Ruin Thief",2020-09-25
 Anrakyr the Traveller,2022-10-07
@@ -1323,6 +1326,7 @@ Armored Cancrix,2010-07-16
 Armored Galleon,1998-06-24
 Armored Griffin,1998-06-24
 Armored Guardian,2000-10-02
+Armored Kincaller,2023-11-17
 Armored Pegasus,1997-05-01
 Armored Scrapgorger,2023-02-03
 Armored Skaab,2011-09-30
@@ -1545,6 +1549,7 @@ Attended Healer,2020-09-25
 Attended Knight,2012-07-13
 Attended Socialite,2022-04-29
 Attentive Skywarden,2023-04-21
+Attentive Sunscribe,2023-11-17
 Attrition,1999-06-07
 Attune with Aether,2016-09-30
 Attunement,1998-10-12
@@ -2988,6 +2993,7 @@ Bowie Base One,2023-10-13
 Box of Free-Range Goblins,2017-12-08
 Boxing Ring,2022-04-29
 Brace for Impact,2006-05-05
+Brackish Blunder,2023-11-17
 Brackish Trudge,2021-04-23
 Brackwater Elemental,2009-02-06
 Brago's Favor,2014-06-06
@@ -3055,6 +3061,7 @@ Brawl,1999-10-04
 Brawl-Bash Ogre,2018-07-13
 Brawler's Plate,2014-07-18
 Brawn,2002-05-27
+Brazen Blademaster,2023-11-17
 Brazen Borrower // Petty Theft,2019-10-04
 Brazen Buccaneers,2017-09-29
 Brazen Cannonade,2022-12-02
@@ -3287,6 +3294,7 @@ Burglar Rat,2018-10-05
 Buried Alive,1997-06-09
 Buried Ogre,2019-11-07
 Buried Ruin,2011-07-15
+Buried Treasure,2023-11-17
 Burlfist Oak,2020-07-03
 Burly Breaker // Dire-Strain Demolisher,2021-09-24
 Burn Away,2014-09-26
@@ -3309,6 +3317,7 @@ Burning Palm Efreet,1996-10-08
 Burning Prophet,2019-05-03
 Burning Sands,2001-10-01
 Burning Shield Askari,1996-10-08
+Burning Sun Cavalry,2023-11-17
 Burning Sun's Avatar,2017-09-29
 Burning Sun's Fury,2023-04-21
 Burning Vengeance,2011-09-30
@@ -3555,6 +3564,7 @@ Captain's Call,2012-07-13
 Captain's Claws,2016-01-22
 Captain's Hook,2018-01-19
 Captain's Maneuver,2001-06-04
+Captivating Cave,2023-11-17
 Captivating Crew,2017-09-29
 Captivating Crossroads,2023-10-10
 Captivating Glance,2007-10-12
@@ -3629,6 +3639,7 @@ Carry Away,2004-02-06
 Cartel Aristocrat,2013-02-01
 Carth the Lion,2021-06-18
 Cartographer,1998-06-15
+Cartographer's Companion,2023-11-17
 Cartographer's Hawk,2020-04-17
 Cartographer's Survey,2021-11-19
 Cartouche of Ambition,2017-04-28
@@ -3728,6 +3739,7 @@ Cave-In,1999-10-04
 Cavern Crawler,1999-10-04
 Cavern Harpy,2001-02-05
 Cavern Lampad,2013-09-27
+Cavern Stomper,2023-11-17
 Cavern Thoctar,2008-10-03
 Cavern Whisperer,2020-04-24
 Cavern of Souls,2012-05-04
@@ -4055,6 +4067,7 @@ Child of Gaea,1998-10-12
 Child of Night,2009-07-17
 Child of Thorns,2005-02-04
 Child of the Pack // Savage Packmate,2021-11-19
+Child of the Volcano,2023-11-17
 Childhood Horror,2001-10-01
 Children of Korlis,2006-10-06
 Chill,1997-10-14
@@ -4523,6 +4536,7 @@ Coming In Hot,2023-04-21
 Command Beacon,2015-11-13
 Command Performance,2022-10-07
 Command Tower,2011-06-17
+Command Tower // Command Tower,2011-06-17
 Command of Unsummoning,1997-05-01
 Command the Chaff,2019-11-07
 Command the Dreadhorde,2019-05-03
@@ -4817,6 +4831,7 @@ Cosmic Hunger,2023-04-21
 Cosmic Intervention,2021-02-05
 Cosmic Larva,2004-06-04
 Cosmic Rebirth,2023-05-12
+Cosmium Blast,2023-11-17
 Cosmium Confluence,2023-11-17
 Cosmos Charger,2021-02-05
 Cosmos Elixir,2021-02-05
@@ -5394,6 +5409,7 @@ Daring Apprentice,1996-10-08
 Daring Archaeologist,2018-04-27
 Daring Buccaneer,2018-01-19
 Daring Demolition,2017-01-20
+Daring Discovery,2023-11-17
 Daring Escape,2022-04-29
 Daring Fiendbonder,2020-04-17
 Daring Leap,2001-02-05
@@ -5665,6 +5681,7 @@ Deathbringer Regent,2015-03-27
 Deathbringer Thoctar,2009-04-30
 Deathcap Cultivator,2016-04-08
 Deathcap Glade,2021-11-19
+Deathcap Marionette,2023-11-17
 Deathcoil Wurm,1998-06-24
 Deathcult Rogue,2013-02-01
 Deathcurse Ogre,2004-10-01
@@ -5722,6 +5739,7 @@ Decommission,2017-01-20
 Decompose,2001-10-01
 Decomposition,1996-10-08
 Deconstruct,2003-10-02
+Deconstruction Hammer,2023-11-17
 Decorated Champion,2018-06-08
 Decorated Griffin,2013-09-27
 Decorated Knight // Present Arms,2006-12-31
@@ -5740,6 +5758,7 @@ Deep Analysis,2002-02-04
 Deep Forest Hermit,2019-06-14
 Deep Freeze,2018-04-27
 Deep Gnome Terramancer,2022-06-10
+Deep Goblin Skulltaker,2023-11-17
 Deep Reconnaissance,2001-10-01
 Deep Spawn,1994-11-01
 Deep Water,1994-08-01
@@ -6240,6 +6259,7 @@ Disruption Aura,2004-06-04
 Disruption Protocol,2022-02-18
 Disruptive Pitmage,2002-10-07
 Disruptive Student,1998-10-12
+Disruptor Wanderglyph,2023-11-17
 Dissatisfied Customer,2022-10-07
 Dissension in the Ranks,2016-04-08
 Dissenter's Deliverance,2017-04-28
@@ -6260,6 +6280,7 @@ Distracting Geist // Clever Distraction,2021-11-19
 Distress,2004-10-01
 District Guide,2018-10-05
 Disturbed Burial,1997-10-14
+Disturbed Slumber,2023-11-17
 Disturbing Conversion,2023-04-21
 Disturbing Plot,2008-05-02
 Dive Bomber,2002-10-07
@@ -6932,6 +6953,7 @@ Eastfarthing Farmer,2023-06-23
 Easy Prey,2020-04-24
 Eat to Extinction,2020-01-24
 Eaten Alive,2021-09-24
+Eaten by Piranhas,2023-11-17
 Eaten by Spiders,2012-05-04
 Eater of Days,2004-02-06
 Eater of Hope,2014-02-07
@@ -6957,6 +6979,7 @@ Echo Inspector,2022-04-29
 Echo Mage,2010-04-23
 Echo Storm,2018-08-09
 Echo Tracer,2003-02-03
+Echo of Dusk,2023-11-17
 Echo of Eons,2019-06-14
 Echoes of the Kin Tree,2015-03-27
 Echoing Boon,2016-08-26
@@ -7435,6 +7458,7 @@ Entropic Eidolon,2006-05-05
 Entropic Specter,1998-06-15
 Envelop,2002-05-27
 Environmental Sciences,2021-04-23
+Envoy of Okinec Ahau,2023-11-17
 Eon Frolicker,2020-04-17
 Eon Hub,2004-06-04
 Ephara's Dispersal,2023-04-21
@@ -7562,6 +7586,7 @@ Essence of the Wild,2011-09-30
 Estrid's Invocation,2018-08-09
 "Estrid, the Masked",2018-08-09
 Estwald Shieldbasher,2021-11-19
+Etali's Favor,2023-11-17
 "Etali, Primal Conqueror // Etali, Primal Sickness",2023-04-21
 "Etali, Primal Storm",2018-01-19
 "Etali, Primal Storm // Etali, Primal Storm",2018-01-19
@@ -7967,6 +7992,7 @@ Falter,1998-10-12
 Familiar Beeble Mascot,2022-10-07
 Familiar Ground,1997-06-09
 Familiar's Ruse,2007-10-12
+Family Reunion,2023-11-17
 Family's Favor,2022-04-29
 Famine,1999-05-01
 Famished Foragers,2021-09-24
@@ -8736,6 +8762,7 @@ Foresee,2007-05-04
 Foreshadow,1997-02-03
 Foresight,1996-06-10
 Forest,1993-08-05
+Forest // Forest,1993-08-05
 Forest Bear,1999-05-01
 Forethought Amulet,1994-06-01
 Forever Young,2019-10-04
@@ -8995,6 +9022,7 @@ Funeral Pyre,2002-05-27
 Funeral Rites,2020-01-24
 Fungal Behemoth,2007-02-02
 Fungal Bloom,1994-11-01
+Fungal Fortitude,2023-11-17
 Fungal Infection,2018-04-27
 Fungal Plots,2018-04-27
 Fungal Reaches,2006-10-06
@@ -9706,6 +9734,7 @@ Gloomwidow,2008-05-02
 Gloomwidow's Feast,2008-05-02
 "Glorfindel, Dauntless Rescuer",2023-06-23
 Glorifier of Dusk,2017-09-29
+Glorifier of Suffering,2023-11-17
 Glorious Anthem,1998-10-12
 Glorious Charge,2009-07-17
 Glorious End,2017-04-28
@@ -9936,6 +9965,7 @@ Goblin Swine-Rider,1997-02-03
 Goblin Taskmaster,2002-10-07
 Goblin Test Pilot,2013-05-03
 Goblin Tinkerer,1996-10-08
+Goblin Tomb Raider,2023-11-17
 Goblin Trailblazer,2018-01-19
 Goblin Trapfinder,2022-07-07
 Goblin Traprunner,2021-06-18
@@ -10157,6 +10187,7 @@ Grasping Current,2017-09-29
 Grasping Dunes,2017-04-28
 Grasping Giant,2020-01-24
 Grasping Scoundrel,2018-01-19
+Grasping Shadows // Shadows' Lair,2023-11-17
 Grasping Thrull,2019-01-25
 Grassland Crusader,2002-10-07
 Grasslands,1996-10-08
@@ -10264,6 +10295,7 @@ Greatest Show in the Multiverse,2022-10-07
 Greatsword,2011-07-15
 Greatsword of Tyr,2022-06-10
 Greed,1994-06-01
+Greedy Freebooter,2023-11-17
 Greel's Caress,2000-06-05
 "Greel, Mind Raker",2000-06-05
 Green Dragon,2021-07-23
@@ -11387,6 +11419,7 @@ Hot Fix,2017-12-08
 Hot Soup,2014-07-18
 Hot Springs,1995-06-03
 Hotel of Fears,2023-10-13
+Hotfoot Gnome,2023-11-17
 Hotheaded Giant,2008-07-25
 Hotshot Mechanic,2022-02-18
 Hound Tamer // Untamed Pup,2021-09-24
@@ -11494,6 +11527,7 @@ Hunted by The Family,2023-10-13
 Hunter Sliver,2003-02-03
 Hunter of Eyeblights,2007-10-12
 Hunter's Ambush,2014-07-18
+Hunter's Blowgun,2023-11-17
 Hunter's Edge,2020-07-03
 Hunter's Insight,2011-07-15
 Hunter's Mark,2021-07-23
@@ -11810,6 +11844,7 @@ In Thrall to the Pit,2022-09-09
 In Too Deep,2022-04-29
 In the Darkness Bind Them,2023-06-23
 In the Eye of Chaos,1994-06-01
+In the Presence of Ages,2023-11-17
 In the Trenches,2022-11-18
 In the Web of War,2005-02-04
 Inaction Injunction,2012-10-05
@@ -12153,6 +12188,7 @@ Inventor's Goggles,2016-09-30
 Inventors' Fair,2016-09-30
 Invert // Invent,2018-10-05
 Invert the Skies,2008-07-25
+Inverted Iceberg // Iceberg Titan,2023-11-17
 Inverter of Truth,2016-01-22
 Investigator's Journal,2021-11-19
 Invigorate,1999-10-04
@@ -12226,6 +12262,7 @@ Ironclaw Orcs,1993-08-05
 Ironfist Crusher,2002-10-07
 Ironhoof Boar,2022-02-18
 Ironhoof Ox,1998-06-24
+Ironpaw Aspirant,2023-11-17
 Ironroot Treefolk,1993-08-05
 Ironroot Warlord,2019-07-12
 Ironscale Hydra,2020-01-24
@@ -12249,6 +12286,7 @@ Isengard Unleashed,2023-06-23
 "Ishkanah, Grafwidow",2016-07-22
 Isildur's Fateful Strike,2023-06-23
 Island,1993-08-05
+Island // Island,1993-08-05
 Island Fish Jasconius,1993-12-17
 Island Sanctuary,1993-08-05
 Island of Wak-Wak,1993-12-17
@@ -12359,6 +12397,7 @@ Jade Leech,2000-10-02
 Jade Mage,2011-07-15
 Jade Monolith,1993-08-05
 Jade Orb of Dragonkind,2022-06-10
+Jade Seedstones // Jadeheart Attendant,2023-11-17
 Jade Statue,1993-08-05
 Jadecraft Artisan,2018-01-19
 Jaded Response,2001-06-04
@@ -12510,6 +12549,7 @@ Johtull Wurm,1995-06-03
 Join Forces,2022-09-09
 Join Shields,2018-10-05
 Join the Dance,2021-09-24
+Join the Dead,2023-11-17
 Join the Maestros,2022-04-29
 Join the Ranks,2010-02-05
 Joiner Adept,2004-06-04
@@ -13472,6 +13512,7 @@ Lapse of Certainty,2009-02-06
 Laquatus's Champion,2002-02-04
 Laquatus's Creativity,2001-10-01
 Laquatus's Disdain,2002-05-27
+"Lara Croft, Tomb Raider",2019-12-02
 Larceny,1999-10-04
 Larder Zombie,2021-09-24
 Largepox,2019-11-07
@@ -14416,6 +14457,10 @@ Malakir Cullblade,2015-07-17
 Malakir Familiar,2015-10-02
 Malakir Rebirth // Malakir Mire,2020-09-25
 Malakir Soothsayer,2016-01-22
+Malamet Battle Glyph,2023-11-17
+Malamet Brawler,2023-11-17
+Malamet Scythe,2023-11-17
+Malamet Veteran,2023-11-17
 Malamet War Scribe,2023-11-17
 Malanthrope,2022-10-07
 Malcator's Watcher,2023-02-03
@@ -14541,6 +14586,7 @@ Marang River Skeleton,2015-03-27
 Marauder's Axe,2018-07-13
 Marauding Blight-Priest,2020-09-25
 Marauding Boneslasher,2017-07-14
+Marauding Brinefang,2023-11-17
 Marauding Dreadship,2023-04-21
 Marauding Knight,2000-10-02
 Marauding Looter,2017-09-29
@@ -14881,6 +14927,7 @@ Mentor's Guidance,2021-04-23
 Mephidross Slime,2023-02-28
 Mephidross Vampire,2004-06-04
 Mephit's Enthusiasm,2022-07-07
+Mephitic Draught,2023-11-17
 Mephitic Ooze,2004-02-06
 Mephitic Vapors,2018-10-05
 Mer Man,2017-12-08
@@ -15038,6 +15085,7 @@ Might of Alara,2009-02-06
 Might of Murasa,2020-09-25
 Might of Oaks,1999-02-15
 Might of Old Krosa,2006-10-06
+Might of the Ancestors,2023-11-17
 Might of the Masses,2010-04-23
 Might of the Nephilim,2006-05-05
 Might of the Old Ways,2021-09-24
@@ -15163,6 +15211,7 @@ Minecart Daredevil // Ride the Rails,2023-09-08
 Miner's Bane,2014-07-18
 Miner's Guidewing,2023-11-17
 Mines of Moria,2023-06-23
+Mineshaft Spider,2023-11-17
 Minimus Containment,2021-07-23
 Minion Reflector,2008-10-03
 Minion of Leshrac,1995-06-03
@@ -15643,6 +15692,7 @@ Mount Doom,2023-06-23
 Mount Keralia,2012-06-01
 Mount Velus Manticore,2021-06-18
 Mountain,1993-08-05
+Mountain // Mountain,1993-08-05
 Mountain Bandit,1999-05-01
 Mountain Goat,1995-06-03
 Mountain Mover,2021-08-01
@@ -16538,6 +16588,7 @@ O-Naginata,2005-06-03
 Oak Street Innkeeper,2012-10-05
 Oaken Brawler,2007-10-12
 Oaken Power Suit,2017-12-08
+Oaken Siren,2023-11-17
 Oakenform,2009-07-17
 Oakgnarl Warrior,2007-10-12
 Oakhame Adversary,2019-10-04
@@ -16743,6 +16794,7 @@ Olivia's Wrath,2021-11-19
 Ollenbock Escort,2021-11-19
 Olog-hai Crusher,2023-06-23
 "Oloro, Ageless Ascetic",2013-11-01
+Oltec Archaeologists,2023-11-17
 Oltec Cloud Guard,2023-11-17
 Olórin's Searing Light,2023-06-23
 "Omarthis, Ghostfire Initiate",2023-08-04
@@ -17016,6 +17068,7 @@ Oswald Fiddlebender,2021-07-23
 Otaria,2009-09-04
 Otarian Juggernaut,2001-10-01
 "Otawara, Soaring City",2022-02-18
+Oteclan Landmark // Oteclan Levitator,2023-11-17
 Otepec Huntmaster,2017-09-29
 "Otharri, Suns' Glory",2023-02-03
 "Othelm, Sigardian Outcast",2019-12-02
@@ -17028,6 +17081,7 @@ Oubliette,1993-12-17
 Ouphe Vandals,2004-06-04
 Our Market Research Shows That Players Like Really Long Card Names So We Made this Card to Have the Absolute Longest Card Name Ever Elemental,2004-11-19
 Oust,2010-04-23
+Out of Air,2023-11-17
 Out of Bounds,2018-06-08
 Out of Time,2021-06-18
 Out of the Tombs,2022-10-07
@@ -17050,6 +17104,7 @@ Outwit,2012-05-04
 Ovalchase Daredevil,2016-09-30
 Ovalchase Dragster,2016-09-30
 Over My Dead Bodies,2017-12-08
+Over the Edge,2023-11-17
 Over the Top,2022-11-18
 Overabundance,2000-10-02
 Overbeing of Myth,2008-07-25
@@ -17193,6 +17248,7 @@ Panharmonicon,2016-09-30
 Panic,1995-06-03
 Panic Attack,2000-06-05
 Panic Spellbomb,2010-10-01
+Panicked Altisaur,2023-11-17
 Panicked Bystander // Cackling Culprit,2021-11-19
 Panoptic Mirror,2004-02-06
 Panopticon,2023-04-21
@@ -17677,6 +17733,7 @@ Pir's Whim,2018-06-08
 Piracy,1998-06-24
 Piracy Charm,2007-02-02
 Piranha Marsh,2009-10-02
+Pirate Hat,2023-11-17
 Pirate Ship,1993-08-05
 Pirate's Cutlass,2017-09-29
 Pirate's Pillage,2018-01-19
@@ -17736,6 +17793,7 @@ Plaguecrafter's Familiar,2021-08-26
 Plagued Rusalka,2006-02-03
 Plaguemaw Beast,2011-02-04
 Plains,1993-08-05
+Plains // Plains,1993-08-05
 Planar Ally,2021-07-23
 Planar Atlas,2022-12-02
 Planar Birth,1998-10-12
@@ -17809,6 +17867,7 @@ Plummet,2010-07-16
 Plunder,2006-10-06
 Plundered Statue,2014-03-01
 Plundering Barbarian,2021-07-23
+Plundering Pirate,2023-11-17
 Plundering Predator,2022-12-02
 Plunge into Darkness,2004-06-04
 Plunge into Winter,2023-09-08
@@ -18139,6 +18198,7 @@ Promise of Power,2003-10-02
 Promise of Tomorrow,2020-11-20
 Promised Kannushi,2005-06-03
 Promising Duskmage,2021-04-23
+Promising Vein,2023-11-17
 Propaganda,1997-10-14
 Propaganda // Propaganda,1997-10-14
 Propeller Pioneer,2016-09-30
@@ -18439,6 +18499,7 @@ Quicken,2006-02-03
 Quickening Licid,1997-10-14
 Quickling,2014-07-18
 Quicksand,1997-02-03
+Quicksand Whirlpool,2023-11-17
 Quicksilver Amulet,1999-02-15
 Quicksilver Behemoth,2004-02-06
 Quicksilver Dagger,2001-06-04
@@ -18830,6 +18891,7 @@ Ray of Enfeeblement,2021-07-23
 Ray of Erasure,1995-06-03
 Ray of Frost,2021-07-23
 Ray of Revelation,2002-05-27
+Ray of Ruin,2023-11-17
 "Rayami, First of the Fallen",2019-08-23
 "Rayne, Academy Chancellor",1999-06-07
 Razaketh's Rite,2017-07-14
@@ -19119,6 +19181,7 @@ Relic Ward,1997-02-03
 Relic of Legends,2022-09-09
 Relic of Progenitus,2008-10-03
 Relic of Sauron,2023-06-23
+Relic's Roar,2023-11-17
 Relief Captain,2016-01-22
 Reliquary Monk,1999-06-07
 Reliquary Tower,2009-02-06
@@ -19588,6 +19651,8 @@ River Bear,1998-06-24
 River Boa,1997-02-03
 River Darter,2018-01-19
 River Delta,1995-06-03
+River Herald Guide,2023-11-17
+River Herald Scout,2023-11-17
 River Heralds' Boon,2017-09-29
 River Hoopoe,2017-07-14
 River Kaijin,2004-10-01
@@ -19892,6 +19957,7 @@ Run Out of Town,2022-04-29
 Run Wild,2002-10-07
 Run for Your Life,2023-10-13
 "Runadi, Behemoth Caller",2022-12-02
+Runaway Boulder,2023-11-17
 Runaway Carriage,2016-04-08
 Runaway Growth,2022-03-17
 Runaway Steam-Kin,2018-10-05
@@ -20040,6 +20106,7 @@ Saffi Eriksdotter,2006-10-06
 Sage Aven,2002-10-07
 Sage Owl,1997-06-09
 Sage of Ancient Lore // Werewolf of Ancient Hunger,2016-04-08
+Sage of Days,2023-11-17
 Sage of Epityr,2006-10-06
 Sage of Fables,2008-02-01
 Sage of Hours,2014-05-02
@@ -20377,6 +20444,7 @@ Scaleguard Sentinels,2015-03-27
 Scalelord Reckoner,2017-08-25
 Scalpelexis,2002-05-27
 Scampering Scorcher,2019-07-12
+Scampering Surveyor,2023-11-17
 Scampire,2022-10-07
 Scandalmonger,1999-10-04
 Scapegoat,1998-03-02
@@ -20534,6 +20602,7 @@ Scrapyard Steelbreaker,2022-02-18
 Scream Puff,2023-09-08
 Screamer-Killer,2022-10-07
 Screaming Fury,2004-06-04
+Screaming Phantom,2023-11-17
 Screaming Seahawk,2002-10-07
 Screaming Shield,2019-01-25
 Screaming Swarm,2021-11-19
@@ -20668,6 +20737,7 @@ Season of Growth,2019-07-12
 Season of Renewal,2022-02-18
 Season of the Witch,1994-08-01
 Season's Beatings,2006-12-31
+Seasonal Sequels,2006-12-31
 Seasoned Buttoneer,2022-10-07
 Seasoned Dungeoneer,2022-06-10
 Seasoned Hallowblade,2020-07-03
@@ -20740,6 +20810,7 @@ Seeker,1994-06-01
 Seeker of Insight,2017-04-28
 Seeker of Skybreak,1997-10-14
 Seeker of Slaanesh,2022-10-07
+Seeker of Sunlight,2023-11-17
 Seeker of the Way,2014-09-26
 Seekers' Squire,2017-09-29
 Seer of Stolen Sight,2023-04-21
@@ -20760,6 +20831,7 @@ Seht's Tiger,2007-05-04
 Seismic Assault,1998-06-15
 Seismic Elemental,2015-07-17
 Seismic Mage,1999-10-04
+Seismic Monstrosaur,2023-11-17
 Seismic Rupture,2015-03-27
 Seismic Shift,2018-04-27
 Seismic Shudder,2009-10-02
@@ -21232,6 +21304,7 @@ Shipwreck Dowser,2020-07-03
 Shipwreck Looter,2017-09-29
 Shipwreck Marsh,2021-09-24
 Shipwreck Moray,2017-01-20
+Shipwreck Sentry,2023-11-17
 Shipwreck Sifters,2021-09-24
 Shipwreck Singer,2013-09-27
 Shire Scarecrow,2023-06-23
@@ -22054,6 +22127,7 @@ So Tiny,2019-10-04
 Soar,1996-10-08
 Soaring Drake,2022-09-09
 Soaring Hope,2007-10-12
+Soaring Sandwing,2023-11-17
 Soaring Seacliff,2009-10-02
 Soaring Show-Off,2018-06-08
 Soaring Thought-Thief,2020-09-25
@@ -22784,6 +22858,7 @@ Staff of the Sun Magus,2013-07-19
 Staff of the Wild Magus,2013-07-19
 Stag Beetle,2002-10-07
 Staggering Insight,2020-01-24
+Staggering Size,2023-11-17
 Staggershock,2010-04-23
 Stain the Mind,2014-07-18
 Stairs to Infinity,2018-12-25
@@ -23393,6 +23468,7 @@ Sundown Pass,2021-11-19
 Sune's Intervention,2022-07-07
 Sunfall,2023-04-21
 Sunfire Balm,2002-10-07
+Sunfire Torch,2023-11-17
 Sunflare Shaman,2008-02-01
 Sunforger,2005-10-07
 Sunfrill Imitator,2023-11-17
@@ -23432,6 +23508,7 @@ Sunscourge Champion,2017-07-14
 Sunseed Nurturer,2008-10-03
 Sunset Pyramid,2017-07-14
 Sunset Revelry,2021-09-24
+Sunshot Militia,2023-11-17
 Sunspear Shikari,2010-10-01
 Sunspire Gatekeepers,2013-05-03
 Sunspire Griffin,2012-10-05
@@ -23540,6 +23617,7 @@ Swallow Whole,2020-04-24
 Swallow the Hero Whole,2013-10-19
 Swallowing Plague,2004-10-01
 Swamp,1993-08-05
+Swamp // Swamp,1993-08-05
 Swamp Mosquito,1996-06-10
 Swan Song,2013-09-27
 Swans of Bryn Argoll,2008-05-02
@@ -23556,6 +23634,7 @@ Swarming Goblins,2021-07-23
 Swarming of Moria,2023-06-23
 Swarmyard,2006-10-06
 Swashbuckler Extraordinaire,2022-06-10
+Swashbuckler's Whip,2023-11-17
 Swashbuckling,2017-09-29
 Swat,1999-02-15
 Swathcutter Giant,2018-10-05
@@ -23957,6 +24036,7 @@ Tectonic Break,1999-10-04
 Tectonic Edge,2010-02-05
 Tectonic Fiend,2006-10-06
 Tectonic Giant,2020-01-24
+Tectonic Hazard,2023-11-17
 Tectonic Hellion,2019-08-23
 Tectonic Instability,2000-10-02
 Tectonic Reformation,2019-06-14
@@ -24619,6 +24699,8 @@ Thoughts of Ruin,2005-06-03
 Thoughtseize,2007-10-12
 Thoughtweft Gambit,2008-05-02
 Thoughtweft Trio,2007-10-12
+Thousand Moons Crackshot,2023-11-17
+Thousand Moons Infantry,2023-11-17
 Thousand Moons Smithy // Barracks of the Thousand,2023-11-17
 Thousand Winds,2014-09-26
 Thousand-Faced Shadow,2022-02-18
@@ -24900,6 +24982,7 @@ Tinder Farm,2000-10-02
 Tinder Wall,1995-06-03
 Tine Shrike,2011-02-04
 Tinker,1999-02-15
+Tinker's Tote,2023-11-17
 "Tinybones, Trinket Thief",2020-07-17
 Tireless Angler,2021-12-09
 Tireless Hauler // Dire-Strain Brawler,2021-09-24
@@ -24939,6 +25022,7 @@ Tithe,1997-02-03
 Tithe Drinker,2013-05-03
 Tithe Taker,2019-01-25
 Tithebearer Giant,2019-05-03
+Tithing Blade // Consuming Sepulcher,2023-11-17
 Tivadar of Thorn,2006-10-06
 Tivadar's Crusade,1994-08-01
 "Tivash, Gloom Summoner",2021-04-23
@@ -25769,6 +25853,7 @@ Unlicensed Hearse,2022-04-29
 Unlikely Aid,2019-05-03
 Unlikely Alliance,1996-06-10
 Unliving Psychopath,2006-05-05
+Unlucky Drop,2023-11-17
 Unlucky Witness,2022-04-29
 Unmake,2008-07-25
 Unmake the Graves,2014-07-18
@@ -26440,6 +26525,7 @@ Vitalizing Wind,2000-06-05
 Vitaspore Thallid,2007-02-02
 Vithian Renegades,2009-04-30
 Vithian Stinger,2008-10-03
+Vito's Inquisitor,2023-11-17
 "Vito, Fanatic of Aclazotz",2023-11-17
 "Vito, Thorn of the Dusk Rose",2020-07-03
 Vitu-Ghazi Guildmage,2012-10-05
@@ -26537,8 +26623,10 @@ Voidwing Hybrid,2023-02-03
 Volatile Arsonist // Dire-Strain Anarchist,2021-11-19
 Volatile Chimera,2016-08-26
 Volatile Claws,2019-06-14
+Volatile Fault,2023-11-17
 Volatile Fjord,2021-02-05
 Volatile Rig,2012-10-05
+Volatile Wanderglyph,2023-11-17
 Volcanic Awakening,2006-10-06
 Volcanic Dragon,1996-10-08
 Volcanic Eruption,1993-08-05
@@ -26690,6 +26778,7 @@ Waking Nightmare,2004-10-01
 Waking the Trolls,2021-02-05
 Walk the Aeons,2006-10-06
 Walk the Plank,2017-09-29
+Walk with the Ancestors,2023-11-17
 Walker of Secret Ways,2005-02-04
 Walker of the Grove,2008-02-01
 Walker of the Wastes,2016-01-22
@@ -26975,6 +27064,7 @@ Wayfarer's Bauble,2004-06-04
 Wayfaring Giant,2000-10-02
 Wayfaring Temple,2012-10-05
 Waylay,1998-10-12
+Waylaying Pirates,2023-11-17
 "Wayta, Trainer Prodigy",2023-11-17
 Wayward Angel,2001-10-01
 Wayward Giant,2016-09-30
