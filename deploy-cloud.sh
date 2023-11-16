@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo certbot renew
 cp /etc/letsencrypt/live/api.stlotus.org/* ./creds/
 docker system prune --volumes -f
 export NVM_DIR=$HOME/.nvm;
