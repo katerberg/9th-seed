@@ -123,7 +123,7 @@ connection.connectAsync().then(() => {
     addDrafts(
       items.filter((item) => item.match(/\.csv$/)),
       0,
-      ['DELETE FROM archives']
+      ['DELETE FROM archives', 'DELETE FROM drafts']
     )
       .then((inserts) => {
         console.log('got some inserts');
