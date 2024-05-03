@@ -23,7 +23,7 @@ function getUnpermissionedResponse(dirtyMessage) {
   ) {
     return 'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=945529176';
   } else if (message.startsWith('!ban') || message.startsWith('!rules')) {
-    return 'Any card not banned in Vintage is legal in this format. Restricted cards are legal and encouraged: https://stlotus.org/build/index.html#/rulings';
+    return 'Any card not banned in Vintage is legal in this format. Restricted cards are legal and encouraged: https://stlotus.org/rulings';
   } else if (
     message === '!bracket' ||
     message === '!record' ||
