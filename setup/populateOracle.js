@@ -24,13 +24,15 @@ connection.on('error', () => {
 });
 
 const INSERT_TEMPLATE =
-  'INSERT INTO oracle (card, releaseDate) VALUES ("{card}", "{releaseDate}")';
+  'INSERT INTO oracle (card, releaseDate, colors) VALUES ("{card}", "{releaseDate}", "{colors}");';
 
-function createInsertStatement(cardName, releaseDate) {
+function createInsertStatement(cardName, releaseDate, colors) {
   return INSERT_TEMPLATE.replace(
     '{card}',
     cardName.toLowerCase().replace(/"/g, '\\"')
-  ).replace('{releaseDate}', releaseDate);
+  )
+    .replace('{releaseDate}', releaseDate)
+    .replace('{colors}', colors || '');
 }
 
 function getInsertsFromArchives() {
@@ -43,8 +45,8 @@ function getInsertsFromArchives() {
 function getInsertsFromCsv(csv) {
   const insertStatements = [];
   const records = parse(csv);
-  records.forEach(([record, releaseDate]) => {
-    insertStatements.push(createInsertStatement(record, releaseDate));
+  records.forEach(([record, releaseDate, colors]) => {
+    insertStatements.push(createInsertStatement(record, releaseDate, colors));
   });
   return insertStatements;
 }

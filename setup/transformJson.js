@@ -60,6 +60,7 @@ fs.readFileAsync(`${process.cwd()}/setup/SetList.json`, 'utf-8')
           cards.map((c) => [
             c,
             getEarliestReleaseDate(sets, cardJson[c][0].printings),
+            cardJson[c][0].colorIdentity.map((ci) => ci.toUpperCase()).join(''),
           ])
         )
           .then((output) => {

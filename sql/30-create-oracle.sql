@@ -4,5 +4,6 @@ DROP TABLE IF EXISTS oracle;
 
 CREATE TABLE oracle (
   card VARCHAR(200) PRIMARY KEY,
-  releaseDate DATE NOT NULL
+  releaseDate DATE NOT NULL,
+  colors VARCHAR(200) NOT NULL
 );
