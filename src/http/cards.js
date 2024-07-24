@@ -210,8 +210,22 @@ const cards = {
       return -1;
     });
   },
-  getTopCards: async () => {
-    const topCards = await getTopCards();
+  getTopCards: async (request) => {
+    const colorFilter =
+      request.query &&
+      request.query.colorAnd !== undefined &&
+      request.query.colorAnd;
+    let filter = '%';
+    if (colorFilter) {
+      if (typeof colorFilter === 'string') {
+        filter = `%${colorFilter}%`;
+      } else {
+        //BGRUW
+        filter = `${colorFilter.reduce((a, c) => `${a}%${c}`, '%')}%`;
+      }
+    }
+
+    const topCards = await getTopCards(filter);
     return topCards.map((c, i) => ({...c, overallPick: i}));
   },
 };

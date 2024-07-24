@@ -160,11 +160,12 @@ const archivesDao = {
         }
       );
     }),
-  getTopCards: async (limit = 1000) =>
+  getTopCards: async (filter) =>
     new Promise((res, rej) => {
       connection.query(
-        `${recentLotusScoreSelect} ORDER BY lotusScore desc LIMIT ?;`,
-        [limit],
+        `${recentLotusScoreSelect} 
+        WHERE colors like ? ORDER BY lotusScore desc LIMIT 1000;`,
+        [filter],
         (err, result) => {
           if (err) {
             console.error('Error retrieving top cards');
