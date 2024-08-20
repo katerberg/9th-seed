@@ -49,7 +49,7 @@ docker-compose up
 
 You will need `npm` and `mysql` installed.
 
-You will need a database called `stlvrd` created in mysql which is accessibly by your user.
+You will need a database called `stlvrd` created in mysql which is accessible to your user.
 
 ### Populating the Database
 
