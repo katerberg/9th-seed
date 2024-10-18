@@ -19,7 +19,7 @@ function isNormalSet(type) {
 function getEarliestReleaseDate(allSets, setsForCard) {
   if (setsForCard.some((s) => isNormalSet(allSets[s].type))) {
     return setsForCard.reduce((a, c) => {
-      if (!isNormalSet(allSets[c].type)) {
+      if (!allSets[c] || !isNormalSet(allSets[c].type)) {
         return a;
       }
       if (a < allSets[c].releaseDate) {
