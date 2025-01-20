@@ -16,7 +16,10 @@ function isNormalSet(type) {
   ].includes(type);
 }
 
-function getEarliestReleaseDate(allSets, setsForCard) {
+function getEarliestReleaseDate(allSets, setsForCard, card) {
+  if (setsForCard && setsForCard[0] === 'FDN') {
+    console.log(card, setsForCard);
+  }
   if (setsForCard.some((s) => isNormalSet(allSets[s].type))) {
     return setsForCard.reduce((a, c) => {
       if (!allSets[c] || !isNormalSet(allSets[c].type)) {
@@ -59,7 +62,7 @@ fs.readFileAsync(`${process.cwd()}/setup/SetList.json`, 'utf-8')
         stringifyAsync(
           cards.map((c) => [
             c,
-            getEarliestReleaseDate(sets, cardJson[c][0].printings),
+            getEarliestReleaseDate(sets, cardJson[c][0].printings, c),
             cardJson[c][0].colorIdentity.map((ci) => ci.toUpperCase()).join(''),
           ])
         )
