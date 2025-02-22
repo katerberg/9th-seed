@@ -216,17 +216,34 @@ const cards = {
       request.query.colorAnd !== undefined &&
       request.query.colorAnd;
     let filter = '%';
+    // const topColorlessCards = [];
     if (colorFilter) {
       if (typeof colorFilter === 'string') {
         filter = `%${colorFilter}%`;
       } else {
-        //BGRUW
+        // BGRUWC
         filter = `${colorFilter.reduce((a, c) => `${a}%${c}`, '%')}%`;
       }
-    }
 
-    const topCards = await getTopCards(filter);
-    return topCards.map((c, i) => ({...c, overallPick: i}));
+      // if (filter.includes('%c')) {
+      //   topColorlessCards = await getTopCards('');
+      //   filter = filter.replace('%c', '');
+      // }
+    }
+    const topFilteredCards = await getTopCards(filter === '%c%' ? '' : filter);
+
+    // Remove this eventually but it's how we can do `OR` if we want it some day
+    // const uniqueStrings = [];
+    // const uniqueCards = [...topColorlessCards, ...topFilteredCards].filter(
+    //   (card) => {
+    //     if (!uniqueStrings.includes(card.card)) {
+    //       uniqueStrings.push(card.card);
+    //       return true;
+    //     }
+    //     return false;
+    //   }
+    // );
+    return topFilteredCards.map((c, i) => ({...c, overallPick: i}));
   },
 };
 
