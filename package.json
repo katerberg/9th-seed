@@ -9,10 +9,10 @@
     "url": "https://github.com/katerberg/9th-seed.git"
   },
   "dependencies": {
+    "@fastify/cors": "^8.5.0",
     "csv-stringify": "^5.3.3",
     "eslint-plugin-prettier": "^4.2.1",
-    "fastify": "^3.29.4",
-    "fastify-cors": "^6.0.2",
+    "fastify": "^4",
     "mysql": "^2.17.1",
     "nodemon": "^3.1.0",
     "tmi.js": "^1.4.2"
