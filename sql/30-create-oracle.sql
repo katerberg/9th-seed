@@ -5,5 +5,8 @@ DROP TABLE IF EXISTS oracle;
 CREATE TABLE oracle (
   card VARCHAR(200) PRIMARY KEY,
   releaseDate DATE NOT NULL,
-  colors VARCHAR(200) NOT NULL
+  colors VARCHAR(200) NOT NULL,
+  manaValue NUMERIC NOT NULL,
+  manaCost VARCHAR(200) NOT NULL,
+  types VARCHAR(200) NOT NULL
 );

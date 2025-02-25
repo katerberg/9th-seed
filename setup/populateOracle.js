@@ -24,15 +24,25 @@ connection.on('error', () => {
 });
 
 const INSERT_TEMPLATE =
-  'INSERT INTO oracle (card, releaseDate, colors) VALUES ("{card}", "{releaseDate}", "{colors}");';
+  'INSERT INTO oracle (card, releaseDate, colors, manaValue, manaCost, types) VALUES ("{card}", "{releaseDate}", "{colors}", "{manaValue}", "{manaCost}", "{types}");';
 
-function createInsertStatement(cardName, releaseDate, colors) {
+function createInsertStatement(
+  cardName,
+  releaseDate,
+  colors = '',
+  manaValue = 0,
+  manaCost = '',
+  types = 'Scheme'
+) {
   return INSERT_TEMPLATE.replace(
     '{card}',
     cardName.toLowerCase().replace(/"/g, '\\"')
   )
     .replace('{releaseDate}', releaseDate)
-    .replace('{colors}', colors || '');
+    .replace('{colors}', colors)
+    .replace('{manaValue}', manaValue)
+    .replace('{manaCost}', manaCost)
+    .replace('{types}', types);
 }
 
 function getInsertsFromArchives() {
@@ -45,9 +55,20 @@ function getInsertsFromArchives() {
 function getInsertsFromCsv(csv) {
   const insertStatements = [];
   const records = parse(csv);
-  records.forEach(([record, releaseDate, colors]) => {
-    insertStatements.push(createInsertStatement(record, releaseDate, colors));
-  });
+  records.forEach(
+    ([record, releaseDate, colors, manaValue, manaCost, types]) => {
+      insertStatements.push(
+        createInsertStatement(
+          record,
+          releaseDate,
+          colors,
+          manaValue,
+          manaCost,
+          types
+        )
+      );
+    }
+  );
   return insertStatements;
 }
 

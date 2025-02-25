@@ -16,11 +16,8 @@ function isNormalSet(type) {
   ].includes(type);
 }
 
-function getEarliestReleaseDate(allSets, setsForCard, card) {
-  if (setsForCard && setsForCard[0] === 'FDN') {
-    console.log(card, setsForCard);
-  }
-  if (setsForCard.some((s) => isNormalSet(allSets[s].type))) {
+function getEarliestReleaseDate(allSets, setsForCard) {
+  if (setsForCard.some((s) => isNormalSet(allSets[s] ? allSets[s].type : ''))) {
     return setsForCard.reduce((a, c) => {
       if (!allSets[c] || !isNormalSet(allSets[c].type)) {
         return a;
@@ -32,10 +29,11 @@ function getEarliestReleaseDate(allSets, setsForCard, card) {
     }, '2222-11-11');
   }
   return setsForCard.reduce((a, c) => {
-    if (allSets[c].type === 'promo') {
-      return a;
-    }
-    if (a < allSets[c].releaseDate) {
+    if (
+      !allSets[c] ||
+      allSets[c].type === 'promo' ||
+      a < allSets[c].releaseDate
+    ) {
       return a;
     }
     return allSets[c].releaseDate;
@@ -62,8 +60,11 @@ fs.readFileAsync(`${process.cwd()}/setup/SetList.json`, 'utf-8')
         stringifyAsync(
           cards.map((c) => [
             c,
-            getEarliestReleaseDate(sets, cardJson[c][0].printings, c),
+            getEarliestReleaseDate(sets, cardJson[c][0].printings),
             cardJson[c][0].colorIdentity.map((ci) => ci.toUpperCase()).join(''),
+            cardJson[c][0].manaValue,
+            cardJson[c][0].manaCost,
+            cardJson[c][0].types.join(';'),
           ])
         )
           .then((output) => {
