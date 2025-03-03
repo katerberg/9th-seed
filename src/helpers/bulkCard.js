@@ -50,6 +50,9 @@ async function getMultipleCardStats(cardList) {
         numberTaken: null,
         ratio: null,
         lotusScore: null,
+        manaValue: null,
+        manaCost: null,
+        types: null,
       });
     });
   }

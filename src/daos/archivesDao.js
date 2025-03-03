@@ -1,27 +1,29 @@
 const connection = require('./db');
 const {PREMIER_FILTER} = require('./filters');
 
-const lotusScoreSelect =
-  'SELECT card, colors, averageRound, average, numberAvailable, numberTaken, ratio, COALESCE(NULLIF (ABS(lotusScore), -lotusScore), 0) as lotusScore from ( ' +
-  'SELECT *, ((376-(((withRatio.numberAvailable - withRatio.numberTaken) * 376 + withRatio.average * withRatio.numberTaken) / withRatio.numberAvailable))/376*100) as lotusScore from ( ' +
-  'SELECT a.card, a.colors, a.averageRound, a.average, a.numberAvailable, a.numberTaken, a.numberTaken/a.numberAvailable as ratio from( ' +
-  'SELECT archives.card ' +
-  ',oracle.colors ' +
-  ',avg(archives.pick) as average ' +
-  ',ceiling(avg(archives.pick)/8) as averageRound ' +
-  ',GREATEST(( ' +
-  'select count(*) ' +
-  'from drafts ' +
-  'where oracle.releaseDate ' +
-  'BETWEEN "1000-01-01" AND drafts.occurrence ' +
-  '), count(*)) as numberAvailable ' +
-  ', count(*) as numberTaken ' +
-  'FROM archives ' +
-  'INNER JOIN oracle on oracle.card = archives.card ' +
-  'GROUP BY card ' +
-  ') a ' +
-  ') withRatio ' +
-  ') withLotus ';
+const lotusScoreSelect = `SELECT card, colors, manaValue, manaCost, types, averageRound, average, numberAvailable, numberTaken, ratio, COALESCE(NULLIF (ABS(lotusScore), -lotusScore), 0) as lotusScore from ( 
+SELECT *, ((376-(((withRatio.numberAvailable - withRatio.numberTaken) * 376 + withRatio.average * withRatio.numberTaken) / withRatio.numberAvailable))/376*100) as lotusScore from ( 
+SELECT a.card, a.colors, a.averageRound, a.manaValue, a.manaCost, a.types, a.average, a.numberAvailable, a.numberTaken, a.numberTaken/a.numberAvailable as ratio from( 
+SELECT archives.card 
+,oracle.colors
+,oracle.manaValue
+,oracle.manaCost
+,oracle.types 
+,avg(archives.pick) as average 
+,ceiling(avg(archives.pick)/8) as averageRound 
+,GREATEST(( 
+select count(*) 
+from drafts 
+where oracle.releaseDate 
+BETWEEN "1000-01-01" AND drafts.occurrence 
+), count(*)) as numberAvailable 
+, count(*) as numberTaken 
+FROM archives 
+INNER JOIN oracle on oracle.card = archives.card 
+GROUP BY card 
+) a 
+) withRatio 
+) withLotus`;
 
 const recentLotusScoreSelect =
   `SELECT card, colors, averageRound, average, numberAvailable, numberTaken, ratio, COALESCE(NULLIF (ABS(lotusScore), -lotusScore), 0) as lotusScore from ( ` +
