@@ -32,4 +32,5 @@ ORDER BY a.occurrence ASC;
       );
     }),
 };
+
 module.exports = draftsDao;

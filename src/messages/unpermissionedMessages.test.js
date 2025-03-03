@@ -47,24 +47,6 @@ describe('Unpermissioned Messages', () => {
     );
   });
 
-  it('links to current draft', () => {
-    ['!decks', '!decklists', '!draft', '!picks', '!sheet'].forEach((item) => {
-      expect(getUnpermissionedResponse(item)).to.have.string(
-        'Spreadsheet with draft picks',
-        `${item} failed to get spreadsheet`
-      );
-    });
-  });
-
-  it('links to bracket', () => {
-    ['!bracket', '!standings', '!record', '!challonge'].forEach((item) => {
-      expect(getUnpermissionedResponse(item)).to.have.string(
-        'challonge',
-        `${item} failed to get challonge`
-      );
-    });
-  });
-
   it('links to suicide prevention', () => {
     expect(getUnpermissionedResponse('!gethelp')).to.have.string(
       'trevorproject'

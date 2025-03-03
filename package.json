@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fastify/cors": "^8.5.0",
+    "axios": "^1.8.1",
     "csv-stringify": "^5.3.3",
     "eslint-plugin-prettier": "^4.2.1",
     "fastify": "^4",
@@ -34,7 +35,7 @@
     "start": "node app.js",
     "start:dev": "CHANNEL=katmarktest nodemon app.js",
     "test": "mocha 'src/**/*.test.js' 'test'",
-    "test:watch": "npm run test --watch",
+    "test:watch": "npm run test -- --watch",
     "lint": "npm run lint:ci --fix",
     "lint:ci": "eslint src app.js test setup",
     "lint:watch": "watch 'npm run lint' ."

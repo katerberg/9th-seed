@@ -15,6 +15,7 @@ const {
   getTopCards,
 } = require('../daos/archivesDao');
 const {getDraftsForCard} = require('../daos/draftsDao');
+const {getMultipleCardStats} = require('../helpers/bulkCard');
 
 const NUMBER_OF_ROUNDS = 8;
 
@@ -153,56 +154,7 @@ const cards = {
         message: `Duplicate cards: ${duplicates.toString()}`,
       };
     }
-    const validCards = await getValidCards(request.body);
-    // Translate DFCs
-    let dfcSafeCards = request.body;
-    if (request.body.length !== validCards.length) {
-      const missingCardsHash = {};
-      dfcSafeCards = await Promise.all(
-        request.body.map(async (requestCard) => {
-          if (
-            !validCards.find(
-              (validCard) =>
-                validCard.card.toLowerCase() === requestCard.toLowerCase()
-            )
-          ) {
-            const dfcCard = await getDfcFromPartialName(requestCard);
-            if (dfcCard[0]) {
-              return dfcCard[0].card;
-            }
-            missingCardsHash[requestCard] = true;
-          }
-          return requestCard;
-        })
-      );
-      const missingCards = Object.keys(missingCardsHash);
-      if (missingCards.length) {
-        throw {
-          message: `Invalid full card names: ${missingCards.join(', ')}`,
-        };
-      }
-    }
-    const cardStats = await getStatsForManyCards(dfcSafeCards);
-    if (dfcSafeCards.length !== cardStats.length) {
-      const missingCards = dfcSafeCards.filter(
-        (requestCard) =>
-          !cardStats.find(
-            (cardStat) =>
-              cardStat.card.toLowerCase() === requestCard.toLowerCase()
-          )
-      );
-      missingCards.forEach((missing) => {
-        cardStats.push({
-          card: missing,
-          averageRound: null,
-          average: null,
-          numberAvailable: null,
-          numberTaken: null,
-          ratio: null,
-          lotusScore: null,
-        });
-      });
-    }
+    const cardStats = await getMultipleCardStats(request.body);
     return cardStats.sort((a, b) => {
       if (a.average > b.average) {
         return 1;

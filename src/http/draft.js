@@ -1,3 +1,5 @@
+const {getCsvSheet, cleanEmptyRows} = require('../apis/googleApi');
+
 const draft = {
   getBreakdown: async (request) => {
     const {draftUrl} = request.params;
@@ -14,10 +16,15 @@ const draft = {
           'Invalid draftUrl: expected format of https://docs.google.com/spreadsheets/d/1yHAVTi7N8n42lvQirCX2j7VBgTUNADx4Lcfv-Aq027s/edit',
       };
     }
-    const draftSlug = draftUrl.split('/d/')[1].split('?');
+    const rows = await getCsvSheet(draftUrl);
+    const sheetPerRound = cleanEmptyRows(rows);
 
     return {
-      response: {slug: draftSlug},
+      response: {
+        url: draftUrl,
+        currentRound: sheetPerRound.length,
+        sheetPerRound,
+      },
     };
   },
 };
