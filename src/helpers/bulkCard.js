@@ -26,6 +26,7 @@ async function getMultipleCardStats(cardList) {
     );
     const missingCards = Object.keys(missingCardsHash);
     if (missingCards.length) {
+      console.log('oh no missing cards', missingCards);
       throw {
         message: `Invalid full card names: ${missingCards.join(', ')}`,
       };

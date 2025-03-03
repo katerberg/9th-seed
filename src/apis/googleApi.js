@@ -52,10 +52,9 @@ async function getCsvSheet(googleSheetUrl) {
 function cleanEmptyRows(sheetPerRound) {
   return sheetPerRound
     .filter((r) => !isNaN(Number.parseInt(r[''], 10)))
-    .map((round) => ({
-      ...round,
-      '': undefined,
-    }))
+    .map((round) =>
+      Object.fromEntries(Object.entries(round).filter(([key]) => key !== ''))
+    )
     .filter((round) => Object.values(round).some((c) => c));
 }
 

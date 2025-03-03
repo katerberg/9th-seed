@@ -1,13 +1,7 @@
 /* eslint-disable operator-linebreak */
 /* eslint-disable multiline-ternary */
+const {isValidCardName, getCardsLike} = require('../daos/oracleDao');
 const {
-  getValidCards,
-  isValidCardName,
-  getCardsLike,
-  getDfcFromPartialName,
-} = require('../daos/oracleDao');
-const {
-  getStatsForManyCards,
   getStatsForCard,
   getSynergiesForCard,
   getRecentStatsForCard,

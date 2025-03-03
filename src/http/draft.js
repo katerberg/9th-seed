@@ -1,4 +1,5 @@
 const {getCsvSheet, cleanEmptyRows} = require('../apis/googleApi');
+const {getMultipleCardStats} = require('../helpers/bulkCard');
 
 const draft = {
   getBreakdown: async (request) => {
@@ -18,12 +19,28 @@ const draft = {
     }
     const rows = await getCsvSheet(draftUrl);
     const sheetPerRound = cleanEmptyRows(rows);
+    const numberOfPlayers = Object.keys(sheetPerRound[0]).length;
+    const cardPicksPerPlayer = sheetPerRound.reduce(
+      (a, c) => {
+        Object.values(c)
+          .filter((card) => card)
+          .forEach((v, i) => {
+            a[i].push(`${v}`.toLowerCase());
+          });
+        return a;
+      },
+      Array.from({length: numberOfPlayers}, () => [])
+    );
+    const pickStatsPerPlayer = await Promise.all(
+      cardPicksPerPlayer.map((picks) => getMultipleCardStats(picks))
+    );
 
     return {
       response: {
         url: draftUrl,
+        numberOfPlayers,
         currentRound: sheetPerRound.length,
-        sheetPerRound,
+        pickStatsPerPlayer,
       },
     };
   },
