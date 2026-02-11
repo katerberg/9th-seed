@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fastify/cors": "^8.5.0",
-    "axios": "^1.12.0",
+    "axios": "^1.13.5",
     "csv-stringify": "^5.3.3",
     "eslint-plugin-prettier": "^4.2.1",
     "fastify": "^4",
