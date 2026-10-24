@@ -12,22 +12,39 @@ services:
       - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
     networks:
       - backend
+  caddy:
+    image: caddy:2.10.2
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - $NODE_LOCAL_PORT:$NODE_LOCAL_PORT
+    environment:
+      - PUBLIC_PORT=$NODE_LOCAL_PORT
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./caddy/data:/data
+      - ./caddy/config:/config
+    networks:
+      - backend
+  # No host ports so docker-rollout can run two copies during a deploy; Caddy fronts it
   http:
     depends_on:
       - mysqldb
     build: ./
     restart: unless-stopped
     env_file: ./.env
-    ports:
-      - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
     environment:
       - DB_HOST=mysqldb
       - DB_USER=$MYSQLDB_USER
       - DB_PASSWORD=$MYSQLDB_ROOT_PASSWORD
       - DB_NAME=$MYSQLDB_DATABASE
       - DB_PORT=$MYSQLDB_DOCKER_PORT
-      - CERT=$CERT_PATH
-      - KEY=$CERT_KEY_PATH
+      - FASTIFY_PORT=3000
+    healthcheck:
+      test: ['CMD', 'curl', '-fs', 'http://localhost:3000/test']
+      interval: 5s
+      timeout: 3s
+      retries: 3
     stdin_open: true
     tty: true
     networks:

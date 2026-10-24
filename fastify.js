@@ -1,15 +1,8 @@
-const fs = require('fs');
 const fastifyRoutes = require('./src/http/routes');
 
-const isDev = process.env.ENV === 'development';
-const httpsOptions = {
-  key: fs.readFileSync(process.env.KEY || 'creds/fastify.key'),
-  cert: fs.readFileSync(process.env.CERT || 'creds/fastify.crt'),
-};
-
+// TLS is terminated by Caddy
 const fastify = require('fastify')({
   logger: true,
-  https: isDev ? null : httpsOptions,
 });
 
 fastify.register(require('@fastify/cors'));
@@ -34,3 +27,9 @@ const start = async () => {
   }
 };
 start();
+
+// Let in-flight requests finish when docker-rollout stops the old container
+process.on('SIGTERM', async () => {
+  await fastify.close();
+  process.exit(0);
+});

@@ -1,0 +1,7 @@
+{$SITE_HOST:api.stlotus.org}:{$PUBLIC_PORT:443} {
+	reverse_proxy http:3000 {
+		# Retry while docker-rollout swaps containers
+		lb_try_duration 10s
+		fail_duration 5s
+	}
+}

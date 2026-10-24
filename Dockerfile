@@ -7,4 +7,5 @@ COPY package-lock.json .
 COPY package.json .
 RUN npm install
 COPY . .
-CMD npm run db:docker && npm run http
+# DB seeding runs once per deploy in deploy-cloud.sh, not on every container start
+CMD ["node", "fastify.js"]
