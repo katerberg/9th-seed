@@ -1,10 +1,6 @@
 const fs = require('fs');
-const util = require('util');
 const stringify = require('csv-stringify');
-
-fs.readFileAsync = util.promisify(fs.readFile);
-fs.writeFileAsync = util.promisify(fs.writeFile);
-const stringifyAsync = util.promisify(stringify);
+const streamDataEntries = require('./streamDataEntries');
 
 function isNormalSet(type) {
   return [
@@ -40,55 +36,47 @@ function getEarliestReleaseDate(allSets, setsForCard) {
   }, '2222-11-11');
 }
 
-fs.readFileAsync(`${process.cwd()}/setup/SetList.json`, 'utf-8')
-  .then((setListText) => {
-    const sets = {};
-    JSON.parse(setListText).data.forEach((set) => {
-      sets[set.code] = {
-        name: set.name,
-        releaseDate: set.releaseDate,
-        type: set.type,
-      };
-    });
+const sets = {};
+JSON.parse(
+  fs.readFileSync(`${process.cwd()}/setup/SetList.json`, 'utf-8')
+).data.forEach((set) => {
+  sets[set.code] = {
+    name: set.name,
+    releaseDate: set.releaseDate,
+    type: set.type,
+  };
+});
 
-    fs.readFileAsync(`${process.cwd()}/setup/VintageCards.json`, 'utf-8')
-      .then((textFile) => {
-        const cardJson = JSON.parse(textFile).data;
-        const cards = Object.keys(cardJson).filter(
-          (c) => cardJson[c][0].printings
-        );
-        stringifyAsync(
-          cards.map((c) => [
-            c,
-            getEarliestReleaseDate(sets, cardJson[c][0].printings),
-            cardJson[c][0].colorIdentity.map((ci) => ci.toUpperCase()).join(''),
-            cardJson[c][0].manaValue,
-            cardJson[c][0].manaCost,
-            cardJson[c][0].types.join(';'),
-          ])
-        )
-          .then((output) => {
-            fs.writeFile(
-              `${process.cwd()}/setup/AllCards.csv`,
-              output,
-              (err) => {
-                if (err) {
-                  throw err;
-                }
-              }
-            );
-          })
-          .catch((e) => {
-            console.log('There was an error writing csv');
-            console.log(e);
-          });
-      })
-      .catch((e) => {
-        console.log('There was an error reading VintageCards.json');
-        console.log(e);
-      });
-  })
+// AtomicCards.json is too large to JSON.parse in one go on memory-constrained
+// machines (the process gets OOM-killed), so stream it entry by entry.
+const csv = stringify();
+const out = fs.createWriteStream(`${process.cwd()}/setup/AllCards.csv`);
+csv.pipe(out);
+
+streamDataEntries(`${process.cwd()}/setup/VintageCards.json`, (name, faces) => {
+  const card = faces[0];
+  if (!card.printings) {
+    return;
+  }
+  csv.write([
+    name,
+    getEarliestReleaseDate(sets, card.printings),
+    card.colorIdentity.map((ci) => ci.toUpperCase()).join(''),
+    card.manaValue,
+    card.manaCost,
+    card.types.join(';'),
+  ]);
+})
+  .then(() => csv.end())
   .catch((e) => {
-    console.log('There was an error reading setlist.json');
+    console.log('There was an error reading VintageCards.json');
     console.log(e);
+    process.exitCode = 1;
+    csv.end();
   });
+
+out.on('error', (e) => {
+  console.log('There was an error writing csv');
+  console.log(e);
+  process.exitCode = 1;
+});
