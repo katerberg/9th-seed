@@ -3,6 +3,8 @@
 """Lifetime"" Pass Holder",2022-10-07,B,1,{B},Creature
 """Name Sticker"" Goblin",2022-10-07,R,3,{2}{R},Creature
 """Rumors of My Death . . .""",2017-12-08,B,3,{2}{B},Enchantment
+"""The Ignoble Serpent""",2027-02-05,BGU,8,{5}{B}{G}{U},Creature
+"""Zekes, Acid Rock Fan""",2027-02-05,BGU,4,{1}{B}{G}{U},Creature
 +2 Mace,2021-07-23,W,2,{1}{W},Artifact
 17-Year Cicadas,2023-02-15,W,8,{7}{W},Sorcery
 1996 World Champion,1996-08-14,BGRUW,5,{W}{U}{B}{R}{G},Summon;Legend
@@ -123,6 +125,7 @@ Abyssal Gorestalker,2023-11-17,B,6,{4}{B}{B},Creature
 Abyssal Harvester,2024-11-15,B,3,{1}{B}{B},Creature
 Abyssal Horror,1998-10-12,B,6,{4}{B}{B},Creature
 Abyssal Hunter,1996-10-08,B,4,{3}{B},Creature
+Abyssal Lotus,2027-02-05,,0,{0},Artifact
 Abyssal Nightstalker,1998-06-24,B,4,{3}{B},Creature
 Abyssal Nocturnus,2006-02-03,B,3,{1}{B}{B},Creature
 Abyssal Persecutor,2010-02-05,B,4,{2}{B}{B},Creature
@@ -145,6 +148,7 @@ Academic Dispute,2021-04-23,R,1,{R},Instant
 Academic Probation,2021-04-23,W,2,{1}{W},Sorcery
 Academy Drake,2018-04-27,U,3,{2}{U},Creature
 Academy Elite,2014-06-06,U,4,{3}{U},Creature
+Academy Instructor,2026-11-13,R,3,{2}{R},Creature
 Academy Journeymage,2018-04-27,U,5,{4}{U},Creature
 Academy Loremaster,2022-09-09,U,2,{U}{U},Creature
 Academy Manufactor,2021-06-18,,3,{3},Artifact;Creature
@@ -276,6 +280,7 @@ Adventurers' Guildhouse,1994-06-01,,0,,Land
 Adventuring Gear,2009-10-02,,1,{1},Artifact
 Adventurous Eater // Have a Bite,2026-04-24,B,3,{2}{B},Creature
 Adventurous Impulse,2018-04-27,G,1,{G},Sorcery
+Adversary by Algorithm,2026-11-13,G,3,{2}{G},Sorcery
 Adverse Conditions,2015-10-02,U,4,{3}{U},Instant
 Advice from the Fae,2008-05-02,U,6,{2/U}{2/U}{2/U},Sorcery
 Advocate of the Beast,2013-07-19,G,3,{2}{G},Creature
@@ -642,6 +647,7 @@ Alesha's Vanguard,2015-01-23,B,4,{3}{B},Creature
 "Alesha, Who Smiles at Death",2015-01-23,BRW,3,{2}{R},Creature
 "Alex Wilder, Runaway",2026-06-26,R,2,{1}{R},Creature
 Alexander Clamilton,2020-02-29,RU,3,{2}{U},Creature
+"Alexander, Ship's Fool",2026-11-13,RW,5,{3}{R}{W},Creature
 Alexi's Cloak,2000-06-05,U,2,{1}{U},Enchantment
 "Alexi, Zephyr Mage",2000-06-05,U,5,{3}{U}{U},Creature
 "Alexios, Deimos of Kosmos",2024-07-05,R,4,{3}{R},Creature
@@ -663,6 +669,7 @@ Aligned Hedron Network,2015-10-02,,4,{4},Artifact
 Alisaie Leveilleur,2025-06-13,W,3,{2}{W},Creature
 "Alistair, the Brigadier",2023-10-13,GUW,4,{1}{G}{W}{U},Creature
 Alive // Well,2013-05-03,GW,5,{3}{G},Sorcery
+All Good Things...,2026-11-13,GU,5,{3}{G}{U},Enchantment
 All Hallow's Eve,1994-06-01,B,4,{2}{B}{B},Sorcery
 All Is Dust,2010-04-23,,7,{7},Kindred;Sorcery
 All Shall Smolder in My Wake,2010-06-18,,0,,Scheme
@@ -756,6 +763,7 @@ Altered Ego,2016-04-08,GU,4,{X}{2}{G}{U},Creature
 Aluren,1997-10-14,G,4,{2}{G}{G},Enchantment
 Always Watching,2016-04-08,W,3,{1}{W}{W},Enchantment
 Amalia Benavides Aguirre,2023-11-17,BW,2,{W}{B},Creature
+"Amanda Grayson, Logic's Link",2026-11-13,G,4,{3}{G},Creature
 Amarant Coral,2025-06-13,GR,4,{2}{R}{G},Creature
 Amaranthine Wall,2018-04-27,,4,{4},Artifact;Creature
 "Amareth, the Lustrous",2020-11-20,GUW,6,{3}{G}{W}{U},Creature
@@ -766,6 +774,7 @@ Amazing Acrobatics,2025-09-23,U,3,{1}{U}{U},Instant
 Amazing Alliance,2025-09-26,W,3,{1}{W}{W},Enchantment
 Amazing Spider-Girl,2026-06-26,W,5,{3}{W}{W},Creature
 Ambassador Blorpityblorpboop,2022-10-07,GU,5,{3}{G}{U},Creature
+Ambassador K'Ehleyr,2026-11-13,W,3,{2}{W},Creature
 Ambassador Laquatus,2002-02-04,U,3,{1}{U}{U},Creature
 Ambassador Oak,2008-02-01,G,4,{3}{G},Creature
 Ambassador of Evendo,2025-08-19,GU,2,{G}{U},Creature
@@ -788,6 +797,7 @@ Ambitious Farmhand // Seasoned Cathar,2021-09-24,W,2,{1}{W},Creature
 Ambling Stormshell,2025-04-11,U,5,{3}{U}{U},Creature
 Ambrosia Whiteheart,2025-06-13,W,2,{1}{W},Creature
 Ambulatory Edifice,2023-02-10,B,3,{2}{B},Artifact;Creature
+Ambulatory Reactor,2026-11-13,U,4,{3}{U},Artifact;Creature
 Ambuscade,2017-07-14,G,3,{2}{G},Instant
 Ambuscade Shaman,2015-03-27,B,3,{2}{B},Creature
 Ambush,1995-10-01,R,4,{3}{R},Instant
@@ -914,8 +924,10 @@ Ancient Tomb,1997-10-14,,0,,Land
 Ancient Vendetta,2025-02-14,B,4,{3}{B},Sorcery
 Ancient Ziggurat,2009-02-06,,0,,Land
 And They Shall Know No Fear,2022-10-07,W,2,{1}{W},Instant
+Andoria,2026-11-13,RU,0,,Land
 Andradite Leech,2000-10-02,B,3,{2}{B},Creature
 "Andrios, Roaming Explorer",2022-08-01,BGRUW,6,{5}{G},Artifact;Creature
+Andromedan Automatons,2026-11-13,W,3,{2}{W},Artifact;Creature
 "Andúril, Flame of the West",2023-06-23,,3,{3},Artifact
 "Andúril, Narsil Reforged",2023-06-23,,2,{2},Artifact
 "Anep, Vizier of Hazoret",2024-11-15,R,3,{2}{R},Creature
@@ -1074,6 +1086,7 @@ Ant-Man's Army,2026-06-26,G,3,{2}{G},Creature
 "Ant-Man, Reformed Rogue",2026-06-26,GU,3,{2}{G/U},Creature
 "Ant-Man, Scott Lang",2026-06-26,W,2,{1}{W},Creature
 Antagonism,1998-10-12,R,4,{3}{R},Enchantment
+Antagonist Incorporator,2026-11-13,W,2,{1}{W},Artifact;Creature
 Antagonize,2022-04-29,R,2,{1}{R},Instant
 Antarctic Research Base,2023-10-13,,0,,Plane
 Anthem of Champions,2024-11-15,GW,2,{G}{W},Enchantment
@@ -1081,6 +1094,7 @@ Anthem of Rakdos,2006-05-05,BR,5,{2}{B}{R}{R},Enchantment
 "Anthousa, Setessan Hero",2013-09-27,G,5,{3}{G}{G},Creature
 Anthropede,2024-09-27,G,4,{3}{G},Creature
 Anthroplasm,1999-02-15,U,4,{2}{U}{U},Creature
+Anthropological Mission,2026-11-13,U,3,{2}{U},Enchantment
 Anti-Magic Aura,1994-06-01,U,3,{2}{U},Enchantment
 "Anti-Venom, Horrifying Healer",2025-09-23,W,5,{W}{W}{W}{W}{W},Creature
 Anticausal Vestige,2025-08-01,,6,{6},Creature
@@ -1477,6 +1491,7 @@ Arms Depot,2017-12-08,,0,,Artifact
 Arms Race,2022-11-18,R,4,{3}{R},Enchantment
 Arms Scavenger,2021-12-09,R,2,{1}{R},Creature
 Arms of Hadar,2022-06-10,B,4,{3}{B},Sorcery
+"Armus, Skin of Evil",2026-11-13,B,7,{5}{B}{B},Creature
 Army Ants,1997-02-03,BR,3,{1}{B}{R},Creature
 Army of Allah,1993-12-17,W,3,{1}{W}{W},Instant
 Army of the Damned,2011-09-30,B,8,{5}{B}{B}{B},Sorcery
@@ -1523,6 +1538,7 @@ Artificer's Dragon,2022-11-18,R,6,{6},Artifact;Creature
 Artificer's Epiphany,2015-07-17,U,3,{2}{U},Instant
 Artificer's Hex,2013-07-19,B,1,{B},Enchantment
 Artificer's Intuition,2004-06-04,U,2,{1}{U},Enchantment
+Artificial Anomaly,2026-11-13,B,0,,Land
 Artificial Evolution,2002-10-07,U,1,{U},Instant
 Artifist Acumen,2026-10-02,R,1,{R},Sorcery
 Artillerize,2011-05-13,R,4,{3}{R},Instant
@@ -1531,7 +1547,7 @@ Artillery Enthusiast,2022-03-17,R,1,{R},Creature
 Artisan of Forms,2013-09-27,U,2,{1}{U},Creature
 Artisan of Kozilek,2010-04-23,,9,{9},Creature
 Artisan's Sorrow,2013-09-27,G,4,{3}{G},Instant
-Artist Alley,2024-02-24,,0,,Plane
+Artist Alley,2023-02-15,,0,,Land
 Artist's Talent,2024-08-02,R,2,{1}{R},Enchantment
 Artistic Process,2026-04-24,R,5,{3}{R}{R},Sorcery
 Artistic Refusal,2023-04-21,U,6,{4}{U}{U},Instant
@@ -1544,7 +1560,7 @@ Arwen's Gift,2023-06-23,U,4,{3}{U},Sorcery
 "Arwen, Mortal Queen",2023-06-23,GW,3,{1}{G}{W},Creature
 "Arwen, Weaver of Hope",2023-06-23,G,3,{1}{G}{G},Creature
 "Aryel, Knight of Windgrace",2018-04-27,BW,4,{2}{W}{B},Creature
-Arzakon,2026-11-09,BGRUW,5,{W}{U}{B}{R}{G},Planeswalker
+Arzakon,2026-10-19,BGRUW,5,{W}{U}{B}{R}{G},Planeswalker
 As Foretold,2017-04-28,U,3,{2}{U},Enchantment
 As Luck Would Have It,2017-12-08,G,1,{G},Enchantment
 Asari Captain,2022-02-18,RW,5,{3}{R}{W},Creature
@@ -1565,7 +1581,7 @@ Ash Zealot,2012-10-05,R,2,{R}{R},Creature
 "Ash, Party Crasher",2023-09-08,RW,2,{R}{W},Creature
 Asha's Favor,2009-02-06,W,3,{2}{W},Enchantment
 "Ashad, the Lone Cyberman",2023-10-13,BRU,4,{1}{U}{B}{R},Artifact;Creature
-Ashaya's Enduring Bond,2026-11-09,GR,3,{1}{R}{G},Sorcery
+Ashaya's Enduring Bond,2026-10-19,GR,3,{1}{R}{G},Sorcery
 "Ashaya, Soul of the Wild",2020-09-25,G,5,{3}{G}{G},Creature
 Ashcloud Phoenix,2014-09-26,R,4,{2}{R}{R},Creature
 Ashcoat Bear,2006-10-06,G,2,{1}{G},Creature
@@ -1659,11 +1675,14 @@ Assemble the Team,2022-12-13,BG,2,{B}{G},Sorcery
 Assembled Alphas,2016-07-22,R,6,{5}{R},Creature
 Assembled Ensemble,2022-10-07,W,5,{4}{W},Artifact;Creature
 Assembly Hall,1999-10-04,,5,{5},Artifact
+Assembly Specialist,2026-11-13,W,2,{1}{W},Artifact;Creature
 Assembly-Worker,2006-10-06,,3,{3},Artifact;Creature
 Assert Authority,2003-10-02,U,7,{5}{U}{U},Instant
 Assert Perfection,2026-01-23,G,2,{1}{G},Sorcery
 Assimilate Essence,2023-04-21,U,2,{1}{U},Instant
+Assimilate the Wounded,2026-11-13,B,3,{2}{B},Instant
 Assimilation Aegis,2024-04-19,UW,3,{1}{W}{U},Artifact
+Assimilation Assessor,2026-11-13,B,5,{4}{B},Artifact;Creature
 Assquatch,2004-11-19,R,5,{4}{R},Creature
 Assure // Assemble,2018-10-05,GW,8,{G/W}{G/W},Instant
 Astarion's Thirst,2022-06-10,B,4,{3}{B},Instant
@@ -1683,8 +1702,10 @@ Astrid Peth,2023-10-13,W,2,{1}{W},Creature
 Astrolabe,1996-06-10,,3,{3},Artifact
 Astrologian's Planisphere,2025-06-13,U,2,{1}{U},Artifact
 Astroquarium,2022-10-07,U,3,{2}{U},Artifact
+Astute Terraformer,2026-11-13,G,2,{1}{G},Creature
 Aswan Jaguar,1997-04-01,G,3,{1}{G}{G},Summon;Jaguar
 Asylum Visitor,2016-04-08,B,2,{1}{B},Creature
+Asymmetry Sage,2026-10-13,U,1,{U},Creature
 At Knifepoint,2024-04-19,BR,3,{1}{B}{R},Enchantment
 At Least It's a Dry Heat,2023-02-15,R,4,{3}{R},Instant
 Atalan Jackal,2022-10-07,GR,3,{1}{R}{G},Creature
@@ -1829,7 +1850,7 @@ Auton Soldier,2023-10-13,U,6,{4}{U}{U},Artifact;Creature
 Autonomous Assembler,2022-11-18,W,5,{5},Artifact;Creature
 Autumn Willow,1995-10-01,G,6,{4}{G}{G},Creature
 Autumn Willow and Baron Sengir,2023-02-15,BG,6,{4}{B}{G},Creature
-"Autumn Willow, Harmony",2026-11-09,G,5,{3}{G}{G},Creature
+"Autumn Willow, Harmony",2026-10-19,G,5,{3}{G}{G},Creature
 Autumn's Veil,2010-07-16,G,1,{G},Instant
 Autumnal Gloom // Ancient of the Equinox,2016-04-08,BG,3,{2}{G},Enchantment
 Auxiliary Boosters,2025-08-01,W,5,{4}{W},Artifact
@@ -1937,6 +1958,7 @@ Avid Reclaimer,2017-07-14,GU,3,{2}{G},Creature
 Avishkar Raceway,2025-02-14,,0,,Land
 Avizoa,1997-06-09,U,4,{3}{U},Creature
 Avoid Fate,1994-06-01,G,1,{G},Instant
+Avoided Stairwurm,2026-10-13,B,1,{B},Artifact;Creature
 Awaken the Ancient,2013-07-19,R,4,{1}{R}{R}{R},Enchantment
 Awaken the Bear,2014-09-26,G,3,{2}{G},Instant
 Awaken the Erstwhile,2019-01-25,B,5,{3}{B}{B},Sorcery
@@ -2023,8 +2045,9 @@ Azure Fleet Admiral,2020-11-20,U,4,{3}{U},Creature
 Azure Mage,2011-07-15,U,2,{1}{U},Creature
 Azusa's Many Journeys // Likeness of the Seeker,2022-02-18,G,2,{1}{G},Enchantment
 "Azusa, Lost but Seeking",2004-10-01,G,3,{2}{G},Creature
+"B'Elanna Torres, Scrapper",2026-11-13,RU,3,{1}{U}{R},Creature
 B-I-N-G-O,2004-11-19,G,2,{1}{G},Creature
-B.F.M. (Big Furry Monster),1998-08-11,B,15,{B}{B}{B}{B}{B}{B}{B}{B}{B}{B}{B}{B}{B}{B}{B},Scariest;Creature;You'll;Ever;See
+B.F.M. (Big Furry Monster),1998-08-11,B,15,,Creature
 B.O.B. (Bevy of Beebles),2020-02-29,U,5,{3}{U}{U},Planeswalker
 Ba Sing Se,2025-11-21,G,0,,Land
 Baaallerina,2022-10-07,U,4,{3}{U},Creature
@@ -2073,6 +2096,7 @@ Bail Out,2025-03-04,B,1,{B},Instant
 "Baird, Argivian Recruiter",2022-09-09,RW,2,{R}{W},Creature
 "Baird, Steward of Argive",2018-04-27,W,4,{2}{W}{W},Creature
 Baithook Angler // Hook-Haunt Drifter,2021-09-24,U,2,{1}{U},Creature
+Bajor,2026-11-13,RW,0,,Land
 Bake into a Pie,2019-10-04,B,4,{2}{B}{B},Instant
 Bakersbane Duo,2024-08-02,G,2,{1}{G},Creature
 Baki's Curse,1995-10-01,U,4,{2}{U}{U},Sorcery
@@ -2085,6 +2109,7 @@ Balamb T-Rexaur,2025-06-13,G,6,{4}{G}{G},Creature
 "Balan, Wandering Knight",2017-08-25,W,4,{2}{W}{W},Creature
 Balance,1993-08-05,W,2,{1}{W},Sorcery
 Balance of Power,1997-05-01,U,5,{3}{U}{U},Sorcery
+Balance of Terror,2026-11-13,W,3,{2}{W},Enchantment
 Balancing Act,2001-10-01,W,4,{2}{W}{W},Sorcery
 "Baldin, Century Herdmaster",2025-04-11,W,6,{4}{W}{W},Creature
 Baldur's Gate,2022-06-10,,0,,Land
@@ -2103,7 +2128,7 @@ Balduvian Shaman,1995-06-03,U,1,{U},Creature
 Balduvian Trading Post,1996-06-10,R,0,,Land
 Balduvian War-Makers,1996-06-10,R,5,{4}{R},Creature
 Balduvian Warlord,2006-07-21,R,4,{3}{R},Creature
-Balefang the Unslayable,2026-11-09,R,5,{3}{R}{R},Creature
+Balefang the Unslayable,2026-10-19,R,5,{3}{R}{R},Creature
 Balefire Dragon,2011-09-30,R,7,{5}{R}{R},Creature
 Balefire Liege,2008-07-25,RW,5,{2}{R/W}{R/W}{R/W},Creature
 Baleful Ammit,2017-04-28,B,3,{2}{B},Creature
@@ -2166,6 +2191,7 @@ Baneblade Scoundrel // Baneclaw Marauder,2021-09-24,B,4,{3}{B},Creature
 Banefire,2009-02-06,R,1,{X}{R},Sorcery
 Baneful Omen,2010-04-23,B,7,{4}{B}{B}{B},Enchantment
 Banehound,2019-05-03,B,1,{B},Creature
+Banescale Serpent,2026-10-13,RU,5,{3}{U}{R},Creature
 Baneslayer Angel,2009-07-17,W,5,{3}{W}{W},Creature
 Baneslayer Aspirant,2019-11-07,W,2,{1}{W},Creature
 Banewasp Affliction,2008-10-03,B,2,{1}{B},Enchantment
@@ -2381,6 +2407,7 @@ Battle for Bretagard,2021-02-05,GW,3,{1}{G}{W},Enchantment
 Battle of Frost and Fire,2021-02-05,RU,5,{3}{U}{R},Enchantment
 Battle of Hoover Dam,2024-03-08,W,4,{3}{W},Enchantment
 Battle of Wits,2001-10-01,U,5,{3}{U}{U},Enchantment
+Battle of Wolf 359,2026-11-13,B,5,{3}{B}{B},Sorcery
 Battle-Mad Ronin,2004-10-01,R,2,{1}{R},Creature
 Battle-Rage Blessing,2022-09-09,B,2,{1}{B},Instant
 Battle-Rattle Shaman,2010-04-23,R,4,{3}{R},Creature
@@ -2572,6 +2599,7 @@ Benalish Partisan,2021-08-26,W,2,{1}{W},Creature
 Benalish Sleeper,2022-09-09,BW,2,{1}{W},Creature
 Benalish Trapper,2000-10-02,W,2,{1}{W},Creature
 Benalish Veteran,2011-07-15,W,3,{2}{W},Creature
+Bend Mortal Limits,2026-10-13,B,1,{B},Sorcery
 Bend or Break,2000-10-02,R,4,{3}{R},Sorcery
 Bender's Waterskin,2025-11-21,,3,{3},Artifact
 Beneath the Sands,2017-07-14,G,3,{2}{G},Sorcery
@@ -2626,6 +2654,7 @@ Bestial Fury,1996-06-10,R,3,{2}{R},Enchantment
 Bestial Incursion,2026-10-02,G,4,{3}{G},Sorcery
 Bestial Menace,2010-02-05,G,5,{3}{G}{G},Sorcery
 Bestow Greatness,2025-02-14,G,3,{2}{G},Instant
+Beta Ray Bill,2022-11-01,GW,3,{2}{G/W},Creature
 "Betor, Ancestor's Voice",2025-04-11,BGW,5,{2}{W}{B}{G},Creature
 "Betor, Kin to All",2025-04-11,BGW,5,{2}{W}{B}{G},Creature
 Betrayal,1997-02-03,U,1,{U},Enchantment
@@ -2635,6 +2664,7 @@ Betrayer's Bargain,2024-09-27,R,2,{1}{R},Instant
 Betrothed of Fire,1997-06-09,R,2,{1}{R},Enchantment
 Better Offer,2022-03-17,U,1,{X}{U},Sorcery
 Better Than One,2017-12-08,GW,2,{G}{W},Sorcery
+"Beverly Crusher, Ship's Doctor",2026-11-13,W,3,{2}{W},Creature
 Bewilder,2006-10-06,U,3,{2}{U},Instant
 Bewildering Blizzard,2025-04-11,U,6,{4}{U}{U},Instant
 Bewitching Leechcraft,2023-06-23,U,2,{1}{U},Enchantment
@@ -2860,6 +2890,7 @@ Blaster Mage,1999-10-04,R,3,{2}{R},Creature
 Blastfire Bolt,2014-07-18,R,6,{5}{R},Instant
 Blasting Station,2004-06-04,,3,{3},Artifact
 Blastoderm,2000-02-14,G,4,{2}{G}{G},Creature
+Blastoneuron,2026-11-13,B,4,{3}{B},Creature
 Blatant Thievery,2002-10-07,U,7,{4}{U}{U}{U},Sorcery
 Blaze,1997-05-01,R,1,{X}{R},Sorcery
 Blaze Commando,2013-05-03,RW,5,{3}{R}{W},Creature
@@ -3059,6 +3090,7 @@ Blood on the Snow,2021-02-05,B,6,{4}{B}{B},Sorcery
 Blood-Chin Fanatic,2015-03-27,B,3,{1}{B}{B},Creature
 Blood-Chin Rager,2015-03-27,B,2,{1}{B},Creature
 Blood-Cursed Knight,2015-07-17,BW,3,{1}{W}{B},Creature
+Blood-Sport Champion,2026-11-13,B,2,{1}{B},Creature
 Blood-Toll Harpy,2013-09-27,B,3,{2}{B},Creature
 Bloodboil Sorcerer,2022-06-10,R,4,{3}{R},Creature
 Bloodbond March,2005-10-07,BG,4,{2}{B}{G},Enchantment
@@ -3164,7 +3196,7 @@ Blooming Marsh,2016-09-30,BG,0,,Land
 Blooming Stinger,2025-08-01,G,2,{1}{G},Creature
 Bloomvine Regent // Claim Territory,2025-04-11,G,5,{3}{G}{G},Creature
 Bloomvine Regent // Claim Territory // Bloomvine Regent // Claim Territory,2025-04-11,G,5,{3}{G}{G},Creature
-Blor the Impervious,2026-11-09,G,5,{3}{G}{G},Creature
+Blor the Impervious,2026-10-19,G,5,{3}{G}{G},Creature
 Blorbian Buddy,2022-10-07,G,1,{G},Creature
 Blossom Dryad,2017-09-29,G,3,{2}{G},Creature
 Blossom Prancer,2022-02-18,G,5,{3}{G}{G},Creature
@@ -3210,6 +3242,7 @@ Boar Umbra,2010-04-23,G,3,{2}{G},Enchantment
 Boar-q-pine,2025-11-21,R,3,{2}{R},Creature
 Board the Weatherlight,2018-04-27,W,2,{1}{W},Sorcery
 Boarded Window,2021-11-19,,3,{3},Artifact
+Boarding Action,2026-11-13,R,2,{1}{R},Sorcery
 Boarding Party,2020-11-20,R,6,{5}{R},Creature
 Boareskyr Tollkeeper,2022-07-07,W,2,{1}{W},Creature
 Boartusk Liege,2008-05-02,GR,4,{1}{R/G}{R/G}{R/G},Creature
@@ -3277,6 +3310,7 @@ Boiling Rock Prison,2025-11-21,BR,0,,Land
 Boiling Rock Rioter,2025-11-21,B,3,{2}{B},Creature
 Boiling Seas,1997-05-01,R,4,{3}{R},Sorcery
 Boing!,2022-10-07,U,2,{1}{U},Instant
+Boisterous Clique,2026-10-13,B,3,{1}{B}{B},Creature
 Bojuka Bog,2010-02-05,B,0,,Land
 Bojuka Brigand,2010-02-05,B,2,{1}{B},Creature
 Bola Slinger,2023-04-21,W,4,{3}{W},Creature
@@ -3423,7 +3457,10 @@ Boreal Griffin,2006-07-21,W,5,{3}{W}{W},Creature
 Boreal Outrider,2021-02-05,G,3,{2}{G},Creature
 Boreal Shelf,2006-07-21,UW,0,,Land
 Boreas Charger,2018-08-10,W,3,{2}{W},Creature
+Borg Cube,2026-11-13,BW,7,{5}{W}{B},Artifact
+Borg Incursion,2026-11-13,W,3,{2}{W},Instant
 "Borg Queen, Perfection Manifest",2026-11-13,B,6,{4}{B}{B},Artifact;Creature
+Borg Scout Sphere,2026-11-13,U,3,{2}{U},Artifact
 Boris Devilboon,1994-06-01,BR,5,{3}{B}{R},Creature
 Born to Drive,2022-02-18,W,3,{2}{W},Enchantment
 Borne Upon a Wind,2023-06-23,U,2,{1}{U},Instant
@@ -3464,7 +3501,7 @@ Boseiju Reaches Skyward // Branch of Boseiju,2022-02-18,G,4,{3}{G},Enchantment
 "Bosh, Iron Golem Avatar",2003-01-01,,0,,Vanguard
 Bosk Banneret,2008-02-01,G,2,{1}{G},Creature
 Bosom Buddy,2004-11-19,W,4,{3}{W},Creature
-"Boss Uramon, Shadow's Reach",2026-11-09,B,4,{3}{B},Creature
+"Boss Uramon, Shadow's Reach",2026-10-19,B,4,{3}{B},Creature
 Boss's Chauffeur,2022-04-29,W,5,{4}{W},Creature
 Bot Bashing Time,2026-03-06,R,4,{3}{R},Sorcery
 Botanical Brawler,2023-04-21,GW,2,{G}{W},Creature
@@ -3572,6 +3609,7 @@ Branch of Vitu-Ghazi,2024-02-09,,0,,Land
 Branchblight Stalker,2023-02-10,G,2,{1}{G},Creature
 Branching Bolt,2008-10-03,GR,3,{1}{R}{G},Instant
 Branching Evolution,2020-07-17,G,3,{2}{G},Enchantment
+Branching Timeline,2026-11-13,G,8,{6}{G}{G},Sorcery
 Branchloft Pathway // Boulderloft Pathway,2020-09-25,GW,0,,Land
 Branchsnap Lorian,2003-02-03,G,3,{1}{G}{G},Creature
 Brand,1998-10-12,R,1,{R},Instant
@@ -3605,6 +3643,7 @@ Brawler's Plate,2014-07-18,,3,{3},Artifact
 Brawn,2002-05-27,G,4,{3}{G},Creature
 "Brawn, Amadeus Cho",2026-06-26,GU,2,{1}{G/U},Creature
 Brazen Blademaster,2023-11-17,R,3,{2}{R},Creature
+Brazen Bluff,2026-11-13,R,2,{R}{R},Instant
 Brazen Boarding,2023-12-05,RU,4,{2}{U}{R},Sorcery
 Brazen Borrower // Petty Theft,2019-10-04,U,3,{1}{U}{U},Creature
 Brazen Buccaneers,2017-09-29,R,4,{3}{R},Creature
@@ -4143,6 +4182,7 @@ Callous Sell-Sword // Burn Together,2023-09-08,BR,2,{1}{B},Creature
 Callow Jushi // Jaraku the Interloper,2005-02-04,U,3,{1}{U}{U},Creature
 Calming Licid,1998-03-02,W,3,{2}{W},Creature
 Calming Verse,2000-06-05,G,4,{3}{G},Sorcery
+Calmwater Mentor,2027-02-05,W,4,{2}{W}{W},Creature
 Caltrops,1999-06-07,,3,{3},Artifact
 Camaraderie,2018-10-05,GW,6,{4}{G}{W},Sorcery
 Camato Scout,2001-06-28,U,3,{1}{U}{U},Creature
@@ -4239,9 +4279,13 @@ Captain America's Shield,2026-06-26,,2,{2},Artifact
 "Captain America, Team Leader",2026-06-26,RUW,3,{R}{W}{U},Creature
 "Captain America, Unbowed",2026-06-26,W,4,{3}{W},Creature
 "Captain America, Wings of Freedom",2026-06-26,W,3,{2}{W},Creature
+Captain Benjamin Sisko,2026-11-13,BGRUW,2,{1}{W},Creature
 Captain Eberhart,2021-12-09,W,2,{1}{W},Creature
 "Captain Howler, Sea Scourge",2025-02-14,RU,4,{2}{U}{R},Creature
 Captain James T. Kirk,2026-11-13,R,3,{2}{R},Creature
+"Captain Janeway, Endgame",2026-11-13,RUW,4,{1}{U}{R}{W},Creature
+Captain Jean-Luc Picard,2026-11-13,W,3,{2}{W},Creature
+Captain Jonathan Archer,2026-11-13,G,3,{2}{G},Creature
 Captain Kathryn Janeway,2026-11-13,G,4,{3}{G},Creature
 "Captain Kirk, Boldly Going",2026-11-13,GUW,4,{1}{G}{W}{U},Creature
 Captain Lannery Storm,2017-09-29,R,3,{2}{R},Creature
@@ -4249,7 +4293,9 @@ Captain Lannery Storm,2017-09-29,R,3,{2}{R},Creature
 "Captain Marvel, Apex Avenger",2026-06-26,RW,7,{5}{R}{W},Creature
 "Captain Marvel, Earth's Protector",2026-06-26,W,5,{3}{W}{W},Creature
 "Captain Marvel, Shooting Star",2026-06-26,W,7,{5}{W}{W},Creature
+Captain Michael Burnham,2026-11-13,R,3,{2}{R},Creature
 Captain N'ghathrod,2022-06-10,BU,5,{3}{U}{B},Creature
+"Captain Pike, Fullness of Time",2026-11-13,G,3,{1}{G}{G},Creature
 Captain Rex Nebula,2022-10-07,RW,3,{1}{R}{W},Creature
 Captain Ripley Vance,2021-06-18,R,3,{2}{R},Creature
 Captain Sisay,2000-10-02,GW,4,{2}{G}{W},Creature
@@ -4286,6 +4332,7 @@ Caravan Escort,2010-04-23,W,1,{W},Creature
 Caravan Hurda,2009-10-02,W,5,{4}{W},Creature
 Caravan Vigil,2011-09-30,G,1,{G},Sorcery
 Carbonize,2003-05-26,R,3,{2}{R},Instant
+Cardassia Prime,2026-11-13,BW,0,,Land
 Cardboard Carapace,1998-08-11,G,6,{5}{G},Enchantment
 Cardpecker,2004-11-19,W,2,{1}{W},Creature
 Careening Mine Cart,2023-11-17,,3,{3},Artifact
@@ -4367,7 +4414,7 @@ Case of the Filched Falcon,2024-02-09,U,1,{U},Enchantment
 Case of the Gateway Express,2024-02-09,W,2,{1}{W},Enchantment
 Case of the Gorgon's Kiss,2024-02-09,B,1,{B},Enchantment
 Case of the Locked Hothouse,2024-02-09,G,4,{3}{G},Enchantment
-Case of the Lost Witness,2026-11-09,U,2,{1}{U},Enchantment
+Case of the Lost Witness,2026-10-19,U,2,{1}{U},Enchantment
 Case of the Market Melee,2024-03-05,R,2,{1}{R},Enchantment
 Case of the Pilfered Proof,2024-02-09,W,2,{1}{W},Enchantment
 Case of the Ransacked Lab,2024-02-09,U,3,{2}{U},Enchantment
@@ -4610,6 +4657,7 @@ Cerulean Wyvern,1996-10-08,U,5,{4}{U},Creature
 Cessation,1999-02-15,W,3,{2}{W},Enchantment
 Ceta Disciple,2001-06-04,GRU,1,{U},Creature
 Ceta Sanctuary,2001-06-04,U,3,{2}{U},Enchantment
+Cetacean Ops,2026-11-13,U,4,{3}{U},Creature
 Cetavolver,2001-06-04,GRU,2,{1}{U},Creature
 Ceti Eel,2026-11-13,B,4,{3}{B},Creature
 Cha'DIch Investigator,2026-11-13,B,5,{4}{B},Creature
@@ -4680,6 +4728,7 @@ Champions of the Shoal,2026-01-23,U,4,{3}{U},Creature
 Chance Encounter,2001-10-01,R,4,{2}{R}{R},Enchantment
 Chance for Glory,2018-10-05,RW,3,{1}{R}{W},Instant
 Chance-Met Elves,2023-06-23,G,3,{2}{G},Creature
+Chancellor Gorkon,2026-11-13,BW,5,{3}{W}{B},Creature
 Chancellor of Tales,2023-09-08,U,4,{3}{U},Creature
 Chancellor of the Annex,2011-05-13,W,7,{4}{W}{W}{W},Creature
 Chancellor of the Dross,2011-05-13,B,7,{4}{B}{B}{B},Creature
@@ -4735,6 +4784,7 @@ Change of Fortune,2021-11-19,R,4,{3}{R},Sorcery
 Change of Heart,1998-03-02,W,1,{W},Instant
 Change of Plans,2022-04-29,U,2,{X}{1}{U},Instant
 Change the Equation,2023-04-21,U,2,{1}{U},Instant
+Change the Narrative,2026-10-13,UW,3,{1}{W}{U},Enchantment
 Changeling Berserker,2007-10-12,R,4,{3}{R},Creature
 Changeling Hero,2007-10-12,W,5,{4}{W},Creature
 Changeling Outcast,2019-06-14,B,1,{B},Creature
@@ -4856,6 +4906,7 @@ Cheerful Osteomancer // Raise Dead,2026-04-24,B,4,{3}{B},Creature
 Cheering Crowd,2025-09-23,GR,2,{1}{R/G},Creature
 Cheering Fanatic,2018-06-08,R,2,{1}{R},Creature
 Chef's Kiss,2021-06-18,R,3,{1}{R}{R},Instant
+Chekov and McCoy,2026-11-13,GU,5,{3}{G}{U},Creature
 Chelonian Tackle,2026-04-24,G,3,{2}{G},Sorcery
 Chemister's Insight,2018-10-05,U,4,{3}{U},Instant
 Chemister's Trick,2012-10-05,RU,2,{U}{R},Instant
@@ -4867,7 +4918,10 @@ Chicken Egg,1998-08-11,R,2,{1}{R},Creature
 Chicken Troupe,2022-10-07,G,2,{1}{G},Creature
 Chicken à la King,1998-08-11,U,3,{1}{U}{U},Creature
 Chief Engineer,2014-07-18,U,2,{1}{U},Creature
-Chief Magistrate of Mercadia,2026-11-09,RW,6,{4}{R}{W},Creature
+"Chief Kyle, Transporter Tech",2026-11-13,UW,4,{2}{W}{U},Creature
+Chief Magistrate of Mercadia,2026-10-19,RW,6,{4}{R}{W},Creature
+Chief Miles O'Brien,2026-11-13,U,3,{2}{U},Creature
+Chief Montgomery Scott,2026-11-13,GU,4,{2}{G}{U},Creature
 Chief Warg's Company,2026-08-14,BG,3,{1}{B}{G},Creature
 Chief of the Edge,2014-09-26,BW,2,{W}{B},Creature
 Chief of the Foundry,2015-07-17,,3,{3},Artifact;Creature
@@ -4905,7 +4959,7 @@ Chimney Goyf,2019-11-07,B,5,{4}{B},Creature
 Chimney Imp,2003-10-02,B,5,{4}{B},Creature
 Chimney Rabble,2023-02-10,R,4,{3}{R},Creature
 Chipper Chopper,2017-12-08,U,4,{3}{U},Artifact;Creature
-"Chira, All In",2026-11-09,R,4,{3}{R},Creature
+"Chira, All In",2026-10-19,R,4,{3}{R},Creature
 "Chisei, Heart of Oceans",2005-02-04,U,4,{2}{U}{U},Creature
 "Chishiro, the Shattered Blade",2022-02-18,GR,4,{2}{R}{G},Creature
 "Chiss-Goria, Forge Tyrant",2023-02-10,R,9,{6}{R}{R}{R},Creature
@@ -5125,6 +5179,8 @@ Clash of Realities,2005-02-04,R,4,{3}{R},Enchantment
 Clash of Titans,2020-04-24,R,5,{3}{R}{R},Instant
 Clash of Wills,2015-07-17,U,1,{X}{U},Instant
 Clash of the Eikons,2025-06-13,G,1,{G},Sorcery
+Class-4 Tactical Cube,2026-11-13,,4,{4},Artifact
+Class-F Shuttlecraft,2026-11-13,,3,{3},Artifact
 Clattering Augur,2021-06-18,B,2,{1}{B},Creature
 Clattering Skeletons,2021-07-23,B,4,{3}{B},Creature
 Claustrophobia,2011-09-30,U,3,{1}{U}{U},Enchantment
@@ -5175,6 +5231,7 @@ Cleric Class,2021-07-23,W,1,{W},Enchantment
 Cleric of Chill Depths,2020-09-25,U,2,{1}{U},Creature
 Cleric of Life's Bond,2020-09-25,BW,2,{W}{B},Creature
 Cleric of the Forward Order,2015-07-17,W,2,{1}{W},Creature
+"Cleveland Booker, Empath",2026-11-13,GR,4,{2}{R/G}{R/G},Creature
 Clever Combo,2017-12-08,G,2,{1}{G},Sorcery
 Clever Concealment,2023-02-10,W,4,{2}{W}{W},Instant
 Clever Conjurer,2021-07-23,U,3,{2}{U},Creature
@@ -5202,6 +5259,7 @@ Clive's Hideaway,2025-06-13,,0,,Land
 "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",2025-06-13,R,6,{4}{R}{R},Creature
 Cloak and Dagger,2008-02-01,,2,{2},Kindred;Artifact
 "Cloak and Dagger, Entwined",2026-06-26,BW,3,{1}{W}{B},Creature
+Cloak and Phaser,2026-11-13,U,9,{8}{U},Sorcery
 Cloak of Confusion,1995-06-03,B,2,{1}{B},Enchantment
 Cloak of Feathers,1997-05-01,U,1,{U},Sorcery
 Cloak of Invisibility,1996-10-08,U,1,{U},Enchantment
@@ -5295,6 +5353,8 @@ Clowning Around,2022-10-07,W,2,{1}{W},Sorcery
 Clutch of Currents,2015-10-02,U,1,{U},Sorcery
 Clutch of Undeath,2003-05-26,B,5,{3}{B}{B},Enchantment
 Clutch of the Undercity,2005-10-07,BU,4,{1}{U}{U}{B},Instant
+"Cmdr. Troi, Outgoing Empath",2026-11-13,RU,4,{2}{U}{R},Creature
+Co-Option Adjutant,2026-11-13,U,4,{3}{U},Artifact;Creature
 Coal Golem,1994-08-01,R,5,{5},Artifact;Creature
 Coal Hill School,2023-10-13,,0,,Plane
 Coal Stoker,2006-10-06,R,4,{3}{R},Creature
@@ -5381,6 +5441,7 @@ Coliseum Behemoth,2025-06-13,G,7,{5}{G}{G},Creature
 Collapsing Borders,2000-10-02,R,4,{3}{R},Enchantment
 Collar the Culprit,2018-10-05,W,4,{3}{W},Instant
 Collateral Damage,2015-01-23,R,1,{R},Instant
+Collation Trimatrix,2026-11-13,B,1,{B},Artifact;Creature
 Collected Company,2015-03-27,G,4,{3}{G},Instant
 Collected Conjuring,2019-06-14,RU,4,{2}{U}{R},Sorcery
 Collectigull // Only the Best,2020-08-01,W,3,{2}{W},Creature
@@ -5391,6 +5452,7 @@ Collective Drone,2026-11-13,B,2,{1}{B},Artifact;Creature
 Collective Effort,2016-07-22,W,3,{1}{W}{W},Sorcery
 Collective Inferno,2026-01-23,R,5,{3}{R}{R},Enchantment
 Collective Nightmare,2023-04-21,B,3,{2}{B},Instant
+Collective Override,2026-11-13,UW,4,{2}{W}{U},Instant
 Collective Resistance,2024-06-14,G,2,{1}{G},Instant
 Collective Restraint,2000-10-02,U,4,{3}{U},Enchantment
 Collective Unconscious,1999-10-04,G,6,{4}{G}{G},Sorcery
@@ -5413,6 +5475,7 @@ Colos Yearling,1999-06-07,R,3,{2}{R},Creature
 Colossadactyl,2023-11-17,G,4,{2}{G}{G},Creature
 Colossal Badger // Dig Deep,2022-06-10,G,6,{5}{G},Creature
 Colossal Chorus,2023-12-05,G,8,{6}{G}{G},Sorcery
+Colossal Clone Master,2026-11-13,U,6,{5}{U},Creature
 Colossal Collision,2026-06-26,G,4,{3}{G},Sorcery
 Colossal Dreadmask,2024-06-14,G,6,{4}{G}{G},Artifact
 Colossal Dreadmaw,2017-09-29,G,6,{4}{G}{G},Creature
@@ -5435,6 +5498,7 @@ Colossus of Sardia,1994-03-04,,9,{9},Artifact;Creature
 Colossus of the Blood Age,2026-04-24,RW,6,{4}{R}{W},Artifact;Creature
 "Colossus, Steel Stalwart",2026-06-26,G,5,{4}{G},Creature
 Coma Veil,2008-10-03,U,5,{4}{U},Enchantment
+Combadge,2026-11-13,,3,{3},Artifact
 Combat Calligrapher,2021-04-23,W,4,{3}{W},Creature
 Combat Celebrant,2017-04-28,R,3,{2}{R},Creature
 Combat Courier,2022-11-18,U,1,{1},Artifact;Creature
@@ -5460,11 +5524,13 @@ Coming Attraction,2022-10-07,G,3,{2}{G},Sorcery
 Coming In Hot,2023-04-21,R,1,{R},Instant
 Command Beacon,2015-11-13,,0,,Land
 Command Bridge,2025-08-01,,0,,Land
+Command Chair,2026-11-13,,6,{6},Artifact
 Command Decision,2026-11-13,W,2,{1}{W},Sorcery
 Command From the Shadows,2023-02-15,,0,,Conspiracy
 Command Mine,2023-02-15,,0,,Land
 Command Performance,2022-10-07,U,2,{1}{U},Sorcery
 Command Power Plant,2023-02-15,,0,,Land
+Command Subadjunct,2026-11-13,W,1,{W},Artifact;Creature
 Command Tower,2011-06-17,,0,,Land
 Command Tower // Command Tower,2011-06-17,,0,,Land
 Command of Unsummoning,1997-05-01,U,3,{2}{U},Instant
@@ -5477,7 +5543,10 @@ Commander Eesha,2002-05-27,W,4,{2}{W}{W},Creature
 Commander Greven il-Vec,1997-10-14,B,6,{3}{B}{B}{B},Creature
 Commander Liara Portyr,2022-06-10,RW,5,{3}{R}{W},Creature
 Commander Mustard,2024-02-23,RW,5,{3}{R}{W},Creature
+Commander Raffi Musiker,2026-11-13,B,3,{2}{B},Creature
 Commander Sofia Daguerre,2024-03-08,W,4,{3}{W},Creature
+Commander Spock,2026-11-13,GUW,5,{2}{G}{W}{U},Creature
+Commander William Riker,2026-11-13,RW,3,{1}{R}{W},Creature
 Commander's Authority,2012-05-04,W,5,{4}{W},Enchantment
 Commander's Insight,2021-04-23,U,3,{X}{U}{U}{U},Instant
 Commander's Insignia,2019-08-23,W,4,{2}{W}{W},Enchantment
@@ -5599,6 +5668,7 @@ Conjured Currency,2012-10-05,U,6,{5}{U},Enchantment
 Conjurer's Ban,2006-02-03,BW,2,{W}{B},Sorcery
 Conjurer's Bauble,2004-06-04,,1,{1},Artifact
 Conjurer's Closet,2012-05-04,,5,{5},Artifact
+Conjurer's Closet // Conjurer's Closet,2012-05-04,,5,{5},Artifact
 Conjurer's Mantle,2023-04-21,W,2,{1}{W},Artifact
 Connecting the Dots,2024-02-09,R,2,{1}{R},Enchantment
 Connive // Concoct,2018-10-05,BU,9,{2}{U/B}{U/B},Sorcery
@@ -5607,6 +5677,7 @@ Conquering Manticore,2010-04-23,R,6,{4}{R}{R},Creature
 Conqueror's Flail,2016-11-11,,2,{2},Artifact
 Conqueror's Galleon // Conqueror's Foothold,2017-09-29,,4,{4},Artifact
 Conqueror's Pledge,2009-10-02,W,5,{2}{W}{W}{W},Sorcery
+Conquest Mission,2026-11-13,W,3,{2}{W},Enchantment
 Conscripted Infantry,2022-11-18,R,3,{2}{R},Creature
 Consecrate // Consume,2019-01-25,BW,6,{1}{W/B},Instant
 Consecrate Land,1993-08-05,W,1,{W},Enchantment
@@ -5625,6 +5696,7 @@ Conspicuous Snoop,2020-07-03,R,2,{R}{R},Creature
 Conspiracy,1999-10-04,B,5,{3}{B}{B},Enchantment
 Conspiracy Theorist,2021-04-23,R,2,{1}{R},Creature
 Conspiracy Unraveler,2024-02-09,U,7,{5}{U}{U},Creature
+Constable Odo,2026-11-13,UW,5,{3}{W/U}{W/U},Creature
 Constable of the Realm,2021-06-18,W,5,{4}{W},Creature
 Constant Mists,1998-03-02,G,2,{1}{G},Instant
 Constricting Sliver,2014-07-18,W,6,{5}{W},Creature
@@ -6170,6 +6242,7 @@ Crushing Vines,2012-02-03,G,3,{2}{G},Instant
 Crustacean Commando,2026-03-06,U,2,{1}{U},Creature
 Crux of Fate,2015-01-23,B,5,{3}{B}{B},Sorcery
 Crux of Mirrodin,2023-02-15,W,5,{3}{W}{W},Sorcery
+Crux of the Theory,2026-10-13,U,2,{1}{U},Enchantment
 Cry of Contrition,2006-02-03,B,1,{B},Sorcery
 Cry of the Carnarium,2019-01-25,B,3,{1}{B}{B},Sorcery
 Cryoclasm,2006-07-21,R,3,{2}{R},Sorcery
@@ -6241,6 +6314,7 @@ Crystallization,2009-04-30,GUW,2,{G/U}{W},Enchantment
 Cuboid Colony,2026-04-24,GU,2,{G}{U},Creature
 Cubwarden,2020-04-24,W,4,{3}{W},Creature
 Cudgel Troll,2009-07-17,G,4,{2}{G}{G},Creature
+"Culber and Stamets, Star-Crossed",2026-11-13,G,4,{3}{G},Creature
 Culling Dais,2010-10-01,,2,{2},Artifact
 Culling Drone,2015-10-02,B,2,{1}{B},Creature
 Culling Mark,2014-02-07,G,3,{2}{G},Sorcery
@@ -6369,6 +6443,7 @@ Cursed Windbreaker,2024-09-27,U,3,{2}{U},Artifact
 Cursed Wombat,2024-06-14,BG,2,{B}{G},Creature
 Curtain of Light,2005-06-03,W,2,{1}{W},Instant
 Curtains' Call,2016-11-11,B,6,{5}{B},Instant
+"Curzon Dax, Bound by Blood",2026-11-13,RW,4,{2}{R}{W},Creature
 Custodi Lich,2016-08-26,B,5,{3}{B}{B},Creature
 Custodi Peacekeeper,2016-08-26,W,3,{2}{W},Creature
 Custodi Soulbinders,2014-06-06,W,4,{3}{W},Creature
@@ -6433,6 +6508,9 @@ Círdan the Shipwright,2023-06-23,GU,5,{3}{G}{U},Creature
 D'Avenant Archer,1994-06-01,W,3,{2}{W},Creature
 D'Avenant Healer,2006-10-06,W,3,{1}{W}{W},Creature
 D'Avenant Trapper,2018-04-27,W,3,{2}{W},Creature
+D'Ghor Bloodletter,2026-11-13,B,3,{2}{B},Creature
+"D'Vana Tendi, Optimistic Ensign",2026-11-13,GU,3,{1}{G/U}{G/U},Creature
+D-7 Battle Cruiser,2026-11-13,R,2,{1}{R},Artifact
 "D00-DL, Caricaturist",2022-10-07,,6,{6},Artifact;Creature
 DOT-7 Repair Squad,2026-11-13,W,4,{3}{W},Artifact;Creature
 Dack Fayden,2014-06-06,RU,3,{1}{U}{R},Planeswalker
@@ -6449,6 +6527,7 @@ Daggerfang Duo,2024-08-02,B,3,{2}{B},Creature
 Daggermaw Megalodon,2024-09-27,U,6,{4}{U}{U},Creature
 Daggersail Aeronaut,2019-07-12,R,4,{3}{R},Creature
 Daghatar the Adamant,2015-01-23,BGW,4,{3}{W},Creature
+Dahar Master,2026-11-13,R,4,{3}{R},Creature
 Dai Li Agents,2025-11-21,BG,5,{3}{B}{G},Creature
 Dai Li Censor,2025-11-21,B,2,{1}{B},Creature
 Dai Li Indoctrination,2025-11-21,B,2,{1}{B},Sorcery
@@ -6468,6 +6547,7 @@ Dakmor Salvage,2007-05-04,B,0,,Land
 Dakmor Scorpion,1998-06-24,B,2,{1}{B},Creature
 Dakmor Sorceress,1998-06-24,B,6,{5}{B},Creature
 Dakra Mystic,2014-05-02,U,1,{U},Creature
+"Dal R'El, Augment Orphan",2026-11-13,GR,3,{1}{R}{G},Creature
 "Dalakos, Crafter of Wonders",2020-01-24,RU,3,{1}{U}{R},Creature
 Dalek Drone,2023-10-13,B,5,{3}{B}{B},Artifact;Creature
 Dalek Intensive Care,2023-10-13,,0,,Plane
@@ -6507,6 +6587,7 @@ Dancing Sword,2021-07-23,W,2,{1}{W},Artifact
 Dancing from Dark to Dawn,2026-08-14,G,5,{3}{G}{G},Enchantment
 Dandân,1993-12-17,U,2,{U}{U},Creature
 Dangerous Wager,2012-05-04,R,2,{1}{R},Instant
+"Daniels, Temporal Agent",2026-11-13,BG,4,{2}{B/G}{B/G},Creature
 "Danitha Capashen, Paragon",2018-04-27,W,3,{2}{W},Creature
 "Danitha, Benalia's Hope",2022-09-09,W,5,{4}{W},Creature
 "Danitha, New Benalia's Light",2023-05-12,GW,3,{1}{G}{W},Creature
@@ -6644,7 +6725,11 @@ Daru Warchief,2003-05-26,W,4,{2}{W}{W},Creature
 "Darwin, Adaptive Mutant",2026-06-26,G,2,{1}{G},Creature
 Dash Hopes,2007-02-02,B,2,{B}{B},Instant
 Dashing Bloodsucker,2024-09-27,B,4,{3}{B},Creature
+"Data, Exploring Humanity",2026-11-13,U,5,{4}{U},Artifact;Creature
+"Data, New Life",2026-11-13,U,2,{1}{U},Artifact;Creature
+"Data, Professor of Humanities",2026-11-13,U,4,{3}{U},Artifact;Creature
 Dathon and Picard at El-Adrel,2026-11-13,G,3,{2}{G},Instant
+"Dathon, His Heart Open",2026-11-13,GRU,3,{G}{U}{R},Creature
 Daughter of Autumn,1995-10-01,GW,4,{2}{G}{G},Creature
 Daughter of the Deep,2026-06-26,U,2,{1}{U},Creature
 Daunting Defender,2002-10-07,W,5,{4}{W},Creature
@@ -6673,13 +6758,14 @@ Dauthi Slayer,1997-10-14,B,2,{B}{B},Creature
 Dauthi Trapper,1998-03-02,B,3,{2}{B},Creature
 Dauthi Voidwalker,2021-06-18,B,2,{B}{B},Creature
 Dauthi Warlord,1998-06-15,B,2,{1}{B},Creature
+"David and Carol Marcus, Creators",2026-11-13,G,3,{2}{G},Creature
 Davriel's Shadowfugue,2019-05-03,B,4,{3}{B},Sorcery
 Davriel's Withering,2021-08-26,B,1,{B},Instant
 "Davriel, Rogue Shadowmage",2019-05-03,B,3,{2}{B},Planeswalker
 "Davriel, Soul Broker",2021-08-26,B,4,{2}{B}{B},Planeswalker
 "Davros, Dalek Creator",2023-10-13,BRU,4,{1}{U}{B}{R},Artifact;Creature
 Davvol's Birthdaymobile,2023-02-15,B,3,{2}{B},Artifact
-"Davvol, Evincar of Rath",2026-11-09,BG,4,{2}{B}{G},Creature
+"Davvol, Evincar of Rath",2026-10-19,BG,4,{2}{B}{G},Creature
 Dawn Charm,2007-02-02,W,2,{1}{W},Instant
 Dawn Elemental,2003-05-26,W,4,{W}{W}{W}{W},Creature
 Dawn Evangel,2020-01-24,W,3,{2}{W},Enchantment;Creature
@@ -6745,6 +6831,7 @@ Dazzling Ramparts,2014-09-26,W,5,{4}{W},Creature
 Dazzling Reflection,2016-01-22,W,2,{1}{W},Instant
 Dazzling Sphinx,2021-04-23,U,5,{3}{U}{U},Creature
 Dazzling Theater // Prop Room,2024-09-27,W,7,{3}{W},Enchantment
+De-evolve,2026-11-13,B,2,{1}{B},Enchantment
 Dead // Gone,2007-02-02,R,4,{R},Instant
 Dead Before Sunrise,2024-04-19,R,4,{3}{R},Instant
 Dead Drop,2014-09-26,B,10,{9}{B},Sorcery
@@ -6802,6 +6889,7 @@ Deafening Silence,2019-10-04,W,1,{W},Enchantment
 Deal Broker,2014-06-06,,3,{3},Artifact;Creature
 Deal Damage,2004-11-19,R,4,{2}{R}{R},Instant
 Deal Gone Bad,2022-04-29,B,4,{3}{B},Instant
+"Deanna Troi, Psychic Counsel",2026-11-13,W,2,{1}{W},Creature
 Dearly Departed,2011-09-30,W,6,{4}{W}{W},Creature
 Death Baron,2008-10-03,B,3,{1}{B}{B},Creature
 Death Baron // Death Baron,2008-10-03,B,3,{1}{B}{B},Creature
@@ -6813,6 +6901,7 @@ Death Cultist,2010-04-23,B,1,{B},Creature
 Death Denied,2005-06-03,B,2,{X}{B}{B},Instant
 Death Frenzy,2014-09-26,BG,5,{3}{B}{G},Sorcery
 Death Grasp,2001-06-04,BW,2,{X}{W}{B},Sorcery
+Death Is Irrelevant,2026-11-13,B,8,{6}{B}{B},Enchantment
 Death Kiss,2022-06-10,R,6,{5}{R},Creature
 Death Match,2002-10-07,B,4,{3}{B},Enchantment
 Death Mutation,2001-06-04,BG,8,{6}{B}{G},Sorcery
@@ -6951,6 +7040,8 @@ Deep Freeze,2018-04-27,U,3,{2}{U},Enchantment
 Deep Gnome Terramancer,2022-06-10,W,2,{1}{W},Creature
 Deep Goblin Skulltaker,2023-11-17,B,3,{2}{B},Creature
 Deep Reconnaissance,2001-10-01,G,3,{2}{G},Sorcery
+Deep Space 9,2026-11-13,,9,{9},Artifact
+Deep Space Scan,2026-11-13,U,6,{4}{U}{U},Sorcery
 Deep Spawn,1994-11-01,U,8,{5}{U}{U}{U},Creature
 Deep Water,1994-08-01,U,2,{U}{U},Enchantment
 Deep Wood,1997-05-01,G,2,{1}{G},Instant
@@ -7065,6 +7156,7 @@ Delightful Discovery,2024-11-15,U,5,{4}{U},Instant
 Delirium,1996-10-08,BR,3,{1}{B}{R},Instant
 Delirium Skeins,2006-05-05,B,3,{2}{B},Sorcery
 Deliver Unto Evil,2019-05-03,B,3,{2}{B},Sorcery
+Deliver from Chaos,2026-11-13,BW,5,{3}{W}{B},Instant
 Delivery Moogle,2025-06-13,W,4,{3}{W},Creature
 "Delney, Streetwise Lookout",2024-02-09,W,3,{2}{W},Creature
 "Delphia, Undecided",2023-02-15,BGRUW,5,{W}{U}{B}{R}{G},Creature
@@ -7079,6 +7171,7 @@ Delve too Deep,2023-02-15,B,1,{X}{B},Sorcery
 Delver of Secrets // Insectile Aberration,2011-09-30,U,1,{U},Creature
 Delver's Torch,2021-07-23,W,2,{1}{W},Artifact
 Demand Answers,2024-02-09,R,2,{1}{R},Instant
+Demand Answers // Demand Answers,2024-02-09,R,2,{1}{R},Instant
 Demanding Dragon,2018-07-13,R,5,{3}{R}{R},Creature
 Dematerialize,2001-10-01,U,4,{3}{U},Sorcery
 Dementia Bat,2011-05-13,B,5,{4}{B},Creature
@@ -7334,6 +7427,7 @@ Dewdrop Cure,2024-08-02,W,3,{2}{W},Sorcery
 Dewdrop Spy,2008-02-01,U,3,{1}{U}{U},Creature
 Dhund Operative,2016-09-30,B,2,{1}{B},Creature
 Diabolic Edict,1997-10-14,B,2,{1}{B},Instant
+Diabolic Formula,2026-10-13,BU,2,{U}{B},Enchantment
 Diabolic Intent,2001-02-05,B,2,{1}{B},Sorcery
 Diabolic Machine,1994-08-01,,7,{7},Artifact;Creature
 Diabolic Revelation,2012-07-13,B,5,{X}{3}{B}{B},Sorcery
@@ -7406,6 +7500,7 @@ Dimir Strandcatcher,2024-02-23,BU,4,{2}{U/B}{U/B},Creature
 Din of the Fireherd,2008-05-02,BR,8,{5}{B/R}{B/R}{B/R},Sorcery
 Dina's Guidance,2026-04-24,BG,3,{1}{B}{G},Instant
 "Dina, Essence Brewer",2026-04-24,BG,3,{1}{B}{G},Creature
+"Dina, Flesh Sower",2026-10-13,GW,2,{G}{W},Creature
 "Dina, Soul Steeper",2021-04-23,BG,2,{B}{G},Creature
 Dingus Egg,1993-08-05,,4,{4},Artifact
 Dingus Staff,1997-06-09,,4,{4},Artifact
@@ -7665,6 +7760,7 @@ Doctor Doom,2026-06-26,B,6,{4}{B}{B},Creature
 Doctor Jane Foster,2026-06-26,W,4,{3}{W},Creature
 "Doctor Octopus, Master Planner",2025-09-23,BU,7,{5}{U}{B},Creature
 Doctor Spectrum,2026-06-26,W,5,{3}{W}{W},Creature
+"Doctor Strange, Master of Magic",2022-11-01,UW,4,{2}{W}{U},Creature
 "Doctor Strange, Surgeon",2026-06-26,W,5,{4}{W},Creature
 Dodecapod,2001-06-04,,4,{4},Artifact;Creature
 Dodgy Jalopy,2022-04-29,G,3,{2}{G},Artifact
@@ -7693,6 +7789,8 @@ Dominating Vampire,2021-11-19,R,3,{1}{R}{R},Creature
 Dominator Drone,2015-10-02,B,3,{2}{B},Creature
 Domineer,2003-10-02,U,3,{1}{U}{U},Enchantment
 Domineering Will,2014-11-07,U,4,{3}{U},Instant
+Dominion Assault Force,2026-11-13,G,4,{3}{G},Creature
+Dominion Infiltration,2026-11-13,R,3,{X}{R}{R}{R},Sorcery
 Dominion Saboteur,2026-11-13,U,5,{4}{U},Creature
 Dominion Supervisor,2026-11-13,G,3,{2}{G},Creature
 Dominus of Fealty,2008-07-25,RU,5,{U/R}{U/R}{U/R}{U/R}{U/R},Creature
@@ -7815,8 +7913,12 @@ Dowsing Device // Geode Grotto,2023-11-17,R,2,{1}{R},Artifact
 Dowsing Shaman,2005-10-07,G,5,{4}{G},Creature
 Dr. Beverly Crusher,2026-11-13,W,3,{2}{W},Creature
 Dr. Eggman,2019-12-02,BRU,5,{2}{U}{B}{R},Creature
+Dr. Joseph M'Benga,2026-11-13,G,4,{2}{G}{G},Creature
 Dr. Julius Jumblemorph,2017-12-08,GW,4,{2}{G}{W},Creature
+"Dr. Leonard ""Bones"" McCoy",2026-11-13,G,3,{1}{G}{G},Creature
 Dr. Madison Li,2024-03-08,RUW,3,{U}{R}{W},Creature
+"Dr. McCoy, Surly Surgeon",2026-11-13,W,4,{2}{W}{W},Creature
+"Dr. Pulaski, Cynical Clinician",2026-11-13,W,2,{1}{W},Creature
 Drach'Nyen,2022-10-07,BR,6,{4}{B}{R},Artifact
 Draco,2001-02-05,,16,{16},Artifact;Creature
 Dracogenesis,2025-04-11,R,8,{6}{R}{R},Enchantment
@@ -7886,7 +7988,7 @@ Dragon's Hoard,2018-07-13,,3,{3},Artifact
 Dragon's Presence,2016-11-16,W,3,{2}{W},Instant
 Dragon's Prey,2025-04-11,B,3,{2}{B},Instant
 Dragon's Rage Channeler,2021-06-18,R,1,{R},Creature
-Dragon's Smile,2026-11-09,R,7,{5}{R}{R},Artifact
+Dragon's Smile,2026-10-19,R,7,{5}{R}{R},Artifact
 Dragon-Cursed Halls,2026-08-14,,0,,Land
 Dragon-Scarred Bear,2015-03-27,G,3,{2}{G},Creature
 Dragon-Style Twins,2014-09-26,R,5,{3}{R}{R},Creature
@@ -8362,7 +8464,7 @@ Dwindle,2018-07-13,U,3,{2}{U},Enchantment
 Dwynen's Elite,2015-07-17,G,2,{1}{G},Creature
 "Dwynen, Gilt-Leaf Daen",2015-07-17,G,4,{2}{G}{G},Creature
 "Dyadrine, Synthesis Amalgam",2025-08-01,GW,2,{X}{G}{W},Artifact;Creature
-"Dyfed, the Guiding Hand",2026-11-09,U,5,{3}{U}{U},Planeswalker
+"Dyfed, the Guiding Hand",2026-10-19,U,5,{3}{U}{U},Planeswalker
 Dying Wail,1999-06-07,B,2,{1}{B},Enchantment
 Dying Wish,2013-02-01,B,2,{1}{B},Enchantment
 Dying to Serve,2021-11-19,B,3,{2}{B},Enchantment
@@ -8414,6 +8516,7 @@ Earth Surge,2006-02-03,G,4,{3}{G},Enchantment
 Earth Tremor,2022-06-10,R,4,{3}{R},Instant
 Earth Village Ruffians,2025-11-21,BG,3,{2}{B/G},Creature
 Earth's Mightiest Heroes,2026-06-26,G,6,{4}{G}{G},Sorcery
+"Earth, Sector 001",2026-11-13,GU,0,,Land
 Earth-Cult Elemental,2021-07-23,R,6,{4}{R}{R},Creature
 Earth-Origin Yak,2016-11-16,W,4,{3}{W},Creature
 Earthbender Ascension,2025-11-21,G,3,{2}{G},Enchantment
@@ -8474,11 +8577,12 @@ Echo Mage,2010-04-23,U,3,{1}{U}{U},Creature
 Echo Storm,2018-08-10,U,5,{3}{U}{U},Sorcery
 Echo Tracer,2003-02-03,U,3,{2}{U},Creature
 Echo of Dusk,2023-11-17,B,2,{1}{B},Creature
-Echo of Eons,2019-06-14,U,6,{4}{U}{U},Sorcery
+Echo of Eons,2018-07-14,U,6,{4}{U}{U},Sorcery
 "Echo, Perceptive Prodigy",2026-06-26,U,3,{2}{U},Creature
 Echocasting Symposium,2026-04-24,U,6,{4}{U}{U},Sorcery
 Echoes of Eternity,2024-06-14,,6,{3}{C}{C}{C},Kindred;Enchantment
 Echoes of the Kin Tree,2015-03-27,W,2,{1}{W},Enchantment
+Echogoyfs,2026-10-13,U,1,{U},Creature
 Echoing Assault,2024-08-02,R,5,{4}{R},Enchantment
 Echoing Boon,2016-08-26,,0,,Conspiracy
 Echoing Calm,2004-02-06,W,2,{1}{W},Instant
@@ -8532,6 +8636,7 @@ Eelectrocute,2022-10-07,R,2,{1}{R},Instant
 Eerie Gravestone,2025-09-23,B,2,{2},Artifact
 Eerie Interference,2023-09-08,W,3,{2}{W},Instant
 Eerie Interlude,2016-04-08,W,3,{2}{W},Instant
+Eerie Interlude // Eerie Interlude,2016-04-08,W,3,{2}{W},Instant
 Eerie Procession,2004-10-01,U,3,{2}{U},Sorcery
 Eerie Soultender,2022-09-09,B,3,{2}{B},Creature
 Eerie Ultimatum,2020-04-24,BGW,7,{W}{W}{B}{B}{B}{G}{G},Sorcery
@@ -8569,7 +8674,7 @@ Eightfold Maze,1999-05-01,W,3,{2}{W},Instant
 "Eivor, Wolf-Kissed",2024-07-05,GRW,6,{3}{R}{G}{W},Creature
 Eject,2025-06-13,U,4,{3}{U},Instant
 Eject the Warp Core,2026-11-13,B,2,{1}{B},Instant
-"Ekthi, Contaminator Priest",2026-11-09,W,4,{3}{W},Creature
+"Ekthi, Contaminator Priest",2026-10-19,W,4,{3}{W},Creature
 Ekundu Cyclops,1996-10-08,R,4,{3}{R},Creature
 Ekundu Griffin,1996-10-08,W,4,{3}{W},Creature
 El-Hajjâj,1993-12-17,B,3,{1}{B}{B},Creature
@@ -8584,7 +8689,7 @@ Eland Umbra,2010-04-23,W,2,{1}{W},Enchantment
 Elanor Gardner,2023-06-23,G,4,{3}{G},Creature
 "Elas il-Kor, Sadistic Pilgrim",2022-09-09,BW,2,{W}{B},Creature
 "Elbrus, the Binding Blade // Withengar Unbound",2012-02-03,B,7,{7},Artifact
-"Elda, Conjurer of Spectacle",2026-11-09,GW,4,{2}{G}{W},Creature
+"Elda, Conjurer of Spectacle",2026-10-19,GW,4,{2}{G}{W},Creature
 Elder Arthur Maxson,2024-03-08,BW,3,{1}{W}{B},Creature
 Elder Auntie,2026-01-23,R,3,{2}{R},Creature
 Elder Brain,2022-06-10,B,7,{5}{B}{B},Creature
@@ -8688,6 +8793,7 @@ Elfsworn Giant,2024-11-15,G,5,{3}{G}{G},Creature
 Elgaud Inquisitor,2012-02-03,W,4,{3}{W},Creature
 Elgaud Shieldmate,2012-05-04,U,4,{3}{U},Creature
 "Eligeth, Crossroads Augur",2020-11-20,U,6,{4}{U}{U},Creature
+"Elim Garak, Simple Tailor",2026-11-13,B,3,{2}{B},Creature
 Eliminate,2020-07-03,B,2,{1}{B},Instant
 Eliminate the Competition,2016-09-30,B,5,{4}{B},Sorcery
 Eliminate the Impossible,2024-02-09,U,2,{1}{U},Instant
@@ -8860,7 +8966,7 @@ Embrace the Paradox,2026-04-24,GU,5,{3}{G}{U},Instant
 Embrace the Unknown,2024-04-19,R,3,{2}{R},Sorcery
 Emcee,2004-11-19,W,3,{2}{W},Creature
 Emerald Charm,1997-02-03,G,1,{G},Instant
-Emerald Collector,2026-11-09,GU,2,{1}{U},Creature
+Emerald Collector,2026-10-19,GU,2,{1}{U},Creature
 Emerald Dragon // Dissonant Wave,2022-06-10,G,6,{4}{G}{G},Creature
 Emerald Dragonfly,1994-06-01,G,2,{1}{G},Creature
 Emerald Medallion,1997-10-14,,2,{2},Artifact
@@ -8869,9 +8975,11 @@ Emerge Unscathed,2010-04-23,W,1,{W},Instant
 Emerge from the Cocoon,2024-09-27,W,5,{4}{W},Sorcery
 Emergence Zone,2019-05-03,,0,,Land
 Emergency Eject,2025-08-01,W,3,{2}{W},Instant
+Emergency Holographic Crew,2026-11-13,U,4,{3}{U},Artifact;Creature
 Emergency Medical Hologram,2026-11-13,W,1,{W},Artifact;Creature
 Emergency Phytomedic // Seed Suture,2026-10-02,GW,1,{G/W},Creature
 Emergency Powers,2019-01-25,UW,7,{5}{W}{U},Instant
+Emergency Regeneration,2026-11-13,W,2,{1}{W},Instant
 Emergency Weld,2022-11-18,B,2,{1}{B},Sorcery
 Emergent Growth,2017-09-29,G,4,{3}{G},Sorcery
 Emergent Haunting,2024-04-19,U,2,{1}{U},Enchantment
@@ -8952,6 +9060,7 @@ Enchantress's Presence,2002-10-07,G,3,{2}{G},Enchantment
 Encircling Fissure,2015-10-02,W,3,{2}{W},Instant
 Enclave Cryptologist,2010-04-23,U,1,{U},Creature
 Enclave Elite,2010-02-05,U,3,{2}{U},Creature
+Encounter the Unknown,2026-11-13,R,3,{1}{R}{R},Instant
 Encouraging Aviator // Jump,2026-04-24,U,3,{2}{U},Creature
 Encroach,1999-06-07,B,1,{B},Sorcery
 Encroaching Dragonstorm,2025-04-11,G,4,{3}{G},Enchantment
@@ -9006,6 +9115,7 @@ Enduring Victory,2015-03-27,W,5,{4}{W},Instant
 Enduring Vitality,2024-09-27,G,3,{1}{G}{G},Enchantment;Creature
 Enemy of Enlightenment,2020-01-24,B,6,{5}{B},Enchantment;Creature
 Enemy of the Guildpact,2006-05-05,B,5,{4}{B},Creature
+Energize,2026-11-13,U,2,{1}{U},Sorcery
 Energizer,1997-10-14,,4,{4},Artifact;Creature
 Energy Arc,1996-06-10,UW,2,{W}{U},Instant
 Energy Bolt,1996-10-08,RW,2,{X}{R}{W},Sorcery
@@ -9060,6 +9170,8 @@ Enraging Licid,1997-10-14,R,2,{1}{R},Creature
 Enroll in the Coalition,2019-11-07,W,4,{3}{W},Enchantment
 Enshrined Memories,2005-02-04,G,1,{X}{G},Sorcery
 Enshrouding Mist,2015-07-17,W,1,{W},Instant
+"Ensign Harry Kim, Operations",2026-11-13,W,2,{1}{W},Creature
+Ensign Pavel Chekov,2026-11-13,U,4,{3}{U},Creature
 Enslave,2007-02-02,B,6,{4}{B}{B},Enchantment
 Enslaved Dwarf,2002-02-04,R,1,{R},Creature
 Enslaved Horror,1999-10-04,B,4,{3}{B},Creature
@@ -9078,9 +9190,11 @@ Entangling Vines,2009-07-17,G,4,{3}{G},Enchantment
 Enter the Avatar State,2025-11-21,W,1,{W},Instant
 Enter the Dungeon,2004-11-19,B,2,{B}{B},Sorcery
 Enter the Enigma,2024-09-27,U,1,{U},Sorcery
+Enter the Eternities,2026-10-13,GU,2,{G}{U},Sorcery
 Enter the God-Eternals,2019-05-03,BU,5,{2}{U}{U}{B},Sorcery
 Enter the Infinite,2013-02-01,U,12,{8}{U}{U}{U}{U},Sorcery
 Enter the Unknown,2018-01-19,G,1,{G},Sorcery
+Enterprise NX-01,2026-11-13,U,4,{3}{U},Artifact
 Enterprising Scallywag,2023-11-17,R,2,{1}{R},Creature
 Enthralling Hold,2020-07-03,U,5,{3}{U}{U},Enchantment
 Enthralling Victor,2015-07-17,R,4,{3}{R},Creature
@@ -9155,6 +9269,7 @@ Erestor of the Council,2023-06-23,GU,3,{1}{G}{U},Creature
 Erg Raiders,1993-12-17,B,2,{1}{B},Creature
 Erhnam Djinn,1993-12-17,G,4,{3}{G},Creature
 Erhnam Djinn Avatar,2003-01-01,,0,,Vanguard
+"Erica Ortegas, Plucky Pilot",2026-11-13,R,4,{3}{R},Creature
 Eriette of the Charmed Apple,2023-09-08,BW,3,{1}{W}{B},Creature
 Eriette's Lullaby,2024-04-19,W,2,{1}{W},Sorcery
 Eriette's Tempting Apple,2023-09-08,,4,{4},Artifact
@@ -9241,6 +9356,7 @@ Essence Feed,2010-04-23,B,6,{5}{B},Sorcery
 Essence Filter,1995-06-03,G,3,{1}{G}{G},Sorcery
 Essence Flare,1995-06-03,U,1,{U},Enchantment
 Essence Flux,2016-04-08,U,1,{U},Instant
+Essence Flux // Essence Flux,2016-04-08,U,1,{U},Instant
 Essence Fracture,2002-10-07,U,5,{3}{U}{U},Sorcery
 Essence Harvest,2012-05-04,B,3,{2}{B},Sorcery
 Essence Infusion,2021-04-23,B,2,{1}{B},Sorcery
@@ -9265,6 +9381,7 @@ Estrid's Invocation // Estrid's Invocation,2018-08-10,U,3,{2}{U},Enchantment
 Estwald Shieldbasher,2021-11-19,W,4,{3}{W},Creature
 Etali's Favor,2023-11-17,R,3,{2}{R},Enchantment
 "Etali, Primal Conqueror // Etali, Primal Sickness",2023-04-21,GR,7,{5}{R}{R},Creature
+"Etali, Primal Garden",2026-10-13,G,7,{6}{G},Creature
 "Etali, Primal Storm",2018-01-19,R,6,{4}{R}{R},Creature
 "Etali, Primal Storm // Etali, Primal Storm",2018-01-19,R,6,{4}{R}{R},Creature
 Etched Champion,2010-10-01,,3,{3},Artifact;Creature
@@ -9331,7 +9448,7 @@ Eunuchs' Intrigues,1999-05-01,R,3,{2}{R},Sorcery
 Eureka,1994-06-01,G,4,{2}{G}{G},Sorcery
 Eureka Moment,2021-04-23,GU,4,{2}{G}{U},Instant
 Euroakus,2021-08-01,GU,6,{4}{G}{G},Creature
-"Euru, Acorn Scrounger",2026-11-09,BG,4,{2}{B}{G},Creature
+"Euru, Acorn Scrounger",2026-10-19,BG,4,{2}{B}{G},Creature
 Eusocial Engineering,2025-08-01,G,5,{3}{G}{G},Enchantment
 Eutropia the Twice-Favored,2020-01-24,GU,3,{1}{G}{U},Creature
 Evacuation,1998-03-02,U,5,{3}{U}{U},Instant
@@ -9372,10 +9489,10 @@ Every Dream a Nightmare,2017-06-16,,0,,Scheme
 Every Hope Shall Vanish,2010-06-18,,0,,Scheme
 Every Last Vestige Shall Rot,2010-06-18,,0,,Scheme
 Everybody Lives!,2023-10-13,W,2,{1}{W},Instant
-Everyone's an Imposter,2023-02-15,,0,,Conspiracy
+Everyone's an Impostor,2023-02-15,,0,,Conspiracy
 Everything Comes to Dust,2023-10-13,W,10,{7}{W}{W}{W},Sorcery
 Everything Pizza,2026-03-06,BGRUW,2,{2},Artifact
-Everythingamajig,2017-12-08,,8,{8},Artifact
+Everythingamajig,2017-12-08,,5,{5},Artifact
 Evidence Examiner,2024-02-09,GU,2,{G}{U},Creature
 Evie Frye,2024-07-05,U,2,{1}{U},Creature
 Evil Boros Charm,2019-11-07,BRW,2,{B/R}{W/B},Instant
@@ -9410,6 +9527,7 @@ Exalted Dragon,1998-06-15,W,6,{4}{W}{W},Creature
 Exalted Flamer of Tzeentch,2022-10-07,RU,4,{2}{U}{R},Creature
 Exalted Sunborn,2025-08-01,W,5,{3}{W}{W},Creature
 "Exava, Rakdos Blood Witch",2013-05-03,BR,4,{2}{B}{R},Creature
+Excalbian Gamemaster,2026-11-13,W,6,{5}{W},Creature
 Excalibur II,2025-06-13,,1,{1},Artifact
 "Excalibur, Sword of Eden",2024-07-05,,12,{12},Artifact
 "Excava, the Risen Past",2026-04-24,RW,4,{2}{R}{W},Creature
@@ -9421,7 +9539,7 @@ Excavation Explosion,2022-11-18,R,3,{2}{R},Sorcery
 Excavation Mole,2020-04-24,G,3,{2}{G},Creature
 Excavation Technique,2021-04-23,W,4,{3}{W},Sorcery
 Excavator,1997-10-14,,2,{2},Artifact
-Exchange of Words,2022-10-07,U,3,{1}{U}{U},Enchantment
+Exchange of Words,2020-09-26,U,3,{1}{U}{U},Enchantment
 Excise,2000-06-05,W,1,{X}{W},Instant
 Excise the Imperfect,2023-04-21,W,3,{1}{W}{W},Instant
 Exclude,2000-10-02,U,3,{2}{U},Instant
@@ -9502,6 +9620,7 @@ Exploding Barrel,2026-03-06,,3,{3},Artifact
 Exploding Borders,2009-02-06,GR,4,{2}{R}{G},Sorcery
 Exploration,1998-10-12,G,1,{G},Enchantment
 Exploration Broodship,2025-08-01,G,1,{G},Artifact
+Exploratory Mission,2026-11-13,R,4,{2}{R}{R},Enchantment
 Explore,2010-02-05,G,2,{1}{G},Sorcery
 Explore the Underdark,2022-06-10,G,5,{4}{G},Sorcery
 Explorer's Cache,2023-11-17,G,2,{1}{G},Artifact
@@ -9552,6 +9671,7 @@ Extract Power,2026-06-26,U,6,{5}{U},Sorcery
 Extract a Confession,2024-02-09,B,2,{1}{B},Sorcery
 Extract from Darkness,2014-06-06,BU,5,{3}{U}{B},Sorcery
 Extract the Truth,2022-04-29,B,2,{1}{B},Sorcery
+Extraction Integrant,2026-11-13,B,2,{1}{B},Artifact;Creature
 Extraction Specialist,2022-04-29,W,3,{2}{W},Creature
 Extractor Demon,2009-02-06,B,6,{4}{B}{B},Creature
 Extraordinary Journey,2023-09-08,U,2,{X}{X}{U}{U},Enchantment
@@ -9604,6 +9724,7 @@ Eyetwitch,2021-04-23,B,1,{B},Creature
 Ezio Auditore da Firenze,2024-07-05,BGRUW,2,{1}{B},Creature
 "Ezio, Blade of Vengeance",2024-07-05,BU,5,{3}{U}{B},Creature
 "Ezio, Brash Novice",2024-07-05,RW,2,{1}{R/W},Creature
+"Ezri Dax, Newly Joined",2026-11-13,W,2,{1}{W},Creature
 "Ezrim, Agency Chief",2024-02-09,UW,5,{1}{W}{W}{U}{U},Creature
 Ezuri's Archers,2010-10-01,G,1,{G},Creature
 Ezuri's Brigade,2010-10-01,G,4,{2}{G}{G},Creature
@@ -9833,7 +9954,7 @@ Farsight Mask,2003-10-02,,5,{5},Artifact
 Farsight Ritual,2023-09-08,U,4,{2}{U}{U},Instant
 Fascination,2015-01-23,U,2,{X}{U}{U},Sorcery
 Fascist Art Director,2004-11-19,W,3,{1}{W}{W},Creature
-Fast // Furious,2023-02-15,R,5,{1}{R},Instant
+Fast // Furious,2021-06-18,R,8,{2}{R},Instant
 Fast Forward,2026-03-06,R,5,{4}{R},Sorcery
 Fastbond,1993-08-05,G,1,{G},Enchantment
 Fasting,1994-08-01,W,1,{W},Enchantment
@@ -9961,7 +10082,9 @@ Featherbrained Filcher,2026-03-06,W,1,{W},Creature
 Fecund Greenshell,2024-08-02,G,5,{3}{G}{G},Creature
 Fecundity,1998-10-12,G,3,{2}{G},Enchantment
 Federation Field Medic,2026-11-13,W,4,{3}{W},Creature
+Federation Outpost,2026-11-13,W,0,,Land
 Federation Probe,2026-11-13,U,1,{U},Artifact;Creature
+Federation Resupply,2026-11-13,W,2,{1}{W},Sorcery
 Feebleness,2006-10-06,B,2,{1}{B},Enchantment
 Feed the Bog,2026-05-19,B,2,{1}{B},Sorcery
 Feed the Cauldron,2023-09-08,B,3,{2}{B},Instant
@@ -10050,8 +10173,10 @@ Feral Roar,2018-07-14,G,2,{1}{G},Sorcery
 Feral Shadow,1996-10-08,B,3,{2}{B},Creature
 Feral Thallid,1994-11-01,G,6,{3}{G}{G}{G},Creature
 Feral Throwback,2003-02-03,G,6,{4}{G}{G},Creature
+Ferenginar,2026-11-13,BG,0,,Land
 Ferocification,2024-04-19,R,3,{2}{R},Enchantment
 Ferocious Charge,2004-06-04,G,3,{2}{G},Instant
+Ferocious Colonist,2026-11-13,R,2,{1}{R},Creature
 Ferocious Pup,2019-07-12,G,3,{2}{G},Creature
 Ferocious Tigorilla,2020-04-24,R,4,{3}{R},Creature
 Ferocious Werefox // Guard Change,2023-09-08,G,4,{3}{G},Creature
@@ -10060,7 +10185,7 @@ Ferocity,1999-10-04,G,2,{1}{G},Enchantment
 Ferocity of the Hunt,2026-10-02,BG,2,{1}{B/G},Enchantment
 Ferocity of the Wilds,2019-10-04,R,3,{2}{R},Enchantment
 Feroz's Ban,1995-10-01,,6,{6},Artifact
-"Feroz, Ulgrotha's Warden",2026-11-09,GUW,6,{3}{G}{W}{U},Planeswalker
+"Feroz, Ulgrotha's Warden",2026-10-19,GUW,6,{3}{G}{W}{U},Planeswalker
 "Ferrafor, Young Yew",2026-01-23,G,7,{6}{G},Creature
 Ferris Wheel,2022-10-07,,0,,Artifact
 Ferropede,2004-06-04,,3,{3},Artifact;Creature
@@ -10196,6 +10321,7 @@ Final Death,2020-01-24,B,5,{4}{B},Instant
 Final Flare,2020-01-24,R,3,{2}{R},Instant
 Final Flourish,2023-04-21,B,2,{1}{B},Instant
 Final Fortune,1996-10-08,R,2,{R}{R},Instant
+Final Frontier,2026-11-13,G,3,{2}{G},Sorcery
 Final Judgment,2005-02-04,W,6,{4}{W}{W},Sorcery
 Final Parting,2018-04-27,B,5,{3}{B}{B},Sorcery
 Final Payment,2019-01-25,BW,2,{W}{B},Instant
@@ -10482,6 +10608,7 @@ Fledgling Imp,2001-10-01,B,3,{2}{B},Creature
 Fledgling Mawcor,2006-10-06,U,4,{3}{U},Creature
 Fledgling Osprey,1999-06-07,U,1,{U},Creature
 Fleecemane Lion,2013-09-27,GW,2,{G}{W},Creature
+Fleet Captain Christopher Pike,2026-11-13,U,3,{2}{U},Creature
 Fleet Swallower,2017-09-29,U,7,{5}{U}{U},Creature
 Fleet-Footed Monk,1997-05-01,W,2,{1}{W},Creature
 Fleetfeather Cockatrice,2014-05-02,GU,5,{3}{G}{U},Creature
@@ -10536,7 +10663,7 @@ Flip the Switch,2021-09-24,U,3,{2}{U},Instant
 Flitterstep Eidolon,2014-02-07,U,2,{1}{U},Enchantment;Creature
 Flitterwing Nuisance,2026-01-23,U,1,{U},Creature
 Flitting Guerrilla,2023-04-21,B,3,{2}{B},Creature
-"Flitwing, Lyev Detective",2026-11-09,U,3,{2}{U},Creature
+"Flitwing, Lyev Detective",2026-10-19,U,3,{2}{U},Creature
 Floating Shield,2002-02-04,W,3,{2}{W},Enchantment
 Floating-Dream Zubera,2004-10-01,U,2,{1}{U},Creature
 Flock Impostor,2026-01-23,W,3,{2}{W},Creature
@@ -10569,6 +10696,7 @@ Floriferous Vinewall,2022-09-09,G,2,{1}{G},Creature
 Flotsam // Jetsam,2024-02-09,BGU,8,{1}{G/U},Instant
 Flourishing Bloom-Kin,2024-02-09,G,2,{1}{G},Creature
 Flourishing Defenses,2008-05-02,G,5,{4}{G},Enchantment
+Flourishing Forces,2026-10-13,GW,3,{G}{W}{W},Sorcery
 Flourishing Fox,2020-04-24,W,1,{W},Creature
 Flourishing Grapple,2026-10-02,G,1,{G},Instant
 Flourishing Hunter,2021-11-19,G,6,{4}{G}{G},Creature
@@ -11050,6 +11178,7 @@ Fuel the Flames,2025-02-14,R,3,{2}{R},Instant
 Fugitive Codebreaker,2024-02-09,R,2,{1}{R},Creature
 Fugitive Droid,2026-03-06,U,1,{U},Artifact;Creature
 Fugitive Druid,1997-10-14,G,4,{3}{G},Creature
+Fugitive Listener,2026-11-13,B,3,{2}{B},Creature
 Fugitive Wizard,2003-02-03,U,1,{U},Creature
 Fugitive of the Judoon,2023-10-13,G,5,{4}{G},Enchantment
 Fugue,1998-06-15,B,5,{3}{B}{B},Sorcery
@@ -11151,6 +11280,7 @@ G'raha Tia,2025-06-13,W,5,{4}{W},Creature
 "G'raha Tia, Scion Reborn",2025-06-13,BUW,3,{W}{U}{B},Creature
 GO TO JAIL,2017-12-08,W,1,{W},Enchantment
 Gabriel Angelfire,1994-06-01,GW,7,{3}{G}{G}{W}{W},Creature
+"Gabriel Lorca, Mirror Menace",2026-11-13,B,5,{4}{B},Creature
 Gaddock Teeg,2007-10-12,GW,2,{G}{W},Creature
 Gadget Technician,2024-02-09,RU,4,{2}{U}{R},Creature
 "Gadrak, the Crown-Scourge",2020-07-03,R,3,{2}{R},Creature
@@ -11174,6 +11304,7 @@ Gaea's Skyfolk,2001-06-04,GU,2,{G}{U},Creature
 Gaea's Touch,1994-08-01,G,2,{G}{G},Enchantment
 Gaea's Will,2021-06-18,G,0,,Sorcery
 Gaelicat,2025-06-13,W,3,{2}{W},Creature
+Gagh Slinger,2026-11-13,R,3,{2}{R},Creature
 "Gahiji, Honored One",2013-11-01,GRW,5,{2}{R}{G}{W},Creature
 Gainsay,2001-02-05,U,2,{1}{U},Instant
 Gaius van Baelsar,2025-06-13,B,4,{2}{B}{B},Creature
@@ -11240,6 +11371,7 @@ Galvanic Key,2003-10-02,,2,{2},Artifact
 Galvanic Relay,2021-06-18,R,3,{2}{R},Sorcery
 Galvanize,2024-02-09,R,2,{1}{R},Instant
 Galvanizing Sawship,2025-08-01,R,6,{5}{R},Artifact
+Galvanizing Tenor,2026-11-13,R,4,{3}{R},Creature
 Galvanoth,2011-02-04,R,5,{3}{R}{R},Creature
 Gamble,1998-10-12,R,1,{R},Sorcery
 Game Knights Live,2024-02-24,,0,,Plane
@@ -11278,6 +11410,7 @@ Garenbrig Carver // Shield's Might,2019-10-04,G,4,{3}{G},Creature
 Garenbrig Paladin,2019-10-04,G,5,{4}{G},Creature
 Garenbrig Squire,2019-10-04,G,2,{1}{G},Creature
 Gargadon,2021-06-18,R,7,{5}{R}{R},Creature
+"Gargantos, the Endbringer",2027-04-09,BG,4,{2}{B}{G},Creature
 Gargantuan Gorilla,1996-06-10,G,7,{4}{G}{G}{G},Creature
 Gargantuan Leech,2023-11-17,B,8,{7}{B},Creature
 "Gargos, Vicious Watcher",2019-07-12,G,6,{3}{G}{G}{G},Creature
@@ -11320,6 +11453,7 @@ Gary Clone,2024-03-08,W,2,{1}{W},Creature
 "Garza Zol, Plague Queen",2006-07-21,BRU,7,{4}{U}{B}{R},Creature
 Garza's Assassin,2006-07-21,B,3,{B}{B}{B},Creature
 Gas Guzzler,2025-02-14,B,1,{B},Creature
+Gaseous Anomaly,2026-11-13,U,0,,Land
 Gaseous Form,1994-06-01,U,3,{2}{U},Enchantment
 Gastal Blockbuster,2025-02-14,R,3,{2}{R},Creature
 Gastal Raider,2025-02-14,B,3,{2}{B},Creature
@@ -11454,6 +11588,8 @@ Generous Stray,2018-10-05,G,3,{2}{G},Creature
 Generous Visitor,2022-02-18,G,1,{G},Creature
 Genesis,2002-05-27,G,5,{4}{G},Creature
 Genesis Chamber,2004-02-06,,2,{2},Artifact
+Genesis Device,2026-11-13,G,3,{2}{G},Artifact
+Genesis Effect,2026-11-13,R,5,{4}{R},Instant
 Genesis Hydra,2014-07-18,G,2,{X}{G}{G},Creature
 Genesis Storm,2018-08-10,G,6,{4}{G}{G},Sorcery
 Genesis Ultimatum,2020-04-24,GRU,7,{G}{G}{U}{U}{U}{R}{R},Sorcery
@@ -11480,6 +11616,8 @@ Geomancer's Gambit,2019-06-14,R,3,{2}{R},Sorcery
 Geometer's Arthropod,2026-04-24,GU,2,{G}{U},Creature
 Geometric Nexus,2021-04-23,,2,{2},Artifact
 Geometric Weird,2019-11-07,R,1,{R},Creature
+"Geordi La Forge, Innovator",2026-11-13,U,3,{2}{U},Creature
+"Georgiou, Terran Emperor",2026-11-13,B,6,{4}{B}{B},Creature
 Geosurge,2011-05-13,R,4,{R}{R}{R}{R},Sorcery
 Geothermal Bog,2022-09-09,BR,0,,Land
 Geothermal Crevice,2000-10-02,BGR,0,,Land
@@ -11579,6 +11717,7 @@ Ghost Tactician,2007-02-02,W,5,{4}{W},Creature
 Ghost Town,1997-10-14,,0,,Land
 Ghost Vacuum,2024-09-27,,1,{1},Artifact
 Ghost Warden,2006-02-03,W,2,{1}{W},Creature
+Ghost of Illyria,2026-11-13,W,4,{3}{W},Creature
 Ghost of Ramirez DePietro,2020-11-20,U,3,{2}{U},Creature
 "Ghost, Spectral Saboteur",2026-06-26,BU,3,{2}{U/B},Creature
 Ghost-Lit Drifter,2021-06-18,U,3,{2}{U},Creature
@@ -11656,6 +11795,7 @@ Giant Scorpion,2009-10-02,B,3,{2}{B},Creature
 Giant Shark,1994-08-01,U,6,{5}{U},Creature
 Giant Slug,1994-06-01,B,2,{1}{B},Creature
 Giant Solifuge,2006-02-03,GR,4,{2}{R/G}{R/G},Creature
+Giant Space Amoeba,2026-11-13,U,5,{4}{U},Creature
 Giant Spectacle,2016-09-30,R,2,{1}{R},Enchantment
 Giant Spider,1993-08-05,G,4,{3}{G},Creature
 Giant Strength,1994-06-01,R,2,{R}{R},Enchantment
@@ -11708,6 +11848,7 @@ Gift of Growth,2018-04-27,G,2,{1}{G},Instant
 Gift of Immortality,2013-09-27,W,3,{2}{W},Enchantment
 Gift of Orzhova,2013-02-01,BW,3,{1}{W/B}{W/B},Enchantment
 Gift of Paradise,2017-04-28,G,3,{2}{G},Enchantment
+Gift of Perfection,2026-11-13,U,5,{4}{U},Sorcery
 Gift of Strands,2023-06-23,G,4,{3}{G},Enchantment
 Gift of Strength,2017-07-14,G,2,{1}{G},Instant
 Gift of Tusks,2016-01-22,U,1,{U},Instant
@@ -11851,7 +11992,7 @@ Glasses of Urza,1993-08-05,,1,{1},Artifact
 Glasspool Mimic // Glasspool Shore,2020-09-25,U,3,{2}{U},Creature
 Glasswing Grace // Age-Graced Chapel,2024-06-14,BW,5,{3}{W/B}{W/B},Enchantment
 Glassworks // Shattered Yard,2024-09-27,R,8,{2}{R},Enchantment
-"Glava, Five-Advents Mage",2026-11-09,G,7,{5}{G}{G},Creature
+"Glava, Five-Advents Mage",2026-10-19,G,7,{5}{G}{G},Creature
 Glaze Fiend,2008-10-03,B,2,{1}{B},Artifact;Creature
 Gleam of Authority,2015-03-27,W,2,{1}{W},Enchantment
 Gleam of Battle,2013-05-03,RW,6,{4}{R}{W},Enchantment
@@ -11972,6 +12113,7 @@ Glory,2002-05-27,W,5,{3}{W}{W},Creature
 Glory Bearers,2020-01-24,W,4,{3}{W},Enchantment;Creature
 Glory Seeker,2002-10-07,W,2,{1}{W},Creature
 Glory of Warfare,2009-04-30,RW,4,{2}{R}{W},Enchantment
+Glory to the Empire!,2026-11-13,R,6,{5}{R},Enchantment
 Glory-Bound Initiate,2017-04-28,W,2,{1}{W},Creature
 Glorybringer,2017-04-28,R,5,{3}{R}{R},Creature
 Gloryheath Lynx,2025-02-14,W,2,{1}{W},Creature
@@ -12010,6 +12152,7 @@ Gnarled Sage,2020-07-03,G,5,{3}{G}{G},Creature
 Gnarled Scarhide,2014-05-02,B,1,{B},Enchantment;Creature
 Gnarlid Colony,2020-09-25,G,2,{1}{G},Creature
 Gnarlid Pack,2010-02-05,G,2,{1}{G},Creature
+Gnarling Targ,2026-11-13,R,5,{4}{R},Creature
 Gnarlroot Pallbearer,2022-11-18,G,6,{4}{G}{G},Creature
 Gnarlroot Trapper,2015-07-17,BG,1,{B},Creature
 Gnarlwood Dryad,2016-07-22,G,1,{G},Creature
@@ -12363,6 +12506,7 @@ Goobbue Gardener,2025-06-13,G,2,{1}{G},Creature
 Good Knight,2023-02-15,W,2,{W}{W},Creature
 Good-Fortune Unicorn,2019-06-14,GW,3,{1}{G}{W},Creature
 "Gor Muldrak, Amphinologist",2020-11-20,GU,3,{1}{G}{U},Creature
+Goramou the Coral-Taken,2027-02-05,GR,3,{1}{R}{G},Creature
 Gorbag of Minas Morgul,2023-06-23,B,2,{1}{B},Creature
 Gore Swine,2015-01-23,R,3,{2}{R},Creature
 Gore Vassal,2011-02-04,W,3,{2}{W},Creature
@@ -12404,6 +12548,7 @@ Gosta Dirk,1994-06-01,UW,7,{3}{W}{W}{U}{U},Creature
 Gouged Zealot,2021-06-18,R,4,{3}{R},Creature
 Gourmand's Talent,2024-08-02,G,1,{G},Enchantment
 Govern the Guildless,2006-05-05,U,6,{5}{U},Sorcery
+"Gowron, Eager for Battle",2026-11-13,BR,4,{2}{B}{R},Creature
 "Graaz, Unstoppable Juggernaut",2023-02-10,,8,{8},Artifact;Creature
 Grab the Prize,2024-09-27,R,2,{1}{R},Sorcery
 Grab the Reins,2003-10-02,R,4,{3}{R},Instant
@@ -12430,7 +12575,7 @@ Grafted Identity,2021-09-24,U,4,{2}{U}{U},Enchantment
 Grafted Skullcap,1998-10-12,,4,{4},Artifact
 Grafted Wargear,2004-06-04,,3,{3},Artifact
 Graham O'Brien,2023-10-13,G,2,{1}{G},Creature
-Grakk the Pacifist,2026-11-09,W,2,{1}{W},Creature
+Grakk the Pacifist,2026-10-19,W,2,{1}{W},Creature
 "Grakmaw, Skyclave Ravager",2020-09-25,BG,3,{1}{B}{G},Creature
 Gran Pulse Ochu,2025-06-13,G,1,{G},Creature
 Gran-Gran,2025-11-21,U,1,{U},Creature
@@ -12444,9 +12589,10 @@ Grand Entryway // Elegant Rotunda,2024-09-27,W,5,{1}{W},Enchantment
 Grand Marshal Macie,2022-10-07,BW,3,{1}{W}{B},Creature
 Grand Master of Flowers,2021-07-23,W,4,{2}{W}{W},Planeswalker
 Grand Melee,2002-10-07,R,4,{3}{R},Enchantment
+Grand Nagus Zek,2026-11-13,B,3,{2}{B},Creature
 Grand Ossuary,2012-06-01,,0,,Plane
 Grand Warlord Radha,2018-04-27,GR,4,{2}{R}{G},Creature
-Grandmother Goby,2026-11-09,U,4,{2}{U}{U},Creature
+Grandmother Goby,2026-10-19,U,4,{2}{U}{U},Creature
 Grandmother Sengir,1995-10-01,B,5,{4}{B},Creature
 Granger Guildmage,1996-10-08,GRW,1,{G},Creature
 Granite Gargoyle,1993-08-05,R,3,{2}{R},Creature
@@ -12553,6 +12699,7 @@ Gray Merchant of Alphabet,2022-10-07,B,5,{3}{B}{B},Creature
 Gray Merchant of Asphodel,2013-09-27,B,5,{3}{B}{B},Creature
 Gray Ogre,1993-08-05,R,3,{2}{R},Creature
 Gray Slaad // Entropic Decay,2022-06-10,B,3,{2}{B},Creature
+"Gray and Adira, Forever Joined",2026-11-13,RU,4,{2}{U/R}{U/R},Creature
 Graypelt Hunter,2010-02-05,G,4,{3}{G},Creature
 Graypelt Refuge,2009-10-02,GW,0,,Land
 Grayscaled Gharial,2005-10-07,U,1,{U},Creature
@@ -12630,7 +12777,7 @@ Greenhouse // Rickety Gazebo,2024-09-27,G,7,{2}{G},Enchantment
 Greenhouse Propagator,2026-10-02,G,3,{2}{G},Creature
 Greenseeker,2006-10-06,G,1,{G},Creature
 Greenside Watcher,2013-02-01,G,2,{1}{G},Creature
-Greensleeves,2026-11-09,G,6,{4}{G}{G},Planeswalker
+Greensleeves,2026-10-19,G,6,{4}{G}{G},Planeswalker
 "Greensleeves, Maro-Sorcerer",2022-09-09,G,5,{3}{G}{G},Creature
 Greenwarden of Murasa,2015-10-02,G,6,{4}{G}{G},Creature
 Greenweaver Druid,2009-10-02,G,3,{2}{G},Creature
@@ -12671,6 +12818,7 @@ Griffin Rider,2011-07-15,W,2,{1}{W},Creature
 Griffin Sentinel,2009-07-17,W,3,{2}{W},Creature
 Griffnaut Tracker,2024-02-09,W,4,{3}{W},Creature
 Grifter's Blade,2005-10-07,,3,{3},Artifact
+"Grilka, Widowed Warrior",2026-11-13,R,6,{5}{R},Creature
 Grim Affliction,2011-05-13,B,3,{2}{B},Instant
 Grim Backwoods,2012-02-03,BG,0,,Land
 Grim Bauble,2025-02-14,B,1,{B},Artifact
@@ -12754,7 +12902,7 @@ Grizzled Leotau,2009-04-30,GW,2,{G}{W},Creature
 Grizzled Outcasts // Krallenhorde Wantons,2011-09-30,G,5,{4}{G},Creature
 Grizzled Outrider,2021-02-05,G,5,{4}{G},Creature
 Grizzled Wolverine,1995-06-03,R,3,{1}{R}{R},Creature
-"Grizzlegom, Hurloon Hero",2026-11-09,GR,7,{5}{R}{G},Creature
+"Grizzlegom, Hurloon Hero",2026-10-19,GR,7,{5}{R}{G},Creature
 Grizzly Bears,1993-08-05,G,2,{1}{G},Creature
 Grizzly Fate,2002-05-27,G,5,{3}{G}{G},Sorcery
 Grizzly Ghoul,2021-09-24,BG,4,{2}{B}{G},Creature
@@ -12923,7 +13071,9 @@ Guildsworn Prowler,2022-06-10,B,2,{1}{B},Creature
 Guile,2007-10-12,U,6,{3}{U}{U}{U},Creature
 Guiltfeeder,2002-05-27,B,5,{3}{B}{B},Creature
 Guilty Conscience,2003-05-26,W,1,{W},Enchantment
+"Guinan, Ancient Advisor",2026-11-13,W,3,{2}{W},Creature
 Guise of Fire,2012-05-04,R,1,{R},Enchantment
+"Gul Dukat, Colonial Prefect",2026-11-13,B,7,{4}{B}{B}{B},Creature
 Gulf Squid,2000-06-05,U,4,{3}{U},Creature
 Gulping Scraptrap,2023-02-10,B,5,{4}{B},Creature
 Guma,1998-10-12,R,3,{2}{R},Creature
@@ -12951,7 +13101,7 @@ Gustcloak Runner,2002-10-07,W,1,{W},Creature
 Gustcloak Savior,2002-10-07,W,5,{4}{W},Creature
 Gustcloak Sentinel,2002-10-07,W,4,{2}{W}{W},Creature
 Gustcloak Skirmisher,2002-10-07,W,4,{3}{W},Creature
-Gustha Ebbasdotter,2026-11-09,U,5,{3}{U}{U},Creature
+Gustha Ebbasdotter,2026-10-19,U,5,{3}{U}{U},Creature
 Gustha's Scepter,1996-06-10,,0,{0},Artifact
 Gustrider Exuberant,2008-10-03,W,3,{2}{W},Creature
 Gut Shot,2011-05-13,R,1,{R/P},Instant
@@ -12987,6 +13137,7 @@ Gwendlyn Di Corci,1994-06-01,BRU,4,{U}{B}{B}{R},Creature
 "Gwenna, Eyes of Gaea",2022-11-18,G,3,{2}{G},Creature
 "Gwenom, Remorseless",2025-09-23,B,5,{3}{B}{B},Creature
 Gwyllion Hedge-Mage,2008-07-25,BW,3,{2}{W/B},Creature
+"Gwyndala, the Progeny",2026-11-13,U,2,{1}{U},Creature
 "Gylwain, Casting Director",2023-09-08,GW,3,{1}{G}{W},Creature
 "Gyome, Master Chef",2021-04-23,BG,4,{2}{B}{G},Creature
 "Gyox, Brutal Carnivora",2023-02-28,BG,3,{1}{B}{G},Creature
@@ -12997,6 +13148,7 @@ Gyre Sage,2013-02-01,G,2,{1}{G},Creature
 Gysahl Greens,2025-06-13,G,2,{1}{G},Sorcery
 H.E.R.B.I.E. Scout Unit,2026-06-26,,4,{4},Artifact;Creature
 "H.E.R.B.I.E., Lovable Robot",2026-06-26,,2,{2},Artifact;Creature
+"H.M.S. Bounty, Unlikely Timeship",2026-11-13,U,5,{4}{U},Artifact
 HELIOS One,2024-03-08,,0,,Land
 HONK!,2023-02-15,G,1,{G},Instant
 HULK SMASH!,2026-06-26,R,2,{1}{R},Instant
@@ -13488,6 +13640,8 @@ Heirloom Epic,2024-08-02,,1,{1},Artifact
 Heirloom Mirror // Inherited Fiend,2021-09-24,B,2,{1}{B},Artifact
 Heirs of Stromkirk,2012-05-04,R,4,{2}{R}{R},Creature
 Hekma Sentinels,2017-04-28,U,3,{2}{U},Creature
+Hela's Arcanum,2027-04-09,B,5,{3}{B}{B},Instant
+"Hela, Mistress of Darkness // Dark Tutor",2027-04-09,B,6,{4}{B}{B},Creature
 Helbrute,2022-10-07,BR,5,{3}{B}{R},Artifact;Creature
 "Helga, Skittish Seer",2024-08-02,GUW,3,{G}{W}{U},Creature
 Helica Glider,2020-04-24,W,3,{2}{W},Creature
@@ -13551,6 +13705,7 @@ Helvault,2012-02-03,,3,{3},Artifact
 Hematite Golem,2003-10-02,R,4,{4},Artifact;Creature
 Hematite Talisman,1995-06-03,,2,{2},Artifact
 Hemlock Vial,2024-07-05,B,2,{1}{B},Artifact
+"Hemmer, Fixing What Is Broken",2026-11-13,UW,2,{W}{U},Creature
 Hemosymbic Mite,2025-08-01,G,1,{G},Creature
 Henchbots,2026-03-06,,4,{4},Artifact;Creature
 Henchfiend of Ukor,2007-05-04,BR,4,{3}{R},Creature
@@ -13802,6 +13957,7 @@ Historian's Boon,2022-09-09,W,4,{3}{W},Enchantment
 Historian's Wisdom,2022-02-18,G,3,{2}{G},Enchantment
 History of Benalia,2018-04-27,W,3,{1}{W}{W},Enchantment
 Hit // Run,2006-05-05,BGR,8,{1}{B}{R},Instant
+Hit It!,2026-11-13,GR,3,{1}{R}{G},Enchantment
 Hit the Mother Lode,2023-11-17,R,7,{4}{R}{R}{R},Sorcery
 Hit-Monkey,2026-06-26,G,4,{3}{G},Creature
 Hitchclaw Recluse,2015-07-17,G,3,{2}{G},Creature
@@ -13865,6 +14021,9 @@ Hollowhenge Spirit,2012-02-03,W,4,{3}{W},Creature
 Hollowhenge Wrangler,2021-12-09,G,5,{3}{G}{G},Creature
 Hollowmurk Siege,2025-04-11,BG,2,{B}{G},Enchantment
 Hollowsage,2008-05-02,B,4,{3}{B},Creature
+Holo-Engineer,2026-11-13,G,4,{2}{G}{G},Creature
+Hologram Janeway,2026-11-13,W,3,{2}{W},Artifact;Creature
+Hologram Stalker,2026-11-13,G,6,{4}{G}{G},Creature
 Holographic Double,2022-03-17,U,1,{U},Creature
 Holy Armor,1993-08-05,W,1,{W},Enchantment
 Holy Avenger,2021-07-23,W,3,{2}{W},Artifact
@@ -13879,7 +14038,7 @@ Homarid Explorer,2018-04-27,U,4,{3}{U},Creature
 Homarid Shaman,1994-11-01,U,4,{2}{U}{U},Creature
 Homarid Spawning Bed,1994-11-01,U,2,{U}{U},Enchantment
 Homarid Warrior,1994-11-01,U,5,{4}{U},Creature
-"Homer, the Hermit",2026-11-09,BGU,3,{B}{G}{U},Creature
+"Homer, the Hermit",2026-10-19,BGU,3,{B}{G}{U},Creature
 Homesickness,2026-04-24,U,6,{4}{U}{U},Instant
 Homestead Courage,2021-09-24,W,1,{W},Sorcery
 Homeward Path,2011-06-17,,0,,Land
@@ -14084,6 +14243,7 @@ Huatli's Spurring,2017-09-29,R,1,{R},Instant
 Hubris,2014-05-02,U,2,{1}{U},Instant
 Huddle Up,2018-06-08,U,3,{2}{U},Sorcery
 Huge Truck,2023-02-15,,2,{2},Artifact
+"Hugh, First of Many",2026-11-13,BUW,4,{1}{W}{U}{B},Artifact;Creature
 "Hugs, Grisly Guardian",2024-08-02,GR,4,{X}{R}{R}{G}{G},Creature
 Hulk's Thunderclap,2026-06-26,G,2,{1}{G},Sorcery
 "Hulk, Always Angry",2026-06-26,R,7,{5}{R}{R},Creature
@@ -14266,6 +14426,7 @@ I Will Savor Your Agony,2024-09-27,,0,,Scheme
 I'm Going On An Adventure!,2023-02-15,W,1,{W},Sorcery
 "I'm Rubber, You're Glue",1998-08-11,W,2,{W}{W},Enchantment
 "I'm a Doctor, Not a . . .",2026-11-13,G,1,{G},Instant
+"I.K.S. Negh'Var, Imperial Flagship",2026-11-13,,3,{3},Artifact
 Ian Chesterton,2023-10-13,W,3,{2}{W},Creature
 "Ian Malcolm, Chaotician",2023-11-17,RU,3,{1}{U}{R},Creature
 Ian the Reckless,2024-03-08,R,2,{1}{R},Creature
@@ -14485,6 +14646,7 @@ Imperial Ceratops,2018-01-19,W,5,{4}{W},Creature
 Imperial Cosmographer,2026-06-26,U,3,{2}{U},Creature
 Imperial Edict,1999-05-01,B,2,{1}{B},Sorcery
 Imperial Hellkite,2003-02-03,R,7,{5}{R}{R},Creature
+Imperial Hullbreachers,2026-11-13,W,3,{2}{W},Creature
 Imperial Lancer,2017-09-29,W,1,{W},Creature
 Imperial Mask,2007-05-04,W,5,{4}{W},Enchantment
 Imperial Oath,2022-02-18,W,6,{5}{W},Sorcery
@@ -14516,6 +14678,7 @@ Imposing Grandeur,2021-11-19,R,5,{4}{R},Sorcery
 Imposing Sovereign,2013-07-19,W,2,{1}{W},Creature
 Imposing Vantasaur,2020-04-24,W,6,{5}{W},Creature
 Imposing Visage,1995-06-03,R,1,{R},Enchantment
+Impossible Choice,2026-11-13,B,3,{2}{B},Instant
 Impossible Inferno,2024-09-27,R,5,{4}{R},Instant
 Impossible Man,2026-06-26,U,3,{2}{U},Creature
 Imposter Mech,2022-02-18,U,2,{1}{U},Artifact
@@ -14606,6 +14769,7 @@ Indatha Crystal,2020-04-24,BGW,3,{3},Artifact
 Indatha Triome,2020-04-24,BGW,0,,Land
 Indebted Samurai,2005-02-04,W,4,{3}{W},Creature
 Indebted Spirit,2024-06-14,W,1,{W},Enchantment;Creature
+Indelicate Healer,2026-11-13,W,3,{2}{W},Creature
 Indentured Djinn,1999-10-04,U,3,{1}{U}{U},Creature
 Indentured Oaf,2005-10-07,R,4,{3}{R},Creature
 Independent Troops,1999-05-01,R,2,{1}{R},Creature
@@ -14700,6 +14864,7 @@ Infiltrator il-Kor,2007-05-04,U,5,{4}{U},Creature
 Infiltrator's Magemark,2006-02-03,U,3,{2}{U},Enchantment
 Infinite Authority,1994-06-01,W,3,{W}{W}{W},Enchantment
 Infinite Coursework,2026-10-02,U,3,{2}{U},Enchantment
+Infinite Diversity,2026-11-13,R,9,{7}{R}{R},Sorcery
 Infinite Guideline Station,2025-08-01,BGRUW,5,{W}{U}{B}{R}{G},Artifact
 Infinite Hourglass,1995-06-03,,4,{4},Artifact
 Infinite Obliteration,2015-07-17,B,3,{1}{B}{B},Sorcery
@@ -14879,6 +15044,7 @@ Interplanar Brushwagg,2019-11-07,G,4,{3}{G},Creature
 Interplanar Tunnel,2012-06-01,,0,,Phenomenon
 Interpret the Signs,2014-05-02,U,6,{5}{U},Sorcery
 Interrogation Robot,2023-02-15,,3,{3},Artifact;Creature
+Interstellar Effigy,2026-11-13,U,5,{4}{U},Artifact;Creature
 Intervene,1999-02-15,U,1,{U},Instant
 Intervention Pact,2007-05-04,W,0,{0},Instant
 Intervention of Keranos,2014-03-01,,0,,Sorcery
@@ -15135,11 +15301,12 @@ Isolated Watchtower,2018-08-10,,0,,Land
 Isolation Cell,2011-05-13,,4,{4},Artifact
 Isolation Zone,2016-01-22,W,4,{2}{W}{W},Enchantment
 Isolation at Orthanc,2023-06-23,U,4,{3}{U},Instant
+Isolinear Processor,2026-11-13,,2,{2},Artifact
 Isperia the Inscrutable,2006-05-05,UW,5,{1}{W}{W}{U}{U},Creature
 Isperia's Skywatch,2012-10-05,U,6,{5}{U},Creature
 "Isperia, Supreme Judge",2012-10-05,UW,6,{2}{W}{W}{U}{U},Creature
 "Isshin, Two Heavens as One",2022-02-18,BRW,3,{R}{W}{B},Creature
-"Istvan, Butcher of Eln",2026-11-09,B,4,{1}{B}{B}{B},Creature
+"Istvan, Butcher of Eln",2026-10-19,B,4,{1}{B}{B}{B},Creature
 Isu the Abominable,2022-12-02,GUW,5,{3}{U}{U},Creature
 It Came from Planet Glurg,2022-10-07,GU,2,{X}{X}{G}{U},Creature
 It Doesn't Add Up,2024-02-09,B,5,{3}{B}{B},Instant
@@ -15149,7 +15316,7 @@ It That Heralds the End,2024-06-14,,2,{1}{C},Creature
 It of the Horrid Swarm,2016-07-22,G,8,{8},Creature
 It'll Quench Ya!,2025-11-21,U,2,{1}{U},Instant
 It's Clobberin' Time!,2026-06-26,G,3,{2}{G},Sorcery
-"Itazura, Lingering Wick",2026-11-09,RU,4,{2}{U}{R},Creature
+"Itazura, Lingering Wick",2026-10-19,RU,4,{2}{U}{R},Creature
 Item Crate,2023-02-15,,2,{2},Artifact
 Item Shopkeep,2025-06-13,R,2,{1}{R},Creature
 Iterative Analysis,2014-06-06,,0,,Conspiracy
@@ -15200,7 +15367,7 @@ Izzet Steam Maze,2009-09-04,,0,,Plane
 J. Jonah Jameson,2025-09-23,R,3,{2}{R},Creature
 Jabari's Banner,1997-06-09,,2,{2},Artifact
 Jabari's Influence,1996-10-08,W,5,{3}{W}{W},Instant
-"Jabs, Mistress of Mockery",2026-11-09,R,3,{2}{R},Creature
+"Jabs, Mistress of Mockery",2026-10-19,R,3,{2}{R},Creature
 Jace Beleren,2007-10-12,U,3,{1}{U}{U},Planeswalker
 Jace Beleren // Jace Beleren,2007-10-12,U,3,{1}{U}{U},Planeswalker
 Jace Reawakened,2024-04-19,U,2,{U}{U},Planeswalker
@@ -15213,6 +15380,7 @@ Jace's Mindseeker,2013-07-19,U,6,{4}{U}{U},Creature
 Jace's Phantasm,2012-07-13,U,1,{U},Creature
 Jace's Projection,2019-05-03,U,4,{2}{U}{U},Creature
 Jace's Ruse,2019-05-03,U,5,{3}{U}{U},Sorcery
+Jace's Saga,2026-10-13,U,0,,Enchantment;Land
 Jace's Sanctum,2015-07-17,U,4,{3}{U},Enchantment
 Jace's Scrutiny,2016-04-08,U,2,{1}{U},Instant
 Jace's Sentinel,2017-09-29,U,2,{1}{U},Creature
@@ -15268,6 +15436,7 @@ Jadelight Ranger,2018-01-19,G,3,{1}{G}{G},Creature
 Jadelight Spelunker,2023-11-17,G,1,{X}{G},Creature
 "Jadzi, Oracle of Arcavios // Journey to the Oracle",2021-04-23,GU,8,{6}{U}{U},Creature
 "Jadzi, Steward of Fate // Oracle's Gift",2026-04-24,U,3,{2}{U},Creature
+"Jadzia Dax, Living Legacy",2026-11-13,G,2,{1}{G},Creature
 Jagged Barrens,2024-04-19,BR,0,,Land
 Jagged Lightning,1998-06-24,R,5,{3}{R}{R},Sorcery
 Jagged Poppet,2006-05-05,BR,3,{1}{B}{R},Creature
@@ -15283,6 +15452,7 @@ Jaheira's Respite,2022-06-10,G,5,{4}{G},Instant
 "Jaheira, Stirring Harper",2022-07-07,GR,3,{1}{R}{G},Creature
 Jailbreak,2022-04-29,W,2,{1}{W},Sorcery
 Jailbreak Scheme,2024-04-19,U,1,{U},Sorcery
+"Jake Sisko, War Correspondent",2026-11-13,G,2,{1}{G},Creature
 Jalira's Show,2024-02-24,,0,,Plane
 "Jalira, Master Polymorphist",2014-07-18,U,4,{3}{U},Creature
 Jalum Grifter,1998-08-11,R,5,{3}{R}{R},Creature
@@ -15294,8 +15464,9 @@ Jamuraan Lion,1997-02-03,W,3,{2}{W},Creature
 "Jan Jansen, Chaos Crafter",2022-06-10,BRW,3,{R}{W}{B},Creature
 Jandor's Ring,1993-12-17,,6,{6},Artifact
 Jandor's Saddlebags,1993-12-17,,2,{2},Artifact
-"Jandor, Fortuned Traveler",2026-11-09,GRW,4,{1}{R}{G}{W},Creature
+"Jandor, Fortuned Traveler",2026-10-19,GRW,4,{1}{R}{G}{W},Creature
 Jangling Automaton,1997-06-09,,3,{3},Artifact;Creature
+"Janice Rand, Essential Aide",2026-11-13,G,4,{3}{G},Creature
 Janjeet Sentry,2016-09-30,U,3,{2}{U},Creature
 Jar of Eyeballs,2012-02-03,,3,{3},Artifact
 Jarad's Orders,2012-10-05,BG,4,{2}{B}{G},Sorcery
@@ -15331,6 +15502,8 @@ Jaya's Phoenix,2023-08-04,R,5,{4}{R},Creature
 "Jaya, Venerated Firemage",2019-05-03,R,5,{4}{R},Planeswalker
 Jayemdae Tome,1993-08-05,,4,{4},Artifact
 Jazal Goldmane,2014-11-07,W,4,{2}{W}{W},Creature
+"Jean-Luc Picard, Luminary",2026-11-13,RUW,4,{1}{U}{R}{W},Creature
+"Jean-Luc, Mon Capitaine",2026-11-13,RUW,5,{2}{U}{R}{W},Creature
 "Jecht, Reluctant Guardian // Braska's Final Aeon",2025-06-13,B,4,{3}{B},Creature
 Jedit Ojanen,1994-06-01,UW,7,{4}{W}{W}{U},Creature
 Jedit Ojanen of Efrava,2007-02-02,G,6,{3}{G}{G}{G},Creature
@@ -15338,6 +15511,7 @@ Jedit Ojanen of Efrava,2007-02-02,G,6,{3}{G}{G}{G},Creature
 Jedit's Dragoons,2006-10-06,W,6,{5}{W},Creature
 Jeering Homunculus,2016-08-26,U,2,{1}{U},Creature
 Jeering Instigator,2014-09-26,R,2,{1}{R},Creature
+Jefferies Tube,2026-11-13,,1,{1},Artifact
 "Jegantha, the Wellspring",2020-04-24,BGRUW,5,{4}{R/G},Creature
 Jelenn Sphinx,2013-05-03,UW,5,{3}{W}{U},Creature
 "Jeleva, Nephalia's Scourge",2013-11-01,BRU,4,{1}{U}{B}{R},Creature
@@ -15381,7 +15555,7 @@ Jester's Cap,1995-06-03,,4,{4},Artifact
 Jester's Mask,1995-06-03,,5,{5},Artifact
 Jester's Scepter,2006-07-21,,3,{3},Artifact
 Jester's Sombrero,1998-08-11,,2,{2},Artifact
-Jet Collector,2026-11-09,BG,2,{1}{G},Creature
+Jet Collector,2026-10-19,BG,2,{1}{G},Creature
 Jet Medallion,1997-10-14,,2,{2},Artifact
 Jet's Brainwashing,2025-11-21,R,1,{R},Sorcery
 "Jet, Freedom Fighter",2025-11-21,RW,5,{2}{R/W}{R/W}{R/W},Creature
@@ -15393,6 +15567,7 @@ Jetmir's Garden,2022-04-29,GRW,0,,Land
 "Jetmir, Nexus of Revels // Jetmir, Nexus of Revels",2022-04-29,GRW,4,{1}{R}{G}{W},Creature
 Jetpack Death Seltzer,2022-10-07,,0,,Stickers
 Jetpack Janitor,2022-10-07,W,3,{2}{W},Creature
+"Jett Reno, Problem Solver",2026-11-13,U,2,{1}{U},Creature
 Jetting Glasskite,2005-02-04,U,6,{4}{U}{U},Creature
 Jewel Mine Overseer,2023-10-10,RW,3,{1}{R}{W},Creature
 Jewel Thief,2022-04-29,G,3,{2}{G},Creature
@@ -15455,6 +15630,7 @@ Johann's Stopgap,2023-09-08,U,4,{3}{U},Sorcery
 Johtull Wurm,1995-06-03,G,6,{5}{G},Creature
 Join Forces,2022-09-09,W,3,{2}{W},Instant
 Join Shields,2018-10-05,GW,5,{3}{G}{W},Instant
+Join the Collective,2026-11-13,W,7,{5}{W}{W},Sorcery
 Join the Dance,2021-09-24,GW,2,{G}{W},Sorcery
 Join the Dead,2023-11-17,B,3,{1}{B}{B},Instant
 Join the Maestros,2022-04-29,B,5,{4}{B},Sorcery
@@ -15506,7 +15682,7 @@ Joust Through,2024-11-15,W,1,{W},Instant
 Jousting Dummy,2019-10-04,,2,{2},Artifact;Creature
 Jousting Lance,2018-04-27,,2,{2},Artifact
 Joven,1995-10-01,R,5,{3}{R}{R},Creature
-Joven and Chandler,2023-02-15,R,5,{3}{R}{R},Creature
+Joven and Chandler,2026-10-19,R,5,{2}{R}{R}{R},Creature
 Joven's Ferrets,1995-10-01,G,1,{G},Creature
 Joven's Tools,1995-10-01,,6,{6},Artifact
 Jovial Evil,1994-06-01,B,3,{2}{B},Sorcery
@@ -15537,6 +15713,7 @@ Jukai Messenger,2004-10-01,G,1,{G},Creature
 Jukai Naturalist,2022-02-18,GW,2,{G}{W},Enchantment;Creature
 Jukai Preserver,2022-02-18,G,4,{3}{G},Enchantment;Creature
 Jukai Trainee,2022-02-18,G,2,{1}{G},Creature
+"Julian Bashir, Frontier Doctor",2026-11-13,W,3,{2}{W},Creature
 Jumbo Cactuar,2025-06-13,G,7,{5}{G}{G},Creature
 Jumbo Imp,1998-08-11,B,3,{2}{B},Creature
 Jump,1993-08-05,U,1,{U},Instant
@@ -15579,6 +15756,7 @@ Junkyard Scrapper,2022-03-17,R,3,{2}{R},Creature
 Junkyo Bell,2004-10-01,,4,{4},Artifact
 Juntu Stakes,2000-10-02,,2,{2},Artifact
 Junún Efreet,1993-12-17,B,3,{1}{B}{B},Creature
+"Jurati, Cordial Queen",2026-11-13,UW,3,{1}{W}{U},Artifact;Creature
 "Juri, Master of the Revue",2020-11-20,BR,2,{B}{R},Creature
 "Jurin, Leading the Charge",2019-12-02,R,6,{4}{R}{R},Creature
 Jushi Apprentice // Tomoya the Revealer,2004-10-01,U,2,{1}{U},Creature
@@ -15602,7 +15780,9 @@ Jwari Shapeshifter,2010-02-05,U,2,{1}{U},Creature
 "Jyoti, Moag Ancient",2024-06-14,GU,4,{2}{G}{U},Creature
 Jötun Grunt,2006-07-21,W,2,{1}{W},Creature
 Jötun Owl Keeper,2006-07-21,UW,3,{2}{W},Creature
+K'Vort-Class Raider,2026-11-13,,4,{4},Artifact
 "K'rrik, Son of Yawgmoth",2019-08-23,B,7,{4}{B/P}{B/P}{B/P},Creature
+K't'inga-Class Battle Cruiser,2026-11-13,,3,{3},Artifact
 K'un-Lun Warrior,2026-06-26,R,2,{1}{R},Creature
 "K-9, Mark I",2023-10-13,U,1,{U},Artifact;Creature
 Ka-Zar of the Savage Land,2026-06-26,G,5,{4}{G},Creature
@@ -15629,6 +15809,7 @@ Kagemaro's Clutch,2005-06-03,B,4,{3}{B},Enchantment
 "Kagha, Shadow Archdruid",2022-06-10,BG,4,{2}{B}{G},Creature
 "Kaheera, the Orphanguard",2020-04-24,GW,3,{1}{G/W}{G/W},Creature
 "Kaho, Minamo Historian",2005-06-03,U,4,{2}{U}{U},Creature
+"Kai Winn, Faithless Leader",2026-11-13,B,2,{1}{B},Creature
 Kaijin of the Vanishing Touch,2005-02-04,U,2,{1}{U},Creature
 "Kaima, the Fractured Calm",2022-02-18,GR,4,{2}{R}{G},Creature
 "Kain, Traitorous Dragoon",2025-06-13,B,3,{2}{B},Creature
@@ -15699,6 +15880,7 @@ Kamigawa Charm,2023-02-15,G,3,{1}{G}{G},Sorcery
 Kang Dynasty,2026-06-26,U,4,{3}{U},Enchantment
 Kang Prime,2026-06-26,BU,5,{3}{U}{B},Creature
 Kang the Conqueror,2026-06-26,U,4,{2}{U}{U},Creature
+"Kang, Suspicious Captain",2026-11-13,R,4,{3}{R},Creature
 "Kang, Temporal Tyrant",2026-06-26,BU,4,{2}{U}{B},Creature
 Kangee's Lieutenant,2020-11-20,W,3,{2}{W},Creature
 "Kangee, Aerie Keeper",2000-10-02,UW,4,{2}{W}{U},Creature
@@ -15952,6 +16134,7 @@ Keral Keep Disciples,2020-07-03,R,4,{2}{R}{R},Creature
 "Keranos, God of Storms",2014-05-02,RU,5,{3}{U}{R},Enchantment;Creature
 Kerblam! Warehouse,2023-10-13,,0,,Plane
 "Keruga, the Macrosage",2020-04-24,GU,5,{3}{G/U}{G/U},Creature
+"Kes, Evolving Telepath",2026-11-13,U,5,{4}{U},Creature
 "Keskit, the Flesh Sculptor",2020-11-20,B,3,{2}{B},Creature
 "Kess, Dissident Mage",2017-08-25,BRU,4,{1}{U}{B}{R},Creature
 Kessig,2012-06-01,,0,,Plane
@@ -15987,6 +16170,8 @@ Khalni Garden,2010-02-05,G,0,,Land
 Khalni Gem,2009-10-02,,4,{4},Artifact
 Khalni Heart Expedition,2009-10-02,G,2,{1}{G},Enchantment
 Khalni Hydra,2010-04-23,G,8,{G}{G}{G}{G}{G}{G}{G}{G},Creature
+"Khan, Despot by Design",2026-11-13,R,5,{4}{R},Creature
+"Khan, Vengeful Heart",2026-11-13,B,4,{2}{B}{B},Creature
 Kharasha Foothills,2023-04-21,,0,,Plane
 Kharis & The Beholder,2019-08-01,GW,5,{1}{G}{G}{W}{W},Creature
 Khenra Charioteer,2017-04-28,GR,3,{1}{R}{G},Creature
@@ -16030,6 +16215,7 @@ Killer's Mask,2024-09-27,B,3,{2}{B},Artifact
 Killian's Confidence,2026-04-24,BW,2,{W}{B},Sorcery
 "Killian, Decisive Mentor",2026-04-24,BW,3,{1}{W}{B},Creature
 "Killian, Ink Duelist",2021-04-23,BW,2,{W}{B},Creature
+"Killian, Spotlight Chaser",2026-10-13,BR,2,{B}{R},Creature
 Killing Glare,2013-02-01,B,1,{X}{B},Instant
 Killing Wave,2012-05-04,B,1,{X}{B},Sorcery
 "Killmonger, Ruthless Usurper",2026-06-26,R,3,{2}{R},Creature
@@ -16108,11 +16294,14 @@ Kiora's Follower,2014-02-07,GU,2,{G}{U},Creature
 "Kiora, the Crashing Wave",2014-02-07,GU,4,{2}{G}{U},Planeswalker
 "Kiora, the Rising Tide",2024-11-15,U,3,{2}{U},Creature
 "Kiora, the Tide's Fury",2021-08-26,U,4,{3}{U},Planeswalker
+"Kira Nerys, Firebrand",2026-11-13,RW,3,{1}{R}{W},Creature
 "Kira, Great Glass-Spinner",2005-02-04,U,3,{1}{U}{U},Creature
 Kird Ape,1993-12-17,R,1,{R},Creature
 Kird Chieftain,2014-07-18,GR,4,{3}{R},Creature
 Kiri-Onna,2005-06-03,U,5,{4}{U},Creature
+"Kirk, Commanding Officer",2026-11-13,RW,3,{1}{R}{W},Creature
 "Kirk, Enterprising Captain",2026-11-13,R,4,{3}{R},Creature
+"Kirk, Man of Action",2026-11-13,GUW,5,{2}{G}{W}{U},Creature
 "Kirol, Attentive First-Year",2026-01-23,RW,3,{1}{R/W}{R/W},Creature
 "Kirol, History Buff // Pack a Punch",2026-04-24,RW,2,{R}{W},Creature
 "Kirri, Talented Sprout",2024-04-19,GRW,4,{1}{R}{G}{W},Creature
@@ -16275,6 +16464,7 @@ Knowledge and Power,2014-05-02,R,5,{4}{R},Enchantment
 Knucklebone Witch,2007-10-12,B,1,{B},Creature
 Knuckles the Echidna,2019-12-02,R,4,{2}{R}{R},Creature
 Koala-Sheep,2025-11-21,W,3,{2}{W},Creature
+Kobayashi Maru Scenario,2026-11-13,U,3,{1}{U}{U},Enchantment
 Kobold Drill Sergeant,1994-06-01,R,2,{1}{R},Creature
 Kobold Overlord,1994-06-01,R,2,{1}{R},Creature
 Kobold Taskmaster,1994-06-01,R,2,{1}{R},Creature
@@ -16303,6 +16493,7 @@ Kolaghan's Command,2015-03-27,BR,3,{1}{B}{R},Instant
 Kolinahr Priest,2026-11-13,U,3,{2}{U},Creature
 "Koll, the Forgemaster",2021-02-05,RW,2,{R}{W},Creature
 "Kolodin, Triumph Caster",2025-02-14,RW,2,{R}{W},Creature
+"Koloth, Tribble Hunter",2026-11-13,R,4,{3}{R},Creature
 "Kolvori, God of Kinship // The Ringhart Crest",2021-02-05,G,4,{2}{G}{G},Creature
 "Koma and Toski, Compleated",2023-02-15,GU,8,{6}{U}{G},Creature
 Koma's Faithful,2021-02-05,B,3,{2}{B},Creature
@@ -16342,9 +16533,11 @@ Kor Scythemaster,2016-01-22,W,3,{2}{W},Creature
 Kor Sky Climber,2016-01-22,W,3,{2}{W},Creature
 Kor Skyfisher,2009-10-02,W,2,{1}{W},Creature
 Kor Spiritdancer,2010-04-23,W,2,{1}{W},Creature
+"Kor, Cause of Vengeance",2026-11-13,BRW,4,{1}{R}{W}{B},Creature
 "Korlash, Heir to Blackblade",2007-05-04,B,4,{2}{B}{B},Creature
 "Korlessa, Scale Singer",2022-06-10,GU,2,{G}{U},Creature
 Kormus Bell,1993-08-05,,4,{4},Artifact
+"Korok, Liberated Rage",2026-11-13,W,4,{3}{W},Artifact;Creature
 Korozda Gorgon,2013-05-03,BG,5,{3}{B}{G},Creature
 Korozda Guildmage,2012-10-05,BG,2,{B}{G},Creature
 Korozda Monitor,2012-10-05,G,4,{2}{G}{G},Creature
@@ -16503,9 +16696,10 @@ Kumena's Speaker,2017-09-29,G,1,{G},Creature
 "Kurbis, Harvest Celebrant",2021-09-24,G,2,{X}{G}{G},Creature
 Kurgadon,2003-05-26,G,5,{4}{G},Creature
 "Kurkesh, Onakke Ancient",2014-07-18,R,4,{2}{R}{R},Creature
+"Kurn, Son of Mogh",2026-11-13,B,3,{2}{B},Creature
 Kuro's Taken,2005-06-03,B,2,{1}{B},Creature
 "Kuro, Pitlord",2004-10-01,B,9,{6}{B}{B}{B},Creature
-"Kuroki, Thief of Talents",2026-11-09,B,5,{4}{B},Creature
+"Kuroki, Thief of Talents",2026-10-19,B,5,{4}{B},Creature
 Kusari-Gama,2004-10-01,,3,{3},Artifact
 Kutzil's Flanker,2023-11-17,W,3,{2}{W},Creature
 "Kutzil, Malamet Exemplar",2023-11-17,GW,3,{1}{G}{W},Creature
@@ -16539,7 +16733,9 @@ Kytheon's Irregulars,2015-07-17,W,4,{2}{W}{W},Creature
 Kytheon's Tactics,2015-07-17,W,3,{1}{W}{W},Sorcery
 "Kytheon, Hero of Akros // Gideon, Battle-Forged",2015-07-17,W,1,{W},Creature
 Kíli the Resourceful,2026-08-14,W,2,{1}{W},Creature
+"L'Rell, Fierce Visionary",2026-11-13,BR,3,{1}{B}{R},Creature
 "La Forge, Perceptive Engineer",2026-11-13,U,2,{1}{U},Creature
+"La Forge, Thoughtful as Ever",2026-11-13,U,4,{3}{U},Creature
 "La'An Noonien-Singh, Security",2026-11-13,R,4,{2}{R}{R},Creature
 Lab Rats,1998-03-02,B,1,{B},Sorcery
 Laboratory Brute,2016-07-22,U,4,{3}{U},Creature
@@ -16979,7 +17175,10 @@ Liege of the Tangle,2010-10-01,G,8,{6}{G}{G},Creature
 "Lier, Disciple of the Drowned",2021-09-24,U,5,{3}{U}{U},Creature
 "Liesa, Forgotten Archangel",2021-09-24,BW,5,{2}{W}{W}{B},Creature
 "Liesa, Shroud of Dusk",2020-11-20,BW,5,{2}{W}{W}{B},Creature
+Lieutenant Commander Data,2026-11-13,U,3,{2}{U},Artifact;Creature
+Lieutenant Hikaru Sulu,2026-11-13,GU,3,{2}{G},Creature
 Lieutenant Kirtar,2001-10-01,W,3,{1}{W}{W},Creature
+Lieutenant Nyota Uhura,2026-11-13,U,3,{2}{U},Creature
 Lieutenants of the Guard,2016-08-26,W,5,{4}{W},Creature
 Life // Death,2001-06-04,BG,3,{G},Sorcery
 Life Burst,2001-10-01,W,2,{1}{W},Instant
@@ -17185,6 +17384,7 @@ Liturgy of Blood,2013-07-19,B,5,{3}{B}{B},Sorcery
 "Liu Bei, Lord of Shu",1999-05-01,W,5,{3}{W}{W},Creature
 "Livaan, Cultist of Tiamat",2022-06-10,R,3,{2}{R},Creature
 Live Fast,2016-09-30,B,3,{2}{B},Sorcery
+Live Long and Prosper,2026-11-13,UW,7,{5}{W}{U},Sorcery
 Live or Die,2024-09-27,B,5,{3}{B}{B},Instant
 Lively Dirge,2024-04-19,B,2,{1}{B},Sorcery
 Livewire Lash,2010-10-01,,2,{2},Artifact
@@ -17288,6 +17488,8 @@ Locus Cobra,2023-02-15,G,2,{1}{G},Creature
 Locust Miser,2005-06-03,B,4,{2}{B}{B},Creature
 Locust Spray,2025-02-14,B,1,{B},Instant
 Locust Swarm,1996-10-08,G,4,{3}{G},Creature
+Locutus of Borg,2026-11-13,BUW,4,{1}{W}{U}{B},Artifact;Creature
+"Locutus, the One Who Speaks",2026-11-13,BW,2,{W}{B},Artifact;Creature
 Lodestone Bauble,1996-06-10,,0,{0},Artifact
 Lodestone Golem,2010-02-05,,4,{4},Artifact;Creature
 Lodestone Myr,2003-10-02,,4,{4},Artifact;Creature
@@ -17386,6 +17588,7 @@ Lore Broker,2005-10-07,U,2,{1}{U},Creature
 Lore Drakkis,2020-04-24,RU,3,{1}{U}{R},Creature
 Lore Seeker,2014-06-06,,2,{2},Artifact;Creature
 Lore Weaver,2018-06-08,U,4,{3}{U},Creature
+"Lore, Positronic Provocateur",2026-11-13,BU,3,{1}{U/B}{U/B},Artifact;Creature
 Lorehold Apprentice,2021-04-23,RW,2,{R}{W},Creature
 Lorehold Archivist // Restore Relic,2026-04-24,RW,3,{1}{R}{W},Creature
 Lorehold Campus,2021-04-23,RW,0,,Land
@@ -17489,6 +17692,8 @@ Loyal Tutor,2026-10-02,W,1,{W},Instant
 Loyal Unicorn,2018-08-10,W,4,{3}{W},Creature
 Loyal Warhound,2021-07-23,W,2,{1}{W},Creature
 "Lozhan, Dragons' Legacy",2022-06-10,RU,5,{3}{U}{R},Creature
+"Lt. Arex, Ever-Adapting",2026-11-13,GU,7,{5}{G}{U},Creature
+Lt. Cmdr. Geordi La Forge,2026-11-13,U,3,{2}{U},Creature
 "Lu Bu, Master-at-Arms",1999-05-01,R,6,{5}{R},Creature
 "Lu Meng, Wu General",1999-05-01,U,5,{3}{U}{U},Creature
 "Lu Su, Wu Advisor",1999-05-01,U,5,{3}{U}{U},Creature
@@ -17603,13 +17808,14 @@ Lust for War,2010-04-23,R,3,{2}{R},Enchantment
 Lux Artillery,2023-02-10,,4,{4},Artifact
 Lux Cannon,2010-10-01,,4,{4},Artifact
 Luxa River Shrine,2017-04-28,,3,{3},Artifact
-Luxior and Shadowspear,2023-02-15,,2,{2},Artifact
+Luxior and Shadowspear,2023-02-15,,3,{3},Artifact
 "Luxior, Giada's Gift",2022-04-29,,1,{1},Artifact
 "Luxior, Ignited",2024-08-02,,4,{4},Artifact;Planeswalker
 Luxknight Breacher,2025-08-01,W,4,{3}{W},Creature
 Luxurious Libation,2022-04-29,G,1,{X}{G},Instant
 Luxurious Locomotive,2024-04-19,,5,{5},Artifact
 Luxury Suite,2018-06-08,BR,0,,Land
+"Lwaxana Troi, Charming Guest",2026-11-13,R,2,{1}{R},Creature
 Lychguard,2022-10-07,B,3,{2}{B},Artifact;Creature
 Lydari Druid,2001-06-28,G,3,{2}{G},Creature
 Lydari Elephant,2001-06-28,G,5,{4}{G},Creature
@@ -17619,7 +17825,7 @@ Lyev Skyknight,2012-10-05,UW,3,{1}{W}{U},Creature
 "Lyla, Holographic Assistant",2025-09-26,U,4,{3}{U},Artifact;Creature
 Lymph Sliver,2007-05-04,W,5,{4}{W},Creature
 Lyna,1997-05-01,,0,,Vanguard
-"Lyna, Veil of Vengeance",2026-11-09,BUW,3,{W}{U}{B},Creature
+"Lyna, Veil of Vengeance",2026-10-19,BUW,3,{W}{U}{B},Creature
 "Lynde, Cheerful Tormentor",2021-09-24,BRU,4,{1}{U}{B}{R},Creature
 Lynx,1998-06-24,G,2,{1}{G},Creature
 Lyra Dawnbringer,2018-04-27,W,5,{3}{W}{W},Creature
@@ -17636,9 +17842,11 @@ Lyse Hext,2025-06-13,UW,3,{1}{W}{U},Creature
 Lórien Revealed,2023-06-23,U,5,{3}{U}{U},Sorcery
 "M'Baku, Jabari Chieftain",2026-06-26,G,3,{1}{G}{G},Creature
 "M'Odo, the Gnarled Oracle",2018-08-01,BGU,3,{B}{U}{G},Creature
+"M'Ress, Crew Coordinator",2026-11-13,W,5,{4}{W},Creature
 M.O.D.O.K.,2026-06-26,B,5,{3}{B}{B},Artifact;Creature
 "M.O.D.O.K., Evil Intellect",2026-06-26,B,5,{3}{B}{B},Artifact;Creature
 "MACH-1, Swooping Scoundrel",2026-06-26,B,2,{1}{B},Artifact;Creature
+MACO Strike Team,2026-11-13,G,1,{G},Creature
 "MJ, Rising Star",2026-06-26,W,3,{2}{W},Creature
 "Ma Chao, Western Warrior",1999-05-01,R,5,{3}{R}{R},Creature
 Maalfeld Twins,2012-05-04,B,6,{5}{B},Creature
@@ -17734,6 +17942,7 @@ Magic Word,2017-12-08,U,3,{2}{U},Enchantment
 MagicConsecrated Sphinx,2023-02-15,U,6,{4}{U}{U},Creature
 Magical Hack,1993-08-05,U,1,{U},Instant
 Magical Hacker,2004-11-19,U,2,{1}{U},Creature
+"Magik, Illyana Rasputin // Darkchild, Demon Uncaged",2027-04-09,BR,3,{1}{B}{R},Creature
 Magister Sphinx,2009-02-06,BUW,7,{4}{W}{U}{B},Artifact;Creature
 Magister of Worth,2014-06-06,BW,6,{4}{W}{B},Creature
 Magistrate's Scepter,1999-10-04,,3,{3},Artifact
@@ -17825,6 +18034,7 @@ Majestic Metamorphosis,2022-04-29,U,3,{2}{U},Instant
 Majestic Myriarch,2017-07-14,G,5,{4}{G},Creature
 Major Teroh,2002-02-04,W,4,{3}{W},Creature
 Make Disappear,2022-04-29,U,2,{1}{U},Instant
+Make It So,2026-11-13,U,4,{3}{U},Sorcery
 Make Mischief,2016-07-22,R,3,{2}{R},Sorcery
 Make Obsolete,2016-09-30,B,3,{2}{B},Instant
 Make Your Mark,2021-04-23,RW,1,{R/W},Instant
@@ -18142,6 +18352,7 @@ Martial Coup,2009-02-06,W,2,{X}{W}{W},Sorcery
 Martial Glory,2013-02-01,RW,2,{R}{W},Instant
 Martial Impetus,2020-04-17,W,3,{2}{W},Enchantment
 Martial Law,2012-10-05,W,4,{2}{W}{W},Enchantment
+"Martok, Hero of the Empire",2026-11-13,W,3,{2}{W},Creature
 Martyr for the Cause,2019-05-03,W,2,{1}{W},Creature
 Martyr of Ashes,2006-07-21,R,1,{R},Creature
 Martyr of Bones,2006-07-21,B,1,{B},Creature
@@ -18205,7 +18416,7 @@ Massacre Girl,2019-05-03,B,5,{3}{B}{B},Creature
 "Massacre Girl, Most Wanted",2026-10-02,B,5,{4}{B},Creature
 Massacre Totem,2014-03-01,,0,,Artifact
 Massacre Wurm,2011-02-04,B,6,{3}{B}{B}{B},Creature
-"Massimo, the Magician",2026-11-09,RUW,3,{U}{R}{W},Creature
+"Massimo, the Magician",2026-10-19,RUW,3,{U}{R}{W},Creature
 Massive Might,2021-11-19,G,1,{G},Instant
 Massive Raid,2013-02-01,R,3,{1}{R}{R},Instant
 Master Apothecary,2001-10-01,W,3,{W}{W}{W},Creature
@@ -18263,7 +18474,7 @@ Math is for Blockers (Plane),2025-02-21,,0,,Plane
 "Mathas, Fiend Seeker",2017-08-25,BRW,3,{R}{W}{B},Creature
 Mathemagics,2026-04-24,U,2,{X}{X}{U}{U},Sorcery
 "Mathise, Surge Channeler",2019-12-02,U,3,{2}{U},Creature
-"Matoc, Lavamancer",2026-11-09,R,4,{3}{R},Creature
+"Matoc, Lavamancer",2026-10-19,R,4,{3}{R},Creature
 Matopi Golem,1997-02-03,,5,{5},Artifact;Creature
 "Matoya, Archon Elder",2025-06-13,U,3,{2}{U},Creature
 Matsu-Tribe Birdstalker,2005-06-03,G,4,{2}{G}{G},Creature
@@ -18272,11 +18483,12 @@ Matsu-Tribe Sniper,2005-02-04,G,2,{1}{G},Creature
 "Matt Murdock, Justice Seeker",2026-06-26,W,2,{1}{W},Creature
 Matter Reshaper,2016-01-22,,3,{2}{C},Creature
 Matterbending Mage,2026-04-24,U,3,{2}{U},Creature
+Maturation Chamber,2026-11-13,W,2,{1}{W},Artifact
 "Matzalantli, the Great Door // The Core",2023-11-17,,3,{3},Artifact
 "Mauhúr, Uruk-hai Captain",2023-06-23,BR,2,{B}{R},Creature
 Maul Splicer,2011-05-13,G,7,{6}{G},Creature
 Maul of the Skyclaves,2020-09-25,W,3,{2}{W},Artifact
-"Maular, the Next Evolution",2026-11-09,G,7,{5}{G}{G},Creature
+"Maular, the Next Evolution",2026-10-19,G,7,{5}{G}{G},Creature
 Maulfist Doorbuster,2016-09-30,R,4,{3}{R},Creature
 Maulfist Revolutionary,2017-01-20,G,3,{1}{G}{G},Creature
 Maulfist Squad,2016-09-30,B,4,{3}{B},Creature
@@ -18321,6 +18533,7 @@ Mazemind Tome,2020-07-03,,2,{2},Artifact
 "Mazirek, Kraul Death Priest",2015-11-13,BG,5,{3}{B}{G},Creature
 "Mazzy, Truesword Paladin",2022-06-10,GRW,4,{1}{R}{G}{W},Creature
 Maître Tree,2023-02-15,G,3,{2}{G},Creature
+"McCoy, Not a Bricklayer",2026-11-13,GW,5,{3}{G}{W},Creature
 "Me, the Immortal",2023-10-13,GRU,5,{2}{G}{U}{R},Creature
 Meadowboon,2008-02-01,W,4,{2}{W}{W},Creature
 Meandered Towershell,2024-08-02,G,1,{G},Enchantment
@@ -18330,7 +18543,7 @@ Meanders Guide,2026-01-23,W,3,{2}{W},Creature
 Measure of Wickedness,2005-06-03,B,4,{3}{B},Enchantment
 Meat Locker // Drowned Diner,2024-09-27,U,8,{2}{U},Enchantment
 Meathook Massacre II,2024-09-27,B,4,{X}{X}{B}{B}{B}{B},Enchantment
-"Meatsqueak, Hoard Lord",2026-11-09,G,3,{2}{G},Creature
+"Meatsqueak, Hoard Lord",2026-10-19,G,3,{2}{G},Creature
 Mech Hangar,2022-02-18,,0,,Land
 Mechan Assembler,2025-08-01,U,5,{4}{U},Artifact;Creature
 Mechan Navigator,2025-08-01,U,2,{1}{U},Artifact;Creature
@@ -18387,6 +18600,7 @@ Melira's Keepers,2011-02-04,G,5,{4}{G},Creature
 Melira's Snacks,2023-02-15,,2,{2},Artifact
 "Melira, Sylvok Outcast",2011-05-13,G,2,{1}{G},Creature
 "Melira, the Living Cure",2023-02-10,GW,2,{G}{W},Creature
+Melkotian Adjudicator,2026-11-13,U,3,{2}{U},Creature
 Meloku the Clouded Mirror,2004-10-01,U,5,{4}{U},Creature
 Melt Terrain,2010-10-01,R,4,{2}{R}{R},Sorcery
 Melt Through,2022-12-13,R,1,{R},Instant
@@ -18469,6 +18683,7 @@ Merchant of Truth,2024-02-09,W,4,{2}{W}{W},Creature
 Merchant of Venom,2026-04-24,B,4,{3}{B},Creature
 Merchant of the Vale // Haggle,2019-10-04,R,3,{2}{R},Creature
 Merchant's Dockhand,2017-01-20,U,1,{1},Artifact;Creature
+Merciful Mandate,2026-11-13,W,2,{1}{W},Instant
 Merciless Enforcers,2025-09-23,B,2,{1}{B},Creature
 Merciless Eternal,2017-07-14,B,3,{2}{B},Creature
 Merciless Eviction,2013-02-01,BW,6,{4}{W}{B},Sorcery
@@ -18670,6 +18885,7 @@ Mijae Djinn,1993-12-17,R,3,{R}{R}{R},Creature
 Mild-Mannered Librarian,2022-12-02,G,1,{G},Creature
 "Miles ""Tails"" Prower",2019-12-02,UW,3,{1}{W}{U},Creature
 Miles Morales // Ultimate Spider-Man,2025-09-23,GRW,2,{1}{G},Creature
+"Miles O'Brien, Transporter Ops",2026-11-13,W,3,{2}{W},Creature
 Militant Angel,2016-11-16,W,5,{3}{W}{W},Creature
 Militant Inquisitor,2016-04-08,W,3,{2}{W},Creature
 Militant Monk,2002-02-04,W,3,{1}{W}{W},Creature
@@ -18888,6 +19104,7 @@ Mirror Sheen,2008-07-25,RU,3,{1}{U/R}{U/R},Enchantment
 Mirror Shield,2020-01-24,,2,{2},Artifact
 Mirror Strike,2000-06-05,W,4,{3}{W},Instant
 Mirror Universe,1994-06-01,,6,{6},Artifact
+Mirror Universe Intrusion,2026-11-13,BU,3,{1}{U}{B},Sorcery
 Mirror Wall,2002-05-27,UW,4,{3}{U},Creature
 Mirror of Fate,2009-07-17,,5,{5},Artifact
 Mirror of Galadriel,2023-06-23,,2,{2},Artifact
@@ -18955,7 +19172,7 @@ Misinformation,1996-06-10,B,1,{B},Instant
 Misleading Motes,2023-09-08,U,4,{3}{U},Instant
 Misleading Signpost,2023-09-08,U,3,{2}{U},Artifact
 Miss Demeanor,1998-08-11,W,4,{3}{W},Creature
-Miss Highwater,2026-11-09,B,4,{2}{B}{B},Creature
+Miss Highwater,2026-10-19,B,4,{2}{B}{B},Creature
 Misshapen Fiend,1999-10-04,B,2,{1}{B},Creature
 Mission Briefing,2018-10-05,U,2,{U}{U},Instant
 Misstep,1999-10-04,U,2,{1}{U},Sorcery
@@ -19169,6 +19386,7 @@ Moment of Truth,2023-04-21,U,2,{1}{U},Instant
 Moment of Valor,2023-09-08,W,3,{2}{W},Instant
 Moment's Peace,2001-10-01,G,2,{1}{G},Instant
 Momentary Blink,2006-10-06,UW,2,{1}{W},Instant
+Momentary Blink // Momentary Blink,2006-10-06,UW,2,{1}{W},Instant
 Momentous Fall,2010-04-23,G,4,{2}{G}{G},Instant
 Momentum,1999-06-07,G,3,{2}{G},Enchantment
 Momentum Breaker,2025-02-14,B,2,{1}{B},Enchantment
@@ -19437,6 +19655,7 @@ Mr. Foxglove,2024-08-02,GUW,5,{2}{G}{W}{U},Creature
 "Mr. House, President and CEO",2024-03-08,BRW,3,{R}{W}{B},Artifact;Creature
 "Mr. Monopoly, On the Go",2025-08-24,R,4,{3}{R},Planeswalker
 "Mr. Orfeo, the Boulder",2022-04-29,BGR,4,{1}{B}{R}{G},Creature
+"Mr. Spock, Science Officer",2026-11-13,U,4,{2}{U}{U},Creature
 "Mr. Wiggles, Helpful Butterfly",2023-02-15,G,3,{2}{G},Creature
 Ms. Bumbleflower,2024-08-02,GUW,4,{1}{G}{W}{U},Creature
 "Ms. Marvel, Elastic Ally",2026-06-26,GW,3,{2}{G/W},Creature
@@ -19936,6 +20155,7 @@ Needlethorn Drake,2021-04-23,GU,2,{G}{U},Creature
 Needletooth Pack,2024-11-15,G,5,{3}{G}{G},Creature
 Needletooth Raptor,2018-01-19,R,4,{3}{R},Creature
 Needleverge Pathway // Pillarverge Pathway,2020-09-25,RW,0,,Land
+"Neelix, Moral Support",2026-11-13,G,2,{1}{G},Creature
 "Neera, Wild Mage",2022-06-10,RU,6,{4}{U}{R},Creature
 "Neerdiv, Devious Diver",2024-11-15,U,3,{2}{U},Creature
 Nef-Crop Entangler,2017-04-28,R,2,{1}{R},Creature
@@ -19972,7 +20192,7 @@ Nephalia Drownyard,2011-09-30,BU,0,,Land
 Nephalia Moondrakes,2016-04-08,U,7,{5}{U}{U},Creature
 Nephalia Seakite,2012-02-03,U,4,{3}{U},Creature
 Nephalia Smuggler,2012-05-04,U,1,{U},Creature
-Nephilim Epochal,2026-11-09,BGRUW,4,{U/R}{R/G}{G/W}{W/B},Creature
+Nephilim Epochal,2026-10-19,BGRUW,4,{U/R}{R/G}{G/W}{W/B},Creature
 Nerd Rage,2024-03-08,U,3,{2}{U},Enchantment
 Nerf War,2017-09-20,RU,5,{3}{U}{R},Sorcery
 "Neriv, Crackling Vanguard",2025-04-11,BRW,5,{2}{R}{W}{B},Creature
@@ -20082,6 +20302,7 @@ Nezumi Prowler,2022-02-18,B,2,{1}{B},Artifact;Creature
 Nezumi Ronin,2004-10-01,B,3,{2}{B},Creature
 Nezumi Shadow-Watcher,2005-02-04,B,1,{B},Creature
 Nezumi Shortfang // Stabwhisker the Odious,2004-10-01,B,2,{1}{B},Creature
+Ni'Var Science Academy,2026-11-13,U,0,,Land
 Niall Silvain,1994-08-01,G,3,{G}{G}{G},Creature
 "Niambi, Beloved Protector",2022-10-05,UW,2,{W}{U},Creature
 "Niambi, Esteemed Speaker",2020-07-03,UW,2,{W}{U},Creature
@@ -20269,7 +20490,7 @@ Niv-Mizzet's Diary,2023-02-15,RU,5,{3}{U}{R},Artifact
 "Niv-Mizzet, Supreme",2023-05-12,BGRUW,5,{W}{U}{B}{R}{G},Creature
 "Niv-Mizzet, Visionary",2024-11-15,RU,6,{4}{U}{R},Creature
 "Niv-Mizzet, the Firemind",2006-02-03,RU,6,{2}{U}{U}{R}{R},Creature
-"Nivea, Beloved Battlemage",2026-11-09,W,3,{2}{W},Creature
+"Nivea, Beloved Battlemage",2026-10-19,W,3,{2}{W},Creature
 Niveous Wisps,2008-05-02,W,1,{W},Instant
 Nivix Barrier,2015-07-17,U,4,{3}{U},Creature
 Nivix Cyclops,2013-05-03,RU,3,{1}{U}{R},Creature
@@ -20286,7 +20507,7 @@ No One Will Hear Your Cries,2017-06-16,,0,,Scheme
 No Quarter,1997-10-14,R,4,{3}{R},Enchantment
 No Rest for the Wicked,1998-10-12,B,2,{1}{B},Enchantment
 No Secret Is Hidden from Me,2024-09-27,,0,,Scheme
-No Way Out,2024-02-24,,0,,Plane
+No Way Out,2021-09-24,B,3,{2}{B},Sorcery
 No Witnesses,2024-02-09,W,4,{2}{W}{W},Sorcery
 No-Dachi,2004-10-01,,2,{2},Artifact
 No-Regrets Egret,2024-08-02,U,2,{1}{U},Creature
@@ -20313,6 +20534,7 @@ Nocturnal Hunger,2024-08-02,B,3,{2}{B},Instant
 Nocturnal Raid,1996-10-08,B,4,{2}{B}{B},Instant
 Nocturno of Myra's Marvels,2022-10-07,B,4,{2}{B}{B},Creature
 Noetic Scales,1998-10-12,,4,{4},Artifact
+"Nog, Ambitious Cadet",2026-11-13,BG,2,{B}{G},Creature
 Noggin Whack,2008-02-01,B,4,{2}{B}{B},Kindred;Sorcery
 Noggle Bandit,2008-07-25,RU,3,{1}{U/R}{U/R},Creature
 Noggle Bridgebreaker,2008-07-25,RU,4,{2}{U/R}{U/R},Creature
@@ -20460,10 +20682,12 @@ Nylea's Emissary,2013-09-27,G,4,{3}{G},Enchantment;Creature
 Nylea's Forerunner,2020-01-24,G,5,{4}{G},Enchantment;Creature
 Nylea's Huntmaster,2020-01-24,G,4,{3}{G},Creature
 Nylea's Intervention,2020-01-24,G,2,{X}{G}{G},Sorcery
+Nylea's Oracle,2026-10-13,G,2,{G}{G},Creature
 Nylea's Presence,2013-09-27,G,2,{1}{G},Enchantment
 "Nylea, God of the Hunt",2013-09-27,G,4,{3}{G},Enchantment;Creature
 "Nylea, Keen-Eyed",2020-01-24,G,4,{3}{G},Enchantment;Creature
 "Nymris, Oona's Trickster",2020-11-20,BU,5,{3}{U}{B},Creature
+"Nyota Uhura, Communications",2026-11-13,U,3,{2}{U},Creature
 Nyssa of Traken,2023-10-13,U,4,{3}{U},Creature
 Nyx,2023-04-21,,0,,Plane
 Nyx Herald,2020-01-24,G,3,{2}{G},Enchantment;Creature
@@ -20546,6 +20770,7 @@ Obelisk of Jund,2008-10-03,BGR,3,{3},Artifact
 Obelisk of Naya,2008-10-03,GRW,3,{3},Artifact
 Obelisk of Undoing,1994-03-04,,1,{1},Artifact
 Obelisk of Urd,2014-07-18,,6,{6},Artifact
+Oberth-Class Starship,2026-11-13,W,2,{1}{W},Artifact
 Oblation,2002-10-07,W,3,{2}{W},Instant
 Obliterate,2000-10-02,R,8,{6}{R}{R},Sorcery
 Obliterating Bolt,2022-11-18,R,2,{1}{R},Sorcery
@@ -20584,6 +20809,7 @@ Obsidian Charmaw,2021-06-18,R,5,{3}{R}{R},Creature
 Obsidian Fireheart,2009-10-02,R,4,{1}{R}{R}{R},Creature
 Obsidian Giant,1998-06-24,R,5,{4}{R},Creature
 Obsidian Obelisk,2022-09-09,,2,{2},Artifact
+Obsidian Order Operative,2026-11-13,B,4,{3}{B},Creature
 Obstinate Baloth,2010-07-16,G,4,{2}{G}{G},Creature
 Obstinate Familiar,2001-10-01,R,1,{R},Creature
 Obstinate Gargoyle,2024-06-14,BW,3,{1}{W}{B},Artifact;Creature
@@ -20689,6 +20915,7 @@ Okina Nightwatch,2005-06-03,G,5,{4}{G},Creature
 Okk,1998-10-12,R,2,{1}{R},Creature
 Oko's Accomplices,2019-10-04,U,3,{2}{U},Creature
 Oko's Hospitality,2019-10-04,GU,5,{3}{G}{U},Instant
+"Oko, Lord of the Fae",2026-10-13,W,3,{1}{W}{W},Planeswalker
 "Oko, Lorwyn Liege // Oko, Shadowmoor Scion",2026-01-23,GU,3,{2}{U},Planeswalker
 "Oko, Thief of Crowns",2019-10-04,GU,3,{1}{G}{U},Planeswalker
 "Oko, the Ringleader",2024-04-19,GU,4,{2}{G}{U},Planeswalker
@@ -20696,7 +20923,7 @@ Oko's Hospitality,2019-10-04,GU,5,{3}{G}{U},Instant
 "Okoye, Dora Milaje Leader",2026-06-26,W,4,{3}{W},Creature
 "Okoye, Mighty and Adored",2026-06-26,GW,4,{2}{G}{W},Creature
 Ol' Buzzbark,2017-12-08,GR,2,{X}{R}{G},Creature
-"Olag and Miau, New Friends",2026-11-09,BGW,3,{W}{B}{G},Creature
+"Olag and Miau, New Friends",2026-10-19,BGW,3,{W}{B}{G},Creature
 Old Fat Spider,2026-08-14,G,6,{4}{G}{G},Creature
 Old Fat Spider Can't See Me,2026-08-14,U,3,{2}{U},Enchantment
 Old Flitterfang,2023-09-08,B,5,{4}{B},Creature
@@ -20716,7 +20943,7 @@ Old-Fashioned Vampire,2017-12-08,B,5,{3}{B}{B},Creature
 Old-Growth Dryads,2017-09-29,G,1,{G},Creature
 Old-Growth Educator,2026-04-24,BG,4,{2}{B}{G},Creature
 Old-Growth Troll,2021-02-05,G,3,{G}{G}{G},Creature
-Olinda the Oblivious,2026-11-09,B,4,{3}{B},Creature
+Olinda the Oblivious,2026-10-19,B,4,{3}{B},Creature
 Oliphaunt,2023-06-23,R,6,{5}{R},Creature
 Olivia Voldaren,2011-09-30,BR,4,{2}{B}{R},Creature
 Olivia's Attendants,2021-11-19,R,6,{4}{R}{R},Creature
@@ -20781,6 +21008,7 @@ On Serra's Wings,2018-04-27,W,4,{3}{W},Enchantment
 On Thin Ice,2019-06-14,W,1,{W},Enchantment
 On Wings of Gold,2025-02-14,W,4,{3}{W},Enchantment
 On the Job,2024-02-09,W,4,{2}{W}{W},Instant
+On the Shoulders of Giants,2026-11-13,U,3,{2}{U},Enchantment
 On the Trail,2024-02-09,G,2,{1}{G},Enchantment
 Onakke Catacomb,2012-06-01,,0,,Plane
 Onakke Javelineer,2023-04-21,R,5,{4}{R},Creature
@@ -20811,6 +21039,7 @@ One with the Kami,2022-02-18,G,4,{3}{G},Enchantment
 One with the Machine,2018-07-13,U,4,{3}{U},Sorcery
 One with the Multiverse,2022-11-18,U,8,{6}{U}{U},Enchantment
 One with the Stars,2020-01-24,U,4,{3}{U},Enchantment
+"One, Borg Evolved",2026-11-13,BUW,7,{4}{W}{U}{B},Artifact;Creature
 One-Clown Band,2022-10-07,R,2,{1}{R},Artifact;Creature
 One-Eyed Scarecrow,2011-09-30,,3,{3},Artifact;Creature
 Oneirophage,2019-06-14,U,4,{3}{U},Creature
@@ -20879,6 +21108,7 @@ Oppressive Will,2005-06-03,U,3,{2}{U},Instant
 Opt,2000-10-02,U,1,{U},Instant
 Optical Optimizer,2017-12-08,,0,,Artifact
 Optimistic Scavenger,2024-09-27,W,1,{W},Creature
+Optimization Annex,2026-11-13,U,2,{1}{U},Artifact;Creature
 "Optimus Prime, Hero // Optimus Prime, Autobot Leader",2022-11-18,RUW,6,{3}{U}{R}{W},Artifact;Creature
 "Optimus Prime, Inspiring Leader",2019-08-01,RW,5,{3}{R}{W},Artifact;Creature
 Opulent Clomper,2026-02-03,G,2,{1}{G},Creature
@@ -20890,7 +21120,7 @@ Oracle of Dust,2015-10-02,U,5,{4}{U},Creature
 Oracle of Mul Daya,2009-10-02,G,4,{3}{G},Creature
 Oracle of Nectars,2008-05-02,GW,3,{2}{G/W},Creature
 Oracle of Tragedy,2023-04-21,U,2,{1}{U},Creature
-Oracle of the Alpha,2026-11-09,U,3,{2}{U},Creature
+Oracle of the Alpha,2026-10-19,U,3,{2}{U},Creature
 Oracle's Attendants,2000-02-14,W,4,{3}{W},Creature
 Oracle's Insight,2014-02-07,U,4,{3}{U},Enchantment
 Oracle's Restoration,2026-04-24,G,1,{G},Sorcery
@@ -21007,6 +21237,7 @@ Orim's Prayer,1997-10-14,W,3,{1}{W}{W},Enchantment
 Orim's Thunder,2001-06-04,RW,3,{2}{W},Instant
 Orim's Touch,2000-10-02,W,1,{W},Instant
 "Orim, Samite Healer",1997-10-14,W,3,{1}{W}{W},Creature
+Orion,2026-11-13,GR,0,,Land
 Oriq Loremage,2021-04-23,B,4,{2}{B}{B},Creature
 "Oriss, Samite Guardian",2007-05-04,W,3,{1}{W}{W},Creature
 "Ormacar, Relic Wraith",2025-08-24,BU,3,{1}{U}{B},Creature
@@ -21129,9 +21360,10 @@ Overburden,2000-06-05,U,2,{1}{U},Enchantment
 Overcharged Amalgam,2021-11-19,U,4,{2}{U}{U},Creature
 Overclocked Electromancer,2024-06-14,R,3,{2}{R},Creature
 Overcome,2017-07-14,G,5,{3}{G}{G},Sorcery
-Overcooked,2026-11-09,R,3,{2}{R},Enchantment
+Overcooked,2026-10-19,R,3,{2}{R},Enchantment
 Overeager Apprentice,2001-10-01,B,3,{2}{B},Creature
 Overencumbered,2024-03-08,W,2,{1}{W},Enchantment
+Overflow Submatrix,2026-11-13,B,3,{2}{B},Artifact;Creature
 Overflowing Basin,2024-03-08,GU,0,,Land
 Overflowing Insight,2017-09-29,U,7,{4}{U}{U}{U},Sorcery
 Overgrown Arch,2021-04-23,G,2,{1}{G},Creature
@@ -21195,6 +21427,7 @@ Owlbear Shepherd,2022-06-10,G,3,{2}{G},Creature
 Owlin Historian,2026-04-24,W,3,{2}{W},Creature
 Owlin Shieldmage,2021-04-23,BW,5,{3}{W}{B},Creature
 Owlin Spiralmancer,2026-04-24,U,4,{3}{U},Creature
+Own the Day,2026-11-13,R,6,{4}{R}{R},Sorcery
 Ox Drover,2023-09-08,W,4,{3}{W},Creature
 Ox of Agonas,2020-01-24,R,5,{3}{R}{R},Creature
 Oxidda Daredevil,2010-10-01,R,2,{1}{R},Creature
@@ -21228,6 +21461,7 @@ Pact of the Titan,2007-05-04,R,0,{0},Instant
 Pactdoll Terror,2025-02-14,B,4,{3}{B},Artifact;Creature
 "Padeem, Consul of Innovation",2016-09-30,U,4,{3}{U},Creature
 "Page, Loose Leaf",2026-04-24,,2,{2},Artifact;Creature
+Pah-Wraith,2026-11-13,R,7,{5}{R}{R},Creature
 Pain // Suffering,2000-10-02,BR,5,{B},Sorcery
 Pain 101,2026-03-06,B,2,{1}{B},Instant
 Pain Distributor,2023-04-21,R,3,{2}{R},Creature
@@ -21321,6 +21555,7 @@ Paradise Plume,2006-10-06,,4,{4},Artifact
 Paradox Engine,2017-01-20,,5,{5},Artifact
 Paradox Gardens,2026-04-24,GU,0,,Land
 Paradox Haze,2006-10-06,U,3,{2}{U},Enchantment
+Paradox Kraken,2026-10-13,U,6,{4}{U}{U},Creature
 Paradox Shaper // Omit Variables,2026-10-02,BU,2,{1}{U/B},Creature
 Paradox Surveyor,2026-04-24,GU,3,{G}{G/U}{U},Creature
 Paradox Zone,2021-04-23,G,5,{4}{G},Enchantment
@@ -21458,10 +21693,12 @@ Patron of the Orochi,2005-02-04,G,8,{6}{G}{G},Creature
 Patron of the Valiant,2015-07-17,W,5,{3}{W}{W},Creature
 Patron of the Vein,2017-08-25,B,6,{4}{B}{B},Creature
 Patron of the Wild,2003-02-03,G,1,{G},Creature
+Pattern Buffer Preservation,2026-11-13,B,2,{1}{B},Sorcery
 Pattern Matcher,2019-07-12,,4,{4},Artifact;Creature
 Pattern of Rebirth,1999-06-07,G,4,{3}{G},Enchantment
 Paupers' Cage,1996-10-08,,3,{3},Artifact
 Pause for Reflection,2018-10-05,G,3,{2}{G},Instant
+"Pavel Chekov, First Posting",2026-11-13,GU,4,{2}{G}{U},Creature
 Pavel Maliki,1994-06-01,BR,6,{4}{B}{R},Creature
 Pawn of Ulamog,2010-04-23,B,3,{1}{B}{B},Creature
 Pawpatch Formation,2024-08-02,G,2,{1}{G},Instant
@@ -21471,6 +21708,7 @@ Pay Tribute to Me,2017-06-16,,0,,Scheme
 Peace Strider,2011-02-04,,4,{4},Artifact;Creature
 Peace Talks,1997-02-03,W,2,{1}{W},Sorcery
 Peace and Quiet,1999-02-15,W,2,{1}{W},Instant
+Peace in Our Time,2026-11-13,W,4,{3}{W},Enchantment
 Peace of Mind,1998-06-15,W,2,{1}{W},Enchantment
 Peacekeeper,1997-06-09,W,3,{2}{W},Creature
 Peacekeeper Avatar,2003-01-01,,0,,Vanguard
@@ -21478,7 +21716,7 @@ Peacewalker Colossus,2017-01-20,W,3,{3},Artifact
 Peacewalker Colossus // Peacewalker Colossus,2017-01-20,W,3,{3},Artifact
 Peach Garden Oath,1999-05-01,W,1,{W},Sorcery
 Peak Eruption,2013-09-27,R,3,{2}{R},Sorcery
-Pearl Collector,2026-11-09,BW,3,{2}{B},Creature
+Pearl Collector,2026-10-19,BW,3,{2}{B},Creature
 Pearl Dragon,1996-10-08,W,6,{4}{W}{W},Creature
 Pearl Lake Ancient,2014-09-26,U,7,{5}{U}{U},Creature
 Pearl Lake Warden // Nesting Instinct,2025-04-29,GU,4,{3}{U},Creature
@@ -21518,6 +21756,7 @@ Pelargir Survivor,2023-06-23,U,2,{1}{U},Creature
 Pelt Collector,2018-10-05,G,1,{G},Creature
 Pemmin's Aura,2003-05-26,U,3,{1}{U}{U},Enchantment
 Penance,1998-06-15,W,3,{2}{W},Enchantment
+Penance Stare,2027-04-09,W,1,{W},Instant
 Pendant of Prosperity,2019-08-23,,3,{3},Artifact
 Pendelhaven,1994-06-01,G,0,,Land
 Pendelhaven Elder,2006-10-06,G,2,{1}{G},Creature
@@ -21556,7 +21795,7 @@ Perennial Gravewarden,2026-02-03,BG,2,{B}{G},Creature
 Perfect Intimidation,2026-01-23,B,4,{3}{B},Sorcery
 Perfected Theory,2026-10-02,U,1,{U},Instant
 Perforating Artist,2024-11-15,BR,3,{1}{B}{R},Creature
-Perforator Crocodile,2026-11-09,B,6,{3}{B}{B}{B},Creature
+Perforator Crocodile,2026-10-19,B,6,{3}{B}{B}{B},Creature
 Perhaps You've Met My Cohort,2222-11-11,,0,,Scheme
 Peri Brown,2023-10-13,W,4,{3}{W},Creature
 Perigee Beckoner,2025-08-01,B,5,{4}{B},Creature
@@ -21622,6 +21861,7 @@ Pestilent Wolf,2021-09-24,G,2,{1}{G},Creature
 Pests of Honor,2023-09-08,W,3,{2}{W},Creature
 Pet Avengers,2026-06-26,G,4,{3}{G},Creature
 Pet Project,2017-12-08,,0,,Artifact
+Pet Sehlat,2026-11-13,W,3,{2}{W},Creature
 Petalmane Baku,2005-02-04,G,2,{1}{G},Creature
 Petals of Insight,2004-10-01,U,5,{4}{U},Sorcery
 Peter Parker // Amazing Spider-Man,2025-09-23,GUW,2,{1}{W},Creature
@@ -21703,6 +21943,7 @@ Pheres-Band Warchief,2014-05-02,G,4,{3}{G},Creature
 Phial of Galadriel,2023-06-23,,3,{3},Artifact
 "Phila, Unsealed",2023-02-15,BGRUW,4,{4},Artifact;Creature
 "Phlage, Titan of Fire's Fury",2024-06-14,RW,3,{1}{R}{W},Creature
+"Phlox, Unorthodox Doctor",2026-11-13,GW,4,{2}{G}{W},Creature
 Phobian Phantasm,2006-07-21,B,3,{1}{B}{B},Creature
 "Phoebe, Head of S.N.E.A.K.",2017-12-08,BU,3,{1}{U}{B},Creature
 Phoenix Chick,2022-09-09,R,1,{R},Creature
@@ -21717,6 +21958,7 @@ Photo Op,2022-10-07,B,1,{B},Sorcery
 Photon Blast Barrage,2026-06-26,R,2,{X}{R}{R},Sorcery
 "Photon, Lady of Light",2026-06-26,W,4,{3}{W},Creature
 "Photon, Mighty Marvel",2026-06-26,R,4,{3}{R},Creature
+Photosynthetic Physician,2026-11-13,G,5,{4}{G},Creature
 Phthisis,2006-10-06,B,7,{3}{B}{B}{B}{B},Sorcery
 Phylactery Lich,2010-07-16,B,3,{B}{B}{B},Creature
 "Phylath, World Sculptor",2020-09-25,GR,6,{4}{R}{G},Creature
@@ -22011,8 +22253,10 @@ Planeswalker's Mirth,2001-02-05,W,3,{2}{W},Enchantment
 Planeswalker's Mischief,2001-02-05,U,3,{2}{U},Enchantment
 Planeswalker's Scorn,2001-02-05,B,3,{2}{B},Enchantment
 Planeswalkerificate,2024-08-02,R,4,{2}{R}{R},Enchantment
+Planet Killer,2026-11-13,,8,{8},Artifact;Creature
 Planetarium of Wan Shi Tong,2025-11-21,,6,{6},Artifact
 Planetary Annihilation,2025-08-01,R,5,{3}{R}{R},Sorcery
+Planetary Bombardment,2026-11-13,R,1,{R},Sorcery
 Planetary Patrol,2026-11-13,R,2,{1}{R},Creature
 Planewide Celebration,2019-05-03,G,7,{5}{G}{G},Sorcery
 Planewide Disaster,2023-04-21,,0,,Phenomenon
@@ -22178,6 +22422,7 @@ Possibility Technician,2025-08-01,R,3,{2}{R},Creature
 Postmortem Lunge,2011-05-13,B,1,{X}{B/P},Sorcery
 Postmortem Professor,2026-04-24,B,2,{1}{B},Creature
 Potatoes,2023-02-15,,0,{0},Artifact
+Potential Horizon,2026-10-13,,0,,Land
 Pothole Mole,2025-02-14,G,3,{2}{G},Creature
 Potion of Healing,2021-07-23,W,2,{1}{W},Artifact
 Potioner's Trove,2026-04-24,,3,{3},Artifact
@@ -22367,6 +22612,7 @@ Primalcrux,2008-07-25,G,6,{G}{G}{G}{G}{G}{G},Creature
 Primaris Chaplain,2022-10-07,BW,4,{2}{W}{B},Creature
 Primaris Eliminator,2022-10-07,B,5,{4}{B},Creature
 Primary Research,2026-04-24,W,5,{4}{W},Enchantment
+Primary Unimatrix Adjunct,2026-11-13,W,4,{3}{W},Artifact;Creature
 Prime Minister's Cabinet Room,2023-10-13,,0,,Plane
 Prime Speaker Vannifar,2019-01-25,GU,4,{2}{G}{U},Creature
 Prime Speaker Zegana,2013-02-01,GU,6,{2}{G}{G}{U}{U},Creature
@@ -22514,6 +22760,7 @@ Prophesied End,2026-10-02,W,2,{1}{W},Instant
 Prophet of Distortion,2016-01-22,U,1,{U},Creature
 Prophet of Kruphix,2013-09-27,GU,5,{3}{G}{U},Creature
 Prophet of the Peak,2019-10-04,,6,{6},Artifact;Creature
+Prophet of the Planeswalker,2026-10-13,W,2,{1}{W},Creature
 Prophet of the Scarab,2025-02-14,U,5,{4}{U},Creature
 Prophetic Bolt,2001-06-04,RU,5,{3}{U}{R},Instant
 Prophetic Flamespeaker,2014-05-02,R,3,{1}{R}{R},Creature
@@ -22684,6 +22931,7 @@ Puppet's Verdict,1999-10-04,R,3,{1}{R}{R},Instant
 Puppeteer,2001-10-01,U,3,{2}{U},Creature
 Puppeteer Clique,2008-05-02,B,5,{3}{B}{B},Creature
 Pure // Simple,2006-05-05,GRW,6,{1}{R}{G},Sorcery
+Pure Energy,2026-11-13,W,2,{1}{W},Sorcery
 Pure Intentions,2005-06-03,W,1,{W},Instant
 Pure Reflection,2000-10-02,W,3,{2}{W},Enchantment
 Purelace,1993-08-05,W,1,{W},Instant
@@ -22791,6 +23039,9 @@ Pyrrhic Revival,2008-07-25,BW,6,{3}{W/B}{W/B}{W/B},Sorcery
 Pyrrhic Strike,2026-01-23,W,3,{2}{W},Instant
 Python,1997-02-03,B,3,{1}{B}{B},Creature
 Pyxis of Pandemonium,2013-09-27,,1,{1},Artifact
+Q Continuum,2026-11-13,G,0,,Land
+"Q, Stacking the Deck",2026-11-13,R,4,{2}{R}{R},Creature
+"Q, Your Illustrious Host",2026-11-13,BGRUW,5,{W}{U}{B}{R}{G},Creature
 Qal Sisma Behemoth,2015-03-27,R,3,{2}{R},Creature
 "Qala, Ajani's Pridemate",2024-11-15,W,4,{3}{W},Creature
 Qarsi Deceiver,2015-03-27,U,2,{1}{U},Creature
@@ -22802,6 +23053,8 @@ Qasali Pridemage,2009-04-30,GW,2,{G}{W},Creature
 Qasali Slingers,2017-08-25,G,5,{4}{G},Creature
 Qilin's Blessing,2016-11-16,W,1,{W},Instant
 Qiqirn Merchant,2025-06-13,U,3,{2}{U},Creature
+Qo'noS,2026-11-13,BR,0,,Land
+Qo'noS Quartermaster,2026-11-13,R,2,{1}{R},Creature
 Quag Feast,2025-02-14,B,2,{1}{B},Sorcery
 Quag Sickness,2010-07-16,B,3,{2}{B},Enchantment
 Quag Vampires,2010-02-05,B,1,{B},Creature
@@ -22826,6 +23079,8 @@ Quantum Misalignment,2023-10-13,U,5,{4}{U},Sorcery
 Quantum Reduction,2026-06-26,U,2,{1}{U},Enchantment
 Quantum Riddler,2025-08-01,U,5,{3}{U}{U},Creature
 Quarantine Field,2015-10-02,W,2,{X}{X}{W}{W},Enchantment
+Quark's Bar,2026-11-13,R,0,,Land
+"Quark, Humble Proprietor",2026-11-13,R,3,{2}{R},Creature
 Quarrel,2026-08-14,G,2,{1}{G},Instant
 Quarrel's End,2023-06-23,R,3,{2}{R},Sorcery
 Quarry Beetle,2017-07-14,G,5,{4}{G},Creature
@@ -22845,6 +23100,7 @@ Queen's Agent,2017-09-29,B,6,{5}{B},Creature
 Queen's Bay Paladin,2023-11-17,B,5,{3}{B}{B},Creature
 Queen's Bay Soldier,2017-09-29,B,2,{1}{B},Creature
 Queen's Commission,2017-09-29,W,3,{2}{W},Sorcery
+Queen's Diamond,2026-11-13,,4,{4},Artifact
 Quench,2019-01-25,U,2,{1}{U},Instant
 Quenchable Fire,2009-02-06,RU,4,{3}{R},Sorcery
 Quest Compleated Beast,2023-02-15,B,4,{2}{B}{B},Creature
@@ -22918,6 +23174,7 @@ Quillspike,2008-07-25,BG,3,{2}{B/G},Creature
 Quinjet Technician,2026-06-26,R,2,{1}{R},Creature
 Quintessential Katana,2026-03-06,W,1,{W},Artifact
 Quintorius Kand,2023-11-17,RW,5,{3}{R}{W},Planeswalker
+"Quintorius, Fate Splitter",2026-10-13,UW,5,{3}{W}{U},Planeswalker
 "Quintorius, Field Historian",2021-04-23,RW,5,{3}{R}{W},Creature
 "Quintorius, History Chaser",2026-04-24,RW,4,{2}{R}{W},Planeswalker
 "Quintorius, Loremaster",2023-04-21,RW,5,{3}{R}{W},Creature
@@ -23346,6 +23603,7 @@ Ravenous Baboons,1998-06-15,R,4,{3}{R},Creature
 Ravenous Baloth,2002-10-07,G,4,{2}{G}{G},Creature
 Ravenous Bloodseeker,2016-04-08,R,2,{1}{R},Creature
 Ravenous Chupacabra,2018-01-19,B,4,{2}{B}{B},Creature
+Ravenous Cosmozoan,2026-11-13,R,6,{5}{R},Creature
 Ravenous Daggertooth,2017-09-29,G,3,{2}{G},Creature
 Ravenous Demon // Archdemon of Greed,2012-02-03,B,5,{3}{B}{B},Creature
 Ravenous Giant,2019-06-14,R,4,{2}{R}{R},Creature
@@ -23548,6 +23806,7 @@ Reclaim the Wastes,2020-09-25,G,1,{G},Sorcery
 Reclaiming Vines,2015-10-02,G,4,{2}{G}{G},Sorcery
 Reclamation,1995-06-03,GW,4,{2}{G}{W},Enchantment
 Reclamation Sage,2014-07-18,G,3,{2}{G},Creature
+Reclamation Specialist,2026-11-13,B,3,{2}{B},Artifact;Creature
 Reclusive Artificer,2015-07-17,RU,4,{2}{U}{R},Creature
 Reclusive Taxidermist,2021-11-19,G,2,{1}{G},Creature
 Reclusive Wight,1998-10-12,B,4,{3}{B},Creature
@@ -23557,6 +23816,7 @@ Recommission,2022-11-18,W,2,{1}{W},Sorcery
 Recon Craft Theta,2024-03-08,,4,{4},Artifact
 Reconnaissance,1998-06-15,W,1,{W},Enchantment
 Reconnaissance Mission,2020-04-24,U,4,{2}{U}{U},Enchantment
+Reconnaissance Partition,2026-11-13,,4,{4},Artifact;Creature
 Reconstruct History,2021-04-23,RW,4,{2}{R}{W},Sorcery
 Reconstructed Thopter,2022-11-18,,3,{3},Artifact;Creature
 Reconstruction,1994-03-04,U,1,{U},Sorcery
@@ -23576,6 +23836,7 @@ Recurring Nightmare,1998-06-15,B,3,{2}{B},Enchantment
 Recursive Recruitment,2026-10-02,BU,4,{2}{U}{B},Sorcery
 Recycla-bird,2019-11-07,U,1,{U},Creature
 Recycle,1997-10-14,G,6,{4}{G}{G},Enchantment
+Red Alert!,2026-11-13,R,3,{2}{R},Instant
 Red Cliffs Armada,1999-05-01,U,5,{4}{U},Creature
 "Red Death, Shipwrecker",2024-03-08,RU,2,{U}{R},Creature
 Red Dragon,2021-07-23,R,6,{4}{R}{R},Creature
@@ -23653,6 +23914,7 @@ Refuse // Cooperate,2017-07-14,RU,7,{3}{R},Instant
 Refuse to Yield,2022-04-29,W,2,{1}{W},Instant
 Refute,2024-11-15,U,3,{1}{U}{U},Instant
 Refute Destiny,2026-10-02,W,2,{1}{W},Sorcery
+"Reg Barclay, Fidgety Fantasist",2026-11-13,RU,4,{2}{U}{R},Creature
 Regal Behemoth,2016-08-26,G,6,{4}{G}{G},Creature
 Regal Bloodlord,2018-07-13,BW,5,{3}{W}{B},Creature
 Regal Bunnicorn,2023-09-08,W,2,{1}{W},Creature
@@ -23710,6 +23972,7 @@ Release to Memory,2022-02-18,W,4,{3}{W},Instant
 Release to the Wind,2018-01-19,U,3,{2}{U},Instant
 Relentless Advance,2019-05-03,U,4,{3}{U},Sorcery
 Relentless Assault,1997-02-03,R,4,{2}{R}{R},Sorcery
+Relentless Assault // Relentless Assault,1997-02-03,R,4,{2}{R}{R},Sorcery
 Relentless Dead,2016-04-08,B,2,{B}{B},Creature
 Relentless Drednok,2026-11-13,B,1,{B},Artifact;Creature
 Relentless Hunter,2016-01-22,GR,3,{1}{R}{G},Creature
@@ -23753,6 +24016,7 @@ Remember the Fallen,2011-05-13,W,3,{2}{W},Sorcery
 Remembrance,1998-10-12,W,4,{3}{W},Enchantment
 Reminisce,2002-10-07,U,3,{2}{U},Sorcery
 Remnant Elemental,2025-08-01,R,2,{1}{R},Creature
+Remnants of Beleren,2026-10-13,U,2,{1}{U},Artifact
 Remodel,2004-11-19,G,3,{2}{G},Instant
 Remorseful Cleric,2018-07-13,W,2,{1}{W},Creature
 Remorseless Punishment,2016-01-22,B,5,{3}{B}{B},Sorcery
@@ -23822,6 +24086,7 @@ Replicating Ring,2021-02-05,,3,{3},Artifact
 Replicating Terror,2024-10-15,B,2,{1}{B},Instant
 Replication Specialist,2022-02-18,U,5,{4}{U},Creature
 Replication Technique,2021-04-23,U,5,{4}{U},Sorcery
+Replicator,2026-11-13,,2,{2},Artifact
 Repopulate,1999-02-15,G,2,{1}{G},Instant
 Repository Skaab,2021-11-19,U,4,{3}{U},Creature
 Reprieve,2023-06-23,W,2,{1}{W},Instant
@@ -24140,6 +24405,7 @@ Riftsweeper,2007-05-04,G,2,{1}{G},Creature
 Riftwing Cloudskate,2006-10-06,U,5,{3}{U}{U},Creature
 Rig for War,2025-08-01,R,2,{1}{R},Instant
 Rigging Runner,2017-09-29,R,1,{R},Creature
+Right of Vengeance,2026-11-13,W,4,{3}{W},Instant
 Righteous Aura,1997-02-03,W,2,{1}{W},Enchantment
 Righteous Authority,2012-10-05,UW,5,{3}{W}{U},Enchantment
 Righteous Avengers,1994-06-01,W,5,{4}{W},Creature
@@ -24153,7 +24419,7 @@ Righteous Valkyrie,2021-02-05,W,3,{2}{W},Creature
 Righteous War,1997-02-03,BW,3,{1}{W}{B},Enchantment
 Righteousness,1993-08-05,W,1,{W},Instant
 "Rigo, Streetwise Mentor",2022-04-29,GUW,3,{G/W}{W}{W/U},Creature
-"Rikala, Homarid King",2026-11-09,GU,3,{1}{G}{U},Creature
+"Rikala, Homarid King",2026-10-19,GU,3,{1}{G}{U},Creature
 "Rikku, Resourceful Guardian",2025-06-13,U,3,{2}{U},Creature
 Riku and Riku,2023-02-15,GRU,4,{2}{R/G}{U},Creature
 Riku of Many Paths,2024-04-19,GRU,3,{G}{U}{R},Creature
@@ -24190,6 +24456,7 @@ Ring of Ma'rûf,1993-12-17,,5,{5},Artifact
 Ring of Renewal,1994-11-01,,5,{5},Artifact
 Ring of Three Wishes,2013-07-19,,5,{5},Artifact
 Ring of Thune,2012-07-13,,2,{2},Artifact
+Ring of Unity,2027-02-05,,7,{7},Artifact
 Ring of Valkas,2012-07-13,,2,{2},Artifact
 Ring of Xathrid,2012-07-13,,2,{2},Artifact
 Ring of the Lucii,2025-06-13,,4,{4},Artifact
@@ -24237,10 +24504,12 @@ Riptide Replicator,2002-10-07,,4,{X}{4},Artifact
 Riptide Shapeshifter,2002-10-07,U,5,{3}{U}{U},Creature
 Riptide Survivor,2003-05-26,U,3,{2}{U},Creature
 Riptide Turtle,2020-01-24,U,2,{1}{U},Creature
+Risa,2026-11-13,GW,0,,Land
 Rise // Fall,2006-05-05,BRU,4,{U}{B},Sorcery
 Rise Again,2020-07-03,B,5,{4}{B},Sorcery
 Rise and Shine,2021-06-18,U,2,{1}{U},Sorcery
 Rise from the Grave,2009-07-17,B,5,{4}{B},Sorcery
+Rise from the Nether,2027-04-09,R,7,{6}{R},Sorcery
 Rise from the Tides,2016-04-08,U,6,{5}{U},Sorcery
 Rise from the Wreck,2025-02-14,G,3,{2}{G},Sorcery
 Rise of Eagles,2014-05-02,U,6,{4}{U}{U},Sorcery
@@ -24279,6 +24548,7 @@ Risky Move,2002-10-07,R,6,{3}{R}{R}{R},Enchantment
 Risky Research,2025-09-23,B,3,{2}{B},Sorcery
 Risky Shortcut,2025-02-14,B,3,{2}{B},Sorcery
 "Risona, Asari Commander",2022-02-18,RW,3,{1}{R}{W},Creature
+Rite of Ascension,2026-11-13,RW,4,{2}{R}{W},Enchantment
 Rite of Belzenlok,2018-04-27,B,4,{2}{B}{B},Enchantment
 Rite of Consumption,2008-05-02,B,2,{1}{B},Sorcery
 Rite of Flame,2006-07-21,R,1,{R},Sorcery
@@ -24359,6 +24629,7 @@ Riveting Rigger,2017-12-08,W,3,{2}{W},Artifact;Creature
 Rix Maadi Guildmage,2012-10-05,BR,2,{B}{R},Creature
 Rix Maadi Reveler,2019-01-25,BR,2,{1}{R},Creature
 "Rix Maadi, Dungeon Palace",2006-05-05,BR,0,,Land
+"Ro Laren, Double Agent",2026-11-13,R,3,{2}{R},Creature
 Road // Ruin,2021-06-18,GR,6,{2}{G},Instant
 Road Rage,2025-02-14,R,1,{R},Instant
 Road of Return,2019-08-23,G,2,{G}{G},Sorcery
@@ -24466,6 +24737,7 @@ Roiling Terrain,2010-02-05,R,4,{2}{R}{R},Sorcery
 Roiling Vortex,2020-09-25,R,2,{1}{R},Enchantment
 Roiling Waters,2016-01-22,U,7,{5}{U}{U},Sorcery
 Roilmage's Trick,2015-10-02,U,4,{3}{U},Instant
+"Rok-Tahk, Budding Scientist",2026-11-13,G,6,{4}{G}{G},Creature
 Roku's Mastery,2025-11-21,R,2,{X}{R}{R},Instant
 Role Reversal,2019-05-03,RU,3,{U}{U}{R},Sorcery
 Roll-Roll-Roll-Roll,2026-08-14,U,3,{2}{U},Enchantment
@@ -24477,8 +24749,11 @@ Rolling Spoil,2005-10-07,BG,4,{2}{G}{G},Sorcery
 Rolling Stones,1998-03-02,W,2,{1}{W},Enchantment
 Rolling Temblor,2011-09-30,R,3,{2}{R},Sorcery
 Rolling Thunder,1997-10-14,R,2,{X}{R}{R},Sorcery
+"Rom and Leeta, Unlikely Pair",2026-11-13,R,4,{3}{R},Creature
 Romana II,2023-10-13,W,4,{3}{W},Creature
 Romantic Rendezvous,2025-09-23,R,2,{1}{R},Sorcery
+Romulan Bird-of-Prey,2026-11-13,U,2,{1}{U},Artifact
+Romulus,2026-11-13,BU,0,,Land
 Rona's Vortex,2022-09-09,BU,1,{U},Instant
 "Rona, Disciple of Gix",2018-04-27,BU,3,{1}{U}{B},Creature
 "Rona, Herald of Invasion // Rona, Tolarian Obliterator",2023-04-21,BU,2,{1}{U},Creature
@@ -24518,6 +24793,7 @@ Rootbreaker Wurm,1997-10-14,G,7,{5}{G}{G},Creature
 Rootcast Apprenticeship,2024-08-02,G,4,{3}{G},Sorcery
 Rootcoil Creeper,2021-09-24,GU,2,{G}{U},Creature
 Rootgrapple,2007-10-12,G,5,{4}{G},Kindred;Instant
+"Rootha, Ardent Artisan // Next Iteration",2026-10-13,GR,2,{R}{G},Creature
 "Rootha, Mastering the Moment",2026-04-24,RU,4,{2}{U}{R},Creature
 "Rootha, Mercurial Artist",2021-04-23,RU,3,{1}{U}{R},Creature
 Rooting Kavu,2000-10-02,G,4,{2}{G}{G},Creature
@@ -24645,7 +24921,7 @@ Rubblebelt Rioters,2019-05-03,GR,3,{1}{R}{G},Creature
 Rubblebelt Runner,2019-01-25,GR,3,{1}{R}{G},Creature
 Rubblehulk,2013-02-01,GR,6,{4}{R}{G},Creature
 Rubinia Soulsinger,1994-06-01,GUW,5,{2}{G}{W}{U},Creature
-Ruby Collector,2026-11-09,RW,1,{W},Creature
+Ruby Collector,2026-10-19,RW,1,{W},Creature
 Ruby Leech,2000-10-02,R,2,{1}{R},Creature
 Ruby Medallion,1997-10-14,,2,{2},Artifact
 "Ruby, Daring Tracker",2023-09-08,GR,2,{R}{G},Creature
@@ -24684,6 +24960,7 @@ Rukh Egg,1993-12-17,R,4,{3}{R},Creature
 Rule of Law,2003-10-02,W,3,{2}{W},Enchantment
 Rule with an Even Hand,2024-08-02,,0,,Conspiracy
 Rules Lawyer,2017-12-08,W,5,{3}{W}{W},Artifact;Creature
+Rules of Acquisition,2026-11-13,U,5,{3}{U}{U},Sorcery
 "Rulik Mons, Warren Chief",2022-09-09,GR,4,{1}{R}{G}{G},Creature
 Rumble Arena,2025-11-21,,0,,Land
 Rumbleweed,2024-04-19,G,11,{10}{G},Creature
@@ -24804,6 +25081,7 @@ Rustspore Ram,2003-10-02,,4,{4},Artifact;Creature
 Rustvale Bridge,2021-06-18,RW,0,,Artifact;Land
 Rustvine Cultivator,2023-02-10,G,1,{G},Creature
 Rustwing Falcon,2018-07-13,W,1,{W},Creature
+"Rutherford, Upgraded Ensign",2026-11-13,W,3,{2}{W},Creature
 Ruthless Cullblade,2010-02-05,B,2,{1}{B},Creature
 Ruthless Deathfang,2015-03-27,BU,6,{4}{U}{B},Creature
 Ruthless Disposal,2016-07-22,B,5,{4}{B},Sorcery
@@ -24831,6 +25109,7 @@ S.H.I.E.L.D. Helicarrier,2026-06-26,,4,{4},Artifact
 S.H.I.E.L.D. Spy Kit,2026-06-26,W,1,{W},Artifact
 S.N.E.A.K. Dispatcher,2017-12-08,U,2,{1}{U},Creature
 S.N.O.T.,2004-11-19,G,1,{G},Creature
+S.S. Botany Bay,2026-11-13,,3,{3},Artifact
 SOLDIER Military Program,2025-06-13,W,3,{2}{W},Enchantment
 "SP//dr, Piloted by Peni",2025-09-23,UW,5,{3}{W}{U},Artifact;Creature
 "Saavik, Stoic Student",2026-11-13,W,5,{4}{W},Creature
@@ -24936,7 +25215,7 @@ Saheeli's Silverwing,2019-05-03,,4,{4},Artifact;Creature
 "Saheeli, Sublime Artificer",2019-05-03,RU,3,{1}{U/R}{U/R},Planeswalker
 "Saheeli, the Gifted",2018-08-10,RU,4,{2}{U}{R},Planeswalker
 "Saheeli, the Sun's Brilliance",2023-11-17,RU,2,{U}{R},Creature
-"Sahir, Visitor in Darkness",2026-11-09,B,3,{1}{B}{B},Creature
+"Sahir, Visitor in Darkness",2026-10-19,B,3,{1}{B}{B},Creature
 Sai of the Shinobi,2012-06-01,,1,{1},Artifact
 "Sai, Master Thopterist",2018-07-13,U,3,{2}{U},Creature
 Saiba Cryptomancer,2023-04-21,U,2,{1}{U},Creature
@@ -24963,6 +25242,7 @@ Sakura-Tribe Scout,2005-06-03,G,1,{G},Creature
 Sakura-Tribe Springcaller,2005-02-04,G,4,{3}{G},Creature
 "Sala, Deck Boss",2025-03-04,RU,3,{1}{U}{R},Creature
 "Salacinder and Soot, Rascals",2026-02-03,RU,4,{2}{U}{R},Creature
+"Salinae, the Ocean Mother",2027-02-05,U,8,{6}{U}{U},Creature
 Salivating Gremlins,2016-09-30,R,3,{2}{R},Creature
 "Sally Pride, Lioness Leader",2026-03-06,W,5,{3}{W}{W},Creature
 Sally Sparrow,2023-10-13,UW,4,{2}{W}{U},Creature
@@ -24985,6 +25265,7 @@ Salvage Scout,2010-10-01,W,1,{W},Creature
 Salvage Scuttler,2017-01-20,U,5,{4}{U},Creature
 Salvage Slasher,2009-02-06,B,2,{1}{B},Artifact;Creature
 Salvage Titan,2008-10-03,B,6,{4}{B}{B},Artifact;Creature
+Salvaged Imitations,2026-10-13,GR,2,{X}{R}{G},Sorcery
 Salvaged Manaworker,2022-09-09,,2,{2},Artifact;Creature
 Salvager of Ruin,2019-07-12,,3,{3},Artifact;Creature
 Salvager of Secrets,2018-07-13,U,5,{3}{U}{U},Creature
@@ -24992,6 +25273,7 @@ Salvaging Station,2004-06-04,,6,{6},Artifact
 Salvation Colossus,2024-06-14,W,8,{6}{W}{W},Artifact;Creature
 Salvation Engine,2025-02-14,W,5,{4}{W},Artifact
 Salvation Swan,2024-08-02,W,4,{3}{W},Creature
+"Sam Kirk, Xenoanthropologist",2026-11-13,U,4,{3}{U},Creature
 Sam's Desperate Rescue,2023-06-23,B,1,{B},Sorcery
 "Sam, Loyal Attendant",2023-06-23,GW,3,{1}{G}{W},Creature
 Sami's Curiosity,2025-08-01,G,1,{G},Sorcery
@@ -25124,7 +25406,7 @@ Sap Vitality,2021-12-09,B,2,{B}{B},Instant
 Sapling Nursery,2026-01-23,G,8,{6}{G}{G},Enchantment
 Sapling of Colfenor,2008-07-25,BG,5,{3}{B/G}{B/G},Creature
 Sapphire Charm,1996-10-08,U,1,{U},Instant
-Sapphire Collector,2026-11-09,RU,3,{2}{R},Creature
+Sapphire Collector,2026-10-19,RU,3,{2}{R},Creature
 Sapphire Dragon // Psionic Pulse,2022-06-10,U,7,{5}{U}{U},Creature
 Sapphire Drake,2013-02-01,U,6,{5}{U},Creature
 Sapphire Leech,2000-10-02,U,2,{1}{U},Creature
@@ -25149,8 +25431,10 @@ Sarah's Wings,2019-11-07,W,1,{W},Tribal;Instant
 Sarcatog,2001-10-01,BR,3,{1}{B}{R},Creature
 Sarcomancy,1997-10-14,B,1,{B},Enchantment
 Sarcomite Myr,2007-05-04,U,3,{2}{U},Artifact;Creature
+"Sarcophagus, Ship of the Dead",2026-11-13,R,3,{2}{R},Artifact
 Sardian Avenger,2022-11-18,R,2,{1}{R},Creature
 Sardian Cliffstomper,2022-11-18,R,2,{1}{R},Creature
+"Sarek, Federation Ambassador",2026-11-13,GUW,4,{1}{G}{W}{U},Creature
 Sarevok the Usurper,2022-07-07,B,4,{3}{B},Creature
 Sarevok's Tome,2022-06-10,,4,{4},Artifact
 "Sarevok, Deadly Usurper",2022-07-07,B,5,{3}{B}{B},Creature
@@ -25181,6 +25465,7 @@ Sarkhan's Whelp,2018-07-13,R,3,{2}{R},Creature
 "Sarkhan, the Dragonspeaker",2014-09-26,R,5,{3}{R}{R},Planeswalker
 "Sarpadian Empires, Vol. VII",2006-10-06,,3,{3},Artifact
 Sarpadian Simulacrum,2024-06-14,R,1,{R},Artifact;Creature
+"Saru, Unthreatened",2026-11-13,G,3,{2}{G},Creature
 Sarulf's Packmate,2021-02-05,G,4,{3}{G},Creature
 "Sarulf, Realm Eater",2021-02-05,BG,3,{1}{B}{G},Creature
 Saruli Caretaker,2019-01-25,G,1,{G},Creature
@@ -25191,7 +25476,7 @@ Saruman's Trickery,2023-06-23,U,3,{1}{U}{U},Instant
 "Saruman, the White Hand",2023-06-23,BRU,4,{1}{U}{B}{R},Creature
 "Saryth, the Viper's Fang",2021-09-24,G,4,{2}{G}{G},Creature
 "Sasaya, Orochi Ascendant // Sasaya's Essence",2005-06-03,G,3,{1}{G}{G},Creature
-"Sash and Waistcoat, Unmen",2026-11-09,U,2,{1}{U},Creature
+"Sash and Waistcoat, Unmen",2026-10-19,U,2,{1}{U},Creature
 Saskia the Unyielding,2016-11-11,BGRW,4,{B}{R}{G}{W},Creature
 Sassy Gremlin Blood,2022-10-07,,0,,Stickers
 Satoru Umezawa,2022-02-18,BU,3,{1}{U}{B},Creature
@@ -25264,6 +25549,7 @@ Savor,2024-08-02,B,2,{1}{B},Instant
 Savor the Moment,2008-05-02,U,3,{1}{U}{U},Sorcery
 "Savra, Queen of the Golgari",2005-10-07,BG,4,{2}{B}{G},Creature
 Savvy Hunter,2019-10-04,BG,3,{1}{B}{G},Creature
+Savvy Profiteer,2026-11-13,R,2,{1}{R},Creature
 Savvy Trader,2024-04-19,G,4,{3}{G},Creature
 Saw,2024-09-27,,2,{2},Artifact
 Saw It Coming,2021-02-05,U,3,{1}{U}{U},Instant
@@ -25445,6 +25731,8 @@ Scornful Egotist,2003-05-26,U,8,{7}{U},Creature
 Scorpion Sentinel,2025-06-13,U,2,{1}{U},Artifact;Creature
 Scorpion's Sting,2025-09-23,B,2,{1}{B},Instant
 "Scorpion, Seething Striker",2025-09-23,B,4,{3}{B},Creature
+"Scotty, Chief Engineer",2026-11-13,U,4,{3}{U},Creature
+"Scotty, Miracle Worker",2026-11-13,U,3,{1}{U}{U},Creature
 Scour,1999-06-07,W,4,{2}{W}{W},Instant
 Scour All Possibilities,2019-06-14,U,2,{1}{U},Sorcery
 Scour for Scrap,2025-08-01,U,4,{3}{U},Instant
@@ -25645,6 +25933,7 @@ Searing Flesh,2002-10-07,R,7,{6}{R},Sorcery
 Searing Light,2016-01-22,W,1,{W},Instant
 Searing Meditation,2005-10-07,RW,3,{1}{R}{W},Enchantment
 Searing Rays,2000-10-02,R,3,{2}{R},Sorcery
+Searing Soloist,2026-10-13,R,4,{2}{R}{R},Creature
 Searing Spear,2012-07-13,R,2,{1}{R},Instant
 Searing Spear Askari,1996-10-08,R,3,{2}{R},Creature
 Searing Touch,1997-10-14,R,1,{R},Instant
@@ -25771,6 +26060,7 @@ Seething Landscape,2024-06-14,BRU,0,,Land
 Seething Pathblazer,2008-02-01,R,3,{2}{R},Creature
 Seething Skitter-Priest,2023-02-28,BW,4,{2}{W}{B},Creature
 Seething Song,2003-10-02,R,3,{2}{R},Instant
+Seething Song // Seething Song,2003-10-02,R,3,{2}{R},Instant
 Sefris of the Hidden Ways,2021-07-23,BUW,3,{W}{U}{B},Creature
 Segmented Krotiq,2015-03-27,G,6,{5}{G},Creature
 Segmented Wurm,1997-10-14,GR,5,{3}{R}{G},Creature
@@ -25810,6 +26100,7 @@ Sejiri Shelter // Sejiri Glacier,2020-09-25,W,2,{1}{W},Instant
 Sejiri Steppe,2010-02-05,W,0,,Land
 "Sek'Kuar, Deathkeeper",2006-07-21,BGR,5,{2}{B}{R}{G},Creature
 "Sekki, Seasons' Guide",2005-06-03,G,8,{5}{G}{G}{G},Creature
+"Sela, Tal Shiar Paradox",2026-11-13,B,4,{3}{B},Creature
 Select for Inspection,2016-09-30,U,1,{U},Instant
 Selective Adaptation,2020-04-17,G,6,{4}{G}{G},Sorcery
 Selective Memory,2010-02-05,U,4,{3}{U},Sorcery
@@ -25817,7 +26108,7 @@ Selective Obliteration,2024-06-14,,5,{3}{C}{C},Sorcery
 Selective Snare,2018-10-05,U,1,{X}{U},Sorcery
 Selenia,1997-05-01,,0,,Vanguard
 "Selenia, Dark Angel",1997-10-14,BW,5,{3}{W}{B},Creature
-"Selenia, the Cursed Heart",2026-11-09,BW,6,{4}{W}{B},Creature
+"Selenia, the Cursed Heart",2026-10-19,BW,6,{4}{W}{B},Creature
 Selesnya Charm,2012-10-05,GW,2,{G}{W},Instant
 Selesnya Cluestone,2013-05-03,GW,3,{3},Artifact
 Selesnya Eulogist,2019-08-23,G,3,{2}{G},Creature
@@ -25839,6 +26130,7 @@ Selfcraft Mechan,2025-08-01,U,4,{3}{U},Artifact;Creature
 Selfie Preservation,2017-12-08,G,2,{1}{G},Sorcery
 Selfless Cathar,2011-09-30,W,1,{W},Creature
 Selfless Exorcist,2002-05-27,W,5,{3}{W}{W},Creature
+Selfless Germinator,2026-10-13,G,1,{G},Creature
 Selfless Glyphweaver // Deadly Vanity,2021-04-23,BW,3,{2}{W},Creature
 Selfless Police Captain,2025-09-23,W,2,{1}{W},Creature
 Selfless Safewright,2026-01-23,G,5,{3}{G}{G},Creature
@@ -25851,7 +26143,7 @@ Selhoff Occultist,2011-09-30,U,3,{2}{U},Creature
 Selkie Hedge-Mage,2008-07-25,GU,3,{2}{G/U},Creature
 Sell-Sword Brute,2005-10-07,R,2,{1}{R},Creature
 Seller of Songbirds,2012-10-05,W,3,{2}{W},Creature
-"Seluma, Light of Aysen",2026-11-09,W,5,{4}{W},Creature
+"Seluma, Light of Aysen",2026-10-19,W,5,{4}{W},Creature
 Selvala's Charge,2014-06-06,G,5,{4}{G},Sorcery
 Selvala's Enforcer,2014-06-06,G,4,{3}{G},Creature
 Selvala's Stampede,2016-08-26,G,6,{4}{G}{G},Sorcery
@@ -26022,6 +26314,8 @@ Settlement Blacksmith,2024-07-05,W,3,{2}{W},Creature
 "Setzer, Wandering Gambler",2025-06-13,BR,3,{1}{B}{R},Creature
 Seven Dwarves,2019-10-04,R,2,{1}{R},Creature
 Seven of Nine,2026-11-13,BU,4,{2}{U}{B},Artifact;Creature
+"Seven of Nine, Tertiary Adjunct",2026-11-13,U,3,{2}{U},Artifact;Creature
+"Seven of Nine, Unassimilated",2026-11-13,U,2,{1}{U},Artifact;Creature
 Seven-Tail Mentor,2022-02-18,W,4,{3}{W},Creature
 Seventh Stage of Magic Design,2023-02-15,GU,6,{4}{G}{U},Enchantment
 Sever Soul,1999-10-04,B,5,{3}{B}{B},Sorcery
@@ -26324,6 +26618,7 @@ Shimmer of Possibility,2019-01-25,U,2,{1}{U},Sorcery
 Shimmercreep,2026-01-23,B,5,{4}{B},Creature
 Shimmerdrift Vale,2021-02-05,,0,,Land
 Shimmering Barrier,1998-10-12,W,2,{1}{W},Creature
+Shimmering Citadel,2027-02-05,UW,0,,Land
 Shimmering Efreet,1997-02-03,U,3,{2}{U},Creature
 Shimmering Glasskite,2005-02-04,U,4,{3}{U},Creature
 Shimmering Grotto,2007-10-12,,0,,Land
@@ -26398,6 +26693,7 @@ Shoot Down,2022-11-18,G,4,{3}{G},Sorcery
 Shoot the Sheriff,2024-04-19,B,2,{1}{B},Instant
 Shopkeeper's Bane,2026-04-24,G,3,{2}{G},Creature
 Shore Keeper,2017-09-29,U,1,{U},Creature
+Shore Leave Planet,2026-11-13,U,0,,Land
 Shore Lurker,2026-01-23,W,4,{3}{W},Creature
 Shore Snapper,2008-10-03,BU,3,{2}{B},Creature
 Shore Up,2022-09-09,U,1,{U},Instant
@@ -26493,6 +26789,7 @@ Shuri's Fabricator,2026-06-26,,4,{4},Artifact
 Shuriken,2005-02-04,,1,{1},Artifact
 Shuttle Ace,2026-11-13,W,5,{4}{W},Creature
 Shuttle Crew,2026-11-13,W,3,{2}{W},Creature
+Shuttlecraft Galileo,2026-11-13,W,4,{3}{W},Artifact
 Shy Town,2024-02-24,,0,,Plane
 Shyft,1995-06-03,U,5,{4}{U},Creature
 "Siani, Eye of the Storm",2020-11-20,U,4,{3}{U},Creature
@@ -26506,6 +26803,7 @@ Sibsig's Artisan,2025-04-29,B,2,{1}{B},Creature
 Sibylline Soothsayer,2023-10-13,R,3,{2}{R},Creature
 Sicarian Infiltrator,2022-10-07,U,3,{2}{U},Artifact;Creature
 Sick and Tired,1999-02-15,B,3,{2}{B},Instant
+Sickbay,2026-11-13,,5,{5},Artifact
 Sickbay Orderly,2026-11-13,W,3,{2}{W},Creature
 Sicken,1998-10-12,B,1,{B},Enchantment
 Sickening Dreams,2002-02-04,B,2,{1}{B},Sorcery
@@ -26552,7 +26850,7 @@ Siegehorn Ceratops,2018-01-19,GW,2,{G}{W},Creature
 "Siegfried, Famed Swordsman",2025-06-13,B,4,{3}{B},Creature
 "Sierra, Nuka's Biggest Fan",2024-03-08,W,4,{3}{W},Creature
 Sif's Spearmaster,2026-06-26,R,3,{2}{R},Creature
-Sifa Grent,2026-11-09,BR,5,{3}{B}{R},Planeswalker
+Sifa Grent,2026-10-19,BR,5,{3}{B}{R},Planeswalker
 Sift,1998-03-02,U,4,{3}{U},Sorcery
 Sift Through Sands,2004-10-01,U,3,{1}{U}{U},Instant
 Sifter Wurm,2017-07-14,G,7,{5}{G}{G},Creature
@@ -26762,6 +27060,7 @@ Sink into Takenuma,2005-06-03,B,4,{3}{B},Sorcery
 Sinkhole,1993-08-05,B,2,{B}{B},Sorcery
 Sinkhole Surveyor,2025-04-11,B,2,{1}{B},Creature
 Sinking Feeling,2008-05-02,U,3,{2}{U},Enchantment
+Sins of the Father,2026-11-13,BR,5,{3}{B}{R},Enchantment
 Sins of the Past,2005-10-07,B,6,{4}{B}{B},Sorcery
 Sinstriker's Will,2006-02-03,W,4,{3}{W},Enchantment
 Sinuous Benthisaur,2023-11-17,U,6,{5}{U},Creature
@@ -27653,7 +27952,7 @@ Sower of Temptation,2007-10-12,U,4,{2}{U}{U},Creature
 Sowing Mycospawn,2024-06-14,G,4,{3}{G},Creature
 Sowing Salt,1999-06-07,R,4,{2}{R}{R},Sorcery
 Sozin's Comet,2025-11-21,R,5,{3}{R}{R},Sorcery
-Space Beleren,2022-10-07,UW,4,{2}{W}{U},Planeswalker
+Space Beleren,2020-09-26,UW,4,{2}{W}{U},Planeswalker
 Space Fungus Snickerdoodle,2022-10-07,,0,,Stickers
 Space Marine Devastator,2022-10-07,W,4,{3}{W},Creature
 Space Marine Scout,2022-10-07,W,3,{2}{W},Creature
@@ -27682,6 +27981,7 @@ Sparkcaster,2001-02-05,GR,4,{2}{R}{G},Creature
 Sparkhunter Masticore,2020-07-03,,3,{3},Artifact;Creature
 Sparkmage Apprentice,2005-10-07,R,2,{1}{R},Creature
 Sparkmage's Gambit,2016-01-22,R,2,{1}{R},Sorcery
+Sparks Ablaze,2026-10-13,R,1,{R},Instant
 Sparkshaper Visionary,2023-08-04,U,3,{2}{U},Creature
 Sparksmith,2002-10-07,R,2,{1}{R},Creature
 Sparkspitter,2007-05-04,R,3,{2}{R},Creature
@@ -27693,6 +27993,7 @@ Sparring Golem,2000-10-02,,3,{3},Artifact;Creature
 Sparring Mummy,2017-04-28,W,4,{3}{W},Creature
 Sparring Regimen,2021-04-23,W,3,{2}{W},Enchantment
 Spartan Veteran,2024-07-05,R,1,{R},Creature
+Spatial Anomaly,2026-11-13,R,0,,Land
 Spatial Binding,1996-10-08,BU,2,{U}{B},Enchantment
 Spatial Contortion,2016-01-22,,2,{1}{C},Instant
 Spatial Merging,2023-04-21,,0,,Phenomenon
@@ -27721,6 +28022,7 @@ Spear of the General,2014-05-02,,0,,Hero;Artifact
 Spearbreaker Behemoth,2008-10-03,G,7,{5}{G}{G},Creature
 Spearpoint Oread,2013-09-27,R,3,{2}{R},Enchantment;Creature
 Special Move,2026-03-06,R,3,{2}{R},Instant
+Species 8472,2026-11-13,G,6,{4}{G}{G},Creature
 Species Gorger,2013-05-03,GU,5,{3}{G}{U},Creature
 Species Specialist,2020-04-17,B,4,{2}{B}{B},Creature
 Specimen Collector,2021-06-18,U,5,{4}{U},Creature
@@ -28083,7 +28385,9 @@ Splitskin Doll,2024-09-27,W,2,{1}{W},Artifact;Creature
 Splitting Headache,2008-05-02,B,4,{3}{B},Sorcery
 Splitting Slime,2016-08-26,G,5,{3}{G}{G},Creature
 Splitting the Powerstone,2022-11-18,U,3,{2}{U},Sorcery
+"Spock, Always Your Friend",2026-11-13,RU,2,{U}{R},Creature
 "Spock, Logical Choice",2026-11-13,U,5,{3}{U}{U},Creature
+"Spock, Voice of Reason",2026-11-13,U,3,{2}{U},Creature
 Spoils of Adventure,2020-09-25,UW,6,{4}{W}{U},Instant
 Spoils of Blood,2014-11-07,B,1,{B},Instant
 Spoils of Evil,1995-06-03,B,3,{2}{B},Instant
@@ -28114,6 +28418,7 @@ Sporocyst,2022-10-07,G,1,{X}{X}{G},Creature
 Sporogenesis,1998-10-12,G,4,{3}{G},Enchantment
 Sporogenic Infection,2024-09-27,B,2,{1}{B},Enchantment
 Sporoloth Ancient,2007-05-04,G,5,{3}{G}{G},Creature
+"Spot, Felis catus",2026-11-13,W,3,{2}{W},Creature
 Spotcycle Scouter,2025-02-14,W,2,{1}{W},Artifact
 Spotlight Falcon,2024-03-05,W,4,{2}{W}{W},Artifact;Creature
 Spotted Griffin,1997-05-01,W,4,{3}{W},Creature
@@ -28219,6 +28524,7 @@ Stab,2024-11-15,B,1,{B},Instant
 Stab Wound,2012-10-05,B,3,{2}{B},Enchantment
 Stabbing Pain,2010-07-16,B,1,{B},Instant
 Stabilizer,2003-05-26,,2,{2},Artifact
+Stable Wormhole,2026-11-13,G,3,{2}{G},Enchantment
 Stack of Paperwork,2019-11-07,W,1,{W},Enchantment
 Stadium Headliner,2025-04-11,R,1,{R},Creature
 Stadium Tidalmage,2026-04-24,RU,4,{2}{U}{R},Creature
@@ -28311,7 +28617,11 @@ Starfield Shepherd,2025-08-01,W,5,{3}{W}{W},Creature
 Starfield Vocalist,2025-08-01,U,4,{3}{U},Creature
 Starfield of Nyx,2015-07-17,W,5,{4}{W},Enchantment
 Starfighter Pilot,2025-08-01,W,2,{1}{W},Creature
+Starfleet Academy,2026-11-13,,0,,Land
+Starfleet Communicator,2026-11-13,,3,{3},Artifact
 Starfleet Crew,2026-11-13,W,2,{1}{W},Creature
+Starfleet Security,2026-11-13,R,1,{R},Creature
+Starfleet Spanner Jockey,2026-11-13,U,2,{1}{U},Creature
 Starforged Sword,2024-08-02,,4,{4},Artifact
 Stargaze,2024-08-02,B,2,{X}{B}{B},Sorcery
 Stark Industries,2026-06-26,RU,0,,Land
@@ -28337,6 +28647,7 @@ Starry-Eyed Skyrider,2025-04-11,W,3,{2}{W},Creature
 Starscape Cleric,2024-08-02,B,2,{1}{B},Creature
 "Starscream, Power Hungry // Starscream, Seeker Leader",2022-11-18,B,4,{3}{B},Artifact;Creature
 Starseer Mentor,2024-08-02,BW,5,{3}{W}{B},Creature
+Starship Enterprise,2026-11-13,,5,{5},Artifact
 Starstorm,2002-10-07,R,2,{X}{R}{R},Instant
 Start // Finish,2017-04-28,BW,6,{2}{W},Instant
 Start // Fire,2019-11-07,RW,5,{2}{W},Instant
@@ -28629,6 +28940,7 @@ Stonybrook Schoolmaster,2008-02-01,W,3,{2}{W},Creature
 Stop Cold,2024-04-19,U,4,{3}{U},Enchantment
 Stop That,2004-11-19,B,1,{B},Instant
 Storage Matrix,1999-06-07,,3,{3},Artifact
+Storied Veteran,2026-11-13,B,1,{B},Creature
 Storm Caller,2020-07-03,R,3,{2}{R},Creature
 Storm Cauldron,1996-06-10,,5,{5},Artifact
 Storm Crow,1996-06-10,U,2,{1}{U},Creature
@@ -28733,6 +29045,7 @@ Strangling Soot,2006-10-06,BR,3,{2}{B},Instant
 Strangling Spores,2018-07-13,B,4,{3}{B},Instant
 Strata Scythe,2010-10-01,,3,{3},Artifact
 Stratadon,2001-02-05,,10,{10},Artifact;Creature
+Stratagem Emulator,2026-11-13,W,3,{2}{W},Artifact;Creature
 Strategic Betrayal,2025-04-11,B,2,{1}{B},Sorcery
 Strategic Intervention,2026-06-26,W,2,{1}{W},Enchantment
 Strategic Planning,1999-05-01,U,2,{1}{U},Sorcery
@@ -28744,6 +29057,7 @@ Stratus Walk,2014-02-07,U,2,{1}{U},Enchantment
 Straw Golem,1997-06-09,,1,{1},Artifact;Creature
 Straw Soldiers,1999-05-01,U,2,{1}{U},Creature
 "Strax, Sontaran Nurse",2023-10-13,GR,5,{3}{R}{G},Creature
+Stray from History,2026-11-13,B,3,{2}{B},Sorcery
 Streaking Oilgorger,2025-02-14,B,5,{4}{B},Creature
 Stream Hopper,2008-07-25,RU,1,{U/R},Creature
 Stream of Acid,1999-07-01,B,4,{2}{B}{B},Sorcery
@@ -28868,6 +29182,7 @@ Sturmgeist,2011-09-30,U,5,{3}{U}{U},Creature
 Stymied Hopes,2013-09-27,U,2,{1}{U},Instant
 Su-Chi,1994-03-04,,4,{4},Artifact;Creature
 Su-Chi Cave Guard,2022-11-18,,8,{8},Artifact;Creature
+Subcommander T'Pol,2026-11-13,U,3,{2}{U},Creature
 Subcontract,2017-12-08,B,1,{B},Sorcery
 Subdue,1994-06-01,G,1,{G},Instant
 Subgoyf,2024-08-02,U,2,{1}{U},Artifact;Creature
@@ -28879,6 +29194,7 @@ Sublime Epiphany,2020-07-03,U,6,{4}{U}{U},Instant
 Sublime Exhalation,2016-11-11,W,7,{6}{W},Sorcery
 Submerge,2000-02-14,U,5,{4}{U},Instant
 Submerged Boneyard,2016-01-22,BU,0,,Land
+Subspace Anomaly,2026-11-13,W,0,,Land
 Subterfuge,2026-01-23,U,5,{4}{U},Creature
 Subterranean Cavern,2026-06-26,BG,0,,Land
 Subterranean Hangar,1999-10-04,B,0,,Land
@@ -28946,6 +29262,8 @@ Sultai Runemark,2015-01-23,B,3,{2}{B},Enchantment
 Sultai Scavenger,2014-09-26,B,6,{5}{B},Creature
 Sultai Skullkeeper,2015-01-23,U,2,{1}{U},Creature
 Sultai Soothsayer,2014-09-26,BGU,5,{2}{B}{G}{U},Creature
+"Sulu, Heroic Helmsman",2026-11-13,W,2,{1}{W},Creature
+"Sulu, Space Swashbuckler",2026-11-13,W,2,{1}{W},Creature
 Sumala Rumblers,2024-02-23,GW,4,{2}{G/W}{G/W},Creature
 Sumala Sentry,2024-02-09,GW,2,{G}{W},Creature
 Sumala Woodshaper,2018-10-05,GW,4,{2}{G}{W},Creature
@@ -29130,6 +29448,7 @@ Supersize,2004-11-19,G,2,{1}{G},Instant
 Suplex,2025-06-13,R,2,{1}{R},Sorcery
 Supper for Spiders,2026-08-14,B,2,{1}{B},Instant
 Supplant Form,2015-01-23,U,6,{4}{U}{U},Instant
+Supplementation Node,2026-11-13,W,3,{2}{W},Artifact;Creature
 Supply // Demand,2006-05-05,GUW,5,{X}{G}{W},Sorcery
 Supply Caravan,2017-04-28,W,5,{4}{W},Creature
 Supply Drop,2022-11-18,,3,{3},Artifact
@@ -29234,6 +29553,8 @@ Susurian Voidborn,2025-08-01,B,3,{2}{B},Creature
 Suture Priest,2011-05-13,W,2,{1}{W},Creature
 Suture Spirit,2008-07-25,BW,2,{1}{W},Creature
 Sutured Ghoul,2002-05-27,B,7,{4}{B}{B}{B},Creature
+Suurok-Class Science Vessel,2026-11-13,U,3,{2}{U},Artifact
+Suus Mahna Practitioner,2026-11-13,U,3,{2}{U},Creature
 "Svega, the Unconventional",2023-08-01,GUW,4,{1}{G}{W}{U},Planeswalker
 "Svella, Ice Shaper",2021-02-05,GR,3,{1}{R}{G},Creature
 "Svogthos, the Restless Tomb",2005-10-07,BG,0,,Land
@@ -29385,6 +29706,7 @@ Sylvan Smite,2022-12-13,G,2,{1}{G},Instant
 Sylvan Tutor,1997-05-01,G,1,{G},Sorcery
 Sylvan Yeti,1998-06-24,G,4,{2}{G}{G},Creature
 Sylvia Brightspear,2018-06-08,W,3,{2}{W},Creature
+"Sylvia Tilly, Joy of Discovery",2026-11-13,G,3,{2}{G},Creature
 Sylvok Battle-Chair,2023-02-10,G,6,{4}{G}{G},Artifact
 Sylvok Explorer,2004-06-04,G,2,{1}{G},Creature
 Sylvok Lifestaff,2010-10-01,,1,{1},Artifact
@@ -29458,6 +29780,7 @@ Séance Board,2024-09-27,,2,{2},Artifact
 "T'Chaka, Venerable King",2026-06-26,GW,2,{G}{W},Creature
 "T'Challa, the Black Panther",2026-06-26,GW,3,{1}{G}{W},Creature
 "T'Pol, Vulcan Representative",2026-11-13,U,5,{4}{U},Creature
+"T'Pring, Never Parted",2026-11-13,GU,5,{3}{G}{U},Creature
 T-45 Power Armor,2024-03-08,,2,{2},Artifact
 T.A.P.P.E.R.,2022-10-07,W,1,{W},Artifact;Creature
 TARDIS,2023-10-13,,2,{2},Artifact
@@ -29546,6 +29869,8 @@ Takenuma Bleeder,2005-02-04,B,3,{2}{B},Creature
 "Takenuma, Abandoned Mire",2022-02-18,B,0,,Land
 Takesies // Backsies,2023-02-15,BU,5,{2}{U},Instant
 Takklemaggot,1994-06-01,B,4,{2}{B}{B},Enchantment
+Tal Shiar Analyst,2026-11-13,R,3,{2}{R},Creature
+Tal Shiar Operative,2026-11-13,B,2,{1}{B},Creature
 Talara's Bane,2008-07-25,B,2,{1}{B},Sorcery
 Talara's Battalion,2008-07-25,G,2,{1}{G},Creature
 Talarian Hook Spider,2026-11-13,G,2,{1}{G},Creature
@@ -29660,6 +29985,7 @@ Tar Snare,2016-01-22,B,3,{2}{B},Instant
 "Tarelily, Lovestruck Archer",2023-02-15,GW,3,{1}{G}{W},Creature
 Tarfire,2007-10-12,R,1,{R},Kindred;Instant
 "Targ Nar, Demon-Fang Gnoll",2021-07-23,GR,2,{R}{G},Creature
+Targ Wrangler,2026-11-13,R,3,{2}{R},Creature
 Target Minotaur,2017-12-08,R,2,{1}{R},Creature
 Targeting Rocket,2017-12-08,,0,,Artifact
 "Tariel, Reckoner of Souls",2011-06-17,BRW,7,{4}{R}{W}{B},Creature
@@ -29677,6 +30003,7 @@ Tarox Bladewing,2007-05-04,R,5,{2}{R}{R}{R},Creature
 Tarpan,1995-06-03,G,1,{G},Creature
 Tarrian's Journal // The Tomb of Aclazotz,2023-11-17,B,2,{1}{B},Artifact
 Tarrian's Soulcleaver,2023-11-17,,1,{1},Artifact
+"Tasha Yar, Out of Time",2026-11-13,R,2,{1}{R},Creature
 Tasha's Hideous Laughter,2021-07-23,U,3,{1}{U}{U},Sorcery
 "Tasha, Unholy Archmage",2022-07-07,BU,4,{2}{U}{B},Planeswalker
 "Tasha, the Witch Queen",2022-06-10,BU,5,{3}{U}{B},Planeswalker
@@ -29749,6 +30076,7 @@ Tazeem Roilmage,2020-09-25,U,2,{1}{U},Creature
 "Tazri, Beacon of Unity",2020-09-25,BGRUW,5,{4}{W},Creature
 "Tazri, Stalwart Survivor",2023-05-12,BGRUW,3,{2}{W},Creature
 Tchotchke Elemental,2022-10-07,G,1,{G},Creature
+"Tea, Earl Grey, Hot",2026-11-13,,2,{2},Artifact
 Teach by Example,2021-04-23,RU,2,{U/R}{U/R},Instant
 Teacher's Pest,2026-04-24,BG,2,{B}{G},Creature
 Teacher's Pet,2017-12-08,W,2,{1}{W},Creature
@@ -29770,6 +30098,7 @@ Tears of Rage,2004-02-06,R,4,{2}{R}{R},Instant
 Tears of Valakut,2016-01-22,R,2,{1}{R},Instant
 Technodrome,2026-03-06,,2,{2},Artifact;Creature
 Technomancer,2022-10-07,B,7,{5}{B}{B},Artifact;Creature
+"Tecton, Malignant Ruin",2027-02-05,B,8,{6}{B}{B},Creature
 Tectonic Break,1999-10-04,R,2,{X}{R}{R},Sorcery
 Tectonic Edge,2010-02-05,,0,,Land
 Tectonic Fiend,2006-10-06,R,6,{4}{R}{R},Creature
@@ -29845,6 +30174,7 @@ Telethopter,1997-10-14,,4,{4},Artifact;Creature
 Telim'Tor,1996-10-08,R,5,{4}{R},Creature
 Telim'Tor's Darts,1996-10-08,,2,{2},Artifact
 Telim'Tor's Edict,1996-10-08,R,1,{R},Instant
+Tell Me What You See,2026-11-13,B,2,{1}{B},Enchantment
 "Tellah, Great Sage",2025-06-13,RU,5,{3}{U}{R},Creature
 Teller of Tales,2004-10-01,U,5,{3}{U}{U},Creature
 Telling Time,2005-10-07,U,2,{1}{U},Instant
@@ -29884,6 +30214,7 @@ Temple of Atropos,2023-10-13,,0,,Plane
 Temple of Deceit,2013-09-27,BU,0,,Land
 Temple of Enlightenment,2014-02-07,UW,0,,Land
 Temple of Epiphany,2014-05-02,RU,0,,Land
+Temple of Khonshu,2027-04-09,BW,0,,Land
 Temple of Malady,2014-05-02,BG,0,,Land
 Temple of Malice,2014-02-07,BR,0,,Land
 Temple of Mystery,2013-09-27,GU,0,,Land
@@ -29893,9 +30224,11 @@ Temple of Triumph,2013-09-27,RW,0,,Land
 Temple of the Dragon Queen,2021-07-23,,0,,Land
 Temple of the False God,2003-05-26,,0,,Land
 Temporal Adept,1999-06-07,U,3,{1}{U}{U},Creature
+Temporal Anomaly,2026-11-13,G,0,,Land
 Temporal Aperture,1998-10-12,,2,{2},Artifact
 Temporal Cascade,2003-10-02,U,7,{5}{U}{U},Sorcery
 Temporal Cleansing,2023-04-21,U,4,{3}{U},Sorcery
+Temporal Conqueror,2026-11-13,G,3,{2}{G},Creature
 Temporal Distortion,2000-10-02,U,5,{3}{U}{U},Enchantment
 Temporal Eddy,2006-10-06,U,4,{2}{U}{U},Sorcery
 Temporal Extortion,2007-02-02,B,4,{B}{B}{B}{B},Sorcery
@@ -29908,6 +30241,7 @@ Temporal Manipulation,1998-06-24,U,5,{3}{U}{U},Sorcery
 Temporal Mastery,2012-05-04,U,7,{5}{U}{U},Sorcery
 Temporal Spring,2001-06-04,GU,3,{1}{G}{U},Sorcery
 Temporal Trespass,2015-01-23,U,11,{8}{U}{U}{U},Sorcery
+Temporal Tribulation,2026-11-13,U,3,{2}{U},Instant
 Temporary Insanity,2002-02-04,R,4,{3}{R},Instant
 Temporary Lockdown,2022-09-09,W,3,{1}{W}{W},Enchantment
 Temporary Truce,1997-05-01,W,2,{1}{W},Sorcery
@@ -29938,6 +30272,7 @@ Temur Tawnyback,2025-04-11,GRU,6,{2/G}{2/U}{2/R},Creature
 Temur War Shaman,2015-01-23,G,6,{4}{G}{G},Creature
 Ten Wizards Mountain,2023-04-21,,0,,Plane
 Tenacious Dead,2013-07-19,B,1,{B},Creature
+Tenacious Drone,2026-11-13,B,2,{1}{B},Artifact;Creature
 Tenacious Hunter,2017-07-14,G,4,{2}{G}{G},Creature
 Tenacious Pup,2021-12-09,G,1,{G},Creature
 Tenacious Tomeseeker,2023-09-08,U,3,{2}{U},Creature
@@ -30038,8 +30373,13 @@ Tersa Lightshatter,2025-04-11,R,3,{2}{R},Creature
 Tervigon,2022-10-07,G,2,{X}{1}{G},Creature
 "Tesak, Judith's Hellhound",2024-02-09,R,4,{3}{R},Creature
 "Teshar, Ancestor's Apostle",2018-04-27,W,4,{3}{W},Creature
+Test of Conviction,2026-11-13,W,2,{1}{W},Sorcery
+Test of Courage,2026-11-13,G,1,{G},Instant
 Test of Endurance,2002-05-27,W,4,{2}{W}{W},Enchantment
 Test of Faith,2004-02-06,W,2,{1}{W},Instant
+Test of Identity,2026-11-13,R,2,{1}{R},Instant
+Test of Loyalty,2026-11-13,B,1,{B},Sorcery
+Test of Priorities,2026-11-13,U,2,{1}{U},Instant
 Test of Talents,2021-04-23,U,2,{1}{U},Instant
 Testament Bearer,2023-02-10,B,4,{3}{B},Creature
 Testament of Faith,2001-10-01,W,1,{W},Enchantment
@@ -30166,6 +30506,7 @@ The Balrog of Moria,2023-06-23,BR,7,{4}{B}{B}{R},Creature
 The Bath Song,2023-06-23,U,4,{3}{U},Enchantment
 The Battle of Bywater,2023-06-23,W,3,{1}{W}{W},Sorcery
 The Battle of Dragon Brothers // Fate Reforged,2023-02-15,,7,{7},Battle
+The Beacon of Kahless,2026-11-13,R,3,{2}{R},Artifact
 The Beamtown Bullies,2022-04-29,BGR,4,{1}{B}{R}{G},Creature
 The Bean,2024-02-24,,0,,Plane
 The Bear Force Pilot,2023-02-15,G,2,{1}{G},Creature
@@ -30176,6 +30517,7 @@ The Bears of Littjara,2021-02-05,GU,3,{1}{G}{U},Enchantment
 The Beleaguered Boxer,2023-02-15,BGRUW,5,{W}{U}{B}{R}{G},Creature
 The Belligerent,2023-11-17,RU,4,{2}{U}{R},Artifact
 The Belligerent and Useless Island,2023-02-15,U,0,,Artifact;Land
+The Best of Both Worlds,2026-11-13,UW,6,{4}{W}{U},Enchantment
 The Biblioplex,2021-04-23,,0,,Land
 The Big Idea,2017-12-08,BR,6,{4}{R}{R},Creature
 The Big Top,2022-10-07,,0,,Land
@@ -30186,10 +30528,12 @@ The Black Arrow,2026-08-14,,3,{3},Artifact
 The Black Breath,2023-06-23,B,3,{2}{B},Sorcery
 The Black Gate,2023-06-23,B,0,,Land
 The Blackstaff of Waterdeep,2021-07-23,U,1,{U},Artifact
+The Bloodbile Swarm,2026-10-13,BR,5,{3}{B}{R},Creature
 The Bloodsky Massacre,2021-02-05,BR,3,{1}{B}{R},Enchantment
 The Blue Spirit,2025-11-21,U,4,{3}{U},Creature
 The Book of Exalted Deeds,2021-07-23,W,3,{W}{W}{W},Artifact
 The Book of Vile Darkness,2021-07-23,B,3,{B}{B}{B},Artifact
+The Borg Queen,2026-11-13,BUW,7,{4}{W}{U}{B},Artifact;Creature
 "The Boulder, Ready to Rumble",2025-11-21,G,4,{3}{G},Creature
 The Brewing Chef,2023-02-15,GUW,5,{2}{G}{W}{U},Creature
 The Bringer of the Red Beard,2023-02-15,R,2,{1}{R},Creature
@@ -30200,6 +30544,7 @@ The Cabbage Merchant,2025-11-21,G,3,{2}{G},Creature
 The Caffeinated Runner,2023-02-15,RW,3,{1}{R}{W},Creature
 The Caldaia,2023-04-21,,0,,Plane
 The Capitoline Triad,2024-07-05,,10,{10},Creature
+The Caretaker,2026-11-13,U,6,{5}{U},Creature
 The Cauldron of Eternity,2019-10-04,B,12,{10}{B}{B},Artifact
 The Cave of Skulls,2023-10-13,,0,,Plane
 The Cave of Two Lovers,2025-11-21,R,4,{3}{R},Enchantment
@@ -30248,6 +30593,7 @@ The Curve Keeper,2023-02-15,W,6,{4}{W}{W},Creature
 The Cyber-Controller,2023-10-13,BU,3,{X}{U}{U}{B},Artifact;Creature
 The Dalek Emperor,2023-10-13,BR,7,{5}{B}{R},Artifact;Creature
 The Dark Barony,2009-09-04,,0,,Plane
+The Darkhold,2027-04-09,B,3,{1}{B}{B},Artifact
 The Darkness Crystal,2025-06-13,B,4,{2}{B}{B},Artifact
 The Dawning Archaic,2026-04-24,,10,{10},Creature
 The Day of the Doctor,2023-10-13,RW,5,{3}{R}{W},Enchantment
@@ -30259,12 +30605,14 @@ The Destined Black Mage,2025-06-13,B,3,{2}{B},Creature
 The Destined Thief,2025-06-13,U,3,{2}{U},Creature
 The Destined Warrior,2025-06-13,BUW,4,{1}{W}{U}{B},Creature
 The Destined White Mage,2025-06-13,W,3,{2}{W},Creature
+The Destruction of Praxis,2026-11-13,B,5,{3}{B}{B},Sorcery
 The Dilu Horse,2023-02-15,G,3,{2}{G},Creature
 The Dining Car,2023-10-13,,0,,Plane
 The Disciple of Nissa,2023-02-15,G,3,{2}{G},Creature
 The Disciple of Vess,2023-02-15,B,4,{2}{B}{B},Creature
 The Doctor's Childhood Barn,2023-10-13,,0,,Plane
 The Doctor's Tomb,2023-10-13,,0,,Plane
+"The Doctor, EMH",2026-11-13,GW,5,{3}{G/W}{G/W},Artifact;Creature
 The Dogronmaster,2023-02-15,GRW,5,{2}{W}{R}{G},Creature
 The Dominion Bracelet,2025-08-01,,2,{2},Artifact
 The Dragon-Kami Reborn // Dragon-Kami's Egg,2022-02-18,G,3,{2}{G},Enchantment
@@ -30272,6 +30620,7 @@ The Dross Pits,2023-02-10,B,0,,Land
 "The Drum, Mining Facility",2023-10-13,,0,,Plane
 The Duke of Midrange,2023-02-15,BGR,5,{2}{B}{R}{G},Creature
 "The Duke, Rebel Sentry",2025-11-21,W,1,{W},Creature
+The Duras Sisters,2026-11-13,BR,2,{B/R}{B/R},Creature
 The Eagles Are Coming!,2026-08-14,W,2,{1}{W},Instant
 The Earth Crystal,2025-06-13,G,4,{2}{G}{G},Artifact
 The Earth King,2025-11-21,G,4,{3}{G},Creature
@@ -30292,7 +30641,7 @@ The Eternal Wanderer,2023-02-10,W,6,{4}{W}{W},Planeswalker
 The Eternity Elevator,2025-08-01,,5,{5},Artifact
 The Ever-Changing 'Dane,2022-09-09,BUW,3,{W}{U}{B},Creature
 The Everflowing Well // The Myriad Pools,2023-11-17,U,3,{2}{U},Artifact
-The Everforger,2026-11-09,,6,{6},Artifact;Creature
+The Everforger,2026-10-19,,6,{6},Artifact;Creature
 The Explorer,2014-02-07,,0,,Hero
 The Fabulous Frog-Man,2026-06-26,G,3,{2}{G},Creature
 The Face of Boe,2023-10-13,RUW,4,{1}{U}{R}{W},Creature
@@ -30366,6 +30715,7 @@ The Great Juggernaut,2023-02-15,R,4,{3}{R},Artifact;Creature
 The Great Mound,2026-06-26,,0,,Land
 The Grey Havens,2023-06-23,,0,,Land
 The Grim Captain's Locker,2023-11-17,B,4,{3}{B},Artifact
+The Guardian of Forever,2026-11-13,,3,{3},Artifact;Creature
 The Gunky Runner,2023-02-15,B,6,{5}{B},Creature
 The Harvester,2013-09-27,,0,,Hero
 The Haunt of Hightower,2019-01-25,B,6,{4}{B}{B},Creature
@@ -30374,6 +30724,7 @@ The Heron Moon,2024-08-02,,0,,Land
 The Highland Runner,2023-02-15,W,6,{4}{W}{W},Creature
 The Hippodrome,2009-09-04,,0,,Plane
 The Hive,1993-08-05,,5,{5},Artifact
+The Holodeck,2026-11-13,,7,{7},Artifact
 The Horizon Seeker,2023-02-15,BGRUW,5,{W}{U}{B}{R}{G},Creature
 The Horus Heresy,2022-10-07,BRU,6,{3}{U}{B}{R},Enchantment
 The Hourglass Coven,2022-07-07,B,6,{4}{B}{B},Creature
@@ -30388,6 +30739,7 @@ The Immortal Sun,2018-01-19,,6,{6},Artifact
 The Immortal Weapons,2026-06-26,R,5,{4}{R},Creature
 The Indomitable,2023-11-17,U,4,{2}{U}{U},Artifact
 The Infamous Cruelclaw,2024-08-02,BR,3,{1}{B}{R},Creature
+The Inner Light,2026-11-13,GW,5,{3}{G}{W},Enchantment
 The Inspector Inspector,2023-02-15,W,3,{2}{W},Creature
 The Irencrag,2023-09-08,,2,{2},Artifact
 The Iron Guardian Stirs,2010-06-18,,0,,Scheme
@@ -30431,7 +30783,7 @@ The Lord of the Eagles,2026-08-14,U,9,{7}{U}{U},Creature
 The Lost and the Damned,2022-10-07,RU,3,{1}{U}{R},Enchantment
 The Lunar Whale,2025-06-13,U,4,{3}{U},Artifact
 The Lux Foundation Library,2023-10-13,,0,,Plane
-The Madcap Jester,2026-11-09,BRU,4,{1}{U}{B}{R},Creature
+The Madcap Jester,2026-10-19,BRU,4,{1}{U}{B}{R},Creature
 The Maelstrom,2009-09-04,,0,,Plane
 The Magic Bandit,2023-02-15,B,4,{3}{B},Creature
 The Magic Mirror,2019-10-04,U,9,{6}{U}{U}{U},Artifact
@@ -30453,6 +30805,7 @@ The Master of Lake-town,2026-08-14,B,3,{1}{B}{B},Creature
 "The Master, Transcendent",2024-03-08,BGU,4,{1}{B}{G}{U},Artifact;Creature
 The Masters of Evil,2026-06-26,B,6,{5}{B},Creature
 The Matrix of Time,2023-10-13,,0,,Plane
+The Measure of a Man,2026-11-13,W,3,{2}{W},Enchantment
 The Meathook Massacre,2021-09-24,B,2,{X}{B}{B},Enchantment
 "The Mechanist, Aerial Artisan",2025-11-21,U,3,{2}{U},Creature
 The Meep,2019-12-02,B,3,{2}{B},Creature
@@ -30479,7 +30832,7 @@ The Most Dangerous Gamer,2022-10-07,BG,4,{2}{B}{G},Creature
 The Mountain-king's Return,2026-08-14,W,3,{2}{W},Enchantment
 The Mouth of Sauron,2023-06-23,BU,5,{3}{U}{B},Creature
 The Mox Painter,2023-02-15,BGRUW,3,{1}{G}{U},Creature
-The Muckslinger Gang,2026-11-09,BGR,4,{1}{B}{R}{G},Creature
+The Muckslinger Gang,2026-10-19,BGR,4,{1}{B}{R}{G},Creature
 The Multifaceted Phyrexian,2023-02-15,B,4,{2}{B}{B},Creature
 The Multiplayer Nitpickers,2023-02-15,BUW,3,{W}{U}{B},Creature
 The Mycosynth Gardens,2023-02-10,,0,,Land
@@ -30487,7 +30840,9 @@ The Mycotyrant,2023-11-17,BG,3,{1}{B}{G},Creature
 The Mysterious Sphere,2023-02-15,,5,{5},Artifact
 The Mystery Raceway,2023-02-15,BGRUW,0,,Land
 The Mystical Archive,2026-05-19,,0,,Land
+The Naked Time,2026-11-13,R,2,{1}{R},Enchantment
 The Necrobloom,2024-06-14,BGW,4,{1}{W}{B}{G},Creature
+The Needs of the Many,2026-11-13,W,2,{1}{W},Instant
 The Neutrinos,2026-03-06,RW,4,{2}{R}{W},Creature
 The Night of the Doctor,2023-10-13,W,6,{4}{W}{W},Enchantment
 The Ninth Doctor,2023-10-13,RU,3,{1}{U}{R},Creature
@@ -30515,6 +30870,7 @@ The Prima Vista,2025-06-13,U,5,{4}{U},Artifact
 The Princess Takes Flight,2023-09-08,W,3,{2}{W},Enchantment
 The Prismatic Piper,2020-11-20,,5,{5},Creature
 The Pro Tour,2024-02-24,,0,,Plane
+The Promise of Kahless,2026-11-13,B,5,{4}{B},Sorcery
 The Protector,2013-09-27,,0,,Hero
 The Provider,2014-02-07,,0,,Hero
 "The Prydwen, Steel Flagship",2024-03-08,W,6,{4}{W}{W},Artifact
@@ -30587,6 +30943,7 @@ The Surgical Bay,2023-02-10,U,0,,Land
 The Swamp Kitten,2023-02-15,B,4,{3}{B},Creature
 The Swarmlord,2022-10-07,GRU,6,{3}{G}{U}{R},Creature
 The Swarmweaver,2024-09-27,BG,4,{2}{B}{G},Artifact;Creature
+The Sword of Kahless,2026-11-13,,4,{4},Artifact
 The Tabernacle at Pendrell Vale,1994-06-01,,0,,Land
 The Tale of Tamiyo,2024-09-27,U,3,{2}{U},Enchantment
 The Tarrasque,2021-07-23,G,9,{6}{G}{G}{G},Creature
@@ -30604,6 +30961,7 @@ The Three Seasons,2021-02-05,GU,2,{G}{U},Enchantment
 The Tokenator,2023-02-15,W,3,{2}{W},Creature
 The Torment of Gollum,2023-06-23,B,4,{3}{B},Sorcery
 The Toymaker's Trap,2023-10-13,B,3,{2}{B},Enchantment
+The Traveler,2026-11-13,GU,2,{G}{U},Creature
 The Traveling Postman,2023-02-15,RUW,4,{1}{U}{R}{W},Creature
 The Trickster-God's Heist,2021-02-05,BU,4,{2}{U}{B},Enchantment
 The Triumph of Anax,2020-01-24,R,3,{2}{R},Enchantment
@@ -30615,8 +30973,9 @@ The Unagi of Kyoshi Island,2025-11-21,U,5,{3}{U}{U},Creature
 The Unbeatable Squirrel Girl,2026-06-26,G,4,{1}{G}{G}{G},Creature
 The Underworld Cookbook,2021-06-18,,1,{1},Artifact
 The Underworld Fantasy Queen,2023-02-15,B,3,{2}{B},Creature
+The Unicomplex,2026-11-13,B,0,,Land
 The Unknown Wizard,2023-02-15,BGRUW,7,{2}{W}{U}{B}{R}{G},Creature
-The Unluckiest Planeswalker,2026-11-09,R,3,{2}{R},Planeswalker
+The Unluckiest Planeswalker,2026-10-19,R,3,{2}{R},Planeswalker
 The Unspeakable,2004-10-01,U,9,{6}{U}{U}{U},Creature
 The Ur-Dragon,2017-08-25,BGRUW,9,{4}{W}{U}{B}{R}{G},Creature
 The Ur-Sphinx,2026-10-02,BUW,9,{6}{W}{U}{B},Creature
@@ -30646,7 +31005,7 @@ The Watcher in the Water,2023-06-23,U,5,{3}{U}{U},Creature
 The Water Crystal,2025-06-13,U,4,{2}{U}{U},Artifact
 The Water Maro,2023-02-15,GUW,4,{1}{W}{U}{G},Creature
 The Weatherseed Treaty,2022-09-09,G,3,{2}{G},Enchantment
-The Weaver King,2026-11-09,BU,6,{4}{U}{B},Creature
+The Weaver King,2026-10-19,BU,6,{4}{U}{B},Creature
 The Wedding of River Song,2023-10-13,W,3,{2}{W},Sorcery
 The Weekly Princess,2023-02-15,GR,3,{1}{R}{G},Creature
 The Western Cloud,2023-04-21,,0,,Plane
@@ -30664,6 +31023,7 @@ The Wizardly Barge,2023-02-15,RU,4,{2}{U}{R},Kindred;Artifact
 The Wondrous Wasp,2026-06-26,U,2,{1}{U},Creature
 The World Spell,2022-09-09,G,7,{5}{G}{G},Enchantment
 The World Tree,2021-02-05,BGRUW,0,,Land
+The Wrath of Khan,2026-11-13,R,3,{2}{R},Enchantment
 The Wretched,1994-06-01,B,5,{3}{B}{B},Creature
 The Zabulous Cosplayer,2023-02-15,RU,4,{2}{U}{R},Creature
 The Zassacre Zirl,2023-02-15,B,7,{5}{B}{B},Creature
@@ -30693,6 +31053,7 @@ Theorix Metamage // Omit Variables,2026-10-02,BU,3,{2}{U/B},Creature
 There // They're // Their,2024-08-02,U,6,{U},Instant
 There Is No Refuge,2017-06-16,,0,,Scheme
 There and Back Again,2023-06-23,R,5,{3}{R}{R},Enchantment
+There's Coffee in that Nebula,2026-11-13,W,2,{1}{W},Sorcery
 Thermal Blast,2001-10-01,R,5,{4}{R},Instant
 Thermal Flux,2006-07-21,U,1,{U},Instant
 Thermal Glider,1999-10-04,W,3,{2}{W},Creature
@@ -30751,7 +31112,7 @@ This World Belongs to Me,2017-06-16,,0,,Scheme
 Thistledown Duo,2008-05-02,UW,3,{2}{W/U},Creature
 Thistledown Liege,2008-05-02,UW,4,{1}{W/U}{W/U}{W/U},Creature
 Thistledown Players,2024-08-02,W,3,{2}{W},Creature
-"Thomil, the Destroyer",2026-11-09,B,5,{3}{B}{B},Planeswalker
+"Thomil, the Destroyer",2026-10-19,B,5,{3}{B}{B},Planeswalker
 Thopter Architect,2022-11-18,W,4,{3}{W},Creature
 Thopter Arrest,2017-01-20,W,3,{2}{W},Enchantment
 Thopter Assembly,2011-02-04,,6,{6},Artifact;Creature
@@ -30803,6 +31164,7 @@ Thornweald Archer,2007-05-04,G,2,{1}{G},Creature
 Thornwind Faeries,1999-02-15,U,3,{1}{U}{U},Creature
 Thornwood Falls,2014-09-26,GU,0,,Land
 Thorough Investigation,2021-07-23,W,3,{2}{W},Enchantment
+Those Old Scientists,2026-11-13,U,3,{2}{U},Enchantment
 Those Who Serve,2017-04-28,W,3,{2}{W},Creature
 Thought Collapse,2019-01-25,U,3,{1}{U}{U},Instant
 Thought Courier,2004-06-04,U,2,{1}{U},Creature
@@ -31266,7 +31628,7 @@ Toil to Renown,2008-05-02,G,2,{1}{G},Sorcery
 Toils of Night and Day,2005-02-04,U,3,{2}{U},Instant
 "Tokka & Rahzar, Terrible Twos",2026-03-06,BR,2,{B/R}{B/R},Creature
 "Tokka & Rahzar, Unsupervised",2026-03-06,R,3,{2}{R},Creature
-"Tolabow, Loch Rascal",2026-11-09,U,4,{2}{U}{U},Creature
+"Tolabow, Loch Rascal",2026-10-19,U,4,{2}{U}{U},Creature
 Tolaria,1994-06-01,U,0,,Land
 Tolaria West,2007-05-04,U,0,,Land
 Tolarian Academy,1998-10-12,U,0,,Land
@@ -31288,6 +31650,7 @@ Tolsimir Wolfblood,2005-10-07,GW,6,{4}{G}{W},Creature
 "Tolsimir, Midnight's Light",2024-02-09,GW,5,{2}{G}{W}{W},Creature
 "Toluz, Clever Conductor",2022-04-29,BUW,3,{W/U}{U}{U/B},Creature
 Tom Bombadil,2023-06-23,BGRUW,5,{W}{U}{B}{R}{G},Creature
+"Tom Paris, Risk-Taker",2026-11-13,RU,6,{4}{U}{R},Creature
 "Tom, Bert, and William",2026-08-14,BG,5,{3}{B}{G},Creature
 Tomakul Honor Guard,2022-11-18,G,2,{1}{G},Creature
 Tomakul Phoenix,2022-12-13,R,3,{1}{R}{R},Creature
@@ -31570,7 +31933,9 @@ Transmutation,1994-06-01,B,2,{1}{B},Instant
 Transmutation Font,2024-04-19,,5,{5},Artifact
 Transmute Artifact,1994-03-04,U,2,{U}{U},Sorcery
 Transplant Theorist,2023-02-10,U,4,{3}{U},Artifact;Creature
+Transporter Malfunction,2026-11-13,R,2,{1}{R},Sorcery
 Transpose,2025-06-13,B,3,{2}{B},Instant
+Transwarp Hub,2026-11-13,U,3,{2}{U},Artifact
 Trap Digger,2003-05-26,W,4,{3}{W},Creature
 Trap Essence,2014-09-26,GRU,3,{G}{U}{R},Instant
 Trap Runner,1999-10-04,W,4,{2}{W}{W},Creature
@@ -31682,7 +32047,7 @@ Trespasser's Curse,2017-04-28,B,2,{1}{B},Enchantment
 Trespassing Souleater,2011-05-13,U,3,{3},Artifact;Creature
 Tresserhorn Sinks,2006-07-21,BR,0,,Land
 Tresserhorn Skyknight,2006-07-21,B,7,{5}{B}{B},Creature
-"Tresserhorn's Lord, Returned",2026-11-09,BRU,5,{2}{U}{B}{R},Creature
+"Tresserhorn's Lord, Returned",2026-10-19,BRU,5,{2}{U}{B}{R},Creature
 Trestle Troll,2012-10-05,BG,3,{1}{B}{G},Creature
 Treva's Attendant,2000-10-02,GUW,5,{5},Artifact;Creature
 Treva's Charm,2001-02-05,GUW,3,{G}{W}{U},Instant
@@ -31707,6 +32072,7 @@ Tribal Flames,2000-10-02,R,2,{1}{R},Sorcery
 Tribal Forcemage,2003-02-03,G,2,{1}{G},Creature
 Tribal Golem,2002-10-07,B,6,{6},Artifact;Creature
 Tribal Unity,2002-10-07,G,3,{X}{2}{G},Instant
+Tribble Cluster,2026-11-13,W,3,{2}{W},Creature
 Tribune of Rot,2024-02-23,BG,3,{1}{B/G}{B/G},Creature
 Tributary Instructor,2023-11-17,G,4,{3}{G},Creature
 Tributary Vaulter,2026-01-23,W,3,{2}{W},Creature
@@ -31728,6 +32094,7 @@ Trickster's Stratagem,2026-06-26,U,4,{3}{U},Sorcery
 Trickster's Talisman,2021-07-23,U,1,{U},Artifact
 Tricky Mage,2023-02-15,U,3,{2}{U},Creature
 Triclopean Sight,2007-10-12,W,2,{1}{W},Enchantment
+Tricorder,2026-11-13,,1,{1},Artifact
 Trigger Happy,2022-10-07,R,2,{1}{R},Instant
 Trigon of Corruption,2010-10-01,B,4,{4},Artifact
 Trigon of Infestation,2010-10-01,G,4,{4},Artifact
@@ -31765,6 +32132,7 @@ Triumphant Getaway,2024-05-07,BRU,4,{1}{U}{B}{R},Enchantment
 Triumphant Reckoning,2020-11-20,W,9,{6}{W}{W}{W},Sorcery
 Triumphant Surge,2020-01-24,W,4,{3}{W},Instant
 Trivia Contest,2022-10-07,,0,,Artifact
+"Troi, Winging It",2026-11-13,W,4,{3}{W},Creature
 Trokin High Guard,1998-06-24,W,4,{3}{W},Creature
 Troll Ascetic,2003-10-02,G,3,{1}{G}{G},Creature
 Troll Negotiations,2026-08-14,G,4,{2}{G}{G},Sorcery
@@ -31790,6 +32158,7 @@ Trouble in Pairs,2024-02-09,W,4,{2}{W}{W},Enchantment
 Troubled Healer,2000-06-05,W,3,{2}{W},Creature
 Troublemaker Ouphe,2023-09-08,G,2,{1}{G},Creature
 Troublesome Spirit,2000-06-05,U,4,{2}{U}{U},Creature
+Troubling Tribbles,2026-11-13,W,3,{2}{W},Creature
 Trove Mage,2022-10-05,U,3,{2}{U},Creature
 Trove Tracker,2020-11-20,U,3,{2}{U},Creature
 Trove Warden,2020-09-25,W,4,{2}{W}{W},Creature
@@ -31840,7 +32209,7 @@ Tsabo Tavoc,2000-10-02,BR,7,{5}{B}{R},Creature
 Tsabo's Assassin,2000-10-02,B,4,{2}{B}{B},Creature
 Tsabo's Decree,2000-10-02,B,6,{5}{B},Instant
 Tsabo's Web,2000-10-02,,2,{2},Artifact
-"Tsagan, Raider Warlord",2026-11-09,BRW,3,{R}{W}{B},Creature
+"Tsagan, Raider Warlord",2026-10-19,BRW,3,{R}{W}{B},Creature
 Tsunami,1993-08-05,G,4,{3}{G},Sorcery
 Tug of War,2022-10-07,G,5,{4}{G},Sorcery
 "Tui and La, Moon and Ocean",2025-11-21,U,4,{3}{U},Creature
@@ -31923,6 +32292,7 @@ Tuskeri Firewalker,2021-02-05,R,3,{2}{R},Creature
 Tuskguard Captain,2014-09-26,G,3,{2}{G},Creature
 Tuvasa the Sunlit,2018-08-10,GUW,3,{G}{W}{U},Creature
 Tuvasa the Sunlit // Tuvasa the Sunlit,2018-08-10,GUW,3,{G}{W}{U},Creature
+"Tuvok, Chief Tactical Officer",2026-11-13,U,3,{2}{U},Creature
 Tuya Bearclaw,2020-11-20,GR,3,{1}{R}{G},Creature
 Tweeze,2026-01-23,R,3,{2}{R},Instant
 Twenty Lessons,2023-02-15,,3,{3},Sorcery
@@ -31997,6 +32367,8 @@ Tymaret Calls the Dead,2020-01-24,B,3,{2}{B},Enchantment
 "Tymaret, the Murder King",2013-09-27,BR,2,{B}{R},Creature
 Tymna the Weaver,2016-11-11,BW,3,{1}{W}{B},Creature
 Tymora's Invoker,2022-06-10,U,2,{1}{U},Creature
+Type-03 Borg Vessel,2026-11-13,W,4,{3}{W},Artifact
+Type-2 Phaser,2026-11-13,,2,{2},Artifact
 "Typhoid Mary, Fractured",2026-06-26,BR,3,{1}{B}{R},Creature
 Typhoid Rats,2011-09-30,B,1,{B},Creature
 Typhoon,1994-06-01,G,3,{2}{G},Sorcery
@@ -32025,7 +32397,20 @@ Tyvar's Stand,2023-02-10,G,1,{X}{G},Instant
 "Tyvar, the Pummeler",2024-09-27,G,3,{1}{G}{G},Creature
 Tzaangor Shaman,2022-10-07,RU,4,{2}{U}{R},Creature
 "U.S.Agent, John Walker",2026-06-26,BW,4,{3}{W/B},Creature
+"U.S.S. Cerritos, Following Up",2026-11-13,,5,{5},Artifact
+"U.S.S. Defiant, Mirror Migrant",2026-11-13,,2,{2},Artifact
+"U.S.S. Defiant, Tough Little Ship",2026-11-13,,6,{6},Artifact
+"U.S.S. Discovery, at Black Alert",2026-11-13,G,5,{3}{G}{G},Artifact
+"U.S.S. Enterprise-A, Free Spirit",2026-11-13,W,5,{3}{W}{W},Artifact
+"U.S.S. Enterprise-C, Time-Tossed",2026-11-13,,5,{5},Artifact
 "U.S.S. Enterprise-D, Galaxy-Class",2026-11-13,,3,{3},Artifact
+"U.S.S. Enterprise-E, Sovereign",2026-11-13,W,5,{3}{W}{W},Artifact
+"U.S.S. Excelsior, Cutting Edge",2026-11-13,W,4,{3}{W},Artifact
+"U.S.S. Farragut, Bold Explorer",2026-11-13,,6,{6},Artifact
+"U.S.S. Prometheus, Prototype",2026-11-13,,5,{5},Artifact
+"U.S.S. Reliant, From Hell's Heart",2026-11-13,B,4,{2}{B}{B},Artifact
+"U.S.S. Stargazer, Here and There",2026-11-13,,3,{3},Artifact
+"U.S.S. Voyager, Lone Wanderer",2026-11-13,G,4,{3}{G},Artifact
 UNIT Headquarters,2023-10-13,,0,,Plane
 Uba Mask,2004-10-01,,4,{4},Artifact
 Ubul Sar Gatekeepers,2013-05-03,B,4,{3}{B},Creature
@@ -32044,6 +32429,7 @@ Ugin's Nexus,2014-09-26,,5,{5},Artifact
 "Ugin, the Spirit Dragon",2015-01-23,,8,{8},Planeswalker
 Uglúk of the White Hand,2023-06-23,BR,4,{2}{B}{R},Creature
 "Uh, Squen & Cragg Made a Card",2023-02-15,BG,2,{1}{B/G},Enchantment
+"Uhura, Xenolinguist",2026-11-13,U,5,{4}{U},Creature
 "Ukkima, Stalking Shadow",2020-04-17,BU,3,{1}{U}{B},Creature
 Uktabi Drake,2007-02-02,G,1,{G},Creature
 Uktabi Efreet,1997-06-09,G,4,{2}{G}{G},Creature
@@ -32115,6 +32501,7 @@ Umbral Mantle,2008-05-02,,3,{3},Artifact
 Umezawa's Charm,2019-06-14,B,2,{1}{B},Instant
 Umezawa's Jitte,2005-02-04,,2,{2},Artifact
 "Umori, the Collector",2020-04-24,BG,4,{2}{B/G}{B/G},Creature
+"Una Chin-Riley, Number One",2026-11-13,W,5,{4}{W},Creature
 Unable to Scream,2024-09-27,U,1,{U},Enchantment
 Unagi's Spray,2025-11-21,U,1,{U},Instant
 Unassuming Gelatinous Serpent,2022-10-07,,0,,Stickers
@@ -32257,6 +32644,7 @@ Unexpectedly Absent,2013-11-01,W,2,{X}{W}{W},Instant
 Unexplained Absence,2024-02-09,W,4,{3}{W},Instant
 Unexplained Disappearance,2018-10-05,U,2,{1}{U},Instant
 Unexplained Vision,2019-10-04,U,5,{4}{U},Sorcery
+Unexplored Territory,2026-11-13,,0,,Land
 Unfathomable Truths,2024-06-14,U,5,{4}{U},Instant
 Unfinished Business,2023-09-08,W,5,{3}{W}{W},Sorcery
 Unflinching Courage,2013-05-03,GW,3,{1}{G}{W},Enchantment
@@ -32285,6 +32673,7 @@ Unholy Strength,1993-08-05,B,1,{B},Enchantment
 Unicycle,2019-11-07,,2,{2},Artifact
 Unicycling Automaton,2023-02-15,,3,{3},Creature
 Unidentified Hovership,2024-09-27,W,3,{1}{W}{W},Artifact
+Unification,2026-11-13,UW,5,{3}{W}{U},Enchantment
 Unified Front,2015-10-02,W,4,{3}{W},Sorcery
 Unified Lunge,2013-10-19,,0,,Sorcery
 Unified Strike,2002-10-07,W,1,{W},Instant
@@ -32517,7 +32906,7 @@ Utter End,2014-09-26,BW,4,{2}{W}{B},Instant
 Utter Insignificance,2024-06-14,U,2,{1}{U},Enchantment
 Utvara Hellkite,2012-10-05,R,8,{6}{R}{R},Creature
 Utvara Scalper,2006-05-05,R,2,{1}{R},Creature
-"Uugguu, the Omniplasm",2026-11-09,BGU,3,{B}{G}{U},Creature
+"Uugguu, the Omniplasm",2026-10-19,BGU,3,{B}{G}{U},Creature
 "Uurg, Spawn of Turg",2022-09-09,BG,3,{B}{B}{G},Creature
 "Uvilda, Dean of Perfection // Nassari, Dean of Expression",2021-04-23,RU,3,{2}{U},Creature
 "Uyo, Silent Prophet",2004-10-01,U,6,{4}{U}{U},Creature
@@ -32549,6 +32938,7 @@ Valgavoth's Lair,2024-09-27,,0,,Enchantment;Land
 Valgavoth's Onslaught,2024-09-27,G,1,{X}{X}{G},Sorcery
 "Valgavoth, Harrower of Souls",2024-09-27,BR,4,{2}{B}{R},Creature
 "Valgavoth, Terror Eater",2024-09-27,B,9,{6}{B}{B}{B},Creature
+"Valgavoth, the Lifeline",2026-10-13,W,3,{2}{W},Creature
 Valiant Batrider,2023-12-05,W,3,{2}{W},Creature
 Valiant Changeling,2019-06-14,W,7,{5}{W}{W},Creature
 Valiant Emberkin,2024-10-15,RW,3,{1}{R}{W},Enchantment;Creature
@@ -32559,7 +32949,7 @@ Valiant Knight,2018-07-13,W,4,{3}{W},Creature
 Valiant Rescuer,2020-04-24,W,2,{1}{W},Creature
 Valiant Veteran,2022-09-09,W,2,{1}{W},Creature
 "Valki, God of Lies // Tibalt, Cosmic Impostor",2021-02-05,BR,2,{1}{B},Creature
-Valko Indorian,2026-11-09,B,4,{3}{B},Creature
+Valko Indorian,2026-10-19,B,4,{3}{B},Creature
 "Valko Indorian, Researcher",2023-02-15,UW,2,{W}{U},Creature
 Valkyrie Aerial Unit,2025-06-13,U,7,{5}{U}{U},Artifact;Creature
 Valkyrie Harbinger,2021-02-05,W,6,{4}{W}{W},Creature
@@ -32669,6 +33059,7 @@ Variable Solutions,2026-05-19,G,1,{X}{G},Sorcery
 "Varis, Silverymoon Ranger",2021-07-23,G,3,{1}{G}{G},Creature
 "Varolz, the Scar-Striped",2013-05-03,BG,3,{1}{B}{G},Creature
 "Varragoth, Bloodsky Sire",2021-02-05,B,3,{2}{B},Creature
+"Vash, Freelance Archaeologist",2026-11-13,BG,3,{1}{B}{G},Creature
 Vashta Nerada,2023-10-13,B,3,{2}{B},Creature
 Vassal Soul,2012-10-05,UW,3,{1}{W/U}{W/U},Creature
 Vassal's Duty,2004-10-01,W,4,{3}{W},Enchantment
@@ -32774,6 +33165,7 @@ Venerated Rotpriest,2023-02-10,G,1,{G},Creature
 Venerated Stormsinger,2025-04-11,B,4,{3}{B},Creature
 Venerated Teacher,2010-04-23,U,3,{2}{U},Creature
 Vengeance,1997-05-01,W,4,{3}{W},Sorcery
+Vengeance Mission,2026-11-13,B,3,{2}{B},Enchantment
 Vengeant Earth,2023-04-21,G,2,{1}{G},Instant
 Vengeant Vampire,2016-11-16,B,6,{4}{B}{B},Creature
 Vengeful Ancestor,2021-07-23,R,4,{2}{R}{R},Creature
@@ -32823,7 +33215,7 @@ Venser's Sliver,2006-10-06,,5,{5},Artifact;Creature
 "Venser, Corpse Puppet",2023-02-10,BU,2,{U}{B},Creature
 "Venser, Fervent Forger",2026-10-02,R,6,{4}{R}{R},Creature
 "Venser, Shaper Savant",2007-05-04,U,4,{2}{U}{U},Creature
-"Venser, Visionary Traveler",2026-11-09,UW,5,{3}{W}{U},Planeswalker
+"Venser, Visionary Traveler",2026-10-19,UW,5,{3}{W}{U},Planeswalker
 "Venser, the Sojourner",2010-10-01,UW,5,{3}{W}{U},Planeswalker
 Vent Sentinel,2010-04-23,R,4,{3}{R},Creature
 Ventifact Bottle,1996-10-08,,3,{3},Artifact
@@ -32915,6 +33307,7 @@ Vexing Arcanix,1995-06-03,,4,{4},Artifact
 Vexing Bauble,2024-06-14,,1,{1},Artifact
 Vexing Beetle,2003-02-03,G,5,{4}{G},Creature
 Vexing Devil,2012-05-04,R,1,{R},Creature
+Vexing Drone,2026-11-13,W,2,{1}{W},Artifact;Creature
 Vexing Gull,2020-01-24,U,3,{2}{U},Creature
 Vexing Puzzlebox,2022-06-10,,3,{3},Artifact
 Vexing Radgull,2024-03-08,U,2,{1}{U},Creature
@@ -32967,6 +33360,7 @@ Vibranium Strike Gauntlets,2026-06-26,,4,{4},Artifact
 Vibrant Cityscape,2025-09-23,,0,,Land
 Vibrant Outburst,2026-04-24,RU,2,{U}{R},Instant
 Vibrating Sphere,1995-06-03,,4,{4},Artifact
+"Vic Fontaine, One Night Only",2026-11-13,RW,3,{1}{R}{W},Artifact;Creature
 Vicious Battlerager,2022-06-10,B,4,{3}{B},Creature
 Vicious Betrayal,2004-06-04,B,5,{3}{B}{B},Sorcery
 Vicious Clown,2024-09-27,R,3,{2}{R},Creature
@@ -33341,6 +33735,7 @@ Volunteer Reserves,1997-06-09,W,2,{1}{W},Creature
 Vona's Hunger,2018-01-19,B,3,{2}{B},Instant
 "Vona, Butcher of Magan",2017-09-29,BW,5,{3}{W}{B},Creature
 Voodoo Doll,1994-06-01,,6,{6},Artifact
+"Voq, Torchbearer",2026-11-13,B,4,{3}{B},Creature
 Voracious Bibliophile,2025-04-11,U,4,{3}{U},Creature
 Voracious Brood,2026-06-26,G,3,{2}{G},Creature
 Voracious Cobra,2000-10-02,GR,4,{2}{R}{G},Creature
@@ -33411,6 +33806,8 @@ Vrock,2022-06-10,B,5,{3}{B}{B},Creature
 "Vronos, Masked Inquisitor",2023-08-04,U,5,{3}{U}{U},Planeswalker
 Vryn Wingmare,2015-07-17,W,3,{2}{W},Creature
 Vug Lizard,1998-10-12,R,3,{1}{R}{R},Creature
+Vulcan,2026-11-13,UW,0,,Land
+Vulcan Mind-Meld,2026-11-13,U,1,{U},Sorcery
 Vulpikeet,2020-04-24,W,4,{3}{W},Creature
 Vulpine Goliath,2013-09-27,G,6,{4}{G}{G},Creature
 Vulpine Harvester,2023-04-21,W,4,{3}{W},Creature
@@ -33432,6 +33829,7 @@ Vulturous Aven,2015-03-27,B,4,{3}{B},Creature
 Vulturous Zombie,2005-10-07,BG,5,{3}{B}{G},Creature
 Vuzzle Spaceship,2024-08-02,R,6,{4}{R}{R},Artifact;Creature
 "Vv'viza, Orbital Overseer",2025-08-19,GUW,4,{1}{G}{W}{U},Creature
+"Võx, Child of the Collective",2026-11-13,U,5,{4}{U},Artifact;Creature
 "W'Kabi, Shield of the Nation",2026-06-26,G,2,{1}{G},Creature
 Wagon Wrecker,2024-05-07,R,2,{1}{R},Creature
 Wail of War,2025-04-11,B,3,{2}{B},Instant
@@ -33620,6 +34018,7 @@ War Tax,1999-10-04,U,3,{2}{U},Enchantment
 War of the Last Alliance,2023-06-23,W,4,{3}{W},Enchantment
 War of the Spark,2020-08-01,B,4,{3}{B},Enchantment
 War's Toll,2006-05-05,R,4,{3}{R},Enchantment
+War's Toll // War's Toll,2006-05-05,R,4,{3}{R},Enchantment
 War-Name Aspirant,2014-09-26,R,2,{1}{R},Creature
 War-Spike Changeling,2008-02-01,R,4,{3}{R},Creature
 War-Torch Goblin,2005-10-07,R,1,{R},Creature
@@ -33677,6 +34076,8 @@ Warmonger's Chariot,2010-04-23,,2,{2},Artifact
 Warmth,1997-10-14,W,2,{1}{W},Enchantment
 Warning,1995-06-03,W,1,{W},Instant
 Warp Artifact,1993-08-05,B,2,{B}{B},Enchantment
+Warp Core,2026-11-13,,2,{2},Artifact
+Warp Speed,2026-11-13,GU,3,{2}{G},Enchantment
 Warp World,2005-10-07,R,8,{5}{R}{R}{R},Sorcery
 Warpath,1999-10-04,R,4,{3}{R},Instant
 Warpath Ghoul,2009-07-17,B,3,{2}{B},Creature
@@ -33711,6 +34112,7 @@ Warriors' Lesson,2013-09-27,G,1,{G},Instant
 Warship Flight Crew,2026-11-13,R,2,{1}{R},Creature
 Warship Scout,2025-11-21,R,1,{R},Creature
 Warstorm Surge,2011-07-15,R,6,{5}{R},Enchantment
+Warstorm Surge // Warstorm Surge,2011-07-15,R,6,{5}{R},Enchantment
 Warteye Witch,2019-06-14,B,3,{2}{B},Creature
 Warthog,1997-02-03,G,3,{1}{G}{G},Creature
 Wartime Protestors,2025-11-21,R,4,{3}{R},Creature
@@ -33946,6 +34348,7 @@ Werewhat,2024-08-02,G,4,{3}{G},Creature
 Werewolf Lightning Mage,2022-10-07,,0,,Stickers
 Werewolf Pack Leader,2021-07-23,G,2,{G}{G},Creature
 "Wernog, Rider's Chaplain",2019-12-02,BW,2,{W}{B},Creature
+"Wesley Crusher, Starfleet Cadet",2026-11-13,U,4,{2}{U}{U},Creature
 West Coast Expansion,2026-06-26,U,2,{X}{U}{U},Sorcery
 West Wind Avatar,2026-03-06,G,7,{5}{G}{G},Creature
 Western Paladin,1998-10-12,B,4,{2}{B}{B},Creature
@@ -34064,7 +34467,7 @@ Whitewater Naiads,2014-05-02,U,5,{3}{U}{U},Enchantment;Creature
 Who // What // When // Where // Why,2004-11-19,BGRUW,13,{X}{W},Instant
 Who's That Praetor?,2023-02-15,,6,{6},Sorcery
 Whoosh!,2025-09-23,U,2,{1}{U},Instant
-"Whtz, the Bibliophile",2026-11-09,UW,3,{1}{W}{U},Creature
+"Whtz, the Bibliophile",2026-10-19,UW,3,{1}{W}{U},Creature
 "Wibbly-wobbly, Timey-wimey",2023-10-13,U,2,{1}{U},Sorcery
 "Wiccan, Rising Magician",2026-06-26,U,5,{4}{U},Creature
 "Wiccan, Young Avenger",2026-06-26,R,4,{3}{R},Creature
@@ -34174,6 +34577,7 @@ Wilfred Mott,2023-10-13,W,4,{3}{W},Creature
 "Wilhelt, the Rotcleaver",2021-09-24,BU,4,{2}{U}{B},Creature
 Will Kenrith,2018-06-08,U,6,{4}{U}{U},Planeswalker
 "Will Riker, Assuming Command",2026-11-13,W,5,{4}{W},Creature
+"Will Riker, First in the Field",2026-11-13,R,4,{3}{R},Creature
 Will of the Abzan,2025-04-11,B,4,{3}{B},Sorcery
 Will of the All-Hunter,2020-04-24,W,2,{1}{W},Instant
 Will of the Jeskai,2025-04-11,R,4,{3}{R},Sorcery
@@ -34185,6 +34589,7 @@ Will of the Temur,2025-04-11,U,6,{5}{U},Sorcery
 Will-Forged Golem,2014-07-18,,6,{6},Artifact;Creature
 Will-o'-the-Wisp,1993-08-05,B,1,{B},Creature
 Willbender,2003-02-03,U,2,{1}{U},Creature
+Willbound Quill,2026-10-13,,4,{4},Artifact
 Willbreaker,2015-07-17,U,5,{3}{U}{U},Creature
 "Willie Lumpkin, Postman",2026-06-26,UW,2,{W}{U},Creature
 Willing Test Subject,2017-12-08,G,3,{2}{G},Creature
@@ -34241,7 +34646,7 @@ Windriddle Palaces,2012-06-01,,0,,Plane
 Windrider Eel,2009-10-02,U,4,{3}{U},Creature
 Windrider Patrol,2015-10-02,U,5,{3}{U}{U},Creature
 Windrider Wizard,2020-09-25,U,3,{2}{U},Creature
-Winds of Abandon,2019-06-14,W,2,{1}{W},Sorcery
+Winds of Abandon,2018-07-14,W,2,{1}{W},Sorcery
 Winds of Change,1994-06-01,R,1,{R},Sorcery
 Winds of Qal Sisma,2015-01-23,G,2,{1}{G},Instant
 Winds of Rath,1997-10-14,W,5,{3}{W}{W},Sorcery
@@ -34518,6 +34923,11 @@ Words of Wind,2002-10-07,U,3,{2}{U},Enchantment
 Words of Wisdom,2001-10-01,U,2,{1}{U},Instant
 Words of Worship,2002-10-07,W,3,{2}{W},Enchantment
 "Worf, Chief Tactical Officer",2026-11-13,W,3,{2}{W},Creature
+"Worf, Defiant Commander",2026-11-13,BRW,5,{2}{R}{W}{B},Creature
+"Worf, Honor-Bound Warrior",2026-11-13,RW,2,{R/W}{R/W},Creature
+"Worf, Intelligence Contractor",2026-11-13,R,3,{2}{R},Creature
+"Worf, Son of Mogh",2026-11-13,RW,3,{1}{R}{W},Creature
+"Worf, Still Not Merry",2026-11-13,RW,5,{3}{R}{W},Creature
 Work a Double,2017-12-08,R,4,{2}{R}{R},Sorcery
 Workhorse,1998-06-15,,6,{6},Artifact;Creature
 Working Stiff,2004-11-19,B,2,{1}{B},Creature
@@ -34567,7 +34977,7 @@ Worst Fears,2014-05-02,B,8,{7}{B},Sorcery
 Worthy Cause,1997-10-14,W,1,{W},Instant
 Worthy Cost,2025-04-11,B,1,{B},Sorcery
 Worthy Knight,2019-10-04,W,2,{1}{W},Creature
-"Worzel, the Protector",2026-11-09,W,4,{1}{W}{W}{W},Planeswalker
+"Worzel, the Protector",2026-10-19,W,4,{1}{W}{W}{W},Planeswalker
 Wose Pathfinder,2023-06-23,G,2,{1}{G},Creature
 Would You Have Done the Same?,2023-02-15,B,1,{B},Instant
 Wound Reflection,2008-05-02,B,6,{5}{B},Enchantment
@@ -34752,6 +35162,7 @@ Yawgmoth's Will,1998-10-12,B,3,{2}{B},Sorcery
 Yawning Fissure,2009-07-17,R,5,{4}{R},Sorcery
 Ydwen Efreet,1993-12-17,R,3,{R}{R}{R},Creature
 Yeah Nah // Nah Yeah,2023-02-15,U,4,{2}{U},Instant
+Year of Hell,2026-11-13,RU,3,{1}{U}{R},Enchantment
 Year-End Review,2024-02-24,,0,,Phenomenon
 "Yedora, Grave Gardener",2021-04-23,G,5,{4}{G},Creature
 Yellow Scarves Cavalry,1999-05-01,R,2,{1}{R},Creature
@@ -34855,7 +35266,7 @@ Yuki-Onna,2005-06-03,R,4,{3}{R},Creature
 "Yukora, the Prisoner",2005-02-04,B,4,{2}{B}{B},Creature
 Yule Ooze,2006-12-31,GR,4,{2}{R}{G},Creature
 "Yuma, Proud Protector",2024-04-19,GRW,8,{5}{R}{G}{W},Creature
-"Yume, Chronicler of Valor",2026-11-09,W,2,{1}{W},Creature
+"Yume, Chronicler of Valor",2026-10-19,W,2,{1}{W},Creature
 Yuna's Decision,2025-06-13,G,4,{3}{G},Sorcery
 Yuna's Whistle,2025-06-13,G,3,{1}{G}{G},Instant
 "Yuna, Grand Summoner",2025-06-13,GUW,4,{1}{G}{W}{U},Creature
@@ -34873,7 +35284,7 @@ Zada's Commando,2016-01-22,R,2,{1}{R},Creature
 "Zada, Hedron Grinder",2015-10-02,R,4,{3}{R},Creature
 Zaffai and the Tempests,2026-04-24,RU,7,{5}{U}{R},Creature
 "Zaffai, Thunder Conductor",2021-04-23,RU,4,{2}{U}{R},Creature
-"Zagorka, Mother of Sanctum",2026-11-09,GRU,4,{1}{G}{U}{R},Creature
+"Zagorka, Mother of Sanctum",2026-10-19,GRU,4,{1}{G}{U}{R},Creature
 Zagoth Crystal,2020-04-24,BGU,3,{3},Artifact
 Zagoth Mamba,2020-04-24,B,1,{B},Creature
 Zagoth Triome,2020-04-24,BGU,0,,Land
@@ -34908,6 +35319,7 @@ Zealous Persecution,2009-04-30,BW,2,{W}{B},Instant
 Zealous Strike,2012-05-04,W,2,{1}{W},Instant
 Zebra Unicorn,1996-10-08,GW,4,{2}{G}{W},Creature
 Zedruu the Greathearted,2011-06-17,RUW,4,{1}{U}{R}{W},Creature
+"Zefram Cochrane, Warp Pioneer",2026-11-13,U,3,{2}{U},Creature
 "Zegana, Utopian Speaker",2019-01-25,GU,4,{2}{G}{U},Creature
 Zektar Shrine Expedition,2009-10-02,R,2,{1}{R},Enchantment
 Zell Dincht,2025-06-13,R,3,{2}{R},Creature
@@ -34939,6 +35351,7 @@ Zephyrim,2022-10-07,W,4,{3}{W},Creature
 Zerapa Minotaur,2000-06-05,R,4,{2}{R}{R},Creature
 "Zeriam, Golden Wind",2022-09-09,W,4,{3}{W},Creature
 Zero Point Ballad,2025-08-01,B,1,{X}{B},Sorcery
+"Zero, Incorporeal Sensate",2026-11-13,BW,3,{1}{W/B}{W/B},Artifact;Creature
 "Zetalpa, Primal Dawn",2018-01-19,W,8,{6}{W}{W},Creature
 "Zethi, Arcane Blademaster",2019-12-02,UW,3,{1}{W}{U},Creature
 "Zevlor, Elturel Exile",2022-06-10,BRU,4,{1}{U}{B}{R},Creature
@@ -34970,6 +35383,7 @@ Ziatora's Proving Ground,2022-04-29,BGR,0,,Land
 "Zidane, Tantalus Thief",2025-06-13,RW,5,{3}{R}{W},Creature
 "Zilortha, Strength Incarnate",2020-04-24,GR,5,{3}{R}{G},Creature
 Zimone and Dina,2023-04-21,BGU,3,{B}{G}{U},Creature
+Zimone the Calculating // Simple Subtraction,2026-10-13,BU,2,{U}{B},Creature
 Zimone's Experiment,2026-04-24,G,4,{3}{G},Sorcery
 Zimone's Homework,2023-02-15,GU,2,{G}{U},Enchantment
 Zimone's Hypothesis,2024-09-27,U,5,{3}{U}{U},Instant
