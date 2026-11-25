@@ -3,8 +3,8 @@ const util = require('util');
 const stringify = require('csv-stringify');
 const {chain} = require('stream-chain');
 const {parser} = require('stream-json');
-const {pick} = require('stream-json/filters/Pick');
-const {streamObject} = require('stream-json/streamers/StreamObject');
+const {pick} = require('stream-json/filters/pick.js');
+const {streamObject} = require('stream-json/streamers/stream-object.js');
 
 fs.readFileAsync = util.promisify(fs.readFile);
 fs.writeFileAsync = util.promisify(fs.writeFile);
